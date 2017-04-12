@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 
 <!-- as my experience with html and css is rather limited, I copied most 
 of the things from good examples. E.g. the futurice.github.io and others 
@@ -14,20 +15,19 @@ of the things from good examples. E.g. the futurice.github.io and others
 
 
 	<!-- Header -->
-<!--		<section id="header">-->
 		<div id="header">
 
 			<div class="top">
 
 				<!-- Logo -->
-					<div id="logo">
+<!--					<div id="logo">
 						<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
 						<h1 id="title">Emanuesson</h1>
 			      <p>This is an overview about<br />
              the software projects of<br />
         		 Emanuesson on github</p>
 					</div>
-
+-->
 				<!-- Nav -->
 					<nav id="nav">
 						<!--
@@ -48,6 +48,9 @@ of the things from good examples. E.g. the futurice.github.io and others
 							<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">About</span></a></li>
 							<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
 -->
+							<li><a href="#gdv" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-area-chart">The LibGDV</span></a></li>
+							<li><a href="#epsara" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-bar-chart">Epsara</span></a></li>
+							<li><a href="#gevse" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-bolt">GEVSE</span></a></li>
 							<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
 <!--
 							<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
@@ -69,6 +72,7 @@ of the things from good examples. E.g. the futurice.github.io and others
 -->
 				    <li><a href="https://github.com/Emanuesson" class="icon fa-github"><span class="label">Github</span></a></li>
 				    <li><a href="eschmidt216@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+<!--            <li class="fa fa-linkedin-square" aria-hidden="true"></i>-->
 					</ul>
 
 			</div>
@@ -87,8 +91,6 @@ of the things from good examples. E.g. the futurice.github.io and others
 							<p>This is just my incredibly simple site<br />
 							with a list of my current projects on github.</p>
 						</header>
-<!--						<p>For the moment there is not really much interesting listed here... but with some time it will be more... definit</p>
--->
 <!--
 						<footer>
 							<a href="#portfolio" class="button scrolly">Magna Aliquam</a>
@@ -96,6 +98,27 @@ of the things from good examples. E.g. the futurice.github.io and others
 -->
 					</div>
 				</section>
+
+	    <!-- Gdv -->
+		    <section id="gdv" class="three">
+			    <div class="container">
+
+				    <header>
+					    <h2>LibGDV</h2>
+				    </header>
+
+				    <p>Working in a scientific environment requires a fast, open and simple approach in software-design. The gtk+ library offers many of these features in terms of UI-programming and the underlying GLib is a powerful approach to use object-oriented programming (OOP) mostly independent of the available platform or programming language. However, most free scientific code does not apply Gtk+ even in applications were the integration would be highly preferable.</p>
+
+			    </div>
+		    </section>
+
+        <section id="hw" class="one dark cover">
+          <div class="container">
+            <?php include('home/hello_world.html');?>
+          </div>
+        </section>
+<!--
+-->
 
 	    <!-- About Me -->
 		    <section id="about" class="three">
@@ -119,7 +142,7 @@ of the things from good examples. E.g. the futurice.github.io and others
 
 			<!-- Copyright -->
 				<ul class="copyright">
-					<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					<li>&copy; Emanuel Schmidt. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 				</ul>
 
 		</div>
