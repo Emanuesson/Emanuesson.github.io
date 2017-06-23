@@ -28,31 +28,21 @@ of the things from good examples. E.g. the futurice.github.io and others
         		 Emanuesson on github</p>
 					</div>
 -->
+
 				<!-- Nav -->
 					<nav id="nav">
-						<!--
 
-							Prologue's nav expects links in one of two formats:
-
-							1. Hash link (scrolls to a different section within the page)
-
-							   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
-
-							2. Standard link (sends the user to another page/site)
-
-							   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
-
-						-->
 						<ul>
+
+							<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Home</span></a></li>
 <!--
-							<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">About</span></a></li>
 							<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
 -->
-							<li><a href="#gdv" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-area-chart">The LibGDV</span></a></li>
+							<li><a href="#gdv" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-area-chart">LibGDV</span></a></li>
 							<li><a href="#epsara" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-bar-chart">Epsara</span></a></li>
-							<li><a href="#gevse" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-bolt">GEVSE</span></a></li>
-							<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
+							<li><a href="#gevse" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-bolt">Gevse</span></a></li>
 <!--
+							<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
 							<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
 -->
 						</ul>
@@ -100,28 +90,61 @@ of the things from good examples. E.g. the futurice.github.io and others
 				</section>
 
 	    <!-- Gdv -->
-		    <section id="gdv" class="three">
+		    <section id="gdv" class="two">
 			    <div class="container">
 
 				    <header>
 					    <h2>LibGDV</h2>
 				    </header>
 
-				    <p>Working in a scientific environment requires a fast, open and simple approach in software-design. The gtk+ library offers many of these features in terms of UI-programming and the underlying GLib is a powerful approach to use object-oriented programming (OOP) mostly independent of the available platform or programming language. However, most free scientific code does not apply Gtk+ even in applications were the integration would be highly preferable.</p>
+				    <h3>Description</h3>
+				    <p>Working in a scientific environment requires a fast, open and simple approach in software-design. The gtk+ library offers many of these features in terms of UI-programming and the underlying GLib is a powerful approach to use object-oriented programming (OOP) mostly independent of the available platform or programming language. Despite the advantages, most free scientific code does not apply Gtk+ even in applications were the integration would be highly preferable. Gdv tries to provide a part of this functionality.</p>
+
+<!--				    <p>One reason for the lack of interest of the scientific community in Gtk+ is a missing solution of data visualisation. A list of recent approaches that circumvent this limitations can be found <a href="http://stackoverflow.com/questions/2629099/gtk-based-graph/2631361#2631361">here</a>. However the best approach for now seems to be custom plotting-widgets, individually developed for the concerning application. This is somehow awkward and not really usefull if you plan to write a small user interface for an experiment within your Lab in less than a full workday.</p>
+
+				    <p>I myself was pretty annoyed by the other options, such as forcing <a href="https://github.com/joastbg/gtk-socket-gnuplot">Gnuplot</a> within a GtkWidget-instance (this approach does work on some platforms and on other it simply doesn't without any apparent reason), or using really old libraries such as <a href="http://gtkextra.sourceforge.net/cms/">GtkExtra</a> that are now so outdated that they require functions <a href="https://mail.gnome.org/archives/gtk-devel-list/2017-April/msg00007.html">deprecated 17 years ago</a>, or use a rather specialized library such as <a href="https://github.com/GNOME/goffice">GOffice</a> that reimplements a lot of the overhead that has been removed by hard work from Gtk+ and sometimes applies rather akward solutions for the things one would expect for a graphic library based on Gtk+, such as geometry-handling.</p>
+-->
+				    <p>I startet to work on gdv because I was pretty annoyed by the options that are available for the visualisation of scientific and technical data, such as forcing <a href="https://github.com/joastbg/gtk-socket-gnuplot">Gnuplot</a> within a GtkWidget-instance (this approach does work on some platforms and on other it simply doesn't - without any apparent reason), or using really old libraries such as <a href="http://gtkextra.sourceforge.net/cms/">GtkExtra</a> that are now so outdated that they require functions <a href="https://mail.gnome.org/archives/gtk-devel-list/2017-April/msg00007.html">deprecated 17 years ago</a>, or use a rather specialized library such as <a href="https://github.com/GNOME/goffice">GOffice</a> that reimplements a lot of the overhead that has been removed from Gtk+ and sometimes applies rather akward solutions for the things one would expect as elementary functionality of any graphic library based on Gtk+, such as geometry-handling.</p>
+
+            <footer>
+  						<a href="https://github.com/Emanuesson/gdv" class="button scrolly">Source&emsp;<span class="icon fa-github" /></a>
+            </footer>
 
 			    </div>
 		    </section>
 
-        <section id="hw" class="one dark cover">
+	    <!-- Epsara -->
+        <section id="epsara" class="two">
           <div class="container">
-            <?php include('home/hello_world.html');?>
+            <header>
+              <h2 class="alt">Epsara</h2>
+            </header>
+            <p>Epsara...</p>
+
+            <footer>
+  						<a href="https://github.com/Emanuesson/epsara" class="button scrolly">Source&emsp;<span class="icon fa-github" /></a>
+            </footer>
+
           </div>
         </section>
-<!--
--->
+
+	    <!-- Epsara -->
+        <section id="gevse" class="two">
+          <div class="container">
+            <header>
+              <h2 class="alt">Gevse</h2>
+            </header>
+            <p>A very small evse system...</p>
+
+            <footer>
+  						<a href="https://github.com/Emanuesson/gevse" class="button scrolly">Source&emsp;<span class="icon fa-github" /></a>
+            </footer>
+
+          </div>
+        </section>
 
 	    <!-- About Me -->
-		    <section id="about" class="three">
+<!--		    <section id="about" class="three">
 			    <div class="container">
 
 				    <header>
@@ -130,11 +153,11 @@ of the things from good examples. E.g. the futurice.github.io and others
 
 				    <a href="#" class="image featured"><img src="images/myperson.jpg" alt="" /></a>
 
-				    <p>For the moment there is not really much interesting listed here... but with some time it will be more... definitely.</p>
+				    <p>For the moment there is not really much to write... but with some time it will be more... definitely.</p>
 
 			    </div>
 		    </section>
-
+-->
 		</div>
 
 	<!-- Footer -->
