@@ -81,9 +81,9 @@
 				    </header>
 
 				    <h3>Description</h3>
-				    <p>Working in a scientific environment requires a fast, open and simple approach in software-design that is flexible enough to get extended to a full scale project in the end. The gtk+ library offers many of these features in terms of UI-programming and the underlying GLib and Gobject-framework is a powerful approach to use object-oriented programming (OOP) mostly independent of the available platform or programming language. Despite the advantages, most free scientific codes do not apply Gtk+ even in applications were the integration would be highly preferable. Gdv tries to provide a part of the functionality to make Gtk+ a little more interesting for people that are looking for a way to observe and control technical environments.</p>
+				    <p>Working in a scientific environment requires a fast, open and simple approach in software-design that is flexible enough to get extended to a full scale project in the end. The Gtk+ library offers many of these features in terms of UI-programming and the underlying GLib and Gobject-framework is a powerful approach to use object-oriented programming (OOP) mostly independent of the available platform or programming language. Despite the advantages, most free scientific codes do not apply Gtk+ even in applications were the integration would be highly preferable. Gdv tries to provide a part of the functionality to make Gtk+ a little more interesting for people that are looking for a way to observe and control technical environments.</p>
 
-				    <p>I startet to work on gdv because I was pretty annoyed by <a href="http://stackoverflow.com/questions/2629099/gtk-based-graph/2631361#2631361">the options that are available for the visualisation of scientific and technical data</a>, such as forcing <a href="https://github.com/joastbg/gtk-socket-gnuplot">Gnuplot</a> within a GtkWidget-instance (this approach limited to systems with a working X11-platform), or using really old libraries such as <a href="http://gtkextra.sourceforge.net/cms/">GtkExtra</a> that are now so outdated that they require functions <a href="https://mail.gnome.org/archives/gtk-devel-list/2017-April/msg00007.html">deprecated 17 years ago</a>, or a rather specialized library such as <a href="https://github.com/GNOME/goffice">GOffice</a> that reimplements a lot of the overhead that has been removed or improved in Gtk+ over the years, leading to rather akward solutions for things one would expect as elementary functionality of any graphic library based on Gtk+, such as theming or geometry-handling.</p>
+				    <p>I startet to work on gdv because I was pretty annoyed by <a href="http://stackoverflow.com/questions/2629099/gtk-based-graph/2631361#2631361">the options that are available for the visualisation of scientific and technical data</a>, such as forcing <a href="https://github.com/joastbg/gtk-socket-gnuplot">Gnuplot</a> within a GtkWidget-instance (this approach limited to systems with a working X11-platform), or using really old libraries such as <a href="http://gtkextra.sourceforge.net/cms/">GtkExtra</a> that are now so outdated that they require functions <a href="https://mail.gnome.org/archives/gtk-devel-list/2017-April/msg00007.html">deprecated 17 years ago</a>, or a rather specialized library such as <a href="https://github.com/GNOME/goffice">GOffice</a> that re-implements a lot of the overhead that has been removed or improved in Gtk+ over the years, leading to rather awkward solutions for things one would expect as elementary functionality of any graphic library based on Gtk+, such as theme-management or geometry-handling.</p>
 
 				    <h3>Current functionality</h3>
 
@@ -106,7 +106,7 @@
             </header>
             <p>Epsara the <strong>e</strong>nhanced <strong>p</strong>article <strong>s</strong>cattering and <strong>r</strong>eaction <strong>a</strong>nalysis framework is a library that is designed to assist the calculation of particle scattering spectra over energy for the aim of ion beam analysis. A physical technique of elemenetal detection that has several applications ranging from fundamental solid state physics, geology, forensics to cultural heritage.</p>
 
-            <p>Epsara is designed on the basis of the gobject infrastructure. I mainly wrote it, because I was frustrated by the shortcoming of existing ion beam analysis codes and the so called <a href="http://home.mpcdf.mpg.de/~mam/NIM%20B268-1824.pdf">IDF (ion beam analysis data format)</a>. However there are some points that have to be clarified concerning the copyrights of existing modells and algorithms for energy loss of particles in matter. Mainly the TRIM-table from Ziegler, Biersack, Littmark. Therefor I can just provide a shortened version without the exact tables and algorithms on the web.</p>
+            <p>Epsara is designed on the basis of the gobject infrastructure. I mainly wrote it, because I was frustrated by the shortcoming of existing ion beam analysis codes and the so called <a href="http://idf.schemas.itn.pt/old%20versions/version0/IDF%20documentation%20v0.pdf">IDF (ion beam analysis data format)</a>. However there are some points that have to be clarified concerning the copyrights of existing modells and algorithms for energy loss of particles in matter. Mainly the TRIM-table from Ziegler, Biersack, Littmark. Therefor I can just provide a shortened version without the exact tables and algorithms on the web.</p>
 
             <p>If you have any wishes or questions it might be better and faster to simply contact me.</p>
 
@@ -125,14 +125,29 @@
             </header>
             <p>Gevse is a Gnome-based EVSE-system (electric vehicle charging station). It was influenced by similar projects, such as the <a href="https://github.com/SmartEVSE/smartevse">SmartEVSE</a>. The general aim is the load management and the logging of power consumption for different vehicle charging stations on a single raspberry pi. A lot of the planned functionality is still missing. For the moment it's actual nothing more than a nice little electricity meter with an underlying sqlite-database and some functionality for system maintenance based on <a href="https://developer.gnome.org/gtk3/stable/gtk-broadway.html">Gtk+ and broadway</a>.</p>
 
+				    <h3>The more general aim</h3>
+
+            <p>When I first had my hands on a raspberry pi and installed ARM-Arch-Linux on it, I was fascinated about the functionality and possibility of this small device. I was even more excited when I realized that the performance of an raspberry pi was absolutely sufficient to use it as a small broadway-server and start normal Gtk+-applications on it.
+            </p>
+
+            <p>Broadway is nevertheless now something like a lost child in the development of Gtk+ and misses major functionality and has definitely safety issues that prevent a general application in a serious environment. But the general idea to use desktop-applications from within your browser for control and interaction of a distributed system is still an highly recent development. I was hoping to build first of all an Gtk+-application that allowed me to manage a system from a single window and then use this application from within the browser and extend it via a simple plugin for the physical purpose of this one device. E.g. this device might be a raspberry pi, connected to your local network, sitting on a wall and managing different charging stations for electric vehicles... Or it might be set of sensors in a vehicle, a building or an industrial process... etc.
+            </p>
+
+            <p>Building an application that offers the possibility to safely manage maintain a whole system in a integral way is challenging enough. I initially hoped, I could use some of the existing programs of gnome, such as Gnome-Terminal, Nauitlus, Gedit, etc., to build such an application around these apps. Gtk+ offers for this purpose the GtkSocket and GtkPlug-widgets that are limited to X11. And that is the problem. These connectors are naturally not available from within a broadway-session. Beside this the development of Gtk+ is sometimes rapidly changing and has seen some new directions in the last couple of years. One of these new directions is the general application of <a href="https://wayland.freedesktop.org/">wayland</a>. With this new system and some new emerging broadway alternatives such as <a href="https://github.com/udevbe/westfield">westfield</a> it might be a good possibility to finally build a Gtk+-based distributed system maintenance-software that could be safely implemented in a web-framework such as Node.js and relies on standard gnome-apps.</p>
+
+				    <h3>User interface</h3>
+
+            <p>For now this is just a really small Gtk+-app with a lot of placeholders for the different functionalities. The whole thing uses broadway as backend. The current focus should be to change this particular issue and play around for a while with e.g. westfield, as described above.
+            </p>
+
 				    <h3>Data management</h3>
 
-            <p>For the moment data logging is just implemented for a simple S0-interfaces. This should be provided in a more general manner in the future.
+            <p>For the moment data logging is just implemented for simple S0-interfaces. This functionality can be expended in the future to more complex interfaces and it should be organized within the logging-scripts.
             </p>
 
             <h3>User management</h3>
 
-            <p>Users should apply to the charging process via a phone-call, a user interface, automatically via the license plate or by an human administrator. However this functionality is at the moment still completely missing.
+            <p>Users apply to the charging process via phone-call, a user interface, automatically via the license plate or by an human administrator. However this functionality is at the moment still completely missing. And due to the different techniques that are necessary for this achievement there is no focus on this part.
             </p>
 
             <footer>
