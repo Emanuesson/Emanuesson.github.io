@@ -5,9 +5,7 @@
 	<title>Emanuesson</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 	<link rel="stylesheet" href="assets/css/main.css" />
-	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 </head>
 <body>
 
@@ -23,16 +21,9 @@
 						<ul>
 
 							<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Home</span></a></li>
-<!--
-							<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
--->
 							<li><a href="#gdv" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-area-chart">LibGDV</span></a></li>
 <!--							<li><a href="#epsara" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-bar-chart">Epsara</span></a></li>-->
 							<li><a href="#gevse" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-bolt">Gevse</span></a></li>
-<!--
-							<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
-							<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
--->
 						</ul>
 					</nav>
 
@@ -43,11 +34,6 @@
 				<!-- Social Icons -->
 					<ul class="icons">
 				    <li><a href="https://twitter.com/Emanuesson" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-<!--
-				    <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-				    <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-				    <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
--->
 				    <li><a href="https://github.com/Emanuesson" class="icon fa-github"><span class="label">Github</span></a></li>
 				    <li><a href="eschmidt216@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
@@ -133,7 +119,7 @@
             <p>Broadway is nevertheless now something like a lost child in the development of Gtk+ and misses major functionality and has definitely safety issues that prevent a general application in a serious environment. But the general idea to use desktop-applications from within your browser for control and interaction of a distributed system is still an highly recent development. I was hoping to build first of all an Gtk+-application that allowes me to manage a system from a single window and then use this application from within the browser and extend it via a simple plugin for the physical purpose of this one device. E.g. this device might be a raspberry pi, connected to your local network, sitting on a wall and managing different charging stations for electric vehicles... Or it might be a full set of sensors in a vehicle, a building or an industrial process... etc.
             </p>
 
-            <p>Building an application that offers the possibility to safely manage and maintain a whole system in an integral way is a challenging task alone. I initially hoped, I could use some of the existing programs of gnome, such as Gnome-Terminal, Nauitlus, Gedit, etc., to build such an application around these apps. Gtk+ offers for this purpose the GtkSocket and GtkPlug-widgets that are limited to X11. And that is the problem. These connectors are naturally not available from within a broadway-session. Beside this the development of Gtk+ is sometimes rapidly changing and has seen some new directions in the last couple of years. One of these new directions is the jump from X11 to <a href="https://wayland.freedesktop.org/">wayland</a>. With this new system and some new emerged broadway alternatives such as <a href="https://github.com/udevbe/westfield">westfield</a> it might be a good possibility to finally build a Gtk+-based distributed system maintenance-software that could be safely implemented in a web-framework such as Node.js and relies on standard gnome-apps.</p>
+            <p>Building an application that offers the possibility to safely manage and maintain a whole system in an integral way is a challenging task alone. I initially hoped, I could use some of the existing programs of gnome, such as Gnome-Terminal, Nauitlus, Gedit, etc., to build such an application around these apps. Gtk+ offers for this purpose the GtkSocket and GtkPlug-widgets that are limited to X11. And that is the problem. These connectors are naturally not available from within a broadway-session. Beside this the development of Gtk+ is sometimes rapidly changing and has seen some new directions in the last couple of years. One of these new directions is the jump from X11 to <a href="https://wayland.freedesktop.org/">wayland</a>. With this new system and some new emerged broadway alternatives such as <a href="https://github.com/udevbe/westfield">westfield</a> it might be a good possibility to finally build a Gtk+-based distributed system maintenance-software that could be safely implemented in a web-framework such as Node.js and relies on standard gnome-apps. It would be an alternative approach to standard admin-tools like <a href="http://doxfer.webmin.com/Webmin/Main_Page">webmin</a>.</p>
 
 				    <h3>User interface</h3>
 
