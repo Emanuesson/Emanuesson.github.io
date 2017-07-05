@@ -19,7 +19,7 @@
 
 						<ul>
 
-							<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Home</span></a></li>
+							<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Top</span></a></li>
 							<li><a href="#gdv" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-area-chart">LibGDV</span></a></li>
 <!--							<li><a href="#epsara" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-bar-chart">Epsara</span></a></li>-->
 							<li><a href="#gevse" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-bolt">Gevse</span></a></li>
@@ -50,7 +50,7 @@
 
 						<header>
 							<h2 class="alt">Overview</h2>
-							<p>Welcome to my incredibly simple site<br />
+							<p>Welcome to this incredibly simple site<br />
 							with a list of my current projects on github.</p>
 						</header>
 
@@ -66,7 +66,19 @@
 				    </header>
 
 				    <h3>Description</h3>
-				    <p>Working in a scientific environment requires a fast, open and simple approach in software-design, which is flexible enough so it can be extended within a minimum of time to a full scale project. Of course this all should be usable by other scientists or students who are not interested in the technical details. The Gtk+ library offers many of these features in terms of UI-programming and the underlying GLib and GObject-framework are a powerful approach to use object-oriented programming (OOP) mostly independent of the available platform or programming language. Despite the advantages, most free scientific codes do not apply Gtk+ even in applications were the integration would be highly preferable. Gdv tries to provide a part of the functionality to make Gtk+ a little more interesting for people that are looking for a way to observe and control technical environments or experimental setups.</p>
+				    <p>Working in a scientific environment requires a fast, open and simple approach in software-design, which is flexible enough so it can be extended within a minimum of time to a full scale project. Of course this all should be usable by other scientists or students who are not interested in the technical details and commonly work with a wide set of programming languages. The Gtk+ library offers many of these features in terms of UI-programming and the underlying GLib and GObject-framework are a powerful approach to use object-oriented programming (OOP) mostly independent of the available platform or programming language. Despite the advantages, most free scientific codes do not apply Gtk+ even in applications were the integration would be highly preferable. Gdv tries to provide a part of the functionality to make Gtk+ a little more interesting for people that are looking for a way to observe and control technical environments or experimental setups.</p>
+
+			      <div align="center">
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit" style="width: 95%;"><img src="https://emanuesson.github.io/gdv/example2.png" alt"" /></a>
+										<header>
+											<h3>A simple demonstration of LibGdv</h3>
+										</header>
+									</article>
+								</div>
+						</div>
+
 
 				    <h3>Motivation</h3>
 				    <p>I started with writing LibGdv because I was pretty annoyed by <a href="http://stackoverflow.com/questions/2629099/gtk-based-graph/2631361#2631361">the options that are available for the visualisation of scientific and technical data</a> within the Gtk+-framework, such as forcing <a href="https://github.com/joastbg/gtk-socket-gnuplot">Gnuplot</a> within a GtkWidget-instance (btw. this approach is limited to systems with a working X11-platform), or using really old libraries such as <a href="http://gtkextra.sourceforge.net/cms/">GtkExtra</a> that are now so outdated they rely on functions <a href="https://mail.gnome.org/archives/gtk-devel-list/2017-April/msg00007.html">deprecated 17 years ago</a>, or a rather specialized library such as <a href="https://github.com/GNOME/goffice">GOffice</a> that re-implements a lot of the overhead that has been removed or improved in Gtk+ over the years. This usually leads to rather awkward solutions for things one would expect as elementary functionality of any graphic library based on Gtk+, such as theme-management or geometry-handling.</p>
@@ -85,7 +97,7 @@
   <li>and linear as well as logarithmic axes.</li>
 </ul>
 
-				    <p>A good starting point for using LibGdv in displaying data is given <a href="https://emanuesson.github.io/gdv/getting-started.html#id-1.2.3.8.2">by the documentation</a></p>
+				    <p>A starting point for using LibGdv to display data is given <a href="https://emanuesson.github.io/gdv/getting-started.html#id-1.2.3.8.2">by preface of the documentation</a></p>
 
 			      <div align="center">
               <footer>
@@ -123,7 +135,7 @@
             <header>
               <h2 class="alt">Gevse</h2>
             </header>
-            <p>Gevse is a Gnome-based EVSE-system (electric vehicle charging station). It was influenced by similar projects, such as the <a href="https://github.com/SmartEVSE/smartevse">SmartEVSE</a>. The general aim is the build a system for load management and a log of power consumption for different charging stations on a single raspberry pi. A lot of the planned functionality is still missing. For the moment it's actual nothing more than a nice little electricity meter with an underlying sqlite-database and some functionality for system maintenance based on <a href="https://developer.gnome.org/gtk3/stable/gtk-broadway.html">Gtk+ and broadway</a>.</p>
+            <p>Gevse is a Gnome-based EVSE-system (electric vehicle charging station). It was influenced by similar projects, such as the <a href="https://github.com/SmartEVSE/smartevse">SmartEVSE</a>. The original aim was to build a system for load management and a log of power consumption for different charging stations on a single raspberry pi. A lot of the planned functionality is still missing. For the moment it's actual nothing more than a nice little electricity meter running in the browser with an underlying sqlite-database and some functionality for system maintenance based on <a href="https://developer.gnome.org/gtk3/stable/gtk-broadway.html">Gtk+ and broadway</a>.</p>
 
 				    <h3>The more general aim</h3>
 
