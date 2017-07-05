@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 
-
 <head>
 	<title>Emanuesson</title>
 	<meta charset="utf-8" />
@@ -51,7 +50,7 @@
 
 						<header>
 							<h2 class="alt">Overview</h2>
-							<p>This is just my incredibly simple site<br />
+							<p>Welcome to my incredibly simple site<br />
 							with a list of my current projects on github.</p>
 						</header>
 
@@ -67,13 +66,23 @@
 				    </header>
 
 				    <h3>Description</h3>
-				    <p>Working in a scientific environment requires a fast, open and simple approach in software-design that is flexible enough to extend within a minimum of time to a full scale project that can be easily used by other scientists or students who are not interested about the technical details. The Gtk+ library offers many of these features in terms of UI-programming and the underlying GLib and GObject-framework are a powerful approach to use object-oriented programming (OOP) mostly independent of the available platform or programming language. Despite the advantages, most free scientific codes do not apply Gtk+ even in applications were the integration would be highly preferable. Gdv tries to provide a part of the functionality to make Gtk+ a little more interesting for people that are looking for a way to observe and control technical environments or experimental setups.</p>
+				    <p>Working in a scientific environment requires a fast, open and simple approach in software-design, which is flexible enough so it can be extended within a minimum of time to a full scale project. Of course this all should be usable by other scientists or students who are not interested about technical details. The Gtk+ library offers many of these features in terms of UI-programming and the underlying GLib and GObject-framework are a powerful approach to use object-oriented programming (OOP) mostly independent of the available platform or programming language. Despite the advantages, most free scientific codes do not apply Gtk+ even in applications were the integration would be highly preferable. Gdv tries to provide a part of the functionality to make Gtk+ a little more interesting for people that are looking for a way to observe and control technical environments or experimental setups.</p>
 
-				    <p>I started to work on gdv because I was pretty annoyed by <a href="http://stackoverflow.com/questions/2629099/gtk-based-graph/2631361#2631361">the options that are available for the visualisation of scientific and technical data</a> within the Gtk+-framework, such as forcing <a href="https://github.com/joastbg/gtk-socket-gnuplot">Gnuplot</a> within a GtkWidget-instance (this approach is limited to systems with a working X11-platform), or using really old libraries such as <a href="http://gtkextra.sourceforge.net/cms/">GtkExtra</a> that are now so outdated that they require functions <a href="https://mail.gnome.org/archives/gtk-devel-list/2017-April/msg00007.html">deprecated 17 years ago</a>, or a rather specialized library such as <a href="https://github.com/GNOME/goffice">GOffice</a> that re-implements a lot of the overhead that has been removed or improved in Gtk+ over the years, leading to rather awkward solutions for things one would expect as elementary functionality of any graphic library based on Gtk+, such as theme-management or geometry-handling.</p>
+				    <h3>Motivation</h3>
+				    <p>I wrote gdv because I was pretty annoyed by <a href="http://stackoverflow.com/questions/2629099/gtk-based-graph/2631361#2631361">the options that are available for the visualisation of scientific and technical data</a> within the Gtk+-framework, such as forcing <a href="https://github.com/joastbg/gtk-socket-gnuplot">Gnuplot</a> within a GtkWidget-instance (btw. this approach is limited to systems with a working X11-platform), or using really old libraries such as <a href="http://gtkextra.sourceforge.net/cms/">GtkExtra</a> that are now so outdated they rely on functions <a href="https://mail.gnome.org/archives/gtk-devel-list/2017-April/msg00007.html">deprecated 17 years ago</a>, or a rather specialized library such as <a href="https://github.com/GNOME/goffice">GOffice</a> that re-implements a lot of the overhead that has been removed or improved in Gtk+ over the years, leading to rather awkward solutions for things one would expect as elementary functionality of any graphic library based on Gtk+, such as theme-management or geometry-handling.</p>
 
 				    <h3>Current functionality</h3>
-
-				    <p>For now the functions provided by Gdv are still really limited. However a good starting point for applications is provided by the documentation</p>
+				    <p>For now the functions provided by Gdv are still really limited. However the API is absolutely sufficient to be used for displays and controls as it provide some standard features, such as</p>
+				    <ui>
+				      <li>automatic geometry- and height/width-management,</li>
+				      <li>theming by the <a href="https://developer.gnome.org/gtk3/stable/GtkCssProvider.html">GtkCssProvider,</a></li>
+				      <li>standard single-axis-displays or 2D-graphs with 4 axes,</li>
+				      <li>automatic setting of tics and scale-limits (if needed by the developer),</li>
+				      <li>a lot of freedom in definition of scale-settings, which makes it quite easy to build more specialized widgets such as time- or angle-axes,</li>
+				      <li>an simple legend-widget</li>
+				      <li>and linear as well as logarithmic axes.</li>
+				    </ui>
+				    <p>A good starting point for making displays is provided <a href="https://emanuesson.github.io/gdv/getting-started.html#id-1.2.3.8.2">by the documentation</a></p>
 
             <footer>
   						<a href="https://emanuesson.github.io/gdv/" class="button scrolly">Documentation&emsp;<span class="icon fa-book" /></a>
