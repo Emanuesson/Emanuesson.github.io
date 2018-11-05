@@ -1,0 +1,369 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="GdvTic">
+<refmeta>
+<refentrytitle role="top_of_page" id="GdvTic.top_of_page">GdvTic</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>GDV Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>GdvTic</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="GdvTic.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="GdvTic"><returnvalue>GdvTic</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="gdv-tic-new">gdv_tic_new</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-tic-label-set-markup">gdv_tic_label_set_markup</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="gchar"><returnvalue>gchar</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="gdv-tic-get-label">gdv_tic_get_label</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-tic-set-label-widget">gdv_tic_set_label_widget</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-tic-set-tic-position">gdv_tic_set_tic_position</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-tic-get-show-label">gdv_tic_get_show_label</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-tic-get-space-to-tic-position">gdv_tic_get_space_to_tic_position</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="GdvTic.properties" role="properties">
+<title role="properties.title">Properties</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="properties_type" colwidth="150px"/>
+<colspec colname="properties_name" colwidth="300px"/>
+<colspec colname="properties_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="GdvTic--axis-inner-dir-x">axis-inner-dir-x</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="GdvTic--axis-inner-dir-y">axis-inner-dir-y</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gchar"><type>gchar</type></link>&#160;*</entry><entry role="property_name"><link linkend="GdvTic--label">label</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="GtkWidget"><type>GtkWidget</type></link>&#160;*</entry><entry role="property_name"><link linkend="GdvTic--label-widget">label-widget</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="GdvTic--label-xalign">label-xalign</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="GdvTic--label-yalign">label-yalign</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gfloat"><type>gfloat</type></link></entry><entry role="property_name"><link linkend="GdvTic--pos-x">pos-x</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gfloat"><type>gfloat</type></link></entry><entry role="property_name"><link linkend="GdvTic--pos-y">pos-y</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="GdvTic--value">value</link></entry><entry role="property_flags">Read / Write</entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="GdvTic.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="GdvTicClass">GdvTicClass</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="GdvTic.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GInitiallyUnowned">GInitiallyUnowned</link>
+        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkWidget">GtkWidget</link>
+            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkContainer">GtkContainer</link>
+                <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkBin">GtkBin</link>
+                    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> GdvTic
+                        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GdvMtic">GdvMtic</link>
+</screen>
+</refsect1>
+
+
+<refsect1 id="GdvTic.description" role="desc">
+<title role="desc.title">Description</title>
+<para><link linkend="GdvTic"><type>GdvTic</type></link> just defines an axis-tic, i.e. a small straight line with an widget
+ (usually an GtkLabel with some sort of information about the specific
+ tic-value).</para>
+<refsect2><title>CSS nodes</title><para>GdvTic uses a single CSS node with name tic.</para>
+</refsect2>
+
+</refsect1>
+<refsect1 id="GdvTic.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="gdv-tic-new" role="function">
+<title>gdv_tic_new&#160;()</title>
+<indexterm zone="gdv-tic-new"><primary>gdv_tic_new</primary></indexterm>
+<programlisting language="C"><link linkend="GdvTic"><returnvalue>GdvTic</returnvalue></link>&#160;*
+gdv_tic_new (<parameter>const <link linkend="gchar"><type>gchar</type></link> *label</parameter>);</programlisting>
+<para>Creates a new <link linkend="GdvTic"><type>GdvTic</type></link>, with optional label <parameter>label</parameter>
+.
+If <parameter>label</parameter>
+ is <link linkend="NULL:CAPS"><literal>NULL</literal></link>, the label is omitted.</para>
+<refsect3 id="gdv-tic-new.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>label</para></entry>
+<entry role="parameter_description"><para>the text to use as the label of the tic. </para></entry>
+<entry role="parameter_annotations"><emphasis role="annotation">[<acronym>allow-none</acronym>]</emphasis></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="gdv-tic-new.returns" role="returns">
+<title>Returns</title>
+<para> a new <link linkend="GdvTic"><type>GdvTic</type></link> widget</para>
+</refsect3></refsect2>
+<refsect2 id="gdv-tic-label-set-markup" role="function">
+<title>gdv_tic_label_set_markup&#160;()</title>
+<indexterm zone="gdv-tic-label-set-markup"><primary>gdv_tic_label_set_markup</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+gdv_tic_label_set_markup (<parameter><link linkend="GdvTic"><type>GdvTic</type></link> *tic</parameter>,
+                          <parameter><link linkend="gchar"><type>gchar</type></link> *markup</parameter>);</programlisting>
+<para>Sets the text of the label. If <parameter>markup</parameter>
+ is <link linkend="NULL:CAPS"><literal>NULL</literal></link>,
+the current label is removed.</para>
+<refsect3 id="gdv-tic-label-set-markup.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>tic</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvTic"><type>GdvTic</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>markup</para></entry>
+<entry role="parameter_description"><para>the text to use as the label of the tic. </para></entry>
+<entry role="parameter_annotations"><emphasis role="annotation">[<acronym>allow-none</acronym>]</emphasis></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="gdv-tic-get-label" role="function">
+<title>gdv_tic_get_label&#160;()</title>
+<indexterm zone="gdv-tic-get-label"><primary>gdv_tic_get_label</primary></indexterm>
+<programlisting language="C">const <link linkend="gchar"><returnvalue>gchar</returnvalue></link>&#160;*
+gdv_tic_get_label (<parameter><link linkend="GdvTic"><type>GdvTic</type></link> *tic</parameter>);</programlisting>
+<para>If the tic’s label widget is a <link linkend="GtkLabel"><type>GtkLabel</type></link>, returns the
+text in the label widget. (The frame will have a <link linkend="GtkLabel"><type>GtkLabel</type></link>
+for the label widget if a non-<link linkend="NULL:CAPS"><literal>NULL</literal></link> argument was passed
+to <link linkend="gtk-frame-new"><function>gtk_frame_new()</function></link>.)</para>
+<refsect3 id="gdv-tic-get-label.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>tic</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvTic"><type>GdvTic</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="gdv-tic-get-label.returns" role="returns">
+<title>Returns</title>
+<para>the text in the label, or <link linkend="NULL:CAPS"><literal>NULL</literal></link> if there
+was no label widget or the lable widget was not
+a <link linkend="GtkLabel"><type>GtkLabel</type></link>. This string is owned by LibGdv and
+must not be modified or freed. </para>
+<para><emphasis role="annotation">[<acronym>nullable</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="gdv-tic-set-label-widget" role="function">
+<title>gdv_tic_set_label_widget&#160;()</title>
+<indexterm zone="gdv-tic-set-label-widget"><primary>gdv_tic_set_label_widget</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+gdv_tic_set_label_widget (<parameter><link linkend="GdvTic"><type>GdvTic</type></link> *tic</parameter>,
+                          <parameter><link linkend="GtkWidget"><type>GtkWidget</type></link> *label_widget</parameter>);</programlisting>
+<para>Sets the label widget for the tic. This is the widget that
+will appear next to the tic as additional information.</para>
+<refsect3 id="gdv-tic-set-label-widget.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>tic</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvTic"><type>GdvTic</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>label_widget</para></entry>
+<entry role="parameter_description"><para>the <link linkend="GtkWidget"><type>GtkWidget</type></link> that is used as new label widget. </para></entry>
+<entry role="parameter_annotations"><emphasis role="annotation">[<acronym>nullable</acronym>]</emphasis></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="gdv-tic-set-tic-position" role="function">
+<title>gdv_tic_set_tic_position&#160;()</title>
+<indexterm zone="gdv-tic-set-tic-position"><primary>gdv_tic_set_tic_position</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+gdv_tic_set_tic_position (<parameter><link linkend="GdvTic"><type>GdvTic</type></link> *tic</parameter>,
+                          <parameter><link linkend="gfloat"><type>gfloat</type></link> x</parameter>,
+                          <parameter><link linkend="gfloat"><type>gfloat</type></link> y</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="gdv-tic-get-show-label" role="function">
+<title>gdv_tic_get_show_label&#160;()</title>
+<indexterm zone="gdv-tic-get-show-label"><primary>gdv_tic_get_show_label</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+gdv_tic_get_show_label (<parameter><link linkend="GdvTic"><type>GdvTic</type></link> *tic</parameter>);</programlisting>
+<refsect3 id="gdv-tic-get-show-label.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>tic</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvTic"><type>GdvTic</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="gdv-tic-get-show-label.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the label-widget should be shown</para>
+</refsect3></refsect2>
+<refsect2 id="gdv-tic-get-space-to-tic-position" role="function">
+<title>gdv_tic_get_space_to_tic_position&#160;()</title>
+<indexterm zone="gdv-tic-get-space-to-tic-position"><primary>gdv_tic_get_space_to_tic_position</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+gdv_tic_get_space_to_tic_position (<parameter><link linkend="GdvTic"><type>GdvTic</type></link> *tic</parameter>,
+                                   <parameter><link linkend="GtkPositionType"><type>GtkPositionType</type></link> direction</parameter>,
+                                   <parameter><link linkend="int"><type>int</type></link> for_size</parameter>,
+                                   <parameter><link linkend="int"><type>int</type></link> *minimum</parameter>,
+                                   <parameter><link linkend="int"><type>int</type></link> *natural</parameter>,
+                                   <parameter><link linkend="gpointer"><type>gpointer</type></link> data</parameter>);</programlisting>
+<para>This function is used to measure the necessary space for a tic-instance.</para>
+<refsect3 id="gdv-tic-get-space-to-tic-position.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>tic</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvTic"><type>GdvTic</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>direction</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GtkPositionType"><type>GtkPositionType</type></link> which indicates the direction to measure the tic</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>for_size</para></entry>
+<entry role="parameter_description"><para>a specific size-value that can be used as a base-value for measurement</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>minimum</para></entry>
+<entry role="parameter_description"><para>the place to store the minimum-space</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>natural</para></entry>
+<entry role="parameter_description"><para>the place to store the natural-space</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>data</para></entry>
+<entry role="parameter_description"><para>any additional data for the measurement. </para></entry>
+<entry role="parameter_annotations"><emphasis role="annotation">[<acronym>nullable</acronym>]</emphasis></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+
+</refsect1>
+<refsect1 id="GdvTic.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="GdvTicClass" role="struct">
+<title>struct GdvTicClass</title>
+<indexterm zone="GdvTicClass"><primary>GdvTicClass</primary></indexterm>
+<programlisting language="C">struct GdvTicClass {
+  GtkBinClass parent_class;
+
+  /* Padding to allow adding up to 12 new virtual functions without
+   * breaking ABI. */
+  gpointer _gdv_reserve[12];
+};
+</programlisting>
+<refsect3 id="GdvTicClass.members" role="struct_members">
+<title>Members</title>
+<informaltable role="struct_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="struct_members_name" colwidth="300px"/>
+<colspec colname="struct_members_description"/>
+<colspec colname="struct_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="member"><entry role="struct_member_name"><para><link linkend="gpointer"><type>gpointer</type></link>&#160;<structfield id="GdvTicClass.-gdv-reserve">_gdv_reserve</structfield>[12];</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3>
+</refsect2>
+
+</refsect1>
+<refsect1 id="GdvTic.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="GdvTic--axis-inner-dir-x" role="property"><title>The <literal>“axis-inner-dir-x”</literal> property</title>
+<indexterm zone="GdvTic--axis-inner-dir-x" role="0.1"><primary>GdvTic:axis-inner-dir-x</primary></indexterm>
+<programlisting>  “axis-inner-dir-x”         <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Determines the x-component of the local vector that points inside the layer.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: -1</para>
+<para role="since">Since: <link linkend="api-index-0.1">0.1</link></para></refsect2>
+<refsect2 id="GdvTic--axis-inner-dir-y" role="property"><title>The <literal>“axis-inner-dir-y”</literal> property</title>
+<indexterm zone="GdvTic--axis-inner-dir-y" role="0.1"><primary>GdvTic:axis-inner-dir-y</primary></indexterm>
+<programlisting>  “axis-inner-dir-y”         <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Determines the y-component of the local vector that points inside the layer.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: 0</para>
+<para role="since">Since: <link linkend="api-index-0.1">0.1</link></para></refsect2>
+<refsect2 id="GdvTic--label" role="property"><title>The <literal>“label”</literal> property</title>
+<indexterm zone="GdvTic--label" role="0.1"><primary>GdvTic:label</primary></indexterm>
+<programlisting>  “label”                    <link linkend="gchar"><type>gchar</type></link>&#160;*</programlisting>
+<para>this contains the GtkLabel, that is associated to the specific tic, or NULL, if the tic has no label.</para><para>Flags: Read / Write</para>
+<para>Default value: NULL</para>
+<para role="since">Since: <link linkend="api-index-0.1">0.1</link></para></refsect2>
+<refsect2 id="GdvTic--label-widget" role="property"><title>The <literal>“label-widget”</literal> property</title>
+<indexterm zone="GdvTic--label-widget" role="0.1"><primary>GdvTic:label-widget</primary></indexterm>
+<programlisting>  “label-widget”             <link linkend="GtkWidget"><type>GtkWidget</type></link>&#160;*</programlisting>
+<para>this contains the GtkLabel, that is associated to the specific tic, or NULL, if the tic has no label.</para><para>Flags: Read / Write</para>
+<para role="since">Since: <link linkend="api-index-0.1">0.1</link></para></refsect2>
+<refsect2 id="GdvTic--label-xalign" role="property"><title>The <literal>“label-xalign”</literal> property</title>
+<indexterm zone="GdvTic--label-xalign" role="0.1"><primary>GdvTic:label-xalign</primary></indexterm>
+<programlisting>  “label-xalign”             <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Determines the alignment of the label-widget in respect to the tic-line.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: 0</para>
+<para role="since">Since: <link linkend="api-index-0.1">0.1</link></para></refsect2>
+<refsect2 id="GdvTic--label-yalign" role="property"><title>The <literal>“label-yalign”</literal> property</title>
+<indexterm zone="GdvTic--label-yalign" role="0.1"><primary>GdvTic:label-yalign</primary></indexterm>
+<programlisting>  “label-yalign”             <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Determines the alignment of the label-widget in respect to the tic-line.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: -0.5</para>
+<para role="since">Since: <link linkend="api-index-0.1">0.1</link></para></refsect2>
+<refsect2 id="GdvTic--pos-x" role="property"><title>The <literal>“pos-x”</literal> property</title>
+<indexterm zone="GdvTic--pos-x" role="0.1"><primary>GdvTic:pos-x</primary></indexterm>
+<programlisting>  “pos-x”                    <link linkend="gfloat"><type>gfloat</type></link></programlisting>
+<para>Determines the horizontal position of the center of the tic.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: 0</para>
+<para role="since">Since: <link linkend="api-index-0.1">0.1</link></para></refsect2>
+<refsect2 id="GdvTic--pos-y" role="property"><title>The <literal>“pos-y”</literal> property</title>
+<indexterm zone="GdvTic--pos-y" role="0.1"><primary>GdvTic:pos-y</primary></indexterm>
+<programlisting>  “pos-y”                    <link linkend="gfloat"><type>gfloat</type></link></programlisting>
+<para>Determines the vertical position of the center of the tic.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: 0</para>
+<para role="since">Since: <link linkend="api-index-0.1">0.1</link></para></refsect2>
+<refsect2 id="GdvTic--value" role="property"><title>The <literal>“value”</literal> property</title>
+<indexterm zone="GdvTic--value" role="0.1"><primary>GdvTic:value</primary></indexterm>
+<programlisting>  “value”                    <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Determines the value of the tic.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: 0</para>
+<para role="since">Since: <link linkend="api-index-0.1">0.1</link></para></refsect2>
+
+</refsect1>
+
+</refentry>

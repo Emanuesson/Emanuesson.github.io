@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE indexdiv PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<indexdiv id="api-index-0.50">
+<indexdiv><title>D</title>
+<indexentry><primaryie linkends="epsara-data-direction-equal"><link linkend="epsara-data-direction-equal">epsara_data_direction_equal</link>, function in <link linkend="epsara-Geoemtry-types">Geoemtry types</link></primaryie></indexentry>
+<indexentry><primaryie linkends="epsara-data-point-equal"><link linkend="epsara-data-point-equal">epsara_data_point_equal</link>, function in <link linkend="epsara-Geoemtry-types">Geoemtry types</link></primaryie></indexentry>
+</indexdiv>
+</indexdiv>

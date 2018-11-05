@@ -1,0 +1,28 @@
+<SIGNAL>
+<NAME>GdvAxis::get-inner-dir</NAME>
+<RETURNS>gboolean</RETURNS>
+<FLAGS>l</FLAGS>
+GdvAxis *gdvaxis
+gdouble  arg1
+gpointer  arg2
+gpointer  arg3
+</SIGNAL>
+
+<SIGNAL>
+<NAME>GdvAxis::get-point</NAME>
+<RETURNS>gboolean</RETURNS>
+<FLAGS>l</FLAGS>
+GdvAxis *gdvaxis
+gdouble  arg1
+gpointer  arg2
+gpointer  arg3
+</SIGNAL>
+
+<SIGNAL>
+<NAME>GdvAxis::make-tic-label-markup</NAME>
+<RETURNS>gchar*</RETURNS>
+<FLAGS>l</FLAGS>
+GdvAxis *gdvaxis
+gdouble  arg1
+</SIGNAL>
+

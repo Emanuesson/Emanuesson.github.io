@@ -1,0 +1,102 @@
+67% symbol docs coverage.
+192 symbols documented.
+35 symbols incomplete.
+95 not documented.
+
+
+GDV_ENABLE_TRACE
+GDV_ENTRY
+GDV_EXIT
+GDV_GOTO (<parameters>)
+GDV_LEGEND_TYPE
+GDV_LOG_LEVEL_TRACE
+GDV_ONED_LAYER_TYPE
+GDV_PROBE
+GDV_RETURN (<parameters>)
+GDV_SPECIAL_TIME_AXIS_TYPE
+GDV_TODO (<parameters>)
+GDV_TRACE_MSG (<parameters>)
+GDV_TWOD_LAYER_TYPE
+GDV_TYPE_DATA_POINT_DOUBLE_EXTENDED
+GDV_TYPE_DATA_POINT_SINGLE_EXTENDED
+GdvAxisClass
+GdvDataPointDoubleExtended (<items>)
+GdvDataPointSingleExtended (<items>)
+GdvIndicatorClass (_gdv_reserve)
+GdvLayerClass
+GdvLayerContent
+GdvLayerContentClass (_gdv_reserve)
+GdvLayerContentPrivate
+GdvLegendClass (_gdv_reserve)
+GdvLegendElementClass (_gdv_reserve)
+GdvLinearAxis
+GdvLinearAxisClass (_gdv_reserve)
+GdvLinearAxisPrivate
+GdvLogAxis
+GdvLogAxisClass (_gdv_reserve)
+GdvLogAxisPrivate
+GdvMticClass (_gdv_reserve)
+GdvOnedLayer
+GdvOnedLayerClass (<items>)
+GdvOnedLayerPrivate
+GdvSpecialCheckedIndicatorClass
+GdvSpecialContentAxis
+GdvSpecialContentAxisClass
+GdvSpecialContentAxisPrivate
+GdvSpecialDrumDisplay
+GdvSpecialDrumDisplayClass
+GdvSpecialDrumDisplayPrivate
+GdvSpecialTimeAxis
+GdvSpecialTimeAxisClass
+GdvSpecialTimeAxisPrivate
+GdvTicClass (_gdv_reserve)
+GdvTwodLayer
+GdvTwodLayerClass (_gdv_reserve)
+GdvTwodLayerPrivate
+I_ (<parameters>)
+N_ (<parameters>)
+P_ (<parameters>)
+bindtextdomain (<parameters>)
+gdv_axis_get_borders
+gdv_axis_get_show_title
+gdv_data_n_point_distance_to_origin (<parameters>)
+gdv_data_n_point_get (<parameters>)
+gdv_data_n_point_metric (<parameters>)
+gdv_data_n_point_set (<parameters>)
+gdv_data_n_point_set_and_expand (<parameters>)
+gdv_data_pixel_equal (<parameters>)
+gdv_data_point_distance_to_origin (<parameters>)
+gdv_data_point_metric (<parameters>)
+gdv_data_polygon_equal (<parameters>)
+gdv_is_nearly_identical (<parameters>)
+gdv_is_nearly_identical_f (<parameters>)
+gdv_is_within_range (<parameters>)
+gdv_is_within_range_f (<parameters>)
+gdv_legend_element_new
+gdv_oned_layer_new
+gdv_special_content_axis_new
+gdv_special_drum_display_new
+gdv_tic_get_show_label
+gdv_tic_set_tic_position (<parameters>)
+textdomain (<parameters>)
+
+gdv-data-boxed:Long_Description
+gdv-data-boxed:Short_Description
+gdv-debug:Long_Description
+gdv-debug:Short_Description
+gdv-enums:Long_Description
+gdv-enums:Short_Description
+gdvcentral:Long_Description
+gdvcentral:Short_Description
+gdvlegendelement:Short_Description
+gdvmtic:Short_Description
+gdvonedlayer:Short_Description
+gdvspecialcontentaxis:Long_Description
+gdvspecialcontentaxis:Short_Description
+gdvspecialdrumdisplay:Long_Description
+gdvspecialdrumdisplay:Short_Description
+gdvspecialtimeaxis:Long_Description
+gdvspecialtimeaxis:Short_Description
+gdvtic:Short_Description
+libgdv-resources:Long_Description
+libgdv-resources:Short_Description

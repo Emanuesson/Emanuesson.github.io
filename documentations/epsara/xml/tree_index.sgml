@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE screen PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<screen>
+    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="EpsaraDataElement">EpsaraDataElement</link>
+    <phrase role="lineart">&#9474;</phrase>   <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="EpsaraDataDetector">EpsaraDataDetector</link>
+    <phrase role="lineart">&#9474;</phrase>   <phrase role="lineart">&#9474;</phrase>   <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="EpsaraDataParticleDetector">EpsaraDataParticleDetector</link>
+    <phrase role="lineart">&#9474;</phrase>   <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="EpsaraDataInteraction">EpsaraDataInteraction</link>
+    <phrase role="lineart">&#9474;</phrase>   <phrase role="lineart">&#9474;</phrase>   <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="EpsaraDataParticleScattering">EpsaraDataParticleScattering</link>
+    <phrase role="lineart">&#9474;</phrase>   <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="EpsaraDataIsotope">EpsaraDataIsotope</link>
+    <phrase role="lineart">&#9474;</phrase>   <phrase role="lineart">&#9474;</phrase>   <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="EpsaraDataIsotopeIonicEloss">EpsaraDataIsotopeIonicEloss</link>
+    <phrase role="lineart">&#9474;</phrase>   <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="EpsaraDataMaterial">EpsaraDataMaterial</link>
+    <phrase role="lineart">&#9474;</phrase>   <phrase role="lineart">&#9474;</phrase>   <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="EpsaraDataMaterialLayered">EpsaraDataMaterialLayered</link>
+    <phrase role="lineart">&#9474;</phrase>   <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="EpsaraDataMeasurement">EpsaraDataMeasurement</link>
+    <phrase role="lineart">&#9474;</phrase>   <phrase role="lineart">&#9474;</phrase>   <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="EpsaraDataRbsMeasurement">EpsaraDataRbsMeasurement</link>
+    <phrase role="lineart">&#9474;</phrase>   <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="EpsaraDataSource">EpsaraDataSource</link>
+    <phrase role="lineart">&#9474;</phrase>   <phrase role="lineart">&#9474;</phrase>   <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="EpsaraDataParticleBeam">EpsaraDataParticleBeam</link>
+    <phrase role="lineart">&#9474;</phrase>   <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="EpsaraDataSet">EpsaraDataSet</link>
+    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="EpsaraDataMatrix">EpsaraDataMatrix</link>
+    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="EpsaraDataVector">EpsaraDataVector</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="EpsaraFileParserR33">EpsaraFileParserR33</link>
+    <link linkend="GEnum">GEnum</link>
+    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="EpsaraBsCalculationType">EpsaraBsCalculationType</link>
+    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="EpsaraDifferntiationType">EpsaraDifferntiationType</link>
+    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="EpsaraEnergyLoss">EpsaraEnergyLoss</link>
+    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="EpsaraIonElossStraggType">EpsaraIonElossStraggType</link>
+    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="EpsaraMaterialState">EpsaraMaterialState</link>
+    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="EpsaraMinimizerType">EpsaraMinimizerType</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="EpsaraScreeningType">EpsaraScreeningType</link>
+    <link linkend="GBoxed">GBoxed</link>
+    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="EpsaraDataDirection">EpsaraDataDirection</link>
+    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="EpsaraDataPoint">EpsaraDataPoint</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="EpsaraDataPolygon">EpsaraDataPolygon</link>
+</screen>

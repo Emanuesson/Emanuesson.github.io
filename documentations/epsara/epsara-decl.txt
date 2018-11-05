@@ -1,0 +1,2299 @@
+<MACRO>
+<NAME>EPSARA_TYPE_DATA_DETECTOR</NAME>
+#define EPSARA_TYPE_DATA_DETECTOR\
+  (epsara_data_detector_get_type ())
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_DETECTOR</NAME>
+#define EPSARA_DATA_DETECTOR(obj)\
+  (G_TYPE_CHECK_INSTANCE_CAST ((obj), EPSARA_TYPE_DATA_DETECTOR, EpsaraDataDetector))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_IS_DETECTOR</NAME>
+#define EPSARA_DATA_IS_DETECTOR(obj)\
+  (G_TYPE_CHECK_INSTANCE_TYPE ((obj), EPSARA_TYPE_DATA_DETECTOR))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_DETECTOR_CLASS</NAME>
+#define EPSARA_DATA_DETECTOR_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_CAST ((klass), EPSARA_TYPE_DATA_DETECTOR, EpsaraDataDetectorClass))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_DETECTOR_IS_CLASS</NAME>
+#define EPSARA_DATA_DETECTOR_IS_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_TYPE ((klass), EPSARA_TYPE_DATA_DETECTOR))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_DETECTOR_GET_CLASS</NAME>
+#define EPSARA_DATA_DETECTOR_GET_CLASS(obj)\
+  (G_TYPE_INSTANCE_GET_CLASS ((obj), EPSARA_TYPE_DATA_DETECTOR, EpsaraDataDetectorClass))
+</MACRO>
+<STRUCT>
+<NAME>EpsaraDataDetector</NAME>
+struct _EpsaraDataDetector
+{
+  EpsaraDataElement parent;
+
+  /*< private > */
+  EpsaraDataDetectorPrivate* priv;
+};
+</STRUCT>
+<STRUCT>
+<NAME>EpsaraDataDetectorClass</NAME>
+struct _EpsaraDataDetectorClass
+{
+  EpsaraDataElementClass parent_class;
+
+  gdouble  (*calculate_estimator)      (EpsaraDataDetector *detector,
+                                        gdouble             calculated_val,
+                                        gdouble             measured_val);
+};
+</STRUCT>
+<FUNCTION>
+<NAME>epsara_data_detector_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_detector_add_roi</NAME>
+<RETURNS>void  </RETURNS>
+EpsaraDataDetector *detector, gint                lower_channel, gint                upper_channel
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_detector_get_roi_from_index</NAME>
+<RETURNS>void  </RETURNS>
+EpsaraDataDetector *detector, guint               no_of_roi, gint               *lower_channel, gint               *upper_channel
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_detector_remove_roi</NAME>
+<RETURNS>gboolean  </RETURNS>
+EpsaraDataDetector *detector, guint no_of_roi
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_detector_calc_det_coeff</NAME>
+<RETURNS>gdouble  </RETURNS>
+EpsaraDataDetector *detector, EpsaraDataMatrix *simulated_spectrum
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_detector_angle_to_source</NAME>
+<RETURNS>gdouble  </RETURNS>
+EpsaraDataDetector *detector, EpsaraDataSource   *source
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_detector_back_scattering_angle_to_source</NAME>
+<RETURNS>gdouble  </RETURNS>
+EpsaraDataDetector *detector, EpsaraDataSource   *source
+</FUNCTION>
+<STRUCT>
+<NAME>EpsaraDataDetectorPrivate</NAME>
+</STRUCT>
+<MACRO>
+<NAME>EPSARA_TYPE_DATA_ELEMENT</NAME>
+#define EPSARA_TYPE_DATA_ELEMENT\
+  (epsara_data_element_get_type ())
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_ELEMENT</NAME>
+#define EPSARA_DATA_ELEMENT(obj)\
+  (G_TYPE_CHECK_INSTANCE_CAST ((obj), EPSARA_TYPE_DATA_ELEMENT, EpsaraDataElement))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_IS_ELEMENT</NAME>
+#define EPSARA_DATA_IS_ELEMENT(obj)\
+  (G_TYPE_CHECK_INSTANCE_TYPE ((obj), EPSARA_TYPE_DATA_ELEMENT))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_ELEMENT_CLASS</NAME>
+#define EPSARA_DATA_ELEMENT_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_CAST ((klass), EPSARA_TYPE_DATA_ELEMENT, EpsaraDataElementClass))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_ELEMENT_IS_CLASS</NAME>
+#define EPSARA_DATA_ELEMENT_IS_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_TYPE ((klass), EPSARA_TYPE_DATA_ELEMENT))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_ELEMENT_GET_CLASS</NAME>
+#define EPSARA_DATA_ELEMENT_GET_CLASS(obj)\
+  (G_TYPE_INSTANCE_GET_CLASS ((obj), EPSARA_TYPE_DATA_ELEMENT, EpsaraDataElementClass))
+</MACRO>
+<STRUCT>
+<NAME>EpsaraDataElement</NAME>
+struct _EpsaraDataElement
+{
+  GObject parent;
+
+  /*< private > */
+  EpsaraDataElementPrivate* priv;
+};
+</STRUCT>
+<STRUCT>
+<NAME>EpsaraDataElementClass</NAME>
+struct _EpsaraDataElementClass
+{
+  GObjectClass parent_class;
+
+  /*< private methods > */
+/*  GList*    (*_eps_parser_save) (
+    EpsaraDataElement *element,
+    JsonObject *object,
+    GList *prev_list);
+
+  GList*    (*_eps_parser_load) (
+    EpsaraDataElement *element,
+    GList *root_nodes,
+    JsonObject *object,
+    GList *prev_list);*/
+};
+</STRUCT>
+<FUNCTION>
+<NAME>epsara_data_element_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_element_set_parent</NAME>
+<RETURNS>void  </RETURNS>
+EpsaraDataElement *parent, EpsaraDataElement *element
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_element_get_parent</NAME>
+<RETURNS>EpsaraDataElement  *</RETURNS>
+EpsaraDataElement *element
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_element_get_children</NAME>
+<RETURNS>GList  *</RETURNS>
+EpsaraDataElement *element
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_element_get_uuid</NAME>
+<RETURNS>gchar  *</RETURNS>
+EpsaraDataElement *element
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_element_unparent</NAME>
+<RETURNS>void  </RETURNS>
+EpsaraDataElement *element
+</FUNCTION>
+<STRUCT>
+<NAME>EpsaraDataElementPrivate</NAME>
+</STRUCT>
+<ENUM>
+<NAME>EpsaraEnergyLoss</NAME>
+typedef enum
+{
+  EPSARA_ELOSS_TRIM85 = 0,
+  EPSARA_ELOSS_TRIM13,
+  EPSARA_ELOSS_ANDERSEN_ZIEGLER
+} EpsaraEnergyLoss;
+</ENUM>
+<ENUM>
+<NAME>EpsaraMinimizerType</NAME>
+typedef enum
+{
+  EPSARA_MINIMIZER_SIMPLEX = 0,
+  EPSARA_MINIMIZER_DIFFEVO,
+  EPSARA_MINIMIZER_MINUIT
+} EpsaraMinimizerType;
+</ENUM>
+<ENUM>
+<NAME>EpsaraBsCalculationType</NAME>
+typedef enum
+{
+  EPSARA_BS_SERRUYS_TYPE = 0,
+  EPSARA_BS_CHUS_TYPE
+} EpsaraBsCalculationType;
+</ENUM>
+<ENUM>
+<NAME>EpsaraDifferntiationType</NAME>
+typedef enum
+{
+  EPSARA_FORWARD = 0,
+  EPSARA_BACKWARD,
+  EPSARA_SYMMETRIC
+} EpsaraDifferntiationType;
+</ENUM>
+<ENUM>
+<NAME>EpsaraScreeningType</NAME>
+typedef enum
+{
+  EPSARA_SCREENING_NONE = 0,
+  EPSARA_SCREENING_LECUYER,
+  EPSARA_SCREENING_ANDERSEN_LJ,
+  EPSARA_SCREENING_ANDERSEN_ZBL,
+  EPSARA_SCREENING_MOLIERE
+} EpsaraScreeningType;
+</ENUM>
+<ENUM>
+<NAME>EpsaraIonElossStraggType</NAME>
+typedef enum
+{
+  EPSARA_NONE = 0,
+  EPSARA_BOHR,
+  EPSARA_LINDHARD_SCHARFF,                /* Lindhard and Scharff 1953 */
+  EPSARA_CHU,                             /* Chu 1976 */
+  EPSARA_CHU_YANG_KORR,                   /* YANG 1991 */
+  EPSARA_YANG                             /* YANG 1991 */
+} EpsaraIonElossStraggType;
+</ENUM>
+<ENUM>
+<NAME>EpsaraMaterialState</NAME>
+typedef enum
+{
+  EPSARA_SOLID = 0,
+  EPSARA_ATOMIC_GAS,
+  EPSARA_MOLECULAR_GASE,
+  EPSARA_FLUID,
+  EPSARA_PLASMA
+} EpsaraMaterialState;
+</ENUM>
+<MACRO>
+<NAME>EPSARA_TYPE_DATA_INTERACTION</NAME>
+#define EPSARA_TYPE_DATA_INTERACTION\
+  (epsara_data_interaction_get_type ())
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_INTERACTION</NAME>
+#define EPSARA_DATA_INTERACTION(obj)\
+  (G_TYPE_CHECK_INSTANCE_CAST ((obj),\
+   EPSARA_TYPE_DATA_INTERACTION,\
+   EpsaraDataInteraction))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_IS_INTERACTION</NAME>
+#define EPSARA_DATA_IS_INTERACTION(obj)\
+  (G_TYPE_CHECK_INSTANCE_TYPE ((obj),\
+   EPSARA_TYPE_DATA_INTERACTION))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_INTERACTION_CLASS</NAME>
+#define EPSARA_DATA_INTERACTION_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_CAST ((klass),\
+   EPSARA_TYPE_DATA_INTERACTION,\
+   EpsaraDataInteractionClass))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_INTERACTION_IS_CLASS</NAME>
+#define EPSARA_DATA_INTERACTION_IS_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_TYPE ((klass),\
+   EPSARA_TYPE_DATA_INTERACTION))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_INTERACTION_GET_CLASS</NAME>
+#define EPSARA_DATA_INTERACTION_GET_CLASS(obj)\
+  (G_TYPE_INSTANCE_GET_CLASS ((obj),\
+   EPSARA_TYPE_DATA_INTERACTION,\
+   EpsaraDataInteractionClass))
+</MACRO>
+<STRUCT>
+<NAME>EpsaraDataInteraction</NAME>
+struct _EpsaraDataInteraction
+{
+  EpsaraDataElement parent;
+
+  /*< private > */
+  EpsaraDataInteractionPrivate* priv;
+};
+</STRUCT>
+<STRUCT>
+<NAME>EpsaraDataInteractionClass</NAME>
+struct _EpsaraDataInteractionClass
+{
+  EpsaraDataElementClass parent_class;
+
+  /* signals */
+//  gdouble (*cross_section) (EpsaraDataInteraction *self,
+//                            gdouble               scattering_angle,
+//                            gdouble               energy_start,
+//                            gdouble               energy_end);
+};
+</STRUCT>
+<FUNCTION>
+<NAME>epsara_data_interaction_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<STRUCT>
+<NAME>EpsaraDataInteractionPrivate</NAME>
+</STRUCT>
+<MACRO>
+<NAME>EPSARA_TYPE_DATA_ISOTOPE_IONIC_ELOSS</NAME>
+#define EPSARA_TYPE_DATA_ISOTOPE_IONIC_ELOSS\
+  (epsara_data_isotope_ionic_eloss_get_type ())
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_ISOTOPE_IONIC_ELOSS</NAME>
+#define EPSARA_DATA_ISOTOPE_IONIC_ELOSS(obj)\
+  (G_TYPE_CHECK_INSTANCE_CAST ((obj),\
+   EPSARA_TYPE_DATA_ISOTOPE_IONIC_ELOSS,\
+   EpsaraDataIsotopeIonicEloss))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_ISOTOPE_IONIC_IS_ELOSS</NAME>
+#define EPSARA_DATA_ISOTOPE_IONIC_IS_ELOSS(obj)\
+  (G_TYPE_CHECK_INSTANCE_TYPE ((obj),\
+   EPSARA_TYPE_DATA_ISOTOPE_IONIC_ELOSS))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_ISOTOPE_IONIC_ELOSS_CLASS</NAME>
+#define EPSARA_DATA_ISOTOPE_IONIC_ELOSS_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_CAST ((klass),\
+   EPSARA_TYPE_DATA_ISOTOPE_IONIC_ELOSS,\
+   EpsaraDataIsotopeIonicElossClass))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_ISOTOPE_IONIC_ELOSS_IS_CLASS</NAME>
+#define EPSARA_DATA_ISOTOPE_IONIC_ELOSS_IS_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_TYPE ((klass),\
+   EPSARA_TYPE_DATA_ISOTOPE_IONIC_ELOSS))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_ISOTOPE_IONIC_ELOSS_GET_CLASS</NAME>
+#define EPSARA_DATA_ISOTOPE_IONIC_ELOSS_GET_CLASS(obj)\
+  (G_TYPE_INSTANCE_GET_CLASS ((obj),\
+   EPSARA_TYPE_DATA_ISOTOPE_IONIC_ELOSS,\
+   EpsaraDataIsotopeIonicElossClass))
+</MACRO>
+<STRUCT>
+<NAME>EpsaraDataIsotopeIonicEloss</NAME>
+struct _EpsaraDataIsotopeIonicEloss
+{
+  EpsaraDataIsotope parent;
+
+  /*< private > */
+  EpsaraDataIsotopeIonicElossPrivate* priv;
+};
+</STRUCT>
+<STRUCT>
+<NAME>EpsaraDataIsotopeIonicElossClass</NAME>
+struct _EpsaraDataIsotopeIonicElossClass
+{
+  EpsaraDataIsotopeClass parent_class;
+};
+</STRUCT>
+<FUNCTION>
+<NAME>epsara_data_isotope_ionic_eloss_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_isotope_ionic_eloss_calc_eloss</NAME>
+<RETURNS>gdouble  </RETURNS>
+EpsaraDataIsotopeIonicEloss *self, gdouble                       energy_ion_in, gint                          atomic_no_ion, gdouble                       atomic_mass_ion
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_isotope_ionic_eloss_calc_nuclear_eloss</NAME>
+<RETURNS>gdouble  </RETURNS>
+EpsaraDataIsotopeIonicEloss *self, gdouble                       energy_ion_in, gint                          atomic_no_ion, gdouble                       atomic_mass_ion
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_isotope_ionic_eloss_calc_electronic_eloss</NAME>
+<RETURNS>gdouble  </RETURNS>
+EpsaraDataIsotopeIonicEloss *self, gdouble                       energy_ion_in, gint                          atomic_no_ion, gdouble                       atomic_mass_ion
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_isotope_ionic_eloss_straggling</NAME>
+<RETURNS>void  </RETURNS>
+EpsaraDataIsotopeIonicEloss *self, gdouble                    energy_ion_in, gint                       atomic_no_ion, gdouble                    atomic_mass_ion, gdouble                   *low_eside_stragg, gdouble                   *high_eside_stragg
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_isotope_ionic_eloss_at_pos</NAME>
+<RETURNS>void</RETURNS>
+EpsaraDataMaterial *material_list, EpsaraDataPoint *position, gdouble energy_ion_in, gint atomic_no_ion, gdouble atomic_mass_ion, gdouble *energy_loss, gdouble *eloss_stragg
+</FUNCTION>
+<STRUCT>
+<NAME>EpsaraDataIsotopeIonicElossPrivate</NAME>
+</STRUCT>
+<MACRO>
+<NAME>EPSARA_TYPE_DATA_ISOTOPE</NAME>
+#define EPSARA_TYPE_DATA_ISOTOPE\
+  (epsara_data_isotope_get_type ())
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_ISOTOPE</NAME>
+#define EPSARA_DATA_ISOTOPE(obj)\
+  (G_TYPE_CHECK_INSTANCE_CAST ((obj),\
+   EPSARA_TYPE_DATA_ISOTOPE,\
+   EpsaraDataIsotope))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_IS_ISOTOPE</NAME>
+#define EPSARA_DATA_IS_ISOTOPE(obj)\
+  (G_TYPE_CHECK_INSTANCE_TYPE ((obj),\
+   EPSARA_TYPE_DATA_ISOTOPE))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_ISOTOPE_CLASS</NAME>
+#define EPSARA_DATA_ISOTOPE_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_CAST ((klass),\
+   EPSARA_TYPE_DATA_ISOTOPE,\
+   EpsaraDataIsotopeClass))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_ISOTOPE_IS_CLASS</NAME>
+#define EPSARA_DATA_ISOTOPE_IS_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_TYPE ((klass),\
+   EPSARA_TYPE_DATA_ISOTOPE))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_ISOTOPE_GET_CLASS</NAME>
+#define EPSARA_DATA_ISOTOPE_GET_CLASS(obj)\
+  (G_TYPE_INSTANCE_GET_CLASS ((obj),\
+   EPSARA_TYPE_DATA_ISOTOPE,\
+   EpsaraDataIsotopeClass))
+</MACRO>
+<STRUCT>
+<NAME>EpsaraDataIsotope</NAME>
+struct _EpsaraDataIsotope
+{
+  EpsaraDataElement parent;
+
+  /*< private > */
+  EpsaraDataIsotopePrivate* priv;
+};
+</STRUCT>
+<STRUCT>
+<NAME>EpsaraDataIsotopeClass</NAME>
+struct _EpsaraDataIsotopeClass
+{
+  EpsaraDataElementClass parent_class;
+
+  void    (*add)       		(EpsaraDataIsotope *self,
+                  				 EpsaraDataInteraction *child);
+  void    (*remove)    		(EpsaraDataIsotope *self,
+                  				 EpsaraDataInteraction *child);
+//  void    (*forall)       (EpsaraDataMaterial  *self,
+//                           gboolean             include_internals,
+//                           GtkCallback          callback,
+//                           gpointer             callback_data);
+
+};
+</STRUCT>
+<FUNCTION>
+<NAME>epsara_data_isotope_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_isotope_get_interactions</NAME>
+<RETURNS>GSList  *</RETURNS>
+EpsaraDataIsotope *isotope
+</FUNCTION>
+<STRUCT>
+<NAME>EpsaraDataIsotopePrivate</NAME>
+</STRUCT>
+<MACRO>
+<NAME>EPSARA_TYPE_DATA_MATERIAL_LAYERED</NAME>
+#define EPSARA_TYPE_DATA_MATERIAL_LAYERED\
+  (epsara_data_material_layered_get_type ())
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_MATERIAL_LAYERED</NAME>
+#define EPSARA_DATA_MATERIAL_LAYERED(obj)\
+  (G_TYPE_CHECK_INSTANCE_CAST ((obj), EPSARA_TYPE_DATA_MATERIAL_LAYERED, EpsaraDataMaterialLayered))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_MATERIAL_IS_LAYERED</NAME>
+#define EPSARA_DATA_MATERIAL_IS_LAYERED(obj)\
+  (G_TYPE_CHECK_INSTANCE_TYPE ((obj), EPSARA_TYPE_DATA_MATERIAL_LAYERED))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_MATERIAL_LAYERED_CLASS</NAME>
+#define EPSARA_DATA_MATERIAL_LAYERED_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_CAST ((klass), EPSARA_TYPE_DATA_MATERIAL_LAYERED, EpsaraDataMaterialLayeredClass))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_MATERIAL_LAYERED_IS_CLASS</NAME>
+#define EPSARA_DATA_MATERIAL_LAYERED_IS_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_TYPE ((klass), EPSARA_TYPE_DATA_MATERIAL_LAYERED))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_MATERIAL_LAYERED_GET_CLASS</NAME>
+#define EPSARA_DATA_MATERIAL_LAYERED_GET_CLASS(obj)\
+  (G_TYPE_INSTANCE_GET_CLASS ((obj), EPSARA_TYPE_DATA_MATERIAL_LAYERED, EpsaraDataMaterialLayeredClass))
+</MACRO>
+<STRUCT>
+<NAME>EpsaraDataMaterialLayered</NAME>
+struct _EpsaraDataMaterialLayered
+{
+  EpsaraDataMaterial parent;
+
+  /*< private > */
+  EpsaraDataMaterialLayeredPrivate* priv;
+};
+</STRUCT>
+<STRUCT>
+<NAME>EpsaraDataMaterialLayeredClass</NAME>
+struct _EpsaraDataMaterialLayeredClass
+{
+  EpsaraDataMaterialClass parent_class;
+
+  /*< public >*/
+};
+</STRUCT>
+<FUNCTION>
+<NAME>epsara_data_material_layered_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<STRUCT>
+<NAME>EpsaraDataMaterialLayeredPrivate</NAME>
+</STRUCT>
+<MACRO>
+<NAME>EPSARA_TYPE_DATA_MATERIAL</NAME>
+#define EPSARA_TYPE_DATA_MATERIAL\
+  (epsara_data_material_get_type ())
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_MATERIAL</NAME>
+#define EPSARA_DATA_MATERIAL(obj)\
+  (G_TYPE_CHECK_INSTANCE_CAST ((obj), EPSARA_TYPE_DATA_MATERIAL, EpsaraDataMaterial))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_IS_MATERIAL</NAME>
+#define EPSARA_DATA_IS_MATERIAL(obj)\
+  (G_TYPE_CHECK_INSTANCE_TYPE ((obj), EPSARA_TYPE_DATA_MATERIAL))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_MATERIAL_CLASS</NAME>
+#define EPSARA_DATA_MATERIAL_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_CAST ((klass), EPSARA_TYPE_DATA_MATERIAL, EpsaraDataMaterialClass))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_MATERIAL_IS_CLASS</NAME>
+#define EPSARA_DATA_MATERIAL_IS_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_TYPE ((klass), EPSARA_TYPE_DATA_MATERIAL))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_MATERIAL_GET_CLASS</NAME>
+#define EPSARA_DATA_MATERIAL_GET_CLASS(obj)\
+  (G_TYPE_INSTANCE_GET_CLASS ((obj), EPSARA_TYPE_DATA_MATERIAL, EpsaraDataMaterialClass))
+</MACRO>
+<STRUCT>
+<NAME>EpsaraDataMaterial</NAME>
+struct _EpsaraDataMaterial
+{
+  EpsaraDataElement parent;
+
+  /*< private > */
+  EpsaraDataMaterialPrivate* priv;
+};
+</STRUCT>
+<STRUCT>
+<NAME>EpsaraDataMaterialClass</NAME>
+struct _EpsaraDataMaterialClass
+{
+  EpsaraDataElementClass parent_class;
+
+  /*< public >*/
+  void    (*add)       		(EpsaraDataMaterial *self,
+                  				 GObject *child);
+  void    (*remove)    		(EpsaraDataMaterial *self,
+                  				 GObject *child);
+//  void    (*forall)       (EpsaraDataMaterial  *self,
+//                           gboolean             include_internals,
+//                           GtkCallback          callback,
+//                           gpointer             callback_data);
+//  GType   (*child_type)		(EpsaraDataMaterial *self);
+//  gchar*  (*composite_name)	(GtkContainer	 *container,
+  gdouble (*distribution) (EpsaraDataMaterial *self,
+                           EpsaraDataPoint    *position);
+  gdouble (*integrate_material) (EpsaraDataMaterial *self,
+                                 EpsaraDataPoint    *start,
+                                 EpsaraDataPoint    *end);
+
+  gdouble (*get_factor_at_pos) (EpsaraDataMaterial *self,
+                                EpsaraDataPoint    *position,
+                                gint type);
+
+//				 GtkWidget	 *child);
+//  void    (*set_child_property) (GtkContainer    *container,
+//				 GtkWidget       *child,
+//				 guint            property_id,
+//				 const GValue    *value,
+//				 GParamSpec      *pspec);
+//  void    (*get_child_property) (GtkContainer    *container,
+//                                 GtkWidget       *child,
+//				 guint            property_id,
+//				 GValue          *value,
+//				 GParamSpec      *pspec);
+  GSList *(*_points_of_interest) (EpsaraDataMaterial *self);
+};
+</STRUCT>
+<FUNCTION>
+<NAME>epsara_data_material_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_material_get_concentration_at_point</NAME>
+<RETURNS>gdouble  </RETURNS>
+EpsaraDataMaterial *self, EpsaraDataPoint *position
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_material_get_sub_isotope_concentration_at_point</NAME>
+<RETURNS>gdouble  </RETURNS>
+EpsaraDataMaterial *self, EpsaraDataPoint *position, EpsaraDataIsotope *isotope
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_material_get_sub_interact_concentration_at_point</NAME>
+<RETURNS>gdouble  </RETURNS>
+EpsaraDataMaterial *self, EpsaraDataPoint *position, EpsaraDataInteraction *interaction
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_material_integrate_sub_interact_over_length</NAME>
+<RETURNS>gdouble  </RETURNS>
+EpsaraDataMaterial *self, EpsaraDataPoint *start, EpsaraDataPoint *end, EpsaraDataInteraction *interaction
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_material_integrate_material_over_length</NAME>
+<RETURNS>gdouble  </RETURNS>
+EpsaraDataMaterial *self, EpsaraDataPoint *start, EpsaraDataPoint *end
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_material_get_distance</NAME>
+<RETURNS>gdouble  </RETURNS>
+EpsaraDataMaterial *material, EpsaraDataPoint *point
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_material_get_submaterials</NAME>
+<RETURNS>GSList  *</RETURNS>
+EpsaraDataMaterial *material
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_material_get_subisotopes</NAME>
+<RETURNS>GSList  *</RETURNS>
+EpsaraDataMaterial *material
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_material_get_all_interactions</NAME>
+<RETURNS>GSList  *</RETURNS>
+EpsaraDataMaterial *material
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_material_get_all_subisotopes</NAME>
+<RETURNS>GSList  *</RETURNS>
+EpsaraDataMaterial *material
+</FUNCTION>
+<STRUCT>
+<NAME>EpsaraDataMaterialPrivate</NAME>
+</STRUCT>
+<MACRO>
+<NAME>EPSARA_TYPE_DATA_MEASUREMENT</NAME>
+#define EPSARA_TYPE_DATA_MEASUREMENT\
+  (epsara_data_measurement_get_type ())
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_MEASUREMENT</NAME>
+#define EPSARA_DATA_MEASUREMENT(obj)\
+  (G_TYPE_CHECK_INSTANCE_CAST ((obj),\
+  EPSARA_TYPE_DATA_MEASUREMENT,\
+  EpsaraDataMeasurement))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_IS_MEASUREMENT</NAME>
+#define EPSARA_DATA_IS_MEASUREMENT(obj)\
+  (G_TYPE_CHECK_INSTANCE_TYPE ((obj),\
+  EPSARA_TYPE_DATA_MEASUREMENT))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_MEASUREMENT_CLASS</NAME>
+#define EPSARA_DATA_MEASUREMENT_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_CAST ((klass),\
+  EPSARA_TYPE_DATA_MEASUREMENT,\
+  EpsaraDataMeasurementClass))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_MEASUREMENT_IS_CLASS</NAME>
+#define EPSARA_DATA_MEASUREMENT_IS_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_TYPE ((klass),\
+  EPSARA_TYPE_DATA_MEASUREMENT))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_MEASUREMENT_GET_CLASS</NAME>
+#define EPSARA_DATA_MEASUREMENT_GET_CLASS(obj)\
+  (G_TYPE_INSTANCE_GET_CLASS ((obj), EPSARA_TYPE_DATA_MEASUREMENT, EpsaraDataMeasurementClass))
+</MACRO>
+<USER_FUNCTION>
+<NAME>EpsaraDataMeasurementForallCallback</NAME>
+<RETURNS>void </RETURNS>
+EpsaraDataMeasurement        *measurement_data,
+                                          gpointer                data
+</USER_FUNCTION>
+<STRUCT>
+<NAME>EpsaraDataMeasurement</NAME>
+struct _EpsaraDataMeasurement
+{
+  EpsaraDataElement parent;
+
+  /*< private > */
+  EpsaraDataMeasurementPrivate* priv;
+};
+</STRUCT>
+<STRUCT>
+<NAME>EpsaraDataMeasurementClass</NAME>
+struct _EpsaraDataMeasurementClass
+{
+  EpsaraDataElementClass parent_class;
+
+  /*< public >*/
+  void  (*add)                (EpsaraDataMeasurement       *container,
+                               GObject                     *widget);
+  void  (*remove)             (EpsaraDataMeasurement       *container,
+                               GObject                     *widget);
+  void  (*forall)             (EpsaraDataMeasurement       *container,
+                               gboolean                     include_internals,
+                               EpsaraDataMeasurementForallCallback   callback,
+                               gpointer                     callback_data);
+  gboolean (*calculate)       (EpsaraDataMeasurement       *measurement);
+  void     (*calculate_async) (EpsaraDataMeasurement       *measurement,
+                               int                          calc_priority,
+                               GCancellable                *cancellable,
+                               GAsyncReadyCallback          callback,
+                               gpointer                     user_data);
+
+  gdouble  (*estimator)       (EpsaraDataMeasurement       *measurement);
+  gdouble  (*estimator_async) (EpsaraDataMeasurement       *measurement,
+                               int                          calc_priority,
+                               GCancellable                *cancellable,
+                               GAsyncReadyCallback          callback,
+                               gpointer                     user_data);
+
+//  gboolean (*fit)             (EpsaraDataMeasurement       *measurement);
+};
+</STRUCT>
+<FUNCTION>
+<NAME>epsara_data_measurement_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_measurement_add</NAME>
+<RETURNS>void  </RETURNS>
+EpsaraDataMeasurement *measurement, GObject *object
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_measurement_remove</NAME>
+<RETURNS>void  </RETURNS>
+EpsaraDataMeasurement *measurement, GObject *object
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_measurement_get_detectors</NAME>
+<RETURNS>GSList  *</RETURNS>
+EpsaraDataMeasurement *measurement
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_measurement_get_sources</NAME>
+<RETURNS>GSList  *</RETURNS>
+EpsaraDataMeasurement *measurement
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_measurement_get_materials</NAME>
+<RETURNS>GSList  *</RETURNS>
+EpsaraDataMeasurement *measurement
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_measurement_perform_calculation</NAME>
+<RETURNS>gboolean  </RETURNS>
+EpsaraDataMeasurement *data
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_measurement_recalculate</NAME>
+<RETURNS>gboolean  </RETURNS>
+EpsaraDataMeasurement *data
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_measurement_get_full_materials</NAME>
+<RETURNS>EpsaraDataMaterial  *</RETURNS>
+EpsaraDataMeasurement *data
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_measurement_get_calculated_spectrum</NAME>
+<RETURNS>EpsaraDataMatrix  *</RETURNS>
+EpsaraDataMeasurement      *data, EpsaraDataDetector         *detector, EpsaraDataSource           *source
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_measurement_set_calculated_spectrum</NAME>
+<RETURNS>void  </RETURNS>
+EpsaraDataMeasurement      *data, EpsaraDataMatrix           *spectrum, EpsaraDataDetector         *detector, EpsaraDataSource           *source
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_measurement_reset_spectrum</NAME>
+<RETURNS>void  </RETURNS>
+EpsaraDataMeasurement *data, EpsaraDataDetector *detector, EpsaraDataSource *source
+</FUNCTION>
+<STRUCT>
+<NAME>EpsaraDataMeasurementPrivate</NAME>
+</STRUCT>
+<MACRO>
+<NAME>EPSARA_TYPE_DATA_PARTICLE_BEAM</NAME>
+#define EPSARA_TYPE_DATA_PARTICLE_BEAM\
+  (epsara_data_particle_beam_get_type ())
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_PARTICLE_BEAM</NAME>
+#define EPSARA_DATA_PARTICLE_BEAM(obj)\
+  (G_TYPE_CHECK_INSTANCE_CAST ((obj), EPSARA_TYPE_DATA_PARTICLE_BEAM, EpsaraDataParticleBeam))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_PARTICLE_IS_BEAM</NAME>
+#define EPSARA_DATA_PARTICLE_IS_BEAM(obj)\
+  (G_TYPE_CHECK_INSTANCE_TYPE ((obj), EPSARA_TYPE_DATA_PARTICLE_BEAM))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_PARTICLE_BEAM_CLASS</NAME>
+#define EPSARA_DATA_PARTICLE_BEAM_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_CAST ((klass), EPSARA_TYPE_DATA_PARTICLE_BEAM, EpsaraDataParticleBeamClass))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_PARTICLE_BEAM_IS_CLASS</NAME>
+#define EPSARA_DATA_PARTICLE_BEAM_IS_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_TYPE ((klass), EPSARA_TYPE_DATA_PARTICLE_BEAM))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_PARTICLE_BEAM_GET_CLASS</NAME>
+#define EPSARA_DATA_PARTICLE_BEAM_GET_CLASS(obj)\
+  (G_TYPE_INSTANCE_GET_CLASS ((obj), EPSARA_TYPE_DATA_PARTICLE_BEAM, EpsaraDataParticleBeamClass))
+</MACRO>
+<STRUCT>
+<NAME>EpsaraDataParticleBeam</NAME>
+struct _EpsaraDataParticleBeam
+{
+  EpsaraDataSource parent;
+
+  /*< private > */
+  EpsaraDataParticleBeamPrivate* priv;
+};
+</STRUCT>
+<STRUCT>
+<NAME>EpsaraDataParticleBeamClass</NAME>
+struct _EpsaraDataParticleBeamClass
+{
+  EpsaraDataSourceClass parent_class;
+
+  /* physics */
+  gdouble (* beam_energy_spread_fct)     (EpsaraDataParticleBeam *beam, gdouble energy_in_kev);
+
+};
+</STRUCT>
+<FUNCTION>
+<NAME>epsara_data_particle_beam_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<STRUCT>
+<NAME>EpsaraDataParticleBeamPrivate</NAME>
+</STRUCT>
+<MACRO>
+<NAME>EPSARA_TYPE_DATA_PARTICLE_DETECTOR</NAME>
+#define EPSARA_TYPE_DATA_PARTICLE_DETECTOR\
+  (epsara_data_particle_detector_get_type ())
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_PARTICLE_DETECTOR</NAME>
+#define EPSARA_DATA_PARTICLE_DETECTOR(obj)\
+  (G_TYPE_CHECK_INSTANCE_CAST ((obj), EPSARA_TYPE_DATA_PARTICLE_DETECTOR, EpsaraDataParticleDetector))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_PARTICLE_IS_DETECTOR</NAME>
+#define EPSARA_DATA_PARTICLE_IS_DETECTOR(obj)\
+  (G_TYPE_CHECK_INSTANCE_TYPE ((obj), EPSARA_TYPE_DATA_PARTICLE_DETECTOR))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_PARTICLE_DETECTOR_CLASS</NAME>
+#define EPSARA_DATA_PARTICLE_DETECTOR_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_CAST ((klass), EPSARA_TYPE_DATA_PARTICLE_DETECTOR, EpsaraDataParticleDetectorClass))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_PARTICLE_DETECTOR_IS_CLASS</NAME>
+#define EPSARA_DATA_PARTICLE_DETECTOR_IS_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_TYPE ((klass), EPSARA_TYPE_DATA_PARTICLE_DETECTOR))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_PARTICLE_DETECTOR_GET_CLASS</NAME>
+#define EPSARA_DATA_PARTICLE_DETECTOR_GET_CLASS(obj)\
+  (G_TYPE_INSTANCE_GET_CLASS ((obj), EPSARA_TYPE_DATA_PARTICLE_DETECTOR, EpsaraDataParticleDetectorClass))
+</MACRO>
+<STRUCT>
+<NAME>EpsaraDataParticleDetector</NAME>
+struct _EpsaraDataParticleDetector
+{
+  EpsaraDataDetector parent;
+
+  /*< private > */
+  EpsaraDataParticleDetectorPrivate* priv;
+};
+</STRUCT>
+<STRUCT>
+<NAME>EpsaraDataParticleDetectorClass</NAME>
+struct _EpsaraDataParticleDetectorClass
+{
+  EpsaraDataDetectorClass parent_class;
+
+  /* physics */
+  gdouble (* detector_resolution_fct)     (EpsaraDataParticleDetector *detector,
+                                           gdouble detector_energy_in_kev,
+                                           gdouble particle_energy_in_kev);
+
+};
+</STRUCT>
+<FUNCTION>
+<NAME>epsara_data_particle_detector_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_particle_detector_energy_at_channel</NAME>
+<RETURNS>gdouble  </RETURNS>
+EpsaraDataParticleDetector *detector, gint channel
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_particle_detector_generate_energy_vs_channel</NAME>
+<RETURNS>EpsaraDataMatrix  *</RETURNS>
+EpsaraDataParticleDetector *detector
+</FUNCTION>
+<STRUCT>
+<NAME>EpsaraDataParticleDetectorPrivate</NAME>
+</STRUCT>
+<MACRO>
+<NAME>EPSARA_TYPE_DATA_PARTICLE_SCATTERING</NAME>
+#define EPSARA_TYPE_DATA_PARTICLE_SCATTERING\
+  (epsara_data_particle_scattering_get_type ())
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_PARTICLE_SCATTERING</NAME>
+#define EPSARA_DATA_PARTICLE_SCATTERING(obj)\
+  (G_TYPE_CHECK_INSTANCE_CAST ((obj),\
+   EPSARA_TYPE_DATA_PARTICLE_SCATTERING,\
+   EpsaraDataParticleScattering))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_PARTICLE_IS_SCATTERING</NAME>
+#define EPSARA_DATA_PARTICLE_IS_SCATTERING(obj)\
+  (G_TYPE_CHECK_INSTANCE_TYPE ((obj),\
+   EPSARA_TYPE_DATA_PARTICLE_SCATTERING))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_PARTICLE_SCATTERING_CLASS</NAME>
+#define EPSARA_DATA_PARTICLE_SCATTERING_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_CAST ((klass),\
+   EPSARA_TYPE_DATA_PARTICLE_SCATTERING,\
+   EpsaraDataParticleScatteringClass))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_PARTICLE_SCATTERING_IS_CLASS</NAME>
+#define EPSARA_DATA_PARTICLE_SCATTERING_IS_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_TYPE ((klass),\
+   EPSARA_TYPE_DATA_PARTICLE_SCATTERING))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_PARTICLE_SCATTERING_GET_CLASS</NAME>
+#define EPSARA_DATA_PARTICLE_SCATTERING_GET_CLASS(obj)\
+  (G_TYPE_INSTANCE_GET_CLASS ((obj),\
+   EPSARA_TYPE_DATA_PARTICLE_SCATTERING,\
+   EpsaraDataParticleScatteringClass))
+</MACRO>
+<STRUCT>
+<NAME>EpsaraDataParticleScattering</NAME>
+struct _EpsaraDataParticleScattering
+{
+  EpsaraDataInteraction parent;
+
+  /*< private > */
+  EpsaraDataParticleScatteringPrivate* priv;
+};
+</STRUCT>
+<STRUCT>
+<NAME>EpsaraDataParticleScatteringClass</NAME>
+struct _EpsaraDataParticleScatteringClass
+{
+  EpsaraDataInteractionClass parent_class;
+};
+</STRUCT>
+<FUNCTION>
+<NAME>epsara_data_particle_scattering_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_material_make_natural_rbs_elements</NAME>
+<RETURNS>void  </RETURNS>
+EpsaraDataMaterial *material, gint atomic_number
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_material_particle_scattering_filter_same</NAME>
+<RETURNS>GSList  *</RETURNS>
+GSList *list
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_material_particle_scattering_filter_by_beam</NAME>
+<RETURNS>GSList  *</RETURNS>
+GSList *list, gint ion_atomic_no, gint ion_mass_no
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_particle_scattering_kinematic_after_scattering</NAME>
+<RETURNS>gdouble  </RETURNS>
+EpsaraDataParticleScattering *scattering, gdouble ion_mass, gdouble ion_energy_before_scattering, gdouble scattering_angle
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_particle_scattering_kinematic_before_scattering</NAME>
+<RETURNS>gdouble  </RETURNS>
+EpsaraDataParticleScattering *scattering, gdouble ion_mass, gdouble ion_energy_after_scattering, gdouble cos_scattering_angle
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_particle_scattering_add_cross_section</NAME>
+<RETURNS>void  </RETURNS>
+EpsaraDataParticleScattering *scattering, EpsaraDataMatrix *cross_section, gdouble scattering_angle
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_particle_scattering_remove_cross_section</NAME>
+<RETURNS>void  </RETURNS>
+EpsaraDataParticleScattering *scattering, gdouble scattering_angle
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_particle_scattering_integrate_cross_section_over_energy</NAME>
+<RETURNS>gdouble  </RETURNS>
+EpsaraDataParticleScattering *scattering, gdouble scattering_angle, gint ion_atomic_no, gdouble ion_mass, gdouble energy_start, gdouble energy_end, gdouble straggling
+</FUNCTION>
+<STRUCT>
+<NAME>EpsaraDataParticleScatteringPrivate</NAME>
+</STRUCT>
+<MACRO>
+<NAME>EPSARA_TYPE_DATA_RBS_MEASUREMENT</NAME>
+#define EPSARA_TYPE_DATA_RBS_MEASUREMENT\
+  (epsara_data_rbs_measurement_get_type ())
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_RBS_MEASUREMENT</NAME>
+#define EPSARA_DATA_RBS_MEASUREMENT(obj)\
+  (G_TYPE_CHECK_INSTANCE_CAST ((obj),\
+  EPSARA_TYPE_DATA_RBS_MEASUREMENT,\
+  EpsaraDataRbsMeasurement))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_RBS_IS_MEASUREMENT</NAME>
+#define EPSARA_DATA_RBS_IS_MEASUREMENT(obj)\
+  (G_TYPE_CHECK_INSTANCE_TYPE ((obj),\
+  EPSARA_TYPE_DATA_RBS_MEASUREMENT))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_RBS_MEASUREMENT_CLASS</NAME>
+#define EPSARA_DATA_RBS_MEASUREMENT_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_CAST ((klass),\
+  EPSARA_TYPE_DATA_RBS_MEASUREMENT,\
+  EpsaraDataRbsMeasurementClass))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_RBS_MEASUREMENT_IS_CLASS</NAME>
+#define EPSARA_DATA_RBS_MEASUREMENT_IS_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_TYPE ((klass),\
+  EPSARA_TYPE_DATA_RBS_MEASUREMENT))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_RBS_MEASUREMENT_GET_CLASS</NAME>
+#define EPSARA_DATA_RBS_MEASUREMENT_GET_CLASS(obj)\
+  (G_TYPE_INSTANCE_GET_CLASS ((obj), EPSARA_TYPE_DATA_RBS_MEASUREMENT, EpsaraDataRbsMeasurementClass))
+</MACRO>
+<STRUCT>
+<NAME>EpsaraDataRbsMeasurement</NAME>
+struct _EpsaraDataRbsMeasurement
+{
+  EpsaraDataMeasurement parent;
+
+  /*< private > */
+  EpsaraDataRbsMeasurementPrivate* priv;
+};
+</STRUCT>
+<STRUCT>
+<NAME>EpsaraDataRbsMeasurementClass</NAME>
+struct _EpsaraDataRbsMeasurementClass
+{
+  EpsaraDataMeasurementClass parent_class;
+};
+</STRUCT>
+<FUNCTION>
+<NAME>epsara_data_rbs_measurement_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_rbs_measurement_calc_simple_spec</NAME>
+<RETURNS>EpsaraDataMatrix  *</RETURNS>
+EpsaraDataRbsMeasurement      *data, EpsaraDataParticleDetector    *detector, EpsaraDataParticleBeam        *beam
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_rbs_measurement_get_beam_eloss</NAME>
+<RETURNS>EpsaraDataMatrix  *</RETURNS>
+EpsaraDataRbsMeasurement      *data, EpsaraDataParticleBeam        *beam
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_rbs_measurement_get_detector_eloss</NAME>
+<RETURNS>EpsaraDataMatrix  *</RETURNS>
+EpsaraDataRbsMeasurement      *data, EpsaraDataParticleDetector    *detector, EpsaraDataParticleBeam        *beam, EpsaraDataParticleScattering  *interaction, gint                           channel
+</FUNCTION>
+<STRUCT>
+<NAME>EpsaraDataRbsMeasurementPrivate</NAME>
+</STRUCT>
+<MACRO>
+<NAME>EPSARA_TYPE_DATA_SET</NAME>
+#define EPSARA_TYPE_DATA_SET\
+  (epsara_data_set_get_type ())
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_SET</NAME>
+#define EPSARA_DATA_SET(obj)\
+  (G_TYPE_CHECK_INSTANCE_CAST ((obj),\
+  EPSARA_TYPE_DATA_SET,\
+  EpsaraDataSet))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_IS_SET</NAME>
+#define EPSARA_DATA_IS_SET(obj)\
+  (G_TYPE_CHECK_INSTANCE_TYPE ((obj),\
+  EPSARA_TYPE_DATA_SET))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_SET_CLASS</NAME>
+#define EPSARA_DATA_SET_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_CAST ((klass),\
+  EPSARA_TYPE_DATA_SET,\
+  EpsaraDataSetClass))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_SET_IS_CLASS</NAME>
+#define EPSARA_DATA_SET_IS_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_TYPE ((klass),\
+  EPSARA_TYPE_DATA_SET))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_SET_GET_CLASS</NAME>
+#define EPSARA_DATA_SET_GET_CLASS(obj)\
+  (G_TYPE_INSTANCE_GET_CLASS ((obj), EPSARA_TYPE_DATA_SET, EpsaraDataSetClass))
+</MACRO>
+<USER_FUNCTION>
+<NAME>EpsaraForallCallback</NAME>
+<RETURNS>void </RETURNS>
+EpsaraDataSet        *set_data,
+                                          gpointer                data
+</USER_FUNCTION>
+<STRUCT>
+<NAME>EpsaraDataSet</NAME>
+struct _EpsaraDataSet
+{
+  EpsaraDataElement parent;
+
+  /*< private > */
+  EpsaraDataSetPrivate* priv;
+};
+</STRUCT>
+<STRUCT>
+<NAME>EpsaraDataSetClass</NAME>
+struct _EpsaraDataSetClass
+{
+  EpsaraDataElementClass parent_class;
+
+  /*< public >*/
+  void  (*add)                (EpsaraDataSet         *container,
+                               EpsaraDataMeasurement *measurement);
+  void  (*remove)             (EpsaraDataSet         *container,
+                               EpsaraDataMeasurement *measurement);
+  void  (*forall)             (EpsaraDataSet         *container,
+                               gboolean               include_internals,
+                               EpsaraForallCallback   callback,
+                               gpointer               callback_data);
+  gboolean (*calculate)       (EpsaraDataSet         *measurement);
+  gboolean (*fit)             (EpsaraDataSet         *measurement);
+
+//  gboolean (*save)            (EpsaraDataSet         *measurement,
+//                               GFile                 *output_file);
+};
+</STRUCT>
+<FUNCTION>
+<NAME>epsara_data_set_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_set_contains</NAME>
+<RETURNS>gboolean  </RETURNS>
+EpsaraDataSet* set, EpsaraDataMeasurement *measurement
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_set_save_results</NAME>
+<RETURNS>void  </RETURNS>
+EpsaraDataSet *set, GFile* output_file
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_set_perform_calculation</NAME>
+<RETURNS>gboolean  </RETURNS>
+EpsaraDataSet *data
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_set_get_fitting_schedule</NAME>
+<RETURNS>GSList  *</RETURNS>
+EpsaraDataSet *data_set, guint i, const gchar **property_name
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_set_add_to_fitting_schedule</NAME>
+<RETURNS>gboolean  </RETURNS>
+EpsaraDataSet *data_set, const gchar *property_name, GSList *objects_list
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_set_get_measurements</NAME>
+<RETURNS>GSList  *</RETURNS>
+EpsaraDataSet *data_set
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_set_get_top_data_set</NAME>
+<RETURNS>EpsaraDataSet  *</RETURNS>
+EpsaraDataElement *child
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_set_calculate_minimizer_value</NAME>
+<RETURNS>gdouble</RETURNS>
+EpsaraDataSet *data_set, const gdouble *params, size_t         no_of_params
+</FUNCTION>
+<STRUCT>
+<NAME>EpsaraDataSetPrivate</NAME>
+</STRUCT>
+<MACRO>
+<NAME>EPSARA_TYPE_DATA_SOURCE</NAME>
+#define EPSARA_TYPE_DATA_SOURCE\
+  (epsara_data_source_get_type ())
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_SOURCE</NAME>
+#define EPSARA_DATA_SOURCE(obj)\
+  (G_TYPE_CHECK_INSTANCE_CAST ((obj), EPSARA_TYPE_DATA_SOURCE, EpsaraDataSource))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_IS_SOURCE</NAME>
+#define EPSARA_DATA_IS_SOURCE(obj)\
+  (G_TYPE_CHECK_INSTANCE_TYPE ((obj), EPSARA_TYPE_DATA_SOURCE))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_SOURCE_CLASS</NAME>
+#define EPSARA_DATA_SOURCE_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_CAST ((klass), EPSARA_TYPE_DATA_SOURCE, EpsaraDataSourceClass))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_SOURCE_IS_CLASS</NAME>
+#define EPSARA_DATA_SOURCE_IS_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_TYPE ((klass), EPSARA_TYPE_DATA_SOURCE))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_SOURCE_GET_CLASS</NAME>
+#define EPSARA_DATA_SOURCE_GET_CLASS(obj)\
+  (G_TYPE_INSTANCE_GET_CLASS ((obj), EPSARA_TYPE_DATA_SOURCE, EpsaraDataSourceClass))
+</MACRO>
+<STRUCT>
+<NAME>EpsaraDataSource</NAME>
+struct _EpsaraDataSource
+{
+  EpsaraDataElement parent;
+
+  /*< private > */
+  EpsaraDataSourcePrivate* priv;
+};
+</STRUCT>
+<STRUCT>
+<NAME>EpsaraDataSourceClass</NAME>
+struct _EpsaraDataSourceClass
+{
+  EpsaraDataElementClass parent_class;
+};
+</STRUCT>
+<FUNCTION>
+<NAME>epsara_data_source_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<STRUCT>
+<NAME>EpsaraDataSourcePrivate</NAME>
+</STRUCT>
+<MACRO>
+<NAME>EPSARA_TYPE_FILE_PARSER_R33</NAME>
+#define EPSARA_TYPE_FILE_PARSER_R33\
+  (epsara_file_parser_r33_get_type ())
+</MACRO>
+<MACRO>
+<NAME>EPSARA_FILE_PARSER_R33</NAME>
+#define EPSARA_FILE_PARSER_R33(obj)\
+  (G_TYPE_CHECK_INSTANCE_CAST ((obj),\
+  EPSARA_TYPE_FILE_PARSER_R33,\
+  EpsaraFileParserR33))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_FILE_PARSER_IS_R33</NAME>
+#define EPSARA_FILE_PARSER_IS_R33(obj)\
+  (G_TYPE_CHECK_INSTANCE_TYPE ((obj),\
+  EPSARA_TYPE_FILE_PARSER_R33))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_FILE_PARSER_R33_CLASS</NAME>
+#define EPSARA_FILE_PARSER_R33_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_CAST ((klass),\
+  EPSARA_TYPE_FILE_PARSER_R33,\
+  EpsaraFileParserR33Class))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_FILE_PARSER_R33_IS_CLASS</NAME>
+#define EPSARA_FILE_PARSER_R33_IS_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_TYPE ((klass),\
+  EPSARA_TYPE_FILE_PARSER_R33))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_EPSARA_FILE_PARSER_R33_GET_CLASS</NAME>
+#define EPSARA_EPSARA_FILE_PARSER_R33_GET_CLASS(obj)\
+  (G_TYPE_INSTANCE_GET_CLASS ((obj), EPSARA_TYPE_FILE_PARSER_R33, EpsaraFileParserR33Class))
+</MACRO>
+<STRUCT>
+<NAME>EpsaraFileParserR33</NAME>
+struct _EpsaraFileParserR33
+{
+  GObject parent;
+
+  /*< private > */
+  EpsaraFileParserR33Private* priv;
+};
+</STRUCT>
+<STRUCT>
+<NAME>EpsaraFileParserR33Class</NAME>
+struct _EpsaraFileParserR33Class
+{
+  GObjectClass parent_class;
+
+  /*< public >*/
+};
+</STRUCT>
+<FUNCTION>
+<NAME>epsara_file_parser_r33_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_file_parser_r33_parse_string</NAME>
+<RETURNS>void  </RETURNS>
+EpsaraFileParserR33 *parser, const gchar* string
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_file_parser_r33_parse_file</NAME>
+<RETURNS>gboolean  </RETURNS>
+EpsaraFileParserR33 *parser, GFile *file
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_file_parser_r33_get_cross_section</NAME>
+<RETURNS>EpsaraDataMatrix  *</RETURNS>
+EpsaraFileParserR33 *parser
+</FUNCTION>
+<STRUCT>
+<NAME>EpsaraFileParserR33Private</NAME>
+</STRUCT>
+<MACRO>
+<NAME>CSV_MAJOR</NAME>
+#define CSV_MAJOR 3
+</MACRO>
+<MACRO>
+<NAME>CSV_MINOR</NAME>
+#define CSV_MINOR 0
+</MACRO>
+<MACRO>
+<NAME>CSV_RELEASE</NAME>
+#define CSV_RELEASE 3
+</MACRO>
+<MACRO>
+<NAME>CSV_SUCCESS</NAME>
+#define CSV_SUCCESS 0
+</MACRO>
+<MACRO>
+<NAME>CSV_EPARSE</NAME>
+#define CSV_EPARSE 1   /* Parse error in strict mode */
+</MACRO>
+<MACRO>
+<NAME>CSV_ENOMEM</NAME>
+#define CSV_ENOMEM 2   /* Out of memory while increasing buffer size */
+</MACRO>
+<MACRO>
+<NAME>CSV_ETOOBIG</NAME>
+#define CSV_ETOOBIG 3  /* Buffer larger than SIZE_MAX needed */
+</MACRO>
+<MACRO>
+<NAME>CSV_EINVALID</NAME>
+#define CSV_EINVALID 4 /* Invalid code,should never be received from csv_error*/
+</MACRO>
+<MACRO>
+<NAME>CSV_STRICT</NAME>
+#define CSV_STRICT 1    /* enable strict mode */
+</MACRO>
+<MACRO>
+<NAME>CSV_REPALL_NL</NAME>
+#define CSV_REPALL_NL 2 /* report all unquoted carriage returns and linefeeds */
+</MACRO>
+<MACRO>
+<NAME>CSV_STRICT_FINI</NAME>
+#define CSV_STRICT_FINI 4 /* causes csv_fini to return CSV_EPARSE if last
+</MACRO>
+<MACRO>
+<NAME>CSV_APPEND_NULL</NAME>
+#define CSV_APPEND_NULL 8 /* Ensure that all fields are null-terminated */
+</MACRO>
+<MACRO>
+<NAME>CSV_EMPTY_IS_NULL</NAME>
+#define CSV_EMPTY_IS_NULL 16 /* Pass null pointer to cb1 function when
+</MACRO>
+<MACRO>
+<NAME>CSV_TAB</NAME>
+#define CSV_TAB    0x09
+</MACRO>
+<MACRO>
+<NAME>CSV_SPACE</NAME>
+#define CSV_SPACE  0x20
+</MACRO>
+<MACRO>
+<NAME>CSV_CR</NAME>
+#define CSV_CR     0x0d
+</MACRO>
+<MACRO>
+<NAME>CSV_LF</NAME>
+#define CSV_LF     0x0a
+</MACRO>
+<MACRO>
+<NAME>CSV_COMMA</NAME>
+#define CSV_COMMA  0x2c
+</MACRO>
+<MACRO>
+<NAME>CSV_QUOTE</NAME>
+#define CSV_QUOTE  0x22
+</MACRO>
+<STRUCT>
+<NAME>csv_parser</NAME>
+struct csv_parser {
+  int pstate;         /* Parser state */
+  int quoted;         /* Is the current field a quoted field? */
+  size_t spaces;      /* Number of continious spaces after quote or in a non-quoted field */
+  unsigned char * entry_buf;   /* Entry buffer */
+  size_t entry_pos;   /* Current position in entry_buf (and current size of entry) */
+  size_t entry_size;  /* Size of entry buffer */
+  int status;         /* Operation status */
+  unsigned char options;
+  unsigned char quote_char;
+  unsigned char delim_char;
+  int (*is_space)(unsigned char);
+  int (*is_term)(unsigned char);
+  size_t blk_size;
+  void *(*malloc_func)(size_t);
+  void *(*realloc_func)(void *, size_t);
+  void (*free_func)(void *);
+};
+</STRUCT>
+<FUNCTION>
+<NAME>csv_init</NAME>
+<RETURNS>int  </RETURNS>
+struct csv_parser *p, unsigned char options
+</FUNCTION>
+<FUNCTION>
+<NAME>csv_fini</NAME>
+<RETURNS>int  </RETURNS>
+struct csv_parser *p, void (*cb1)(void *, size_t, void *), void (*cb2)(int, void *), void *data
+</FUNCTION>
+<FUNCTION>
+<NAME>csv_free</NAME>
+<RETURNS>void  </RETURNS>
+struct csv_parser *p
+</FUNCTION>
+<FUNCTION>
+<NAME>csv_error</NAME>
+<RETURNS>int  </RETURNS>
+struct csv_parser *p
+</FUNCTION>
+<FUNCTION>
+<NAME>csv_strerror</NAME>
+<RETURNS>char  * </RETURNS>
+int error
+</FUNCTION>
+<FUNCTION>
+<NAME>csv_parse</NAME>
+<RETURNS>size_t  </RETURNS>
+struct csv_parser *p, const void *s, size_t len, void (*cb1)(void *, size_t, void *), void (*cb2)(int, void *), void *data
+</FUNCTION>
+<FUNCTION>
+<NAME>csv_write</NAME>
+<RETURNS>size_t  </RETURNS>
+void *dest, size_t dest_size, const void *src, size_t src_size
+</FUNCTION>
+<FUNCTION>
+<NAME>csv_fwrite</NAME>
+<RETURNS>int  </RETURNS>
+FILE *fp, const void *src, size_t src_size
+</FUNCTION>
+<FUNCTION>
+<NAME>csv_write2</NAME>
+<RETURNS>size_t  </RETURNS>
+void *dest, size_t dest_size, const void *src, size_t src_size, unsigned char quote
+</FUNCTION>
+<FUNCTION>
+<NAME>csv_fwrite2</NAME>
+<RETURNS>int  </RETURNS>
+FILE *fp, const void *src, size_t src_size, unsigned char quote
+</FUNCTION>
+<FUNCTION>
+<NAME>csv_get_opts</NAME>
+<RETURNS>int  </RETURNS>
+struct csv_parser *p
+</FUNCTION>
+<FUNCTION>
+<NAME>csv_set_opts</NAME>
+<RETURNS>int  </RETURNS>
+struct csv_parser *p, unsigned char options
+</FUNCTION>
+<FUNCTION>
+<NAME>csv_set_delim</NAME>
+<RETURNS>void  </RETURNS>
+struct csv_parser *p, unsigned char c
+</FUNCTION>
+<FUNCTION>
+<NAME>csv_set_quote</NAME>
+<RETURNS>void  </RETURNS>
+struct csv_parser *p, unsigned char c
+</FUNCTION>
+<FUNCTION>
+<NAME>csv_get_delim</NAME>
+<RETURNS>unsigned char  </RETURNS>
+struct csv_parser *p
+</FUNCTION>
+<FUNCTION>
+<NAME>csv_get_quote</NAME>
+<RETURNS>unsigned char  </RETURNS>
+struct csv_parser *p
+</FUNCTION>
+<FUNCTION>
+<NAME>csv_set_space_func</NAME>
+<RETURNS>void  </RETURNS>
+struct csv_parser *p, int (*f)(unsigned char)
+</FUNCTION>
+<FUNCTION>
+<NAME>csv_set_term_func</NAME>
+<RETURNS>void  </RETURNS>
+struct csv_parser *p, int (*f)(unsigned char)
+</FUNCTION>
+<FUNCTION>
+<NAME>csv_set_realloc_func</NAME>
+<RETURNS>void  </RETURNS>
+struct csv_parser *p, void *(*)(void *, size_t)
+</FUNCTION>
+<FUNCTION>
+<NAME>csv_set_free_func</NAME>
+<RETURNS>void  </RETURNS>
+struct csv_parser *p, void (*)(void *)
+</FUNCTION>
+<FUNCTION>
+<NAME>csv_set_blk_size</NAME>
+<RETURNS>void  </RETURNS>
+struct csv_parser *p, size_t
+</FUNCTION>
+<FUNCTION>
+<NAME>csv_get_buffer_size</NAME>
+<RETURNS>size_t  </RETURNS>
+struct csv_parser *p
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_physcore_calc_scattering_cross_section</NAME>
+<RETURNS>gdouble  </RETURNS>
+gint atomic_no_ion, gint atomic_no_target, gdouble mass_inc_ion, gdouble mass_target, gdouble scattering_angle, gdouble energy_value
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_eloss_physcore_calc_trim_85_electronic</NAME>
+<RETURNS>gdouble  </RETURNS>
+guint atomic_no_ion, gdouble atomic_mass_ion, guint atomic_no_target, gdouble atomic_mass_target, gdouble energy
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_eloss_physcore_calc_trim_85_nuclear</NAME>
+<RETURNS>gdouble  </RETURNS>
+guint atomic_no_ion, gdouble atomic_mass_ion, guint atomic_no_target, gdouble atomic_mass_target, gdouble energy
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_eloss_physcore_get_trim_13_eloss</NAME>
+<RETURNS>EpsaraDataMatrix  *</RETURNS>
+guint atomic_no_ion, gdouble atomic_mass_ion, guint atomic_no_target, gdouble atomic_mass_target
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_eloss_physcore_get_andersen_ziegler_eloss</NAME>
+<RETURNS>gdouble  </RETURNS>
+guint atomic_no_ion, gdouble atomic_mass_ion, guint atomic_no_target, gdouble atomic_mass_target, gdouble energy
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_physical_const_get_isotope_masses</NAME>
+<RETURNS>EpsaraDataVector * </RETURNS>
+guint atomic_no
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_physical_const_get_abundances</NAME>
+<RETURNS>EpsaraDataVector * </RETURNS>
+guint atomic_no
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_physical_const_get_specific_mass</NAME>
+<RETURNS>gdouble</RETURNS>
+guint atomic_no, guint mass_no
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_physical_const_get_specific_abundance</NAME>
+<RETURNS>gdouble</RETURNS>
+guint atomic_no, guint mass_no
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_physical_const_trim85_pscoef_dat1</NAME>
+<RETURNS>gfloat  </RETURNS>
+guint integ1, guint integ2
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_physical_const_trim85_pscoef_dat2</NAME>
+<RETURNS>gfloat  </RETURNS>
+guint integ1, guint integ2
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_physical_const_trim77_get_hcoef</NAME>
+<RETURNS>gfloat  </RETURNS>
+guint atomic_no, guint coeff_index
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_physcore_physical_const_trim77_get_hecoef</NAME>
+<RETURNS>gfloat  </RETURNS>
+guint atomic_no, guint coeff_index
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_physical_const_calc_chu_straggling_correction_factor</NAME>
+<RETURNS>gdouble</RETURNS>
+gdouble ion_energy, guint target_atom_no, gdouble ion_mass, guint ion_atom_no
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_physical_const_calc_yang_straggling_correction_value</NAME>
+<RETURNS>gdouble</RETURNS>
+gdouble ion_energy, guint target_atom_no, EpsaraMaterialState state, gdouble ion_mass, guint ion_atom_no
+</FUNCTION>
+<STRUCT>
+<NAME>EpsaraDataPoint</NAME>
+struct _EpsaraDataPoint
+{
+  gdouble x;
+  gdouble y;
+  gdouble z;
+};
+</STRUCT>
+<STRUCT>
+<NAME>EpsaraDataDirection</NAME>
+struct _EpsaraDataDirection
+{
+  EpsaraDataPoint origin;
+  EpsaraDataPoint direction;
+};
+</STRUCT>
+<STRUCT>
+<NAME>EpsaraDataPolygon</NAME>
+struct _EpsaraDataPolygon
+{
+  EpsaraDataPoint point1;
+  EpsaraDataPoint point2;
+  EpsaraDataPoint point3;
+};
+</STRUCT>
+<FUNCTION>
+<NAME>epsara_data_point_equal</NAME>
+<RETURNS>gboolean  </RETURNS>
+const EpsaraDataPoint *point1, const EpsaraDataPoint *point2
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_point_scalar_product</NAME>
+<RETURNS>gdouble  </RETURNS>
+const EpsaraDataPoint *point1, const EpsaraDataPoint *point2
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_point_metric</NAME>
+<RETURNS>gdouble  </RETURNS>
+const EpsaraDataPoint *point1, const EpsaraDataPoint *point2
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_point_distance_to_origin</NAME>
+<RETURNS>gdouble  </RETURNS>
+const EpsaraDataPoint *point
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_point_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_direction_equal</NAME>
+<RETURNS>gboolean  </RETURNS>
+const EpsaraDataDirection *direction1, const EpsaraDataDirection *direction2
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_direction_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_polygon_equal</NAME>
+<RETURNS>gboolean  </RETURNS>
+const EpsaraDataPolygon *polygon1, const EpsaraDataPolygon *polygon2
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_polygon_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<MACRO>
+<NAME>EPSARA_TYPE_DATA_POINT</NAME>
+#define EPSARA_TYPE_DATA_POINT\
+  (epsara_data_point_get_type ())
+</MACRO>
+<MACRO>
+<NAME>EPSARA_TYPE_DATA_DIRECTION</NAME>
+#define EPSARA_TYPE_DATA_DIRECTION\
+  (epsara_data_direction_get_type ())
+</MACRO>
+<MACRO>
+<NAME>EPSARA_TYPE_DATA_POLYGON</NAME>
+#define EPSARA_TYPE_DATA_POLYGON\
+  (epsara_data_polygon_get_type ())
+</MACRO>
+<STRUCT>
+<NAME>EpsaraDataDirection</NAME>
+</STRUCT>
+<STRUCT>
+<NAME>EpsaraDataPoint</NAME>
+</STRUCT>
+<STRUCT>
+<NAME>EpsaraDataPolygon</NAME>
+</STRUCT>
+<MACRO>
+<NAME>EPSARA_TYPE_DATA_MATRIX</NAME>
+#define EPSARA_TYPE_DATA_MATRIX\
+  (epsara_data_matrix_get_type ())
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_MATRIX</NAME>
+#define EPSARA_DATA_MATRIX(obj)\
+  (G_TYPE_CHECK_INSTANCE_CAST ((obj),\
+  EPSARA_TYPE_DATA_MATRIX,\
+  EpsaraDataMatrix))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_IS_MATRIX</NAME>
+#define EPSARA_DATA_IS_MATRIX(obj)\
+  (G_TYPE_CHECK_INSTANCE_TYPE ((obj),\
+  EPSARA_TYPE_DATA_MATRIX))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_MATRIX_CLASS</NAME>
+#define EPSARA_DATA_MATRIX_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_CAST ((klass),\
+  EPSARA_TYPE_DATA_MATRIX,\
+  EpsaraDataMatrixClass))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_MATRIX_IS_CLASS</NAME>
+#define EPSARA_DATA_MATRIX_IS_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_TYPE ((klass),\
+  EPSARA_TYPE_DATA_MATRIX))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_MATRIX_GET_CLASS</NAME>
+#define EPSARA_DATA_MATRIX_GET_CLASS(obj)\
+  (G_TYPE_INSTANCE_GET_CLASS ((obj), EPSARA_TYPE_DATA_MATRIX, EpsaraDataMatrixClass))
+</MACRO>
+<STRUCT>
+<NAME>EpsaraDataMatrix</NAME>
+struct _EpsaraDataMatrix
+{
+  GObject parent;
+
+  /*< private > */
+  EpsaraDataMatrixPrivate* priv;
+};
+</STRUCT>
+<STRUCT>
+<NAME>EpsaraDataMatrixClass</NAME>
+struct _EpsaraDataMatrixClass
+{
+  GObjectClass parent_class;
+
+  /*< public >*/
+
+};
+</STRUCT>
+<FUNCTION>
+<NAME>epsara_data_matrix_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_matrix_new</NAME>
+<RETURNS>EpsaraDataMatrix  *</RETURNS>
+gint rows, gint columns
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_matrix_get</NAME>
+<RETURNS>gdouble  </RETURNS>
+EpsaraDataMatrix *matrix, gint i, gint j
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_matrix_set</NAME>
+<RETURNS>void  </RETURNS>
+EpsaraDataMatrix *matrix, gint i, gint j, gdouble x
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_matrix_set_and_expand</NAME>
+<RETURNS>EpsaraDataMatrix  *</RETURNS>
+EpsaraDataMatrix *matrix, gint i, gint j, gdouble x
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_matrix_set_all</NAME>
+<RETURNS>void  </RETURNS>
+EpsaraDataMatrix *matrix, gdouble x
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_matrix_set_zero</NAME>
+<RETURNS>void  </RETURNS>
+EpsaraDataMatrix *matrix
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_matrix_set_identity</NAME>
+<RETURNS>void  </RETURNS>
+EpsaraDataMatrix *matrix
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_matrix_copy</NAME>
+<RETURNS>gint  </RETURNS>
+EpsaraDataMatrix *dest, EpsaraDataMatrix *src
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_matrix_swap</NAME>
+<RETURNS>gint  </RETURNS>
+EpsaraDataMatrix *v, EpsaraDataMatrix *w
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_matrix_get_row</NAME>
+<RETURNS>EpsaraDataVector  *</RETURNS>
+EpsaraDataMatrix * matrix, gint i
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_matrix_get_column</NAME>
+<RETURNS>EpsaraDataVector  *</RETURNS>
+EpsaraDataMatrix * matrix, gint j
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_matrix_memcpy_submatrix</NAME>
+<RETURNS>EpsaraDataMatrix  *</RETURNS>
+EpsaraDataMatrix *a, gint min_row, gint max_row, gint min_col, gint max_col
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_matrix_memcpy_row</NAME>
+<RETURNS>EpsaraDataMatrix  *</RETURNS>
+EpsaraDataMatrix *src, EpsaraDataMatrix *dst, gint src_row, gint dst_row
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_matrix_memcpy_col</NAME>
+<RETURNS>EpsaraDataMatrix  *</RETURNS>
+EpsaraDataMatrix *src, EpsaraDataMatrix *dst, gint src_col, gint dst_col
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_matrix_add</NAME>
+<RETURNS>gint  </RETURNS>
+EpsaraDataMatrix * a, const EpsaraDataMatrix * b
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_matrix_sub</NAME>
+<RETURNS>gint  </RETURNS>
+EpsaraDataMatrix * a, const EpsaraDataMatrix * b
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_matrix_mul_elements</NAME>
+<RETURNS>gint  </RETURNS>
+EpsaraDataMatrix * a, const EpsaraDataMatrix * b
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_matrix_div_elements</NAME>
+<RETURNS>gint  </RETURNS>
+EpsaraDataMatrix * a, const EpsaraDataMatrix * b
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_matrix_scale</NAME>
+<RETURNS>gint  </RETURNS>
+EpsaraDataMatrix * a, const gdouble x
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_matrix_add_constant</NAME>
+<RETURNS>gint  </RETURNS>
+EpsaraDataMatrix * a, const gdouble x
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_matrix_max</NAME>
+<RETURNS>gdouble  </RETURNS>
+const EpsaraDataMatrix * v
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_matrix_min</NAME>
+<RETURNS>gdouble  </RETURNS>
+const EpsaraDataMatrix * v
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_matrix_minmax</NAME>
+<RETURNS>void  </RETURNS>
+const EpsaraDataMatrix * v, gdouble * min_out, gdouble * max_out
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_matrix_max_index</NAME>
+<RETURNS>void  </RETURNS>
+const EpsaraDataMatrix * v, gint *imax, gint *jmax
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_matrix_min_index</NAME>
+<RETURNS>void  </RETURNS>
+const EpsaraDataMatrix * v, gint *imin, gint *jmin
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_matrix_minmax_index</NAME>
+<RETURNS>void  </RETURNS>
+const EpsaraDataMatrix * v, gint * imin, gint * jmin, gint * imax, gint * jmax
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_matrix_integrate_column</NAME>
+<RETURNS>gdouble  </RETURNS>
+EpsaraDataMatrix *matrix, gint peek_column, gint integrate_column, gboolean sort_matrix, gdouble start_value, gdouble end_value
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_matrix_get_mean_column_value_near_row</NAME>
+<RETURNS>gdouble  </RETURNS>
+EpsaraDataMatrix *matrix, gint peek_column, gint return_column, gint *nearest_row, gdouble peek_value
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_matrix_get_mean_column_value</NAME>
+<RETURNS>gdouble  </RETURNS>
+EpsaraDataMatrix *matrix, gint peek_column, gint return_column, gboolean sort_matrix, gdouble peek_value
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_matrix_sort_along_column</NAME>
+<RETURNS>void  </RETURNS>
+EpsaraDataMatrix *matrix, gint column
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_matrix_print</NAME>
+<RETURNS>void</RETURNS>
+EpsaraDataMatrix* matrix
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_matrix_save_to_file</NAME>
+<RETURNS>void</RETURNS>
+EpsaraDataMatrix* matrix, GFile* file
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_matrix_get_raw_values</NAME>
+<RETURNS>const gdouble  *</RETURNS>
+EpsaraDataMatrix *matrix
+</FUNCTION>
+<STRUCT>
+<NAME>EpsaraDataMatrixPrivate</NAME>
+</STRUCT>
+<MACRO>
+<NAME>EPSARA_TYPE_DATA_VECTOR</NAME>
+#define EPSARA_TYPE_DATA_VECTOR\
+  (epsara_data_vector_get_type ())
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_VECTOR</NAME>
+#define EPSARA_DATA_VECTOR(obj)\
+  (G_TYPE_CHECK_INSTANCE_CAST ((obj),\
+  EPSARA_TYPE_DATA_VECTOR,\
+  EpsaraDataVector))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_IS_VECTOR</NAME>
+#define EPSARA_DATA_IS_VECTOR(obj)\
+  (G_TYPE_CHECK_INSTANCE_TYPE ((obj),\
+  EPSARA_TYPE_DATA_VECTOR))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_VECTOR_CLASS</NAME>
+#define EPSARA_DATA_VECTOR_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_CAST ((klass),\
+  EPSARA_TYPE_DATA_VECTOR,\
+  EpsaraDataVectorClass))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_VECTOR_IS_CLASS</NAME>
+#define EPSARA_DATA_VECTOR_IS_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_TYPE ((klass),\
+  EPSARA_TYPE_DATA_VECTOR))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_DATA_VECTOR_GET_CLASS</NAME>
+#define EPSARA_DATA_VECTOR_GET_CLASS(obj)\
+  (G_TYPE_INSTANCE_GET_CLASS ((obj), EPSARA_TYPE_DATA_VECTOR, EpsaraDataVectorClass))
+</MACRO>
+<STRUCT>
+<NAME>EpsaraDataVector</NAME>
+struct _EpsaraDataVector
+{
+  GObject parent;
+
+  /*< private > */
+  EpsaraDataVectorPrivate* priv;
+};
+</STRUCT>
+<STRUCT>
+<NAME>EpsaraDataVectorClass</NAME>
+struct _EpsaraDataVectorClass
+{
+  GObjectClass parent_class;
+
+  /*< public >*/
+
+};
+</STRUCT>
+<FUNCTION>
+<NAME>epsara_data_vector_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_vector_new</NAME>
+<RETURNS>EpsaraDataVector  *</RETURNS>
+gint size
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_vector_get</NAME>
+<RETURNS>gdouble  </RETURNS>
+EpsaraDataVector *vector, gint i
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_vector_set</NAME>
+<RETURNS>void  </RETURNS>
+EpsaraDataVector *vector, gint i, gdouble x
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_vector_set_and_expand</NAME>
+<RETURNS>EpsaraDataVector  *</RETURNS>
+EpsaraDataVector *vector, gint i, gdouble x
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_vector_set_all</NAME>
+<RETURNS>void  </RETURNS>
+EpsaraDataVector *vector, gdouble x
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_vector_set_zero</NAME>
+<RETURNS>void  </RETURNS>
+EpsaraDataVector *vector
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_vector_set_basis</NAME>
+<RETURNS>gint  </RETURNS>
+EpsaraDataVector *vector, gint i
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_vector_copy</NAME>
+<RETURNS>gint  </RETURNS>
+EpsaraDataVector *dest, EpsaraDataVector *src
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_vector_swap</NAME>
+<RETURNS>gint  </RETURNS>
+EpsaraDataVector *v, EpsaraDataVector *w
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_vector_swap_elements</NAME>
+<RETURNS>gint  </RETURNS>
+EpsaraDataVector *vector, gint i, gint j
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_vector_reverse</NAME>
+<RETURNS>gint  </RETURNS>
+EpsaraDataVector *vector
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_vector_add</NAME>
+<RETURNS>gint  </RETURNS>
+EpsaraDataVector * a, const EpsaraDataVector * b
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_vector_sub</NAME>
+<RETURNS>gint  </RETURNS>
+EpsaraDataVector * a, const EpsaraDataVector * b
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_vector_mul</NAME>
+<RETURNS>gint  </RETURNS>
+EpsaraDataVector * a, const EpsaraDataVector * b
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_vector_div</NAME>
+<RETURNS>gint  </RETURNS>
+EpsaraDataVector * a, const EpsaraDataVector * b
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_vector_scale</NAME>
+<RETURNS>gint  </RETURNS>
+EpsaraDataVector * a, const gdouble x
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_vector_add_constant</NAME>
+<RETURNS>gint  </RETURNS>
+EpsaraDataVector * a, const gdouble x
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_vector_max</NAME>
+<RETURNS>gdouble  </RETURNS>
+const EpsaraDataVector * v
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_vector_min</NAME>
+<RETURNS>gdouble  </RETURNS>
+const EpsaraDataVector * v
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_vector_minmax</NAME>
+<RETURNS>void  </RETURNS>
+const EpsaraDataVector * v, gdouble * min_out, gdouble * max_out
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_vector_max_index</NAME>
+<RETURNS>gint  </RETURNS>
+const EpsaraDataVector * v
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_vector_min_index</NAME>
+<RETURNS>gint  </RETURNS>
+const EpsaraDataVector * v
+</FUNCTION>
+<FUNCTION>
+<NAME>epsara_data_vector_minmax_index</NAME>
+<RETURNS>void  </RETURNS>
+const EpsaraDataVector * v, gint * imin, gint * imax
+</FUNCTION>
+<STRUCT>
+<NAME>EpsaraDataVectorPrivate</NAME>
+</STRUCT>
+<FUNCTION>
+<NAME>epsara_energy_loss_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<MACRO>
+<NAME>EPSARA_TYPE_ENERGY_LOSS</NAME>
+#define EPSARA_TYPE_ENERGY_LOSS (epsara_energy_loss_get_type ())
+</MACRO>
+<FUNCTION>
+<NAME>epsara_minimizer_type_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<MACRO>
+<NAME>EPSARA_TYPE_MINIMIZER_TYPE</NAME>
+#define EPSARA_TYPE_MINIMIZER_TYPE (epsara_minimizer_type_get_type ())
+</MACRO>
+<FUNCTION>
+<NAME>epsara_bs_calculation_type_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<MACRO>
+<NAME>EPSARA_TYPE_BS_CALCULATION_TYPE</NAME>
+#define EPSARA_TYPE_BS_CALCULATION_TYPE (epsara_bs_calculation_type_get_type ())
+</MACRO>
+<FUNCTION>
+<NAME>epsara_differntiation_type_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<MACRO>
+<NAME>EPSARA_TYPE_DIFFERNTIATION_TYPE</NAME>
+#define EPSARA_TYPE_DIFFERNTIATION_TYPE (epsara_differntiation_type_get_type ())
+</MACRO>
+<FUNCTION>
+<NAME>epsara_screening_type_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<MACRO>
+<NAME>EPSARA_TYPE_SCREENING_TYPE</NAME>
+#define EPSARA_TYPE_SCREENING_TYPE (epsara_screening_type_get_type ())
+</MACRO>
+<FUNCTION>
+<NAME>epsara_ion_eloss_stragg_type_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<MACRO>
+<NAME>EPSARA_TYPE_ION_ELOSS_STRAGG_TYPE</NAME>
+#define EPSARA_TYPE_ION_ELOSS_STRAGG_TYPE (epsara_ion_eloss_stragg_type_get_type ())
+</MACRO>
+<FUNCTION>
+<NAME>epsara_material_state_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<MACRO>
+<NAME>EPSARA_TYPE_MATERIAL_STATE</NAME>
+#define EPSARA_TYPE_MATERIAL_STATE (epsara_material_state_get_type ())
+</MACRO>
+<MACRO>
+<NAME>EPSARA_ENABLE_TRACE</NAME>
+# define EPSARA_ENABLE_TRACE 0
+</MACRO>
+<MACRO>
+<NAME>EPSARA_LOG_LEVEL_TRACE</NAME>
+# define EPSARA_LOG_LEVEL_TRACE ((GLogLevelFlags)(1 << G_LOG_LEVEL_USER_SHIFT))
+</MACRO>
+<MACRO>
+<NAME>EPSARA_TRACE_MSG</NAME>
+# define EPSARA_TRACE_MSG(fmt, ...)                                         \
+   g_log(G_LOG_DOMAIN, EPSARA_LOG_LEVEL_TRACE, "  MSG: %s():%d: " fmt,       \
+         G_STRFUNC, __LINE__, ##__VA_ARGS__)
+</MACRO>
+<MACRO>
+<NAME>EPSARA_PROBE</NAME>
+# define EPSARA_PROBE                                                       \
+   g_log(G_LOG_DOMAIN, EPSARA_LOG_LEVEL_TRACE, "PROBE: %s():%d",            \
+         G_STRFUNC, __LINE__)
+</MACRO>
+<MACRO>
+<NAME>EPSARA_TODO</NAME>
+# define EPSARA_TODO(_msg)                                                  \
+   g_log(G_LOG_DOMAIN, EPSARA_LOG_LEVEL_TRACE, " TODO: %s():%d: %s",        \
+         G_STRFUNC, __LINE__, _msg)
+</MACRO>
+<MACRO>
+<NAME>EPSARA_ENTRY</NAME>
+# define EPSARA_ENTRY                                                       \
+   g_log(G_LOG_DOMAIN, EPSARA_LOG_LEVEL_TRACE, "ENTRY: %s():%d",            \
+         G_STRFUNC, __LINE__)
+</MACRO>
+<MACRO>
+<NAME>EPSARA_EXIT</NAME>
+# define EPSARA_EXIT                                                        \
+   G_STMT_START {                                                        \
+      g_log(G_LOG_DOMAIN, EPSARA_LOG_LEVEL_TRACE, " EXIT: %s():%d",         \
+            G_STRFUNC, __LINE__);                                        \
+      return;                                                            \
+   } G_STMT_END
+</MACRO>
+<MACRO>
+<NAME>EPSARA_GOTO</NAME>
+# define EPSARA_GOTO(_l)                                                    \
+   G_STMT_START {                                                        \
+      g_log(G_LOG_DOMAIN, EPSARA_LOG_LEVEL_TRACE, " GOTO: %s():%d ("#_l")", \
+            G_STRFUNC, __LINE__);                                        \
+      goto _l;                                                           \
+   } G_STMT_END
+</MACRO>
+<MACRO>
+<NAME>EPSARA_RETURN</NAME>
+# define EPSARA_RETURN(_r)                                                  \
+   G_STMT_START {                                                        \
+      g_log(G_LOG_DOMAIN, EPSARA_LOG_LEVEL_TRACE, " EXIT: %s():%d ",        \
+            G_STRFUNC, __LINE__);                                        \
+      return _r;                                                         \
+   } G_STMT_END
+</MACRO>

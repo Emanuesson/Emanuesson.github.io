@@ -1,0 +1,1010 @@
+<ARG>
+<NAME>EpsaraDataDetector::detector-dead-layer</NAME>
+<TYPE>EpsaraDataMaterial*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>dead-layer on outgoing ion path</NICK>
+<BLURB>holds the dead-layer material of the detector.</BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataDetector::direction</NAME>
+<TYPE>EpsaraDataPoint*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>direction detector</NICK>
+<BLURB>holds the direction point of the detector.</BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataDetector::origin</NAME>
+<TYPE>EpsaraDataPoint*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>origin detector</NICK>
+<BLURB>holds the origin point of the detector.</BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataDetector::solid-angle</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE>[0,12566.4]</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>solid angle - omega</NICK>
+<BLURB>Holds the value of the detector-solid-angle in msr.</BLURB>
+<DEFAULT>4</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataDetector::spectrum</NAME>
+<TYPE>EpsaraDataMatrix*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>spectrum with channel and yield</NICK>
+<BLURB>pointer to gsl_matrix with calculated spectrum on schedule.</BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataElement::children</NAME>
+<TYPE>gpointer</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>the children elements</NICK>
+<BLURB>Is a conveniant way to access the list of children-elements.</BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataElement::name</NAME>
+<TYPE>GString*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>element name</NICK>
+<BLURB>the name of the element.</BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataElement::parent</NAME>
+<TYPE>EpsaraDataElement*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>the parent element</NICK>
+<BLURB>Holds the element, that is assigned as the parent of this element.</BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataElement::uuid</NAME>
+<TYPE>GBytes*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rwX</FLAGS>
+<NICK>element unique identifier</NICK>
+<BLURB>a element-specific universal unique identifier.</BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataIsotope::abundance</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE>>= 0</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>material-abundance</NICK>
+<BLURB>abundance of interaction or material.</BLURB>
+<DEFAULT>1</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataIsotope::atomic-no</NAME>
+<TYPE>gint</TYPE>
+<RANGE>>= 0</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>isotopic atomic number</NICK>
+<BLURB>atomic number of the isotope.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataIsotope::mass</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE>>= 0</RANGE>
+<FLAGS>r</FLAGS>
+<NICK>isotopic mass</NICK>
+<BLURB>mass of the isotope in amu.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataIsotope::mass-no</NAME>
+<TYPE>gint</TYPE>
+<RANGE>>= 0</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>isotopic mass number</NICK>
+<BLURB>mass number of the isotope.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataIsotopeIonicEloss::eloss</NAME>
+<TYPE>gint</TYPE>
+<RANGE>[0,2]</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>eloss-type</NICK>
+<BLURB>specify energy-loss calcul.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataIsotopeIonicEloss::state</NAME>
+<TYPE>EpsaraMaterialState</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>physical-state</NICK>
+<BLURB>determines the physical state, the material is present.</BLURB>
+<DEFAULT>EPSARA_SOLID</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataIsotopeIonicEloss::straggling</NAME>
+<TYPE>EpsaraIonElossStraggType</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>energy-straggling</NICK>
+<BLURB>determines if energy-straggling will be calculated or not.</BLURB>
+<DEFAULT>EPSARA_YANG</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataMaterial::concentration</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE>>= 0</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>concentration fraction</NICK>
+<BLURB>concentration of material.</BLURB>
+<DEFAULT>1</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataMaterial::header</NAME>
+<TYPE>gchar*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>header information of the material</NICK>
+<BLURB>header string, e.g. the name of the material.</BLURB>
+<DEFAULT>""</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataMaterialLayered::begin</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>layer begin</NICK>
+<BLURB>begin of the layer in z.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataMaterialLayered::end</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>layer end</NICK>
+<BLURB>end of the layer in z.</BLURB>
+<DEFAULT>-1000</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataMaterialLayered::normal</NAME>
+<TYPE>EpsaraDataPoint*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>surface normal of the material</NICK>
+<BLURB>contains the surface normal vector of the material.</BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataMatrix::columns</NAME>
+<TYPE>gint</TYPE>
+<RANGE>>= 1</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>number of columns</NICK>
+<BLURB>Holds the number of columns of the matrix.</BLURB>
+<DEFAULT>1</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataMatrix::rows</NAME>
+<TYPE>gint</TYPE>
+<RANGE>>= 1</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>number of rows</NICK>
+<BLURB>Holds the number of rows of the matrix.</BLURB>
+<DEFAULT>1</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataMeasurement::duration-time</NAME>
+<TYPE>gint64</TYPE>
+<RANGE>>= 0</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>value of the duration time</NICK>
+<BLURB>the time, that the measurement took.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataMeasurement::id</NAME>
+<TYPE>gint</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>id of the object for sql-linking</NICK>
+<BLURB>an sql id.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataMeasurement::start-time</NAME>
+<TYPE>GDateTime*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>value of the start time</NICK>
+<BLURB>the time, when the measurement was started.</BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataMeasurement::stop-time</NAME>
+<TYPE>GDateTime*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>value of the stop time</NICK>
+<BLURB>the time, when the measurement was stoped.</BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataParticleBeam::atomic-mass-inc-ion</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>mass of ion</NICK>
+<BLURB>Holds the isotopic mass of the inc. ion in amu.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataParticleBeam::atomic-no-inc-ion</NAME>
+<TYPE>gint</TYPE>
+<RANGE>>= 1</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>atomic-number of ion</NICK>
+<BLURB>Holds the integer atomic-number of the incident ion.</BLURB>
+<DEFAULT>2</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataParticleBeam::charge-state</NAME>
+<TYPE>gint</TYPE>
+<RANGE>>= -2147483647</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>ionisation</NICK>
+<BLURB>Holds the integer value of the charge state of the incident ion.</BLURB>
+<DEFAULT>1</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataParticleBeam::dispersion</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE>>= 0</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>Energy dispersion</NICK>
+<BLURB>Second central moment of the energy distribution in keV^2.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataParticleBeam::ion-count-rate</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>fluence</NICK>
+<BLURB>ion fluence in ions.</BLURB>
+<DEFAULT>1</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataParticleBeam::ion-energy</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE>>= 0</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>E inc. ion</NICK>
+<BLURB>Holds the energy-value of the incident ion at surface in keV.</BLURB>
+<DEFAULT>1000</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataParticleBeam::mass-no-inc-ion</NAME>
+<TYPE>gint</TYPE>
+<RANGE>>= 1</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>atomic-mass of ion</NICK>
+<BLURB>Holds the integer mass-number of the incident ion-isotope in amu.</BLURB>
+<DEFAULT>4</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataParticleDetector::energy-offset</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>Energy Offset</NICK>
+<BLURB>Holds the calibration value for the energy-offset in keV.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataParticleDetector::energy-per-channel</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>E per Chann</NICK>
+<BLURB>Holds the calibration value for the energy-per-channel in kev/1.</BLURB>
+<DEFAULT>5</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataParticleDetector::energy-per-channel-cube</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>E per Chann Cube</NICK>
+<BLURB>Holds the calibration value for the energy-per-channel-cube in kev/1cube.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataParticleDetector::energy-per-channel-square</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>E per Chann Squ</NICK>
+<BLURB>Holds the calibration value for the energy-per-channel-square in kev/1square.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataParticleDetector::energy-resolution</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>Det Resolution square</NICK>
+<BLURB>Holds the square calibration value for the detector-resolution in keV^2.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataParticleDetector::max-channel</NAME>
+<TYPE>gint</TYPE>
+<RANGE>>= -2147483647</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>max Channel</NICK>
+<BLURB>Holds the value of the maximum detector channel.</BLURB>
+<DEFAULT>1024</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataParticleDetector::min-channel</NAME>
+<TYPE>gint</TYPE>
+<RANGE>>= -2147483647</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>min Channel</NICK>
+<BLURB>Holds the value of the minimum detector channel.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataParticleDetector::pulse-rate</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>Pulse Rate</NICK>
+<BLURB>mean pulse rate of detector in pulses/mu s.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataParticleDetector::sharping-time</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>Sharp Time</NICK>
+<BLURB>sharping-time of the amplifier in mu s.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataParticleScattering::atomic-mass-in-ion</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>mass of incident ion</NICK>
+<BLURB>Holds the isotopic mass of the inc. ion in amu.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataParticleScattering::atomic-mass-init-target</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>mass of initial target</NICK>
+<BLURB>Holds the isotopic mass of the init. target in amu.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataParticleScattering::atomic-mass-out-ion</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>mass of outgoing ion</NICK>
+<BLURB>Holds the isotopic mass of the outg. ion in amu.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataParticleScattering::atomic-mass-remain-target</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>mass of remaining target</NICK>
+<BLURB>Holds the isotopic mass of the rem. target in amu.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataParticleScattering::atomic-no-in-ion</NAME>
+<TYPE>gint</TYPE>
+<RANGE>[0,94]</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>AN inc ion</NICK>
+<BLURB>atomic number of the incident ion.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataParticleScattering::atomic-no-init-target</NAME>
+<TYPE>gint</TYPE>
+<RANGE>[0,94]</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>AN init. target</NICK>
+<BLURB>atomic number of initial target-atom.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataParticleScattering::atomic-no-out-ion</NAME>
+<TYPE>gint</TYPE>
+<RANGE>[0,94]</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>AN det. ion</NICK>
+<BLURB>atomic number of detected ion.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataParticleScattering::atomic-no-remain-target</NAME>
+<TYPE>gint</TYPE>
+<RANGE>[0,94]</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>AN rem. target</NICK>
+<BLURB>atomic number of remaining target-atom.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataParticleScattering::mass-no-in-ion</NAME>
+<TYPE>gint</TYPE>
+<RANGE>>= 0</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>mass no incident ion</NICK>
+<BLURB>mass number of the incident ion.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataParticleScattering::mass-no-init-target</NAME>
+<TYPE>gint</TYPE>
+<RANGE>>= 0</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>mass no init. target</NICK>
+<BLURB>mass number of initial target-atom.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataParticleScattering::mass-no-out-ion</NAME>
+<TYPE>gint</TYPE>
+<RANGE>>= 0</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>mass no det. ion</NICK>
+<BLURB>mass number of detected ion.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataParticleScattering::mass-no-remain-target</NAME>
+<TYPE>gint</TYPE>
+<RANGE>>= 0</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>mass no rem. target</NICK>
+<BLURB>mass number of remaining target-atom.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataParticleScattering::q-value</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>Q</NICK>
+<BLURB>nuclear reaction Q-value [keV].</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataParticleScattering::rutherford-cs</NAME>
+<TYPE>gboolean</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>use rutherford cross-section</NICK>
+<BLURB>specifies if rutherford or individual cs. should be used.</BLURB>
+<DEFAULT>TRUE</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataRbsMeasurement::calculation-type</NAME>
+<TYPE>EpsaraBsCalculationType</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>bs-calculation-type</NICK>
+<BLURB>specify the type of backscattering calculation.</BLURB>
+<DEFAULT>EPSARA_BS_CHUS_TYPE</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataRbsMeasurement::depth-granularity</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE>>= 0</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>determines the minimum resolved depth-difference for energy-loss in nm</NICK>
+<BLURB>the minimum resolved depth-difference in the calculation of energy-losses determines the accuracy of the simulation, but is always a trade-off to the performance.</BLURB>
+<DEFAULT>1</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataRbsMeasurement::ini-precision-in</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE>>= 0</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>determines the initial precision of the energy-integration on the in-path</NICK>
+<BLURB>the initial precision, that will be applied to the integration of the ion-trajectory on the invard-path.</BLURB>
+<DEFAULT>0.005</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataRbsMeasurement::ini-precision-out</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE>>= 0</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>determines the initial precision of the energy-integration on the out-path</NICK>
+<BLURB>the initial precision, that will be applied to the integration of the ion-trajectory on the out-path.</BLURB>
+<DEFAULT>0.005</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataRbsMeasurement::max-precision-in</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE>>= 0</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>determines the maximum precision of the energy-integration on the in-path</NICK>
+<BLURB>the maximum precision, that will be applied to the integration of the ion-trajectory on the invard-path.</BLURB>
+<DEFAULT>1e-08</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataRbsMeasurement::max-precision-out</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE>>= 0</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>determines the maximum precision of the energy-integration on the out-path</NICK>
+<BLURB>the maximum precision, that will be applied to the integration of the ion-trajectory on the out-path.</BLURB>
+<DEFAULT>1e-08</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataRbsMeasurement::suppress-dispersion</NAME>
+<TYPE>gboolean</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>suppresses the energy dispersion</NICK>
+<BLURB>suppresses all folding calculation with energy dispersion effects (e.g. E-straggling, beam-dispersion, detector-resolution). Is effective to accelerate the calculation time.</BLURB>
+<DEFAULT>FALSE</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataSet::iterations</NAME>
+<TYPE>gint</TYPE>
+<RANGE>>= 0</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>iterations-limit</NICK>
+<BLURB>maximum number of iterations for the fitting-process.</BLURB>
+<DEFAULT>100</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataSet::minimizer-type</NAME>
+<TYPE>EpsaraMinimizerType</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>the minimizer type</NICK>
+<BLURB>holds the type of algorithm, that will be applied for minimization.</BLURB>
+<DEFAULT>EPSARA_MINIMIZER_SIMPLEX</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataSet::result-table</NAME>
+<TYPE>GHashTable*</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>the hash table of calculation-results</NICK>
+<BLURB>stores the calculated spectra as hash-table for all measurements.</BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataSet::tolerance</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE>[0,1]</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>value-tolerance limit</NICK>
+<BLURB>maximum of tolerance for the fitting-process.</BLURB>
+<DEFAULT>0.01</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataSource::dead-layer</NAME>
+<TYPE>EpsaraDataMaterial*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>dead-layer on source</NICK>
+<BLURB>holds the dead-layer material of the incident source.</BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataSource::direction</NAME>
+<TYPE>EpsaraDataPoint*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>direction point source</NICK>
+<BLURB>holds the direction point of the probe source; if identical to origin, a point-source is assumed.</BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataSource::origin</NAME>
+<TYPE>EpsaraDataPoint*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>origin point source</NICK>
+<BLURB>holds the origin point of the probe source.</BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraDataVector::size</NAME>
+<TYPE>gint</TYPE>
+<RANGE>>= 1</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>vector size</NICK>
+<BLURB>Holds the size of the vector.</BLURB>
+<DEFAULT>1</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraFileParserR33::address1</NAME>
+<TYPE>GString*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>address-line 1</NICK>
+<BLURB></BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraFileParserR33::address2</NAME>
+<TYPE>GString*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>address-line 2</NICK>
+<BLURB></BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraFileParserR33::address3</NAME>
+<TYPE>GString*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>address-line 3</NICK>
+<BLURB></BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraFileParserR33::address4</NAME>
+<TYPE>GString*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>address-line 4</NICK>
+<BLURB></BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraFileParserR33::address5</NAME>
+<TYPE>GString*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>address-line 5</NICK>
+<BLURB></BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraFileParserR33::address6</NAME>
+<TYPE>GString*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>address-line 6</NICK>
+<BLURB></BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraFileParserR33::address7</NAME>
+<TYPE>GString*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>address-line 7</NICK>
+<BLURB></BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraFileParserR33::address8</NAME>
+<TYPE>GString*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>address-line 8</NICK>
+<BLURB></BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraFileParserR33::address9</NAME>
+<TYPE>GString*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>address-line 9</NICK>
+<BLURB></BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraFileParserR33::comment</NAME>
+<TYPE>GString*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>a comment</NICK>
+<BLURB></BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraFileParserR33::data</NAME>
+<TYPE>EpsaraDataMatrix*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>the data values</NICK>
+<BLURB></BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraFileParserR33::egamma</NAME>
+<TYPE>GString*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>E-gamma</NICK>
+<BLURB></BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraFileParserR33::energy</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>ion energy</NICK>
+<BLURB>the energy of the particle in unspecefied units.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraFileParserR33::enfactors</NAME>
+<TYPE>EpsaraDataVector*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>the factors for the energy</NICK>
+<BLURB></BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraFileParserR33::keyword</NAME>
+<TYPE>GString*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>a keyword</NICK>
+<BLURB>this content was included, due to a improper documentation of the file format.</BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraFileParserR33::masses</NAME>
+<TYPE>EpsaraDataVector*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>the masses of all nucleons</NICK>
+<BLURB></BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraFileParserR33::name</NAME>
+<TYPE>GString*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>author name</NICK>
+<BLURB>contains the author name.</BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraFileParserR33::nvalues</NAME>
+<TYPE>guint</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>number of values</NICK>
+<BLURB></BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraFileParserR33::qvalue</NAME>
+<TYPE>EpsaraDataVector*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>the qvalues of the reaction</NICK>
+<BLURB></BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraFileParserR33::reaction</NAME>
+<TYPE>GString*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>specifies the nuclear reaction</NICK>
+<BLURB></BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraFileParserR33::serial-number</NAME>
+<TYPE>GString*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>the serial number</NICK>
+<BLURB></BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraFileParserR33::sigfactors</NAME>
+<TYPE>EpsaraDataVector*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>the factors for the cross-section</NICK>
+<BLURB></BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraFileParserR33::source</NAME>
+<TYPE>GString*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>the source</NICK>
+<BLURB></BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraFileParserR33::subfile</NAME>
+<TYPE>GString*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>the subfile</NICK>
+<BLURB></BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraFileParserR33::target</NAME>
+<TYPE>GString*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>a description of the target</NICK>
+<BLURB></BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraFileParserR33::theta</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>angle theta</NICK>
+<BLURB>the scattering angle for the reaction in deg.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraFileParserR33::version</NAME>
+<TYPE>GString*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>the version</NICK>
+<BLURB></BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraFileParserR33::x4number</NAME>
+<TYPE>GString*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>the EXFOR-number</NICK>
+<BLURB></BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>EpsaraFileParserR33::zeds</NAME>
+<TYPE>EpsaraDataVector*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>the atomic numbers of all nucleons</NICK>
+<BLURB></BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+

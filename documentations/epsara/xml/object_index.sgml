@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!DOCTYPE informaltable PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colwidth="1*"/>
+<colspec colwidth="1*"/>
+<colspec colwidth="1*"/>
+<tbody>
+<row>
+<entry><link linkend="EpsaraBsCalculationType">EpsaraBsCalculationType</link></entry>
+<entry><link linkend="EpsaraDataDetector">EpsaraDataDetector</link></entry>
+<entry><link linkend="EpsaraDataDirection">EpsaraDataDirection</link></entry>
+</row>
+<row>
+<entry><link linkend="EpsaraDataElement">EpsaraDataElement</link></entry>
+<entry><link linkend="EpsaraDataInteraction">EpsaraDataInteraction</link></entry>
+<entry><link linkend="EpsaraDataIsotope">EpsaraDataIsotope</link></entry>
+</row>
+<row>
+<entry><link linkend="EpsaraDataIsotopeIonicEloss">EpsaraDataIsotopeIonicEloss</link></entry>
+<entry><link linkend="EpsaraDataMaterial">EpsaraDataMaterial</link></entry>
+<entry><link linkend="EpsaraDataMaterialLayered">EpsaraDataMaterialLayered</link></entry>
+</row>
+<row>
+<entry><link linkend="EpsaraDataMatrix">EpsaraDataMatrix</link></entry>
+<entry><link linkend="EpsaraDataMeasurement">EpsaraDataMeasurement</link></entry>
+<entry><link linkend="EpsaraDataParticleBeam">EpsaraDataParticleBeam</link></entry>
+</row>
+<row>
+<entry><link linkend="EpsaraDataParticleDetector">EpsaraDataParticleDetector</link></entry>
+<entry><link linkend="EpsaraDataParticleScattering">EpsaraDataParticleScattering</link></entry>
+<entry><link linkend="EpsaraDataPoint">EpsaraDataPoint</link></entry>
+</row>
+<row>
+<entry><link linkend="EpsaraDataPolygon">EpsaraDataPolygon</link></entry>
+<entry><link linkend="EpsaraDataRbsMeasurement">EpsaraDataRbsMeasurement</link></entry>
+<entry><link linkend="EpsaraDataSet">EpsaraDataSet</link></entry>
+</row>
+<row>
+<entry><link linkend="EpsaraDataSource">EpsaraDataSource</link></entry>
+<entry><link linkend="EpsaraDataVector">EpsaraDataVector</link></entry>
+<entry><link linkend="EpsaraDifferntiationType">EpsaraDifferntiationType</link></entry>
+</row>
+<row>
+<entry><link linkend="EpsaraEnergyLoss">EpsaraEnergyLoss</link></entry>
+<entry><link linkend="EpsaraFileParserR33">EpsaraFileParserR33</link></entry>
+<entry><link linkend="EpsaraIonElossStraggType">EpsaraIonElossStraggType</link></entry>
+</row>
+<row>
+<entry><link linkend="EpsaraMaterialState">EpsaraMaterialState</link></entry>
+<entry><link linkend="EpsaraMinimizerType">EpsaraMinimizerType</link></entry>
+<entry><link linkend="EpsaraScreeningType">EpsaraScreeningType</link></entry>
+</row>
+<row>
+<entry><link linkend="GBoxed">GBoxed</link></entry>
+<entry><link linkend="GEnum">GEnum</link></entry>
+<entry><link linkend="GObject">GObject</link></entry>
+</row>
+</tbody></tgroup></informaltable>

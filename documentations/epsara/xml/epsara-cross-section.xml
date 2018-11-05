@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="epsara-epsara-cross-section">
+<refmeta>
+<refentrytitle role="top_of_page" id="epsara-epsara-cross-section.top_of_page">epsara-cross-section</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>EPSARA Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>epsara-cross-section</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="epsara-epsara-cross-section.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-physcore-calc-scattering-cross-section">epsara_physcore_calc_scattering_cross_section</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+
+<refsect1 id="epsara-epsara-cross-section.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="epsara-epsara-cross-section.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="epsara-physcore-calc-scattering-cross-section" role="function">
+<title>epsara_physcore_calc_scattering_cross_section&#160;()</title>
+<indexterm zone="epsara-physcore-calc-scattering-cross-section"><primary>epsara_physcore_calc_scattering_cross_section</primary></indexterm>
+<programlisting language="C"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+epsara_physcore_calc_scattering_cross_section
+                               (<parameter><link linkend="gint"><type>gint</type></link> atomic_no_ion</parameter>,
+                                <parameter><link linkend="gint"><type>gint</type></link> atomic_no_target</parameter>,
+                                <parameter><link linkend="gdouble"><type>gdouble</type></link> mass_inc_ion</parameter>,
+                                <parameter><link linkend="gdouble"><type>gdouble</type></link> mass_target</parameter>,
+                                <parameter><link linkend="gdouble"><type>gdouble</type></link> scattering_angle</parameter>,
+                                <parameter><link linkend="gdouble"><type>gdouble</type></link> energy_value</parameter>);</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="epsara-epsara-cross-section.other_details" role="details">
+<title role="details.title">Types and Values</title>
+
+</refsect1>
+
+</refentry>

@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="epsara-epsara-data-enums">
+<refmeta>
+<refentrytitle role="top_of_page" id="epsara-epsara-data-enums.top_of_page">epsara-data-enums</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>EPSARA Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>epsara-data-enums</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="epsara-epsara-data-enums.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="EpsaraEnergyLoss">EpsaraEnergyLoss</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="EpsaraMinimizerType">EpsaraMinimizerType</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="EpsaraBsCalculationType">EpsaraBsCalculationType</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="EpsaraDifferntiationType">EpsaraDifferntiationType</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="EpsaraScreeningType">EpsaraScreeningType</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="EpsaraIonElossStraggType">EpsaraIonElossStraggType</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="EpsaraMaterialState">EpsaraMaterialState</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="epsara-epsara-data-enums.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GEnum">GEnum</link>
+    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> EpsaraBsCalculationType
+    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> EpsaraDifferntiationType
+    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> EpsaraEnergyLoss
+    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> EpsaraIonElossStraggType
+    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> EpsaraMaterialState
+    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> EpsaraMinimizerType
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> EpsaraScreeningType
+</screen>
+</refsect1>
+
+
+<refsect1 id="epsara-epsara-data-enums.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="epsara-epsara-data-enums.functions_details" role="details">
+<title role="details.title">Functions</title>
+<para />
+</refsect1>
+<refsect1 id="epsara-epsara-data-enums.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="EpsaraEnergyLoss" role="enum">
+<title>enum EpsaraEnergyLoss</title>
+<indexterm zone="EpsaraEnergyLoss"><primary>EpsaraEnergyLoss</primary></indexterm>
+<refsect3 id="EpsaraEnergyLoss.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="EPSARA-ELOSS-TRIM85:CAPS">EPSARA_ELOSS_TRIM85</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="EPSARA-ELOSS-TRIM13:CAPS">EPSARA_ELOSS_TRIM13</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="EPSARA-ELOSS-ANDERSEN-ZIEGLER:CAPS">EPSARA_ELOSS_ANDERSEN_ZIEGLER</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="EpsaraMinimizerType" role="enum">
+<title>enum EpsaraMinimizerType</title>
+<indexterm zone="EpsaraMinimizerType"><primary>EpsaraMinimizerType</primary></indexterm>
+<refsect3 id="EpsaraMinimizerType.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="EPSARA-MINIMIZER-SIMPLEX:CAPS">EPSARA_MINIMIZER_SIMPLEX</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="EPSARA-MINIMIZER-DIFFEVO:CAPS">EPSARA_MINIMIZER_DIFFEVO</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="EPSARA-MINIMIZER-MINUIT:CAPS">EPSARA_MINIMIZER_MINUIT</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="EpsaraBsCalculationType" role="enum">
+<title>enum EpsaraBsCalculationType</title>
+<indexterm zone="EpsaraBsCalculationType"><primary>EpsaraBsCalculationType</primary></indexterm>
+<refsect3 id="EpsaraBsCalculationType.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="EPSARA-BS-SERRUYS-TYPE:CAPS">EPSARA_BS_SERRUYS_TYPE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="EPSARA-BS-CHUS-TYPE:CAPS">EPSARA_BS_CHUS_TYPE</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="EpsaraDifferntiationType" role="enum">
+<title>enum EpsaraDifferntiationType</title>
+<indexterm zone="EpsaraDifferntiationType"><primary>EpsaraDifferntiationType</primary></indexterm>
+<refsect3 id="EpsaraDifferntiationType.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="EPSARA-FORWARD:CAPS">EPSARA_FORWARD</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="EPSARA-BACKWARD:CAPS">EPSARA_BACKWARD</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="EPSARA-SYMMETRIC:CAPS">EPSARA_SYMMETRIC</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="EpsaraScreeningType" role="enum">
+<title>enum EpsaraScreeningType</title>
+<indexterm zone="EpsaraScreeningType"><primary>EpsaraScreeningType</primary></indexterm>
+<refsect3 id="EpsaraScreeningType.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="EPSARA-SCREENING-NONE:CAPS">EPSARA_SCREENING_NONE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="EPSARA-SCREENING-LECUYER:CAPS">EPSARA_SCREENING_LECUYER</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="EPSARA-SCREENING-ANDERSEN-LJ:CAPS">EPSARA_SCREENING_ANDERSEN_LJ</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="EPSARA-SCREENING-ANDERSEN-ZBL:CAPS">EPSARA_SCREENING_ANDERSEN_ZBL</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="EPSARA-SCREENING-MOLIERE:CAPS">EPSARA_SCREENING_MOLIERE</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="EpsaraIonElossStraggType" role="enum">
+<title>enum EpsaraIonElossStraggType</title>
+<indexterm zone="EpsaraIonElossStraggType"><primary>EpsaraIonElossStraggType</primary></indexterm>
+<refsect3 id="EpsaraIonElossStraggType.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="EPSARA-NONE:CAPS">EPSARA_NONE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="EPSARA-BOHR:CAPS">EPSARA_BOHR</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="EPSARA-LINDHARD-SCHARFF:CAPS">EPSARA_LINDHARD_SCHARFF</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="EPSARA-CHU:CAPS">EPSARA_CHU</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="EPSARA-CHU-YANG-KORR:CAPS">EPSARA_CHU_YANG_KORR</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="EPSARA-YANG:CAPS">EPSARA_YANG</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="EpsaraMaterialState" role="enum">
+<title>enum EpsaraMaterialState</title>
+<indexterm zone="EpsaraMaterialState"><primary>EpsaraMaterialState</primary></indexterm>
+<refsect3 id="EpsaraMaterialState.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="EPSARA-SOLID:CAPS">EPSARA_SOLID</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="EPSARA-ATOMIC-GAS:CAPS">EPSARA_ATOMIC_GAS</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="EPSARA-MOLECULAR-GASE:CAPS">EPSARA_MOLECULAR_GASE</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="EPSARA-FLUID:CAPS">EPSARA_FLUID</para></entry>
+<entry /><entry />
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="EPSARA-PLASMA:CAPS">EPSARA_PLASMA</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+
+</refsect1>
+
+</refentry>

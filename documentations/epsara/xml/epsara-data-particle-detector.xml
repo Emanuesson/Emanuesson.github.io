@@ -1,0 +1,217 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="EpsaraDataParticleDetector">
+<refmeta>
+<refentrytitle role="top_of_page" id="EpsaraDataParticleDetector.top_of_page">EpsaraDataParticleDetector</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>EPSARA Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>EpsaraDataParticleDetector</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="EpsaraDataParticleDetector.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-particle-detector-energy-at-channel">epsara_data_particle_detector_energy_at_channel</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="EpsaraDataMatrix"><returnvalue>EpsaraDataMatrix</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="epsara-data-particle-detector-generate-energy-vs-channel">epsara_data_particle_detector_generate_energy_vs_channel</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataParticleDetector.properties" role="properties">
+<title role="properties.title">Properties</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="properties_type" colwidth="150px"/>
+<colspec colname="properties_name" colwidth="300px"/>
+<colspec colname="properties_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="EpsaraDataParticleDetector--energy-offset">energy-offset</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="EpsaraDataParticleDetector--energy-per-channel">energy-per-channel</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="EpsaraDataParticleDetector--energy-per-channel-cube">energy-per-channel-cube</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="EpsaraDataParticleDetector--energy-per-channel-square">energy-per-channel-square</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="EpsaraDataParticleDetector--energy-resolution">energy-resolution</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gint"><type>gint</type></link></entry><entry role="property_name"><link linkend="EpsaraDataParticleDetector--max-channel">max-channel</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gint"><type>gint</type></link></entry><entry role="property_name"><link linkend="EpsaraDataParticleDetector--min-channel">min-channel</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="EpsaraDataParticleDetector--pulse-rate">pulse-rate</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="EpsaraDataParticleDetector--sharping-time">sharping-time</link></entry><entry role="property_flags">Read / Write</entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataParticleDetector.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="EpsaraDataParticleDetector-struct">EpsaraDataParticleDetector</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="EpsaraDataParticleDetectorClass">EpsaraDataParticleDetectorClass</link></entry></row>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="EpsaraDataParticleDetectorPrivate">EpsaraDataParticleDetectorPrivate</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataParticleDetector.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="EpsaraDataElement">EpsaraDataElement</link>
+        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="EpsaraDataDetector">EpsaraDataDetector</link>
+            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> EpsaraDataParticleDetector
+</screen>
+</refsect1>
+<refsect1 id="EpsaraDataParticleDetector.implemented-interfaces" role="impl_interfaces">
+<title role="impl_interfaces.title">Implemented Interfaces</title>
+<para>
+EpsaraDataParticleDetector implements
+ <link linkend="JsonSerializable">JsonSerializable</link>.</para>
+
+</refsect1>
+
+
+<refsect1 id="EpsaraDataParticleDetector.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="EpsaraDataParticleDetector.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="epsara-data-particle-detector-energy-at-channel" role="function">
+<title>epsara_data_particle_detector_energy_at_channel&#160;()</title>
+<indexterm zone="epsara-data-particle-detector-energy-at-channel"><primary>epsara_data_particle_detector_energy_at_channel</primary></indexterm>
+<programlisting language="C"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+epsara_data_particle_detector_energy_at_channel
+                               (<parameter><link linkend="EpsaraDataParticleDetector"><type>EpsaraDataParticleDetector</type></link> *detector</parameter>,
+                                <parameter><link linkend="gint"><type>gint</type></link> channel</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-particle-detector-generate-energy-vs-channel" role="function" condition="since:0.02">
+<title>epsara_data_particle_detector_generate_energy_vs_channel&#160;()</title>
+<indexterm zone="epsara-data-particle-detector-generate-energy-vs-channel" role="0.02"><primary>epsara_data_particle_detector_generate_energy_vs_channel</primary></indexterm>
+<programlisting language="C"><link linkend="EpsaraDataMatrix"><returnvalue>EpsaraDataMatrix</returnvalue></link>&#160;*
+epsara_data_particle_detector_generate_energy_vs_channel
+                               (<parameter><link linkend="EpsaraDataParticleDetector"><type>EpsaraDataParticleDetector</type></link> *detector</parameter>);</programlisting>
+<para>Compiles a nx2-matrix with a first column contain every possible channel-number (as specified
+by the min-max-channel range of the detector) and a second column with the Detector-energy (as
+specified by the calibration values of the detector).</para>
+<refsect3 id="epsara-data-particle-detector-generate-energy-vs-channel.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>detector</para></entry>
+<entry role="parameter_description"><para>an <link linkend="EpsaraDataParticleDetector"><type>EpsaraDataParticleDetector</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="epsara-data-particle-detector-generate-energy-vs-channel.returns" role="returns">
+<title>Returns</title>
+<para>a newly allocated matrix with an channel and energy column. </para>
+<para><emphasis role="annotation">[<acronym>transfer full</acronym>]</emphasis></para>
+</refsect3><para role="since">Since: <link linkend="api-index-0.02">0.02</link></para></refsect2>
+
+</refsect1>
+<refsect1 id="EpsaraDataParticleDetector.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="EpsaraDataParticleDetector-struct" role="struct">
+<title>struct EpsaraDataParticleDetector</title>
+<indexterm zone="EpsaraDataParticleDetector-struct"><primary>EpsaraDataParticleDetector</primary></indexterm>
+<programlisting language="C">struct EpsaraDataParticleDetector;</programlisting>
+</refsect2>
+<refsect2 id="EpsaraDataParticleDetectorClass" role="struct">
+<title>struct EpsaraDataParticleDetectorClass</title>
+<indexterm zone="EpsaraDataParticleDetectorClass"><primary>EpsaraDataParticleDetectorClass</primary></indexterm>
+<programlisting language="C">struct EpsaraDataParticleDetectorClass {
+  EpsaraDataDetectorClass parent_class;
+
+  /* physics */
+  gdouble (* detector_resolution_fct)     (EpsaraDataParticleDetector *detector,
+                                           gdouble detector_energy_in_kev,
+                                           gdouble particle_energy_in_kev);
+};
+</programlisting>
+</refsect2>
+<refsect2 id="EpsaraDataParticleDetectorPrivate" role="struct">
+<title>EpsaraDataParticleDetectorPrivate</title>
+<indexterm zone="EpsaraDataParticleDetectorPrivate"><primary>EpsaraDataParticleDetectorPrivate</primary></indexterm>
+<programlisting language="C">typedef struct _EpsaraDataParticleDetectorPrivate EpsaraDataParticleDetectorPrivate;</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="EpsaraDataParticleDetector.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="EpsaraDataParticleDetector--energy-offset" role="property"><title>The <literal>“energy-offset”</literal> property</title>
+<indexterm zone="EpsaraDataParticleDetector--energy-offset"><primary>EpsaraDataParticleDetector:energy-offset</primary></indexterm>
+<programlisting>  “energy-offset”            <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Holds the calibration value for the energy-offset in keV.</para><para>Flags: Read / Write</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="EpsaraDataParticleDetector--energy-per-channel" role="property"><title>The <literal>“energy-per-channel”</literal> property</title>
+<indexterm zone="EpsaraDataParticleDetector--energy-per-channel"><primary>EpsaraDataParticleDetector:energy-per-channel</primary></indexterm>
+<programlisting>  “energy-per-channel”       <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Holds the calibration value for the energy-per-channel in kev/1.</para><para>Flags: Read / Write</para>
+<para>Default value: 5</para>
+</refsect2>
+<refsect2 id="EpsaraDataParticleDetector--energy-per-channel-cube" role="property"><title>The <literal>“energy-per-channel-cube”</literal> property</title>
+<indexterm zone="EpsaraDataParticleDetector--energy-per-channel-cube"><primary>EpsaraDataParticleDetector:energy-per-channel-cube</primary></indexterm>
+<programlisting>  “energy-per-channel-cube”  <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Holds the calibration value for the energy-per-channel-cube in kev/1cube.</para><para>Flags: Read / Write</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="EpsaraDataParticleDetector--energy-per-channel-square" role="property"><title>The <literal>“energy-per-channel-square”</literal> property</title>
+<indexterm zone="EpsaraDataParticleDetector--energy-per-channel-square"><primary>EpsaraDataParticleDetector:energy-per-channel-square</primary></indexterm>
+<programlisting>  “energy-per-channel-square” <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Holds the calibration value for the energy-per-channel-square in kev/1square.</para><para>Flags: Read / Write</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="EpsaraDataParticleDetector--energy-resolution" role="property"><title>The <literal>“energy-resolution”</literal> property</title>
+<indexterm zone="EpsaraDataParticleDetector--energy-resolution"><primary>EpsaraDataParticleDetector:energy-resolution</primary></indexterm>
+<programlisting>  “energy-resolution”        <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Holds the square calibration value for the detector-resolution in keV^2.</para><para>Flags: Read / Write</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="EpsaraDataParticleDetector--max-channel" role="property"><title>The <literal>“max-channel”</literal> property</title>
+<indexterm zone="EpsaraDataParticleDetector--max-channel"><primary>EpsaraDataParticleDetector:max-channel</primary></indexterm>
+<programlisting>  “max-channel”              <link linkend="gint"><type>gint</type></link></programlisting>
+<para>Holds the value of the maximum detector channel.</para><para>Flags: Read / Write</para>
+<para>Allowed values: &gt;= -2147483647</para>
+<para>Default value: 1024</para>
+</refsect2>
+<refsect2 id="EpsaraDataParticleDetector--min-channel" role="property"><title>The <literal>“min-channel”</literal> property</title>
+<indexterm zone="EpsaraDataParticleDetector--min-channel"><primary>EpsaraDataParticleDetector:min-channel</primary></indexterm>
+<programlisting>  “min-channel”              <link linkend="gint"><type>gint</type></link></programlisting>
+<para>Holds the value of the minimum detector channel.</para><para>Flags: Read / Write</para>
+<para>Allowed values: &gt;= -2147483647</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="EpsaraDataParticleDetector--pulse-rate" role="property"><title>The <literal>“pulse-rate”</literal> property</title>
+<indexterm zone="EpsaraDataParticleDetector--pulse-rate"><primary>EpsaraDataParticleDetector:pulse-rate</primary></indexterm>
+<programlisting>  “pulse-rate”               <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>mean pulse rate of detector in pulses/mu s.</para><para>Flags: Read / Write</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="EpsaraDataParticleDetector--sharping-time" role="property"><title>The <literal>“sharping-time”</literal> property</title>
+<indexterm zone="EpsaraDataParticleDetector--sharping-time"><primary>EpsaraDataParticleDetector:sharping-time</primary></indexterm>
+<programlisting>  “sharping-time”            <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>sharping-time of the amplifier in mu s.</para><para>Flags: Read / Write</para>
+<para>Default value: 0</para>
+</refsect2>
+
+</refsect1>
+
+</refentry>

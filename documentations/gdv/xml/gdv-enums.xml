@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="gdv-gdv-enums">
+<refmeta>
+<refentrytitle role="top_of_page" id="gdv-gdv-enums.top_of_page">gdv-enums</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>GDV Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>gdv-enums</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="gdv-gdv-enums.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="GdvOnedLayerType">GdvOnedLayerType</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="GdvTwodAxisType">GdvTwodAxisType</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="GdvDistributionType">GdvDistributionType</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+
+<refsect1 id="gdv-gdv-enums.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="gdv-gdv-enums.functions_details" role="details">
+<title role="details.title">Functions</title>
+<para />
+</refsect1>
+<refsect1 id="gdv-gdv-enums.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="GdvOnedLayerType" role="enum">
+<title>enum GdvOnedLayerType</title>
+<indexterm zone="GdvOnedLayerType"><primary>GdvOnedLayerType</primary></indexterm>
+<para>Represents the style to handle data-indicators and axis-range in a 1d-plot.</para>
+<refsect3 id="GdvOnedLayerType.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="GDV-NORMAL-STRAIGHT:CAPS">GDV_NORMAL_STRAIGHT</para></entry>
+<entry role="enum_member_description"><para>A normal straight one-dimensional layer</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="GDV-DRUM-SCALE:CAPS">GDV_DRUM_SCALE</para></entry>
+<entry role="enum_member_description"><para>A graph-style were the scale range is updated continously to show the data
+                      always in the scale-center</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="GDV-BAR-GRAPH:CAPS">GDV_BAR_GRAPH</para></entry>
+<entry role="enum_member_description"><para>A graph-style were the data is indicated by a marker on a normal scale</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="GDV-BOX-GRAPH:CAPS">GDV_BOX_GRAPH</para></entry>
+<entry role="enum_member_description"><para>A graph-style were the data is indicated by a box on a normal scale</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="GdvTwodAxisType" role="enum">
+<title>enum GdvTwodAxisType</title>
+<indexterm zone="GdvTwodAxisType"><primary>GdvTwodAxisType</primary></indexterm>
+<para>Differs between the different axes, present in an normal two-dimensional cartesian plot.</para>
+<refsect3 id="GdvTwodAxisType.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="GDV-X1-AXIS:CAPS">GDV_X1_AXIS</para></entry>
+<entry role="enum_member_description"><para>The bottom x-axis</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="GDV-X2-AXIS:CAPS">GDV_X2_AXIS</para></entry>
+<entry role="enum_member_description"><para>The top-side x-axis</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="GDV-Y1-AXIS:CAPS">GDV_Y1_AXIS</para></entry>
+<entry role="enum_member_description"><para>The left y-axis</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="GDV-Y2-AXIS:CAPS">GDV_Y2_AXIS</para></entry>
+<entry role="enum_member_description"><para>The right y-axis</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="GdvDistributionType" role="enum">
+<title>enum GdvDistributionType</title>
+<indexterm zone="GdvDistributionType"><primary>GdvDistributionType</primary></indexterm>
+<para>Necessary to clarify a distribution.</para>
+<refsect3 id="GdvDistributionType.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="GDV-UPPER-DIST:CAPS">GDV_UPPER_DIST</para></entry>
+<entry role="enum_member_description"><para>An upper focused distribution</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="GDV-SYMMETRIC-DIST:CAPS">GDV_SYMMETRIC_DIST</para></entry>
+<entry role="enum_member_description"><para>An symmetric distribution</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="GDV-LOWER-DIST:CAPS">GDV_LOWER_DIST</para></entry>
+<entry role="enum_member_description"><para>An lower focused distribution</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+
+</refsect1>
+
+</refentry>

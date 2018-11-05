@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE indexdiv PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<indexdiv id="api-index-0.1">
+<indexdiv><title>D</title>
+<indexentry><primaryie linkends="epsara-data-matrix-integrate-column"><link linkend="epsara-data-matrix-integrate-column">epsara_data_matrix_integrate_column</link>, function in <link linkend="EpsaraDataMatrix">EpsaraDataMatrix</link></primaryie></indexentry>
+<indexentry><primaryie linkends="epsara-data-matrix-save-to-file"><link linkend="epsara-data-matrix-save-to-file">epsara_data_matrix_save_to_file</link>, function in <link linkend="EpsaraDataMatrix">EpsaraDataMatrix</link></primaryie></indexentry>
+<indexentry><primaryie linkends="epsara-data-matrix-sort-along-column"><link linkend="epsara-data-matrix-sort-along-column">epsara_data_matrix_sort_along_column</link>, function in <link linkend="EpsaraDataMatrix">EpsaraDataMatrix</link></primaryie></indexentry>
+</indexdiv>
+</indexdiv>

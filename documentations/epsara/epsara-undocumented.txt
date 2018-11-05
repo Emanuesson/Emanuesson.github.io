@@ -1,0 +1,294 @@
+36% symbol docs coverage.
+162 symbols documented.
+128 symbols incomplete.
+283 not documented.
+
+
+CSV_COMMA
+CSV_CR
+CSV_EINVALID
+CSV_ENOMEM
+CSV_EPARSE
+CSV_ETOOBIG
+CSV_LF
+CSV_MAJOR
+CSV_MINOR
+CSV_QUOTE
+CSV_RELEASE
+CSV_REPALL_NL
+CSV_SPACE
+CSV_STRICT
+CSV_STRICT_FINI
+CSV_SUCCESS
+CSV_TAB
+EPSARA_ENABLE_TRACE
+EPSARA_ENTRY
+EPSARA_EXIT
+EPSARA_GOTO (<parameters>)
+EPSARA_LOG_LEVEL_TRACE
+EPSARA_PROBE
+EPSARA_RETURN (<parameters>)
+EPSARA_TODO (<parameters>)
+EPSARA_TRACE_MSG (<parameters>)
+EpsaraBsCalculationType (<items>)
+EpsaraDataDetector
+EpsaraDataDetector::calculate-estimator
+EpsaraDataDetectorClass
+EpsaraDataDetectorPrivate
+EpsaraDataElement
+EpsaraDataElementClass
+EpsaraDataElementPrivate
+EpsaraDataInteraction
+EpsaraDataInteractionClass
+EpsaraDataInteractionPrivate
+EpsaraDataIsotope
+EpsaraDataIsotope::add
+EpsaraDataIsotope::remove
+EpsaraDataIsotopeClass (<items>)
+EpsaraDataIsotopeIonicEloss
+EpsaraDataIsotopeIonicElossClass
+EpsaraDataIsotopeIonicElossPrivate
+EpsaraDataIsotopePrivate
+EpsaraDataMaterial
+EpsaraDataMaterial::add
+EpsaraDataMaterial::distribution
+EpsaraDataMaterial::integrate-material
+EpsaraDataMaterial::remove
+EpsaraDataMaterialClass (<items>)
+EpsaraDataMaterialLayered
+EpsaraDataMaterialLayeredClass
+EpsaraDataMaterialLayeredPrivate
+EpsaraDataMaterialPrivate
+EpsaraDataMatrix
+EpsaraDataMatrixClass
+EpsaraDataMatrixPrivate
+EpsaraDataMeasurement
+EpsaraDataMeasurement::add
+EpsaraDataMeasurement::calculate
+EpsaraDataMeasurement::estimator
+EpsaraDataMeasurement::remove
+EpsaraDataMeasurementClass (<items>)
+EpsaraDataMeasurementPrivate
+EpsaraDataParticleBeam
+EpsaraDataParticleBeamClass (<items>)
+EpsaraDataParticleBeamPrivate
+EpsaraDataParticleDetector
+EpsaraDataParticleDetectorClass (<items>)
+EpsaraDataParticleDetectorPrivate
+EpsaraDataParticleScattering
+EpsaraDataParticleScatteringClass
+EpsaraDataParticleScatteringPrivate
+EpsaraDataRbsMeasurement
+EpsaraDataRbsMeasurementClass
+EpsaraDataRbsMeasurementPrivate
+EpsaraDataSet
+EpsaraDataSet::add
+EpsaraDataSet::calculate
+EpsaraDataSet::fit
+EpsaraDataSet::remove
+EpsaraDataSetClass (<items>)
+EpsaraDataSetPrivate
+EpsaraDataSource
+EpsaraDataSourceClass
+EpsaraDataSourcePrivate
+EpsaraDataVector
+EpsaraDataVectorClass
+EpsaraDataVectorPrivate
+EpsaraDifferntiationType (<items>)
+EpsaraEnergyLoss (<items>)
+EpsaraFileParserR33
+EpsaraFileParserR33:address1
+EpsaraFileParserR33:address2
+EpsaraFileParserR33:address3
+EpsaraFileParserR33:address4
+EpsaraFileParserR33:address5
+EpsaraFileParserR33:address6
+EpsaraFileParserR33:address7
+EpsaraFileParserR33:address8
+EpsaraFileParserR33:address9
+EpsaraFileParserR33:comment
+EpsaraFileParserR33:data
+EpsaraFileParserR33:egamma
+EpsaraFileParserR33:enfactors
+EpsaraFileParserR33:masses
+EpsaraFileParserR33:nvalues
+EpsaraFileParserR33:qvalue
+EpsaraFileParserR33:reaction
+EpsaraFileParserR33:serial-number
+EpsaraFileParserR33:sigfactors
+EpsaraFileParserR33:source
+EpsaraFileParserR33:subfile
+EpsaraFileParserR33:target
+EpsaraFileParserR33:version
+EpsaraFileParserR33:x4number
+EpsaraFileParserR33:zeds
+EpsaraFileParserR33Class
+EpsaraFileParserR33Private
+EpsaraIonElossStraggType (<items>)
+EpsaraMaterialState (<items>)
+EpsaraMinimizerType (<items>)
+EpsaraScreeningType (<items>)
+csv_error (<parameters>)
+csv_fini (<parameters>)
+csv_free (<parameters>)
+csv_fwrite (<parameters>)
+csv_fwrite2 (<parameters>)
+csv_get_buffer_size (<parameters>)
+csv_get_delim (<parameters>)
+csv_get_opts (<parameters>)
+csv_get_quote (<parameters>)
+csv_init (<parameters>)
+csv_parse (<parameters>)
+csv_parser (<items>)
+csv_set_blk_size (<parameters>)
+csv_set_delim (<parameters>)
+csv_set_free_func (<parameters>)
+csv_set_opts (<parameters>)
+csv_set_quote (<parameters>)
+csv_set_realloc_func (<parameters>)
+csv_set_space_func (<parameters>)
+csv_set_term_func (<parameters>)
+csv_strerror (<parameters>)
+csv_write (<parameters>)
+csv_write2 (<parameters>)
+epsara_data_detector_add_roi (<parameters>)
+epsara_data_detector_calc_det_coeff (<parameters>)
+epsara_data_detector_get_roi_from_index (<parameters>)
+epsara_data_detector_remove_roi (<parameters>)
+epsara_data_element_get_children
+epsara_data_element_get_parent
+epsara_data_element_get_uuid (<parameters>)
+epsara_data_element_set_parent (<parameters>)
+epsara_data_element_unparent (<parameters>)
+epsara_data_isotope_ionic_eloss_calc_eloss (<parameters>)
+epsara_data_isotope_ionic_eloss_straggling (<parameters>)
+epsara_data_material_get_all_interactions
+epsara_data_material_get_concentration_at_point (<parameters>)
+epsara_data_material_get_distance (<parameters>)
+epsara_data_material_get_sub_interact_concentration_at_point (<parameters>)
+epsara_data_material_get_sub_isotope_concentration_at_point (<parameters>)
+epsara_data_material_integrate_material_over_length (<parameters>)
+epsara_data_material_integrate_sub_interact_over_length (<parameters>)
+epsara_data_material_make_natural_rbs_elements (<parameters>)
+epsara_data_material_particle_scattering_filter_by_beam (ion_mass_no)
+epsara_data_matrix_add (<parameters>)
+epsara_data_matrix_add_constant (<parameters>)
+epsara_data_matrix_copy (<parameters>)
+epsara_data_matrix_div_elements (<parameters>)
+epsara_data_matrix_get_mean_column_value (<parameters>)
+epsara_data_matrix_get_mean_column_value_near_row (<parameters>)
+epsara_data_matrix_get_raw_values (<parameters>)
+epsara_data_matrix_max (<parameters>)
+epsara_data_matrix_max_index (<parameters>)
+epsara_data_matrix_min (<parameters>)
+epsara_data_matrix_min_index (<parameters>)
+epsara_data_matrix_minmax (<parameters>)
+epsara_data_matrix_minmax_index (<parameters>)
+epsara_data_matrix_mul_elements (<parameters>)
+epsara_data_matrix_new (<parameters>)
+epsara_data_matrix_print (<parameters>)
+epsara_data_matrix_scale (<parameters>)
+epsara_data_matrix_set_all (<parameters>)
+epsara_data_matrix_set_identity (<parameters>)
+epsara_data_matrix_set_zero (<parameters>)
+epsara_data_matrix_sub (<parameters>)
+epsara_data_matrix_swap (<parameters>)
+epsara_data_measurement_add (<parameters>)
+epsara_data_measurement_recalculate (<parameters>)
+epsara_data_measurement_remove (<parameters>)
+epsara_data_measurement_reset_spectrum (<parameters>)
+epsara_data_measurement_set_calculated_spectrum (<parameters>)
+epsara_data_particle_detector_energy_at_channel (<parameters>)
+epsara_data_particle_scattering_integrate_cross_section_over_energy (<parameters>)
+epsara_data_particle_scattering_kinematic_after_scattering (<parameters>)
+epsara_data_particle_scattering_kinematic_before_scattering (<parameters>)
+epsara_data_point_distance_to_origin (<parameters>)
+epsara_data_point_metric (<parameters>)
+epsara_data_point_scalar_product (<parameters>)
+epsara_data_polygon_equal (<parameters>)
+epsara_data_rbs_measurement_get_detector_eloss (channel)
+epsara_data_set_calculate_minimizer_value (<parameters>)
+epsara_data_set_save_results (<parameters>)
+epsara_data_vector_add (<parameters>)
+epsara_data_vector_add_constant (<parameters>)
+epsara_data_vector_copy (<parameters>)
+epsara_data_vector_div (<parameters>)
+epsara_data_vector_get (<parameters>)
+epsara_data_vector_max (<parameters>)
+epsara_data_vector_max_index (<parameters>)
+epsara_data_vector_min (<parameters>)
+epsara_data_vector_min_index (<parameters>)
+epsara_data_vector_minmax (<parameters>)
+epsara_data_vector_minmax_index (<parameters>)
+epsara_data_vector_mul (<parameters>)
+epsara_data_vector_new (<parameters>)
+epsara_data_vector_reverse (<parameters>)
+epsara_data_vector_scale (<parameters>)
+epsara_data_vector_set (<parameters>)
+epsara_data_vector_set_all (<parameters>)
+epsara_data_vector_set_basis (<parameters>)
+epsara_data_vector_set_zero (<parameters>)
+epsara_data_vector_sub (<parameters>)
+epsara_data_vector_swap (<parameters>)
+epsara_data_vector_swap_elements (<parameters>)
+epsara_file_parser_r33_parse_file (<parameters>)
+epsara_file_parser_r33_parse_string (<parameters>)
+epsara_physcore_calc_scattering_cross_section (<parameters>)
+epsara_physical_const_calc_chu_straggling_correction_factor (<parameters>)
+epsara_physical_const_calc_yang_straggling_correction_value (<parameters>)
+epsara_physical_const_get_abundances (atomic_no)
+epsara_physical_const_get_isotope_masses (atomic_no)
+epsara_physical_const_get_specific_abundance (<parameters>)
+epsara_physical_const_get_specific_mass (<parameters>)
+epsara_physical_const_trim85_pscoef_dat1 (<parameters>)
+epsara_physical_const_trim85_pscoef_dat2 (<parameters>)
+
+epsara-calculations:Long_Description
+epsara-calculations:Short_Description
+epsara-cross-section:Long_Description
+epsara-cross-section:Short_Description
+epsara-data-element:Long_Description
+epsara-data-element:Short_Description
+epsara-data-enums:Long_Description
+epsara-data-enums:Short_Description
+epsara-data-interaction:Long_Description
+epsara-data-interaction:Short_Description
+epsara-data-isotope-ionic-eloss:Long_Description
+epsara-data-isotope-ionic-eloss:Short_Description
+epsara-data-isotope:Long_Description
+epsara-data-isotope:Short_Description
+epsara-data-material-layered:Long_Description
+epsara-data-material-layered:Short_Description
+epsara-data-material:Long_Description
+epsara-data-material:Short_Description
+epsara-data-matrix:Long_Description
+epsara-data-matrix:Short_Description
+epsara-data-measurement:Long_Description
+epsara-data-measurement:Short_Description
+epsara-data-particle-beam:Long_Description
+epsara-data-particle-beam:Short_Description
+epsara-data-particle-detector:Long_Description
+epsara-data-particle-detector:Short_Description
+epsara-data-particle-scattering:Long_Description
+epsara-data-particle-scattering:Short_Description
+epsara-data-rbs-measurement:Long_Description
+epsara-data-rbs-measurement:Short_Description
+epsara-data-source:Long_Description
+epsara-data-source:Short_Description
+epsara-data-type-builtins:Long_Description
+epsara-data-type-builtins:Short_Description
+epsara-data-vector:Long_Description
+epsara-data-vector:Short_Description
+epsara-debug:Long_Description
+epsara-debug:Short_Description
+epsara-eloss:Long_Description
+epsara-eloss:Short_Description
+epsara-file-parser-r33:Long_Description
+epsara-file-parser-r33:Short_Description
+epsara-physical-const:Long_Description
+epsara-physical-const:Short_Description
+epsaradataenums:Long_Description
+libcsv:Long_Description
+libcsv:Short_Description
+physcore-parser-input:Long_Description
+physcore-parser-input:Short_Description

@@ -1,0 +1,433 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="EpsaraDataSet">
+<refmeta>
+<refentrytitle role="top_of_page" id="EpsaraDataSet.top_of_page">The Data-Set</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>EPSARA Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>The Data-Set</refname>
+<refpurpose>Basic container class for the fitting process</refpurpose>
+</refnamediv>
+
+<refsect1 id="EpsaraDataSet.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><phrase role="c_punctuation">(</phrase><link linkend="EpsaraForallCallback">*EpsaraForallCallback</link><phrase role="c_punctuation">)</phrase>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-set-contains">epsara_data_set_contains</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-set-save-results">epsara_data_set_save_results</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-set-perform-calculation">epsara_data_set_perform_calculation</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GSList"><returnvalue>GSList</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="epsara-data-set-get-fitting-schedule">epsara_data_set_get_fitting_schedule</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-set-add-to-fitting-schedule">epsara_data_set_add_to_fitting_schedule</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GSList"><returnvalue>GSList</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="epsara-data-set-get-measurements">epsara_data_set_get_measurements</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="EpsaraDataSet"><returnvalue>EpsaraDataSet</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="epsara-data-set-get-top-data-set">epsara_data_set_get_top_data_set</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-set-calculate-minimizer-value">epsara_data_set_calculate_minimizer_value</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataSet.properties" role="properties">
+<title role="properties.title">Properties</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="properties_type" colwidth="150px"/>
+<colspec colname="properties_name" colwidth="300px"/>
+<colspec colname="properties_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="property_type"><link linkend="gint"><type>gint</type></link></entry><entry role="property_name"><link linkend="EpsaraDataSet--iterations">iterations</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="EpsaraMinimizerType"><type>EpsaraMinimizerType</type></link></entry><entry role="property_name"><link linkend="EpsaraDataSet--minimizer-type">minimizer-type</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="GHashTable"><type>GHashTable</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraDataSet--result-table">result-table</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="EpsaraDataSet--tolerance">tolerance</link></entry><entry role="property_flags">Read / Write</entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataSet.signals" role="signal_proto">
+<title role="signal_proto.title">Signals</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="signals_return" colwidth="150px"/>
+<colspec colname="signals_name" colwidth="300px"/>
+<colspec colname="signals_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="EpsaraDataSet-add">add</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-FIRST:CAPS">Run First</link></entry></row>
+<row><entry role="signal_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link></entry><entry role="signal_name"><link linkend="EpsaraDataSet-calculate">calculate</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-ACTION:CAPS">Action</link></entry></row>
+<row><entry role="signal_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link></entry><entry role="signal_name"><link linkend="EpsaraDataSet-fit">fit</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-ACTION:CAPS">Action</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="EpsaraDataSet-remove">remove</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-FIRST:CAPS">Run First</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataSet.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="EpsaraDataSet-struct">EpsaraDataSet</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="EpsaraDataSetClass">EpsaraDataSetClass</link></entry></row>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="EpsaraDataSetPrivate">EpsaraDataSetPrivate</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataSet.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="EpsaraDataElement">EpsaraDataElement</link>
+        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> EpsaraDataSet
+</screen>
+</refsect1>
+<refsect1 id="EpsaraDataSet.implemented-interfaces" role="impl_interfaces">
+<title role="impl_interfaces.title">Implemented Interfaces</title>
+<para>
+EpsaraDataSet implements
+ <link linkend="JsonSerializable">JsonSerializable</link>.</para>
+
+</refsect1>
+
+
+<refsect1 id="EpsaraDataSet.description" role="desc">
+<title role="desc.title">Description</title>
+<para>An analytical experiment always contains a whole bunch of intormation. In many cases these
+informations are linked in a highly complex way. The idea of the <link linkend="EpsaraDataSet-class"><type>EpsaraDataSet-class</type></link> is to
+bundle this information together in a way, that all relevant information is safed and the
+experimental questions are described completely. Only then a computer-algorithm is able to solve
+a physical problem.</para>
+<para>Beside the experimental information, described with the <link linkend="EpsaraDataMeasurement-instances"><type>EpsaraDataMeasurement-instances</type></link>, a
+<link linkend="EpsaraDataSet-object"><type>EpsaraDataSet-object</type></link> contains information about the fitting process, such as a fitting-schedule,
+the fitting-algorithm-type and the optimum-point as well as the estimation of error-boundaries.
+It also contains a global random-number-generator, that should be used in any calculation, linked
+to a data-set. Only then it is possible to prevent correlations between several instances of the
+same pseudo-random-number-generator.</para>
+
+</refsect1>
+<refsect1 id="EpsaraDataSet.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="EpsaraForallCallback" role="function">
+<title>EpsaraForallCallback&#160;()</title>
+<indexterm zone="EpsaraForallCallback"><primary>EpsaraForallCallback</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+<phrase role="c_punctuation">(</phrase>*EpsaraForallCallback<phrase role="c_punctuation">)</phrase> (<parameter><link linkend="EpsaraDataSet"><type>EpsaraDataSet</type></link> *set_data</parameter>,
+                         <parameter><link linkend="gpointer"><type>gpointer</type></link> data</parameter>);</programlisting>
+<para>The type of the callback functions used for e.g. iterating over
+the children of a set-data, see <link linkend="epsara-set-data-foreach"><function>epsara_set_data_foreach()</function></link>.</para>
+<refsect3 id="EpsaraForallCallback.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>set_data</para></entry>
+<entry role="parameter_description"><para>the set-data to operate on</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>data</para></entry>
+<entry role="parameter_description"><para>user-supplied data. </para></entry>
+<entry role="parameter_annotations"><emphasis role="annotation">[<acronym>closure</acronym>]</emphasis></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="epsara-data-set-contains" role="function" condition="since:0.02">
+<title>epsara_data_set_contains&#160;()</title>
+<indexterm zone="epsara-data-set-contains" role="0.02"><primary>epsara_data_set_contains</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+epsara_data_set_contains (<parameter><link linkend="EpsaraDataSet"><type>EpsaraDataSet</type></link> *set</parameter>,
+                          <parameter><link linkend="EpsaraDataMeasurement"><type>EpsaraDataMeasurement</type></link> *measurement</parameter>);</programlisting>
+<para>Tests if the specified <link linkend="EpsaraDataMeasurement-object"><type>EpsaraDataMeasurement-object</type></link> is a part of
+the <link linkend="EpsaraDataSet"><type>EpsaraDataSet</type></link> set.</para>
+<refsect3 id="epsara-data-set-contains.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>set</para></entry>
+<entry role="parameter_description"><para>the <link linkend="EpsaraDataSet"><type>EpsaraDataSet</type></link> object</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>measurement</para></entry>
+<entry role="parameter_description"><para>the tested <link linkend="EpsaraDataMeasurement"><type>EpsaraDataMeasurement</type></link> object</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="epsara-data-set-contains.returns" role="returns">
+<title>Returns</title>
+<para> the result of the test</para>
+</refsect3><para role="since">Since: <link linkend="api-index-0.02">0.02</link></para></refsect2>
+<refsect2 id="epsara-data-set-save-results" role="function">
+<title>epsara_data_set_save_results&#160;()</title>
+<indexterm zone="epsara-data-set-save-results"><primary>epsara_data_set_save_results</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+epsara_data_set_save_results (<parameter><link linkend="EpsaraDataSet"><type>EpsaraDataSet</type></link> *set</parameter>,
+                              <parameter><link linkend="GFile"><type>GFile</type></link> *output_file</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-set-perform-calculation" role="function" condition="since:0.02">
+<title>epsara_data_set_perform_calculation&#160;()</title>
+<indexterm zone="epsara-data-set-perform-calculation" role="0.02"><primary>epsara_data_set_perform_calculation</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+epsara_data_set_perform_calculation (<parameter><link linkend="EpsaraDataSet"><type>EpsaraDataSet</type></link> *data</parameter>);</programlisting>
+<para>Performs the calculation of the data.</para>
+<refsect3 id="epsara-data-set-perform-calculation.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>data</para></entry>
+<entry role="parameter_description"><para>an <link linkend="EpsaraDataSet"><type>EpsaraDataSet</type></link> object</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="epsara-data-set-perform-calculation.returns" role="returns">
+<title>Returns</title>
+<para> the status of the calculation</para>
+</refsect3><para role="since">Since: <link linkend="api-index-0.02">0.02</link></para></refsect2>
+<refsect2 id="epsara-data-set-get-fitting-schedule" role="function" condition="since:0.02">
+<title>epsara_data_set_get_fitting_schedule&#160;()</title>
+<indexterm zone="epsara-data-set-get-fitting-schedule" role="0.02"><primary>epsara_data_set_get_fitting_schedule</primary></indexterm>
+<programlisting language="C"><link linkend="GSList"><returnvalue>GSList</returnvalue></link>&#160;*
+epsara_data_set_get_fitting_schedule (<parameter><link linkend="EpsaraDataSet"><type>EpsaraDataSet</type></link> *data_set</parameter>,
+                                      <parameter><link linkend="guint"><type>guint</type></link> i</parameter>,
+                                      <parameter>const <link linkend="gchar"><type>gchar</type></link> **property_name</parameter>);</programlisting>
+<para>Returns the list of objects at the <parameter>i</parameter>
+-position in the schedule list, or NULL if <link linkend="i"><literal>i</literal></link> is out of
+range.</para>
+<refsect3 id="epsara-data-set-get-fitting-schedule.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>data_set</para></entry>
+<entry role="parameter_description"><para>a <link linkend="EpsaraDataSet"><type>EpsaraDataSet</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>i</para></entry>
+<entry role="parameter_description"><para>the index of the</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>property_name</para></entry>
+<entry role="parameter_description"><para>a pace to store the pointer to the property-name. </para></entry>
+<entry role="parameter_annotations"><emphasis role="annotation">[<acronym>transfer none</acronym>][<acronym>allow-none</acronym>]</emphasis></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="epsara-data-set-get-fitting-schedule.returns" role="returns">
+<title>Returns</title>
+<para>the list of objects connected to
+the parameter with the. </para>
+<para><emphasis role="annotation">[<acronym>element-type</acronym> GtkWindow][<acronym>transfer none</acronym>][<acronym>allow-none</acronym>]</emphasis></para>
+</refsect3><para role="since">Since: <link linkend="api-index-0.02">0.02</link></para></refsect2>
+<refsect2 id="epsara-data-set-add-to-fitting-schedule" role="function" condition="since:0.02">
+<title>epsara_data_set_add_to_fitting_schedule&#160;()</title>
+<indexterm zone="epsara-data-set-add-to-fitting-schedule" role="0.02"><primary>epsara_data_set_add_to_fitting_schedule</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+epsara_data_set_add_to_fitting_schedule
+                               (<parameter><link linkend="EpsaraDataSet"><type>EpsaraDataSet</type></link> *data_set</parameter>,
+                                <parameter>const <link linkend="gchar"><type>gchar</type></link> *property_name</parameter>,
+                                <parameter><link linkend="GSList"><type>GSList</type></link> *objects_list</parameter>);</programlisting>
+<para>Adds one property to the list of parameters that will be used for global optimization (fitting).
+The <parameter>property_name</parameter>
+ and <parameter>objects_list</parameter>
+ build one entity, meaning one degree of freedom for the
+optimisation-kernel. The order of adding parameters with this function determines the logical
+order of parameters used by the <parameter>data_set</parameter>
+ in optimization.</para>
+<refsect3 id="epsara-data-set-add-to-fitting-schedule.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>data_set</para></entry>
+<entry role="parameter_description"><para>a <link linkend="EpsaraDataSet"><type>EpsaraDataSet</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>property_name</para></entry>
+<entry role="parameter_description"><para>the property to add</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>objects_list</para></entry>
+<entry role="parameter_description"><para>list of respective elements. </para></entry>
+<entry role="parameter_annotations"><emphasis role="annotation">[<acronym>element-type</acronym> EpsaraDataElement]</emphasis></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="epsara-data-set-add-to-fitting-schedule.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> on success and <link linkend="False"><literal>False</literal></link> on failure.</para>
+</refsect3><para role="since">Since: <link linkend="api-index-0.02">0.02</link></para></refsect2>
+<refsect2 id="epsara-data-set-get-measurements" role="function" condition="since:0.02">
+<title>epsara_data_set_get_measurements&#160;()</title>
+<indexterm zone="epsara-data-set-get-measurements" role="0.02"><primary>epsara_data_set_get_measurements</primary></indexterm>
+<programlisting language="C"><link linkend="GSList"><returnvalue>GSList</returnvalue></link>&#160;*
+epsara_data_set_get_measurements (<parameter><link linkend="EpsaraDataSet"><type>EpsaraDataSet</type></link> *data_set</parameter>);</programlisting>
+<para>Gives a list with all connected measurements.</para>
+<refsect3 id="epsara-data-set-get-measurements.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>data_set</para></entry>
+<entry role="parameter_description"><para>a <link linkend="EpsaraDataSet"><type>EpsaraDataSet</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="epsara-data-set-get-measurements.returns" role="returns">
+<title>Returns</title>
+<para>a <link linkend="GSList"><type>GSList</type></link>. </para>
+<para><emphasis role="annotation">[<acronym>transfer container</acronym>][<acronym>element-type</acronym> Epsara.DataMeasurement]</emphasis></para>
+</refsect3><para role="since">Since: <link linkend="api-index-0.02">0.02</link></para></refsect2>
+<refsect2 id="epsara-data-set-get-top-data-set" role="function" condition="since:0.02">
+<title>epsara_data_set_get_top_data_set&#160;()</title>
+<indexterm zone="epsara-data-set-get-top-data-set" role="0.02"><primary>epsara_data_set_get_top_data_set</primary></indexterm>
+<programlisting language="C"><link linkend="EpsaraDataSet"><returnvalue>EpsaraDataSet</returnvalue></link>&#160;*
+epsara_data_set_get_top_data_set (<parameter><link linkend="EpsaraDataElement"><type>EpsaraDataElement</type></link> *child</parameter>);</programlisting>
+<para>Gives the top most parent-set of the child.</para>
+<refsect3 id="epsara-data-set-get-top-data-set.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>child</para></entry>
+<entry role="parameter_description"><para>an <link linkend="EpsaraDataElement"><type>EpsaraDataElement</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="epsara-data-set-get-top-data-set.returns" role="returns">
+<title>Returns</title>
+<para>the parent set. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3><para role="since">Since: <link linkend="api-index-0.02">0.02</link></para></refsect2>
+<refsect2 id="epsara-data-set-calculate-minimizer-value" role="function">
+<title>epsara_data_set_calculate_minimizer_value&#160;()</title>
+<indexterm zone="epsara-data-set-calculate-minimizer-value"><primary>epsara_data_set_calculate_minimizer_value</primary></indexterm>
+<programlisting language="C"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+epsara_data_set_calculate_minimizer_value
+                               (<parameter><link linkend="EpsaraDataSet"><type>EpsaraDataSet</type></link> *data_set</parameter>,
+                                <parameter>const <link linkend="gdouble"><type>gdouble</type></link> *params</parameter>,
+                                <parameter><link linkend="size-t"><type>size_t</type></link> no_of_params</parameter>);</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="EpsaraDataSet.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="EpsaraDataSet-struct" role="struct">
+<title>struct EpsaraDataSet</title>
+<indexterm zone="EpsaraDataSet-struct"><primary>EpsaraDataSet</primary></indexterm>
+<programlisting language="C">struct EpsaraDataSet;</programlisting>
+</refsect2>
+<refsect2 id="EpsaraDataSetClass" role="struct">
+<title>struct EpsaraDataSetClass</title>
+<indexterm zone="EpsaraDataSetClass"><primary>EpsaraDataSetClass</primary></indexterm>
+<programlisting language="C">struct EpsaraDataSetClass {
+  EpsaraDataElementClass parent_class;
+
+  void  (*add)                (EpsaraDataSet         *container,
+                               EpsaraDataMeasurement *measurement);
+  void  (*remove)             (EpsaraDataSet         *container,
+                               EpsaraDataMeasurement *measurement);
+  void  (*forall)             (EpsaraDataSet         *container,
+                               gboolean               include_internals,
+                               EpsaraForallCallback   callback,
+                               gpointer               callback_data);
+  gboolean (*calculate)       (EpsaraDataSet         *measurement);
+  gboolean (*fit)             (EpsaraDataSet         *measurement);
+
+//  gboolean (*save)            (EpsaraDataSet         *measurement,
+//                               GFile                 *output_file);
+};
+</programlisting>
+</refsect2>
+<refsect2 id="EpsaraDataSetPrivate" role="struct">
+<title>EpsaraDataSetPrivate</title>
+<indexterm zone="EpsaraDataSetPrivate"><primary>EpsaraDataSetPrivate</primary></indexterm>
+<programlisting language="C">typedef struct _EpsaraDataSetPrivate EpsaraDataSetPrivate;</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="EpsaraDataSet.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="EpsaraDataSet--iterations" role="property"><title>The <literal>“iterations”</literal> property</title>
+<indexterm zone="EpsaraDataSet--iterations"><primary>EpsaraDataSet:iterations</primary></indexterm>
+<programlisting>  “iterations”               <link linkend="gint"><type>gint</type></link></programlisting>
+<para>maximum number of iterations for the fitting-process.</para><para>Flags: Read / Write</para>
+<para>Allowed values: &gt;= 0</para>
+<para>Default value: 100</para>
+</refsect2>
+<refsect2 id="EpsaraDataSet--minimizer-type" role="property"><title>The <literal>“minimizer-type”</literal> property</title>
+<indexterm zone="EpsaraDataSet--minimizer-type"><primary>EpsaraDataSet:minimizer-type</primary></indexterm>
+<programlisting>  “minimizer-type”           <link linkend="EpsaraMinimizerType"><type>EpsaraMinimizerType</type></link></programlisting>
+<para>holds the type of algorithm, that will be applied for minimization.</para><para>Flags: Read / Write</para>
+<para>Default value: EPSARA_MINIMIZER_SIMPLEX</para>
+</refsect2>
+<refsect2 id="EpsaraDataSet--result-table" role="property"><title>The <literal>“result-table”</literal> property</title>
+<indexterm zone="EpsaraDataSet--result-table"><primary>EpsaraDataSet:result-table</primary></indexterm>
+<programlisting>  “result-table”             <link linkend="GHashTable"><type>GHashTable</type></link>&#160;*</programlisting>
+<para>stores the calculated spectra as hash-table for all measurements.</para><para>Flags: Read</para>
+</refsect2>
+<refsect2 id="EpsaraDataSet--tolerance" role="property"><title>The <literal>“tolerance”</literal> property</title>
+<indexterm zone="EpsaraDataSet--tolerance"><primary>EpsaraDataSet:tolerance</primary></indexterm>
+<programlisting>  “tolerance”                <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>maximum of tolerance for the fitting-process.</para><para>Flags: Read / Write</para>
+<para>Allowed values: [0,1]</para>
+<para>Default value: 0.01</para>
+</refsect2>
+
+</refsect1>
+<refsect1 id="EpsaraDataSet.signal-details" role="signals">
+<title role="signals.title">Signal Details</title>
+<refsect2 id="EpsaraDataSet-add" role="signal"><title>The <literal>“add”</literal> signal</title>
+<indexterm zone="EpsaraDataSet-add"><primary>EpsaraDataSet::add</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="EpsaraDataSet"><type>EpsaraDataSet</type></link>         *epsaradataset,
+               <link linkend="EpsaraDataMeasurement"><type>EpsaraDataMeasurement</type></link> *arg1,
+               <link linkend="gpointer"><type>gpointer</type></link>               user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-FIRST:CAPS">Run First</link></para>
+</refsect2><refsect2 id="EpsaraDataSet-calculate" role="signal"><title>The <literal>“calculate”</literal> signal</title>
+<indexterm zone="EpsaraDataSet-calculate"><primary>EpsaraDataSet::calculate</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+user_function (<link linkend="EpsaraDataSet"><type>EpsaraDataSet</type></link> *epsaradataset,
+               <link linkend="gpointer"><type>gpointer</type></link>       user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-ACTION:CAPS">Action</link></para>
+</refsect2><refsect2 id="EpsaraDataSet-fit" role="signal"><title>The <literal>“fit”</literal> signal</title>
+<indexterm zone="EpsaraDataSet-fit"><primary>EpsaraDataSet::fit</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+user_function (<link linkend="EpsaraDataSet"><type>EpsaraDataSet</type></link> *epsaradataset,
+               <link linkend="gpointer"><type>gpointer</type></link>       user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-ACTION:CAPS">Action</link></para>
+</refsect2><refsect2 id="EpsaraDataSet-remove" role="signal"><title>The <literal>“remove”</literal> signal</title>
+<indexterm zone="EpsaraDataSet-remove"><primary>EpsaraDataSet::remove</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="EpsaraDataSet"><type>EpsaraDataSet</type></link>         *epsaradataset,
+               <link linkend="EpsaraDataMeasurement"><type>EpsaraDataMeasurement</type></link> *arg1,
+               <link linkend="gpointer"><type>gpointer</type></link>               user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-FIRST:CAPS">Run First</link></para>
+</refsect2>
+</refsect1>
+
+</refentry>

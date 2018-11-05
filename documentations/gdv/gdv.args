@@ -1,0 +1,670 @@
+<ARG>
+<NAME>GdvAxis::axis-beg-at-screen-x</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>horizontal beginning of the axis</NICK>
+<BLURB>horizontal amount of the layer that determines the starting of the axis.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvAxis::axis-beg-at-screen-y</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>vertical beginning of the axis</NICK>
+<BLURB>vertical amount of the layer that determines the starting of the axis.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvAxis::axis-beg-pix-x</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE>>= 0</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>beginning of the axis in pixel x-value</NICK>
+<BLURB>x-value of the absolute axis-start.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvAxis::axis-beg-pix-y</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE>>= 0</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>beginning of the axis in pixel y-value</NICK>
+<BLURB>y-value of the absolute axis-start.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvAxis::axis-direction-outside</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>axis of direction of the outside</NICK>
+<BLURB>direction of the axis-outside relative to the upside of the screen.</BLURB>
+<DEFAULT>1.5708</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvAxis::axis-end-at-screen-x</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>horizontal ending of the axis</NICK>
+<BLURB>horizontal amount of the layer that determines the end of the axis.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvAxis::axis-end-at-screen-y</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>vertical ending of the axis</NICK>
+<BLURB>vertical amount of the layer that determines the end of the axis.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvAxis::axis-end-pix-x</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE>>= 0</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>end of the axis in pixel x-value</NICK>
+<BLURB>x-value of the absolute axis-end.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvAxis::axis-end-pix-y</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE>>= 0</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>end of the axis in pixel y-value</NICK>
+<BLURB>y-value of the absolute axis-end.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvAxis::axis-orientation</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>angle of beginning of the axis on screen</NICK>
+<BLURB>angle between the beginning of the axis and the vertical on screen.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvAxis::force-beg-end</NAME>
+<TYPE>gboolean</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>forces the use of manually assigned beg- and end- properties</NICK>
+<BLURB>this property forces the axis to use the manually assigned beg- and end-properties.</BLURB>
+<DEFAULT>FALSE</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvAxis::mtics</NAME>
+<TYPE>guint</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>number of mtics in scale interval</NICK>
+<BLURB>sets the absolute number of mtics per scale interval.</BLURB>
+<DEFAULT>4</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvAxis::mtics-automatic</NAME>
+<TYPE>gboolean</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>automatic mtics-setting</NICK>
+<BLURB>determines, if number of mtics and mtics-beg-val and mtics-end-val should be setted automatically.</BLURB>
+<DEFAULT>TRUE</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvAxis::mtics-beg-val</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>minimum data value for mtics</NICK>
+<BLURB>the data value, where the mticsshould begin to be drawn.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvAxis::mtics-end-val</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>maximum data value for mtics</NICK>
+<BLURB>the data value, where the mticsshould end to be drawn.</BLURB>
+<DEFAULT>100</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvAxis::resize-during-redraw</NAME>
+<TYPE>gboolean</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>*placeholder*</NICK>
+<BLURB>*placeholder*.</BLURB>
+<DEFAULT>FALSE</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvAxis::scale-auto-increment</NAME>
+<TYPE>gboolean</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>automatic increment-value</NICK>
+<BLURB>determines, if the increment-value should be resetted automatically.</BLURB>
+<DEFAULT>TRUE</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvAxis::scale-beg-val</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>minimum displayed data value</NICK>
+<BLURB>the data value, where the axisshould begin to show data.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvAxis::scale-end-val</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>maximum displayed data value</NICK>
+<BLURB>the data value, where the axisshould end to show data.</BLURB>
+<DEFAULT>100</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvAxis::scale-increment-val</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>increment of axis in data-values</NICK>
+<BLURB>defines the increment of the axis, type-independent.</BLURB>
+<DEFAULT>100</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvAxis::scale-limits-automatic</NAME>
+<TYPE>gboolean</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>automatic scale limits</NICK>
+<BLURB>determines, if the scale-borders should be setted automatically.</BLURB>
+<DEFAULT>TRUE</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvAxis::tics-automatic</NAME>
+<TYPE>gboolean</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>automatic tics-setting</NICK>
+<BLURB>determines, if tic-values should be determined automatically.</BLURB>
+<DEFAULT>TRUE</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvAxis::tics-beg-val</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>minimum data value for tics</NICK>
+<BLURB>the data value, where the ticsshould begin to be drawn.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvAxis::tics-end-val</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>maximum data value for tics</NICK>
+<BLURB>the data value, where the ticsshould end to be drawn.</BLURB>
+<DEFAULT>100</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvAxis::title</NAME>
+<TYPE>gchar*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>holds the gtk-label associated as title of the axis</NICK>
+<BLURB>this contains the GtkLabel, that is associated as title to the axis, or NULL, if the axis has no title.</BLURB>
+<DEFAULT>NULL</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvAxis::title-widget</NAME>
+<TYPE>GtkWidget*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>holds the gtk-label associated as title to the axis</NICK>
+<BLURB>this contains the GtkLabel, that is associated as title to the axis, or NULL, if the tic has no label.</BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvIndicator::rotate-widget-with-axis</NAME>
+<TYPE>gboolean</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>rotates widget automatically</NICK>
+<BLURB>the widget will be rotated according to the local axis geometry.</BLURB>
+<DEFAULT>FALSE</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvIndicator::show-in-legend</NAME>
+<TYPE>gboolean</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>indicator shown in legend</NICK>
+<BLURB>determines if the indicator-title is shown or hidden in the legend.</BLURB>
+<DEFAULT>TRUE</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvIndicator::show-in-out-of-range</NAME>
+<TYPE>gboolean</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>show indicator even after leaving the axis-range</NICK>
+<BLURB>determines if the indicator is shown or hidden after leaving the range of the assigned axis.</BLURB>
+<DEFAULT>FALSE</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvIndicator::title</NAME>
+<TYPE>gchar*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>content-title</NICK>
+<BLURB>the title that will be shown in the legend.</BLURB>
+<DEFAULT>"new indicator"</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvIndicator::value</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>data value</NICK>
+<BLURB>Determines the current value of the indicator.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvIndicator::widget</NAME>
+<TYPE>GtkWidget*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>the widget related to the indicator</NICK>
+<BLURB>determines the widget, that will be displayed on the position of the indicator.</BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvIndicator::widget-xalign</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>horizontal widget offset</NICK>
+<BLURB>determines the offset to diplay the widget.</BLURB>
+<DEFAULT>0.5</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvIndicator::widget-yalign</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>vertical widget offset</NICK>
+<BLURB>determines the offset to diplay the widget.</BLURB>
+<DEFAULT>0.5</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvLayerContent::data-point</NAME>
+<TYPE>GdvDataPoint*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>data-point</NICK>
+<BLURB>property, to access the containing data points.</BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvLayerContent::fill-above</NAME>
+<TYPE>gboolean</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>fill the space above the content</NICK>
+<BLURB>determines if the space above the data should be filled.</BLURB>
+<DEFAULT>FALSE</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvLayerContent::fill-below</NAME>
+<TYPE>gboolean</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>fill the space below the content</NICK>
+<BLURB>determines if the space below the data should be filled.</BLURB>
+<DEFAULT>FALSE</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvLayerContent::line-style</NAME>
+<TYPE>guint</TYPE>
+<RANGE><= 50</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>line-style type</NICK>
+<BLURB>style-type that is used for the plotting.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvLayerContent::point-line-width</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE>>= 0</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>line-width of the point-symbol</NICK>
+<BLURB>line-width of the point-symbol.</BLURB>
+<DEFAULT>2</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvLayerContent::point-type</NAME>
+<TYPE>guint</TYPE>
+<RANGE><= 50</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>point-symbol type</NICK>
+<BLURB>symbol-type that is used for the points.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvLayerContent::show-in-legend</NAME>
+<TYPE>gboolean</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>content shown in legend</NICK>
+<BLURB>determines if the content-title is shown or hidden in the legend.</BLURB>
+<DEFAULT>TRUE</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvLayerContent::title</NAME>
+<TYPE>gchar*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>content-title</NICK>
+<BLURB>the title that will be shown in the legend.</BLURB>
+<DEFAULT>"new content"</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvLegendElement::descriptor</NAME>
+<TYPE>GtkWidget*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>the descriptor-widget</NICK>
+<BLURB>The widget to describe the legend-element.</BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvLegendElement::element</NAME>
+<TYPE>GtkWidget*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>displayed element</NICK>
+<BLURB>the layer element (layer-content or indicator) that should be displayed as a legend-element.</BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvLegendElement::sample-length</NAME>
+<TYPE>gint</TYPE>
+<RANGE>>= 0</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>the example length</NICK>
+<BLURB>the length of sample-length in pixels.</BLURB>
+<DEFAULT>20</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvLegend::columns</NAME>
+<TYPE>guint</TYPE>
+<RANGE>>= 1</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>sets the basic orientation of the legend</NICK>
+<BLURB>determines the number of rows for the legend.</BLURB>
+<DEFAULT>1</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvLegend::layer</NAME>
+<TYPE>GdvLayer*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>the connected layer</NICK>
+<BLURB>layer that is presented in the legend.</BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvLegend::rows</NAME>
+<TYPE>guint</TYPE>
+<RANGE>>= 1</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>number of rows</NICK>
+<BLURB>determines the number of rows for the legend.</BLURB>
+<DEFAULT>4294967295</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvLegend::text-position</NAME>
+<TYPE>GtkPositionType</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>text-position relativ to the markers</NICK>
+<BLURB>determines if the data-title is shown on the left, right, top or bottom to the data-examples.</BLURB>
+<DEFAULT>GTK_POS_RIGHT</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvLinearAxis::scale-increment-base</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE>>= 0</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>scale auto increment base value</NICK>
+<BLURB>The base-value to calculate automatically tic-values.</BLURB>
+<DEFAULT>10</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvOnedLayer::axis</NAME>
+<TYPE>GdvAxis*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>axis of the graph</NICK>
+<BLURB>Get or assign a axis to the layer.</BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvOnedLayer::base-orientation</NAME>
+<TYPE>GtkOrientation</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>sets the basic orientation of the main-axis</NICK>
+<BLURB>Displays the basic orientation of the main-axis.</BLURB>
+<DEFAULT>GTK_ORIENTATION_VERTICAL</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvOnedLayer::orientation</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>sets the orientation of the main-axis</NICK>
+<BLURB>Displays the orientation of the main-axis.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvSpecialCheckedIndicator::in-length</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>data value</NICK>
+<BLURB>Determines the current value of the indicator.</BLURB>
+<DEFAULT>10</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvSpecialCheckedIndicator::out-length</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>data value</NICK>
+<BLURB>Determines the current value of the indicator.</BLURB>
+<DEFAULT>1</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvSpecialDrumDisplay::center-value</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>Sets the currect center value</NICK>
+<BLURB>Determines the value at the center of this axis.</BLURB>
+<DEFAULT>50</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvSpecialDrumDisplay::left-right-range</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>Range of values to display on left and right of the center</NICK>
+<BLURB>Determines the displayed range from the center of this axis.</BLURB>
+<DEFAULT>50</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvSpecialTimeAxis::is-unix-time</NAME>
+<TYPE>gboolean</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>axis-values will be interpreted in local unit-time</NICK>
+<BLURB>axis-values will be interpreted as the time in seconds since 1970-01-01 00:00:00 UTC (value is interpreted as UTC-time).</BLURB>
+<DEFAULT>FALSE</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvTic::axis-inner-dir-x</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>the x-component of the vector pointing inside the layer</NICK>
+<BLURB>represents the horizontal component of the vector that points in the center of the layer-area.</BLURB>
+<DEFAULT>-1</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvTic::axis-inner-dir-y</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>the y-component of the vector pointing inside the layer</NICK>
+<BLURB>represents the vertical component of the vector that points in the center of the layer-area.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvTic::label</NAME>
+<TYPE>gchar*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>holds the gtk-label associated to the tic</NICK>
+<BLURB>this contains the GtkLabel, that is associated to the specific tic, or NULL, if the tic has no label.</BLURB>
+<DEFAULT>NULL</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvTic::label-widget</NAME>
+<TYPE>GtkWidget*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>holds the gtk-label associated to the tic</NICK>
+<BLURB>this contains the GtkLabel, that is associated to the specific tic, or NULL, if the tic has no label.</BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvTic::label-xalign</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>Label xalign</NICK>
+<BLURB>The horizontal alignment of the label.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvTic::label-yalign</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>Label yalign</NICK>
+<BLURB>The vertical alignment of the label.</BLURB>
+<DEFAULT>-0.5</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvTic::pos-x</NAME>
+<TYPE>gfloat</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>the horizontal position of the tic</NICK>
+<BLURB>represents the horizontal position of the tic within the allocated space.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvTic::pos-y</NAME>
+<TYPE>gfloat</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>the vertical position of the tic</NICK>
+<BLURB>represents the vertical position of the tic within the allocated space.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>GdvTic::value</NAME>
+<TYPE>gdouble</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>the data-value at the tic</NICK>
+<BLURB>assigns the current value, that is representad by the tic.</BLURB>
+<DEFAULT>0</DEFAULT>
+</ARG>
+

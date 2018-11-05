@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="GdvSpecialCheckedIndicator">
+<refmeta>
+<refentrytitle role="top_of_page" id="GdvSpecialCheckedIndicator.top_of_page">GdvSpecialCheckedIndicator</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>GDV Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>GdvSpecialCheckedIndicator</refname>
+<refpurpose>an special indicator, with checked design</refpurpose>
+</refnamediv>
+
+<refsect1 id="GdvSpecialCheckedIndicator.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="GdvSpecialCheckedIndicator"><returnvalue>GdvSpecialCheckedIndicator</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="gdv-special-checked-indicator-new">gdv_special_checked_indicator_new</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="GdvSpecialCheckedIndicator.properties" role="properties">
+<title role="properties.title">Properties</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="properties_type" colwidth="150px"/>
+<colspec colname="properties_name" colwidth="300px"/>
+<colspec colname="properties_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="GdvSpecialCheckedIndicator--in-length">in-length</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="GdvSpecialCheckedIndicator--out-length">out-length</link></entry><entry role="property_flags">Read / Write</entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="GdvSpecialCheckedIndicator.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="GdvSpecialCheckedIndicatorClass">GdvSpecialCheckedIndicatorClass</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="GdvSpecialCheckedIndicator.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GInitiallyUnowned">GInitiallyUnowned</link>
+        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkWidget">GtkWidget</link>
+            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkContainer">GtkContainer</link>
+                <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GdvIndicator">GdvIndicator</link>
+                    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> GdvSpecialCheckedIndicator
+</screen>
+</refsect1>
+
+
+<refsect1 id="GdvSpecialCheckedIndicator.description" role="desc">
+<title role="desc.title">Description</title>
+<refsect2><title>CSS nodes</title><para>GdvSpecialCheckedIndicator uses a single CSS node with name special-checked-indicator.</para>
+</refsect2>
+
+</refsect1>
+<refsect1 id="GdvSpecialCheckedIndicator.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="gdv-special-checked-indicator-new" role="function">
+<title>gdv_special_checked_indicator_new&#160;()</title>
+<indexterm zone="gdv-special-checked-indicator-new"><primary>gdv_special_checked_indicator_new</primary></indexterm>
+<programlisting language="C"><link linkend="GdvSpecialCheckedIndicator"><returnvalue>GdvSpecialCheckedIndicator</returnvalue></link>&#160;*
+gdv_special_checked_indicator_new (<parameter><type>void</type></parameter>);</programlisting>
+<para>Just a common constructor.</para>
+<refsect3 id="gdv-special-checked-indicator-new.returns" role="returns">
+<title>Returns</title>
+<para> a new <link linkend="GdvSpecialCheckedIndicator"><type>GdvSpecialCheckedIndicator</type></link></para>
+</refsect3></refsect2>
+
+</refsect1>
+<refsect1 id="GdvSpecialCheckedIndicator.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="GdvSpecialCheckedIndicatorClass" role="struct">
+<title>struct GdvSpecialCheckedIndicatorClass</title>
+<indexterm zone="GdvSpecialCheckedIndicatorClass"><primary>GdvSpecialCheckedIndicatorClass</primary></indexterm>
+<programlisting language="C">struct GdvSpecialCheckedIndicatorClass {
+};
+</programlisting>
+<refsect3 id="GdvSpecialCheckedIndicatorClass.members" role="struct_members">
+<title>Members</title>
+<informaltable role="struct_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="struct_members_name" colwidth="300px"/>
+<colspec colname="struct_members_description"/>
+<colspec colname="struct_members_annotations" colwidth="200px"/>
+<tbody>
+</tbody></tgroup></informaltable>
+</refsect3>
+</refsect2>
+
+</refsect1>
+<refsect1 id="GdvSpecialCheckedIndicator.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="GdvSpecialCheckedIndicator--in-length" role="property"><title>The <literal>“in-length”</literal> property</title>
+<indexterm zone="GdvSpecialCheckedIndicator--in-length"><primary>GdvSpecialCheckedIndicator:in-length</primary></indexterm>
+<programlisting>  “in-length”                <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Determines inner length of the indicator.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: 10</para>
+</refsect2>
+<refsect2 id="GdvSpecialCheckedIndicator--out-length" role="property"><title>The <literal>“out-length”</literal> property</title>
+<indexterm zone="GdvSpecialCheckedIndicator--out-length"><primary>GdvSpecialCheckedIndicator:out-length</primary></indexterm>
+<programlisting>  “out-length”               <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Determines the current value of the indicator.</para><para>Flags: Read / Write</para>
+<para>Default value: 1</para>
+</refsect2>
+
+</refsect1>
+
+</refentry>

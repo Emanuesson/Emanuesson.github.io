@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="EpsaraDataMaterialLayered">
+<refmeta>
+<refentrytitle role="top_of_page" id="EpsaraDataMaterialLayered.top_of_page">EpsaraDataMaterialLayered</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>EPSARA Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>EpsaraDataMaterialLayered</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="EpsaraDataMaterialLayered.properties" role="properties">
+<title role="properties.title">Properties</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="properties_type" colwidth="150px"/>
+<colspec colname="properties_name" colwidth="300px"/>
+<colspec colname="properties_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="EpsaraDataMaterialLayered--begin">begin</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="EpsaraDataMaterialLayered--end">end</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="EpsaraDataPoint"><type>EpsaraDataPoint</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraDataMaterialLayered--normal">normal</link></entry><entry role="property_flags">Read / Write</entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataMaterialLayered.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="EpsaraDataMaterialLayered-struct">EpsaraDataMaterialLayered</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="EpsaraDataMaterialLayeredClass">EpsaraDataMaterialLayeredClass</link></entry></row>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="EpsaraDataMaterialLayeredPrivate">EpsaraDataMaterialLayeredPrivate</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataMaterialLayered.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="EpsaraDataElement">EpsaraDataElement</link>
+        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="EpsaraDataMaterial">EpsaraDataMaterial</link>
+            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> EpsaraDataMaterialLayered
+</screen>
+</refsect1>
+<refsect1 id="EpsaraDataMaterialLayered.implemented-interfaces" role="impl_interfaces">
+<title role="impl_interfaces.title">Implemented Interfaces</title>
+<para>
+EpsaraDataMaterialLayered implements
+ <link linkend="JsonSerializable">JsonSerializable</link>.</para>
+
+</refsect1>
+
+
+<refsect1 id="EpsaraDataMaterialLayered.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="EpsaraDataMaterialLayered.functions_details" role="details">
+<title role="details.title">Functions</title>
+<para />
+</refsect1>
+<refsect1 id="EpsaraDataMaterialLayered.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="EpsaraDataMaterialLayered-struct" role="struct">
+<title>struct EpsaraDataMaterialLayered</title>
+<indexterm zone="EpsaraDataMaterialLayered-struct"><primary>EpsaraDataMaterialLayered</primary></indexterm>
+<programlisting language="C">struct EpsaraDataMaterialLayered;</programlisting>
+</refsect2>
+<refsect2 id="EpsaraDataMaterialLayeredClass" role="struct">
+<title>struct EpsaraDataMaterialLayeredClass</title>
+<indexterm zone="EpsaraDataMaterialLayeredClass"><primary>EpsaraDataMaterialLayeredClass</primary></indexterm>
+<programlisting language="C">struct EpsaraDataMaterialLayeredClass {
+  EpsaraDataMaterialClass parent_class;
+};
+</programlisting>
+</refsect2>
+<refsect2 id="EpsaraDataMaterialLayeredPrivate" role="struct">
+<title>EpsaraDataMaterialLayeredPrivate</title>
+<indexterm zone="EpsaraDataMaterialLayeredPrivate"><primary>EpsaraDataMaterialLayeredPrivate</primary></indexterm>
+<programlisting language="C">typedef struct _EpsaraDataMaterialLayeredPrivate EpsaraDataMaterialLayeredPrivate;</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="EpsaraDataMaterialLayered.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="EpsaraDataMaterialLayered--begin" role="property"><title>The <literal>“begin”</literal> property</title>
+<indexterm zone="EpsaraDataMaterialLayered--begin"><primary>EpsaraDataMaterialLayered:begin</primary></indexterm>
+<programlisting>  “begin”                    <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>begin of the layer in z.</para><para>Flags: Read / Write</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="EpsaraDataMaterialLayered--end" role="property"><title>The <literal>“end”</literal> property</title>
+<indexterm zone="EpsaraDataMaterialLayered--end"><primary>EpsaraDataMaterialLayered:end</primary></indexterm>
+<programlisting>  “end”                      <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>end of the layer in z.</para><para>Flags: Read / Write</para>
+<para>Default value: -1000</para>
+</refsect2>
+<refsect2 id="EpsaraDataMaterialLayered--normal" role="property"><title>The <literal>“normal”</literal> property</title>
+<indexterm zone="EpsaraDataMaterialLayered--normal"><primary>EpsaraDataMaterialLayered:normal</primary></indexterm>
+<programlisting>  “normal”                   <link linkend="EpsaraDataPoint"><type>EpsaraDataPoint</type></link>&#160;*</programlisting>
+<para>contains the surface normal vector of the material.</para><para>Flags: Read / Write</para>
+</refsect2>
+
+</refsect1>
+
+</refentry>

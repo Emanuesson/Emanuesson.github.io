@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="EpsaraDataInteraction">
+<refmeta>
+<refentrytitle role="top_of_page" id="EpsaraDataInteraction.top_of_page">EpsaraDataInteraction</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>EPSARA Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>EpsaraDataInteraction</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="EpsaraDataInteraction.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="EpsaraDataInteraction-struct">EpsaraDataInteraction</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="EpsaraDataInteractionClass">EpsaraDataInteractionClass</link></entry></row>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="EpsaraDataInteractionPrivate">EpsaraDataInteractionPrivate</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataInteraction.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="EpsaraDataElement">EpsaraDataElement</link>
+        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> EpsaraDataInteraction
+            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="EpsaraDataParticleScattering">EpsaraDataParticleScattering</link>
+</screen>
+</refsect1>
+<refsect1 id="EpsaraDataInteraction.implemented-interfaces" role="impl_interfaces">
+<title role="impl_interfaces.title">Implemented Interfaces</title>
+<para>
+EpsaraDataInteraction implements
+ <link linkend="JsonSerializable">JsonSerializable</link>.</para>
+
+</refsect1>
+
+
+<refsect1 id="EpsaraDataInteraction.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="EpsaraDataInteraction.functions_details" role="details">
+<title role="details.title">Functions</title>
+<para />
+</refsect1>
+<refsect1 id="EpsaraDataInteraction.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="EpsaraDataInteraction-struct" role="struct">
+<title>struct EpsaraDataInteraction</title>
+<indexterm zone="EpsaraDataInteraction-struct"><primary>EpsaraDataInteraction</primary></indexterm>
+<programlisting language="C">struct EpsaraDataInteraction;</programlisting>
+</refsect2>
+<refsect2 id="EpsaraDataInteractionClass" role="struct">
+<title>struct EpsaraDataInteractionClass</title>
+<indexterm zone="EpsaraDataInteractionClass"><primary>EpsaraDataInteractionClass</primary></indexterm>
+<programlisting language="C">struct EpsaraDataInteractionClass {
+  EpsaraDataElementClass parent_class;
+
+  /* signals */
+//  gdouble (*cross_section) (EpsaraDataInteraction *self,
+//                            gdouble               scattering_angle,
+//                            gdouble               energy_start,
+//                            gdouble               energy_end);
+};
+</programlisting>
+</refsect2>
+<refsect2 id="EpsaraDataInteractionPrivate" role="struct">
+<title>EpsaraDataInteractionPrivate</title>
+<indexterm zone="EpsaraDataInteractionPrivate"><primary>EpsaraDataInteractionPrivate</primary></indexterm>
+<programlisting language="C">typedef struct _EpsaraDataInteractionPrivate EpsaraDataInteractionPrivate;</programlisting>
+</refsect2>
+
+</refsect1>
+
+</refentry>

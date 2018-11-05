@@ -1,0 +1,402 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="epsara-libcsv">
+<refmeta>
+<refentrytitle role="top_of_page" id="epsara-libcsv.top_of_page">libcsv</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>EPSARA Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>libcsv</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="epsara-libcsv.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="csv-init">csv_init</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="csv-fini">csv_fini</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="csv-free">csv_free</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="csv-error">csv_error</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="csv-strerror">csv_strerror</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="size-t"><returnvalue>size_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="csv-parse">csv_parse</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="size-t"><returnvalue>size_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="csv-write">csv_write</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="csv-fwrite">csv_fwrite</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="size-t"><returnvalue>size_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="csv-write2">csv_write2</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="csv-fwrite2">csv_fwrite2</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="csv-get-opts">csv_get_opts</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="csv-set-opts">csv_set_opts</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="csv-set-delim">csv_set_delim</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="csv-set-quote">csv_set_quote</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">unsigned <link linkend="char"><returnvalue>char</returnvalue></link>
+</entry><entry role="function_name"><link linkend="csv-get-delim">csv_get_delim</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">unsigned <link linkend="char"><returnvalue>char</returnvalue></link>
+</entry><entry role="function_name"><link linkend="csv-get-quote">csv_get_quote</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="csv-set-space-func">csv_set_space_func</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="csv-set-term-func">csv_set_term_func</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="csv-set-realloc-func">csv_set_realloc_func</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="csv-set-free-func">csv_set_free_func</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="csv-set-blk-size">csv_set_blk_size</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="size-t"><returnvalue>size_t</returnvalue></link>
+</entry><entry role="function_name"><link linkend="csv-get-buffer-size">csv_get_buffer_size</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="epsara-libcsv.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="CSV-MAJOR:CAPS">CSV_MAJOR</link></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="CSV-MINOR:CAPS">CSV_MINOR</link></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="CSV-RELEASE:CAPS">CSV_RELEASE</link></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="CSV-SUCCESS:CAPS">CSV_SUCCESS</link></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="CSV-EPARSE:CAPS">CSV_EPARSE</link></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="CSV-ENOMEM:CAPS">CSV_ENOMEM</link></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="CSV-ETOOBIG:CAPS">CSV_ETOOBIG</link></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="CSV-EINVALID:CAPS">CSV_EINVALID</link></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="CSV-STRICT:CAPS">CSV_STRICT</link></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="CSV-REPALL-NL:CAPS">CSV_REPALL_NL</link></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="CSV-STRICT-FINI:CAPS">CSV_STRICT_FINI</link></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="CSV-TAB:CAPS">CSV_TAB</link></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="CSV-SPACE:CAPS">CSV_SPACE</link></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="CSV-CR:CAPS">CSV_CR</link></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="CSV-LF:CAPS">CSV_LF</link></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="CSV-COMMA:CAPS">CSV_COMMA</link></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="CSV-QUOTE:CAPS">CSV_QUOTE</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="csv-parser">csv_parser</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+
+<refsect1 id="epsara-libcsv.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="epsara-libcsv.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="csv-init" role="function">
+<title>csv_init&#160;()</title>
+<indexterm zone="csv-init"><primary>csv_init</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+csv_init (<parameter><type>struct csv_parser</type> *p</parameter>,
+          <parameter>unsigned <link linkend="char"><type>char</type></link> options</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="csv-fini" role="function">
+<title>csv_fini&#160;()</title>
+<indexterm zone="csv-fini"><primary>csv_fini</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+csv_fini (<parameter><type>struct csv_parser</type> *p</parameter>,
+          <parameter><link linkend="void"><type>void</type></link> (*cb1) (void *, size_t, void *)</parameter>,
+          <parameter><link linkend="void"><type>void</type></link> (*cb2) (int, void *)</parameter>,
+          <parameter><link linkend="void"><type>void</type></link> *data</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="csv-free" role="function">
+<title>csv_free&#160;()</title>
+<indexterm zone="csv-free"><primary>csv_free</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+csv_free (<parameter><type>struct csv_parser</type> *p</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="csv-error" role="function">
+<title>csv_error&#160;()</title>
+<indexterm zone="csv-error"><primary>csv_error</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+csv_error (<parameter><type>struct csv_parser</type> *p</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="csv-strerror" role="function">
+<title>csv_strerror&#160;()</title>
+<indexterm zone="csv-strerror"><primary>csv_strerror</primary></indexterm>
+<programlisting language="C"><link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+csv_strerror (<parameter><link linkend="int"><type>int</type></link> error</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="csv-parse" role="function">
+<title>csv_parse&#160;()</title>
+<indexterm zone="csv-parse"><primary>csv_parse</primary></indexterm>
+<programlisting language="C"><link linkend="size-t"><returnvalue>size_t</returnvalue></link>
+csv_parse (<parameter><type>struct csv_parser</type> *p</parameter>,
+           <parameter>const <link linkend="void"><type>void</type></link> *s</parameter>,
+           <parameter><link linkend="size-t"><type>size_t</type></link> len</parameter>,
+           <parameter><link linkend="void"><type>void</type></link> (*cb1) (void *, size_t, void *)</parameter>,
+           <parameter><link linkend="void"><type>void</type></link> (*cb2) (int, void *)</parameter>,
+           <parameter><link linkend="void"><type>void</type></link> *data</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="csv-write" role="function">
+<title>csv_write&#160;()</title>
+<indexterm zone="csv-write"><primary>csv_write</primary></indexterm>
+<programlisting language="C"><link linkend="size-t"><returnvalue>size_t</returnvalue></link>
+csv_write (<parameter><link linkend="void"><type>void</type></link> *dest</parameter>,
+           <parameter><link linkend="size-t"><type>size_t</type></link> dest_size</parameter>,
+           <parameter>const <link linkend="void"><type>void</type></link> *src</parameter>,
+           <parameter><link linkend="size-t"><type>size_t</type></link> src_size</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="csv-fwrite" role="function">
+<title>csv_fwrite&#160;()</title>
+<indexterm zone="csv-fwrite"><primary>csv_fwrite</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+csv_fwrite (<parameter><link linkend="FILE:CAPS"><type>FILE</type></link> *fp</parameter>,
+            <parameter>const <link linkend="void"><type>void</type></link> *src</parameter>,
+            <parameter><link linkend="size-t"><type>size_t</type></link> src_size</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="csv-write2" role="function">
+<title>csv_write2&#160;()</title>
+<indexterm zone="csv-write2"><primary>csv_write2</primary></indexterm>
+<programlisting language="C"><link linkend="size-t"><returnvalue>size_t</returnvalue></link>
+csv_write2 (<parameter><link linkend="void"><type>void</type></link> *dest</parameter>,
+            <parameter><link linkend="size-t"><type>size_t</type></link> dest_size</parameter>,
+            <parameter>const <link linkend="void"><type>void</type></link> *src</parameter>,
+            <parameter><link linkend="size-t"><type>size_t</type></link> src_size</parameter>,
+            <parameter>unsigned <link linkend="char"><type>char</type></link> quote</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="csv-fwrite2" role="function">
+<title>csv_fwrite2&#160;()</title>
+<indexterm zone="csv-fwrite2"><primary>csv_fwrite2</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+csv_fwrite2 (<parameter><link linkend="FILE:CAPS"><type>FILE</type></link> *fp</parameter>,
+             <parameter>const <link linkend="void"><type>void</type></link> *src</parameter>,
+             <parameter><link linkend="size-t"><type>size_t</type></link> src_size</parameter>,
+             <parameter>unsigned <link linkend="char"><type>char</type></link> quote</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="csv-get-opts" role="function">
+<title>csv_get_opts&#160;()</title>
+<indexterm zone="csv-get-opts"><primary>csv_get_opts</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+csv_get_opts (<parameter><type>struct csv_parser</type> *p</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="csv-set-opts" role="function">
+<title>csv_set_opts&#160;()</title>
+<indexterm zone="csv-set-opts"><primary>csv_set_opts</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+csv_set_opts (<parameter><type>struct csv_parser</type> *p</parameter>,
+              <parameter>unsigned <link linkend="char"><type>char</type></link> options</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="csv-set-delim" role="function">
+<title>csv_set_delim&#160;()</title>
+<indexterm zone="csv-set-delim"><primary>csv_set_delim</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+csv_set_delim (<parameter><type>struct csv_parser</type> *p</parameter>,
+               <parameter>unsigned <link linkend="char"><type>char</type></link> c</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="csv-set-quote" role="function">
+<title>csv_set_quote&#160;()</title>
+<indexterm zone="csv-set-quote"><primary>csv_set_quote</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+csv_set_quote (<parameter><type>struct csv_parser</type> *p</parameter>,
+               <parameter>unsigned <link linkend="char"><type>char</type></link> c</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="csv-get-delim" role="function">
+<title>csv_get_delim&#160;()</title>
+<indexterm zone="csv-get-delim"><primary>csv_get_delim</primary></indexterm>
+<programlisting language="C">unsigned <link linkend="char"><returnvalue>char</returnvalue></link>
+csv_get_delim (<parameter><type>struct csv_parser</type> *p</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="csv-get-quote" role="function">
+<title>csv_get_quote&#160;()</title>
+<indexterm zone="csv-get-quote"><primary>csv_get_quote</primary></indexterm>
+<programlisting language="C">unsigned <link linkend="char"><returnvalue>char</returnvalue></link>
+csv_get_quote (<parameter><type>struct csv_parser</type> *p</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="csv-set-space-func" role="function">
+<title>csv_set_space_func&#160;()</title>
+<indexterm zone="csv-set-space-func"><primary>csv_set_space_func</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+csv_set_space_func (<parameter><type>struct csv_parser</type> *p</parameter>,
+                    <parameter><link linkend="int"><type>int</type></link> (*f) (unsigned char)</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="csv-set-term-func" role="function">
+<title>csv_set_term_func&#160;()</title>
+<indexterm zone="csv-set-term-func"><primary>csv_set_term_func</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+csv_set_term_func (<parameter><type>struct csv_parser</type> *p</parameter>,
+                   <parameter><link linkend="int"><type>int</type></link> (*f) (unsigned char)</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="csv-set-realloc-func" role="function">
+<title>csv_set_realloc_func&#160;()</title>
+<indexterm zone="csv-set-realloc-func"><primary>csv_set_realloc_func</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+csv_set_realloc_func (<parameter><type>struct csv_parser</type> *p</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="csv-set-free-func" role="function">
+<title>csv_set_free_func&#160;()</title>
+<indexterm zone="csv-set-free-func"><primary>csv_set_free_func</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+csv_set_free_func (<parameter><type>struct csv_parser</type> *p</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="csv-set-blk-size" role="function">
+<title>csv_set_blk_size&#160;()</title>
+<indexterm zone="csv-set-blk-size"><primary>csv_set_blk_size</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+csv_set_blk_size (<parameter><type>struct csv_parser</type> *p</parameter>,
+                  <parameter><link linkend="size-t"><type>size_t</type></link> Param2</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="csv-get-buffer-size" role="function">
+<title>csv_get_buffer_size&#160;()</title>
+<indexterm zone="csv-get-buffer-size"><primary>csv_get_buffer_size</primary></indexterm>
+<programlisting language="C"><link linkend="size-t"><returnvalue>size_t</returnvalue></link>
+csv_get_buffer_size (<parameter><type>struct csv_parser</type> *p</parameter>);</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="epsara-libcsv.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="CSV-MAJOR:CAPS" role="macro">
+<title>CSV_MAJOR</title>
+<indexterm zone="CSV-MAJOR:CAPS"><primary>CSV_MAJOR</primary></indexterm>
+<programlisting language="C">#define CSV_MAJOR 3
+</programlisting>
+</refsect2>
+<refsect2 id="CSV-MINOR:CAPS" role="macro">
+<title>CSV_MINOR</title>
+<indexterm zone="CSV-MINOR:CAPS"><primary>CSV_MINOR</primary></indexterm>
+<programlisting language="C">#define CSV_MINOR 0
+</programlisting>
+</refsect2>
+<refsect2 id="CSV-RELEASE:CAPS" role="macro">
+<title>CSV_RELEASE</title>
+<indexterm zone="CSV-RELEASE:CAPS"><primary>CSV_RELEASE</primary></indexterm>
+<programlisting language="C">#define CSV_RELEASE 3
+</programlisting>
+</refsect2>
+<refsect2 id="CSV-SUCCESS:CAPS" role="macro">
+<title>CSV_SUCCESS</title>
+<indexterm zone="CSV-SUCCESS:CAPS"><primary>CSV_SUCCESS</primary></indexterm>
+<programlisting language="C">#define CSV_SUCCESS 0
+</programlisting>
+</refsect2>
+<refsect2 id="CSV-EPARSE:CAPS" role="macro">
+<title>CSV_EPARSE</title>
+<indexterm zone="CSV-EPARSE:CAPS"><primary>CSV_EPARSE</primary></indexterm>
+<programlisting language="C">#define CSV_EPARSE 1   /* Parse error in strict mode */
+</programlisting>
+</refsect2>
+<refsect2 id="CSV-ENOMEM:CAPS" role="macro">
+<title>CSV_ENOMEM</title>
+<indexterm zone="CSV-ENOMEM:CAPS"><primary>CSV_ENOMEM</primary></indexterm>
+<programlisting language="C">#define CSV_ENOMEM 2   /* Out of memory while increasing buffer size */
+</programlisting>
+</refsect2>
+<refsect2 id="CSV-ETOOBIG:CAPS" role="macro">
+<title>CSV_ETOOBIG</title>
+<indexterm zone="CSV-ETOOBIG:CAPS"><primary>CSV_ETOOBIG</primary></indexterm>
+<programlisting language="C">#define CSV_ETOOBIG 3  /* Buffer larger than SIZE_MAX needed */
+</programlisting>
+</refsect2>
+<refsect2 id="CSV-EINVALID:CAPS" role="macro">
+<title>CSV_EINVALID</title>
+<indexterm zone="CSV-EINVALID:CAPS"><primary>CSV_EINVALID</primary></indexterm>
+<programlisting language="C">#define CSV_EINVALID 4 /* Invalid code,should never be received from csv_error*/
+</programlisting>
+</refsect2>
+<refsect2 id="CSV-STRICT:CAPS" role="macro">
+<title>CSV_STRICT</title>
+<indexterm zone="CSV-STRICT:CAPS"><primary>CSV_STRICT</primary></indexterm>
+<programlisting language="C">#define CSV_STRICT 1    /* enable strict mode */
+</programlisting>
+</refsect2>
+<refsect2 id="CSV-REPALL-NL:CAPS" role="macro">
+<title>CSV_REPALL_NL</title>
+<indexterm zone="CSV-REPALL-NL:CAPS"><primary>CSV_REPALL_NL</primary></indexterm>
+<programlisting language="C">#define CSV_REPALL_NL 2 /* report all unquoted carriage returns and linefeeds */
+</programlisting>
+</refsect2>
+<refsect2 id="CSV-STRICT-FINI:CAPS" role="macro">
+<title>CSV_STRICT_FINI</title>
+<indexterm zone="CSV-STRICT-FINI:CAPS"><primary>CSV_STRICT_FINI</primary></indexterm>
+<programlisting language="C">#define CSV_STRICT_FINI 4 /* causes csv_fini to return CSV_EPARSE if last
+</programlisting>
+</refsect2>
+<refsect2 id="CSV-TAB:CAPS" role="macro">
+<title>CSV_TAB</title>
+<indexterm zone="CSV-TAB:CAPS"><primary>CSV_TAB</primary></indexterm>
+<programlisting language="C">#define CSV_TAB    0x09
+</programlisting>
+</refsect2>
+<refsect2 id="CSV-SPACE:CAPS" role="macro">
+<title>CSV_SPACE</title>
+<indexterm zone="CSV-SPACE:CAPS"><primary>CSV_SPACE</primary></indexterm>
+<programlisting language="C">#define CSV_SPACE  0x20
+</programlisting>
+</refsect2>
+<refsect2 id="CSV-CR:CAPS" role="macro">
+<title>CSV_CR</title>
+<indexterm zone="CSV-CR:CAPS"><primary>CSV_CR</primary></indexterm>
+<programlisting language="C">#define CSV_CR     0x0d
+</programlisting>
+</refsect2>
+<refsect2 id="CSV-LF:CAPS" role="macro">
+<title>CSV_LF</title>
+<indexterm zone="CSV-LF:CAPS"><primary>CSV_LF</primary></indexterm>
+<programlisting language="C">#define CSV_LF     0x0a
+</programlisting>
+</refsect2>
+<refsect2 id="CSV-COMMA:CAPS" role="macro">
+<title>CSV_COMMA</title>
+<indexterm zone="CSV-COMMA:CAPS"><primary>CSV_COMMA</primary></indexterm>
+<programlisting language="C">#define CSV_COMMA  0x2c
+</programlisting>
+</refsect2>
+<refsect2 id="CSV-QUOTE:CAPS" role="macro">
+<title>CSV_QUOTE</title>
+<indexterm zone="CSV-QUOTE:CAPS"><primary>CSV_QUOTE</primary></indexterm>
+<programlisting language="C">#define CSV_QUOTE  0x22
+</programlisting>
+</refsect2>
+<refsect2 id="csv-parser" role="struct">
+<title>struct csv_parser</title>
+<indexterm zone="csv-parser"><primary>csv_parser</primary></indexterm>
+<programlisting language="C">struct csv_parser {
+  int pstate;         /* Parser state */
+  int quoted;         /* Is the current field a quoted field? */
+  size_t spaces;      /* Number of continious spaces after quote or in a non-quoted field */
+  unsigned char * entry_buf;   /* Entry buffer */
+  size_t entry_pos;   /* Current position in entry_buf (and current size of entry) */
+  size_t entry_size;  /* Size of entry buffer */
+  int status;         /* Operation status */
+  unsigned char options;
+  unsigned char quote_char;
+  unsigned char delim_char;
+  int (*is_space)(unsigned char);
+  int (*is_term)(unsigned char);
+  size_t blk_size;
+  void *(*malloc_func)(size_t);
+  void *(*realloc_func)(void *, size_t);
+  void (*free_func)(void *);
+};
+</programlisting>
+</refsect2>
+
+</refsect1>
+
+</refentry>

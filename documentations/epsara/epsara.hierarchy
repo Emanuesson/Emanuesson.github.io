@@ -1,0 +1,39 @@
+GObject
+  EpsaraDataElement
+    EpsaraDataDetector
+      EpsaraDataParticleDetector
+    EpsaraDataInteraction
+      EpsaraDataParticleScattering
+    EpsaraDataIsotope
+      EpsaraDataIsotopeIonicEloss
+    EpsaraDataMaterial
+      EpsaraDataMaterialLayered
+    EpsaraDataMeasurement
+      EpsaraDataRbsMeasurement
+    EpsaraDataSource
+      EpsaraDataParticleBeam
+    EpsaraDataSet
+  EpsaraDataMatrix
+  EpsaraDataVector
+  EpsaraFileParserR33
+GInterface
+  GTypePlugin
+  JsonSerializable
+GEnum
+  EpsaraBsCalculationType
+  EpsaraDifferntiationType
+  EpsaraEnergyLoss
+  EpsaraIonElossStraggType
+  EpsaraMaterialState
+  EpsaraMinimizerType
+  EpsaraScreeningType
+GBoxed
+  GValueArray
+  EpsaraDataDirection
+  EpsaraDataPoint
+  EpsaraDataPolygon
+  GString
+  GBytes
+  GDateTime
+  GHashTable
+  GStrv

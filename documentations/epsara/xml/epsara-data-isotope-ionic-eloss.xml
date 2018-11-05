@@ -1,0 +1,284 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="EpsaraDataIsotopeIonicEloss">
+<refmeta>
+<refentrytitle role="top_of_page" id="EpsaraDataIsotopeIonicEloss.top_of_page">EpsaraDataIsotopeIonicEloss</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>EPSARA Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>EpsaraDataIsotopeIonicEloss</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="EpsaraDataIsotopeIonicEloss.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-isotope-ionic-eloss-calc-eloss">epsara_data_isotope_ionic_eloss_calc_eloss</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-isotope-ionic-eloss-calc-nuclear-eloss">epsara_data_isotope_ionic_eloss_calc_nuclear_eloss</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-isotope-ionic-eloss-calc-electronic-eloss">epsara_data_isotope_ionic_eloss_calc_electronic_eloss</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-isotope-ionic-eloss-straggling">epsara_data_isotope_ionic_eloss_straggling</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-isotope-ionic-eloss-at-pos">epsara_data_isotope_ionic_eloss_at_pos</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataIsotopeIonicEloss.properties" role="properties">
+<title role="properties.title">Properties</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="properties_type" colwidth="150px"/>
+<colspec colname="properties_name" colwidth="300px"/>
+<colspec colname="properties_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="property_type"><link linkend="gint"><type>gint</type></link></entry><entry role="property_name"><link linkend="EpsaraDataIsotopeIonicEloss--eloss">eloss</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="EpsaraMaterialState"><type>EpsaraMaterialState</type></link></entry><entry role="property_name"><link linkend="EpsaraDataIsotopeIonicEloss--state">state</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="EpsaraIonElossStraggType"><type>EpsaraIonElossStraggType</type></link></entry><entry role="property_name"><link linkend="EpsaraDataIsotopeIonicEloss--straggling">straggling</link></entry><entry role="property_flags">Read / Write</entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataIsotopeIonicEloss.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="EpsaraDataIsotopeIonicEloss-struct">EpsaraDataIsotopeIonicEloss</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="EpsaraDataIsotopeIonicElossClass">EpsaraDataIsotopeIonicElossClass</link></entry></row>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="EpsaraDataIsotopeIonicElossPrivate">EpsaraDataIsotopeIonicElossPrivate</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataIsotopeIonicEloss.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="EpsaraDataElement">EpsaraDataElement</link>
+        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="EpsaraDataIsotope">EpsaraDataIsotope</link>
+            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> EpsaraDataIsotopeIonicEloss
+</screen>
+</refsect1>
+<refsect1 id="EpsaraDataIsotopeIonicEloss.implemented-interfaces" role="impl_interfaces">
+<title role="impl_interfaces.title">Implemented Interfaces</title>
+<para>
+EpsaraDataIsotopeIonicEloss implements
+ <link linkend="JsonSerializable">JsonSerializable</link>.</para>
+
+</refsect1>
+
+
+<refsect1 id="EpsaraDataIsotopeIonicEloss.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="EpsaraDataIsotopeIonicEloss.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="epsara-data-isotope-ionic-eloss-calc-eloss" role="function">
+<title>epsara_data_isotope_ionic_eloss_calc_eloss&#160;()</title>
+<indexterm zone="epsara-data-isotope-ionic-eloss-calc-eloss"><primary>epsara_data_isotope_ionic_eloss_calc_eloss</primary></indexterm>
+<programlisting language="C"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+epsara_data_isotope_ionic_eloss_calc_eloss
+                               (<parameter><link linkend="EpsaraDataIsotopeIonicEloss"><type>EpsaraDataIsotopeIonicEloss</type></link> *self</parameter>,
+                                <parameter><link linkend="gdouble"><type>gdouble</type></link> energy_ion_in</parameter>,
+                                <parameter><link linkend="gint"><type>gint</type></link> atomic_no_ion</parameter>,
+                                <parameter><link linkend="gdouble"><type>gdouble</type></link> atomic_mass_ion</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-isotope-ionic-eloss-calc-nuclear-eloss" role="function">
+<title>epsara_data_isotope_ionic_eloss_calc_nuclear_eloss&#160;()</title>
+<indexterm zone="epsara-data-isotope-ionic-eloss-calc-nuclear-eloss"><primary>epsara_data_isotope_ionic_eloss_calc_nuclear_eloss</primary></indexterm>
+<programlisting language="C"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+epsara_data_isotope_ionic_eloss_calc_nuclear_eloss
+                               (<parameter><link linkend="EpsaraDataIsotopeIonicEloss"><type>EpsaraDataIsotopeIonicEloss</type></link> *self</parameter>,
+                                <parameter><link linkend="gdouble"><type>gdouble</type></link> energy_ion_in</parameter>,
+                                <parameter><link linkend="gint"><type>gint</type></link> atomic_no_ion</parameter>,
+                                <parameter><link linkend="gdouble"><type>gdouble</type></link> atomic_mass_ion</parameter>);</programlisting>
+<para>This function calculates the energy loss by nuclear collisions as available by
+the TRIM-calculations (see "the stopping and range of ions in solids" by
+Ziegler, Biersack and Littmark for details).</para>
+<refsect3 id="epsara-data-isotope-ionic-eloss-calc-nuclear-eloss.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>self</para></entry>
+<entry role="parameter_description"><para>a <link linkend="EpsaraDataIsotopeIonicEloss"><type>EpsaraDataIsotopeIonicEloss</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>energy_ion_in</para></entry>
+<entry role="parameter_description"><para>ion energy in keV</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>atomic_no_ion</para></entry>
+<entry role="parameter_description"><para>the atomic number of the ion</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>atomic_mass_ion</para></entry>
+<entry role="parameter_description"><para>the atomic mass of the ion</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="epsara-data-isotope-ionic-eloss-calc-nuclear-eloss.returns" role="returns">
+<title>Returns</title>
+<para> the value of nuclear energy loss per atomic density [kev/nm]/[cm^-3]
+for the given ion energy</para>
+</refsect3></refsect2>
+<refsect2 id="epsara-data-isotope-ionic-eloss-calc-electronic-eloss" role="function">
+<title>epsara_data_isotope_ionic_eloss_calc_electronic_eloss&#160;()</title>
+<indexterm zone="epsara-data-isotope-ionic-eloss-calc-electronic-eloss"><primary>epsara_data_isotope_ionic_eloss_calc_electronic_eloss</primary></indexterm>
+<programlisting language="C"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+epsara_data_isotope_ionic_eloss_calc_electronic_eloss
+                               (<parameter><link linkend="EpsaraDataIsotopeIonicEloss"><type>EpsaraDataIsotopeIonicEloss</type></link> *self</parameter>,
+                                <parameter><link linkend="gdouble"><type>gdouble</type></link> energy_ion_in</parameter>,
+                                <parameter><link linkend="gint"><type>gint</type></link> atomic_no_ion</parameter>,
+                                <parameter><link linkend="gdouble"><type>gdouble</type></link> atomic_mass_ion</parameter>);</programlisting>
+<para>This function calculates the energy loss by electronic exitations as
+available by the TRIM-calculations (see "the stopping and range of ions in
+solids" by Ziegler, Biersack and Littmark for details).</para>
+<refsect3 id="epsara-data-isotope-ionic-eloss-calc-electronic-eloss.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>self</para></entry>
+<entry role="parameter_description"><para>a <link linkend="EpsaraDataIsotopeIonicEloss"><type>EpsaraDataIsotopeIonicEloss</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>energy_ion_in</para></entry>
+<entry role="parameter_description"><para>ion energy in keV</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>atomic_no_ion</para></entry>
+<entry role="parameter_description"><para>the atomic number of the ion</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>atomic_mass_ion</para></entry>
+<entry role="parameter_description"><para>the atomic mass of the ion</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="epsara-data-isotope-ionic-eloss-calc-electronic-eloss.returns" role="returns">
+<title>Returns</title>
+<para> the value of nuclear energy loss per atomic density [kev/nm]/[cm^-3]
+for the given ion energy</para>
+</refsect3></refsect2>
+<refsect2 id="epsara-data-isotope-ionic-eloss-straggling" role="function">
+<title>epsara_data_isotope_ionic_eloss_straggling&#160;()</title>
+<indexterm zone="epsara-data-isotope-ionic-eloss-straggling"><primary>epsara_data_isotope_ionic_eloss_straggling</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+epsara_data_isotope_ionic_eloss_straggling
+                               (<parameter><link linkend="EpsaraDataIsotopeIonicEloss"><type>EpsaraDataIsotopeIonicEloss</type></link> *self</parameter>,
+                                <parameter><link linkend="gdouble"><type>gdouble</type></link> energy_ion_in</parameter>,
+                                <parameter><link linkend="gint"><type>gint</type></link> atomic_no_ion</parameter>,
+                                <parameter><link linkend="gdouble"><type>gdouble</type></link> atomic_mass_ion</parameter>,
+                                <parameter><link linkend="gdouble"><type>gdouble</type></link> *low_eside_stragg</parameter>,
+                                <parameter><link linkend="gdouble"><type>gdouble</type></link> *high_eside_stragg</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-isotope-ionic-eloss-at-pos" role="function">
+<title>epsara_data_isotope_ionic_eloss_at_pos&#160;()</title>
+<indexterm zone="epsara-data-isotope-ionic-eloss-at-pos"><primary>epsara_data_isotope_ionic_eloss_at_pos</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+epsara_data_isotope_ionic_eloss_at_pos
+                               (<parameter><link linkend="EpsaraDataMaterial"><type>EpsaraDataMaterial</type></link> *material_list</parameter>,
+                                <parameter><link linkend="EpsaraDataPoint"><type>EpsaraDataPoint</type></link> *position</parameter>,
+                                <parameter><link linkend="gdouble"><type>gdouble</type></link> energy_ion_in</parameter>,
+                                <parameter><link linkend="gint"><type>gint</type></link> atomic_no_ion</parameter>,
+                                <parameter><link linkend="gdouble"><type>gdouble</type></link> atomic_mass_ion</parameter>,
+                                <parameter><link linkend="gdouble"><type>gdouble</type></link> *energy_loss</parameter>,
+                                <parameter><link linkend="gdouble"><type>gdouble</type></link> *eloss_stragg</parameter>);</programlisting>
+<para>This function calculates the full energy loss at a single position for a
+given list of isotopes and materials.</para>
+<refsect3 id="epsara-data-isotope-ionic-eloss-at-pos.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>material_list</para></entry>
+<entry role="parameter_description"><para>a <link linkend="EpsaraDataMaterial"><type>EpsaraDataMaterial</type></link> with subisotopes</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>position</para></entry>
+<entry role="parameter_description"><para>the current position</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>energy_ion_in</para></entry>
+<entry role="parameter_description"><para>ion energy in keV</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>atomic_no_ion</para></entry>
+<entry role="parameter_description"><para>the atomic number of the ion</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>atomic_mass_ion</para></entry>
+<entry role="parameter_description"><para>the atomic mass of the ion</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>energy_loss</para></entry>
+<entry role="parameter_description"><para>a pointer to store the absolute energy-loss value in keV</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>eloss_stragg</para></entry>
+<entry role="parameter_description"><para>a pointer to store the absolute energy-straggling in keV^2</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+
+</refsect1>
+<refsect1 id="EpsaraDataIsotopeIonicEloss.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="EpsaraDataIsotopeIonicEloss-struct" role="struct">
+<title>struct EpsaraDataIsotopeIonicEloss</title>
+<indexterm zone="EpsaraDataIsotopeIonicEloss-struct"><primary>EpsaraDataIsotopeIonicEloss</primary></indexterm>
+<programlisting language="C">struct EpsaraDataIsotopeIonicEloss;</programlisting>
+</refsect2>
+<refsect2 id="EpsaraDataIsotopeIonicElossClass" role="struct">
+<title>struct EpsaraDataIsotopeIonicElossClass</title>
+<indexterm zone="EpsaraDataIsotopeIonicElossClass"><primary>EpsaraDataIsotopeIonicElossClass</primary></indexterm>
+<programlisting language="C">struct EpsaraDataIsotopeIonicElossClass {
+  EpsaraDataIsotopeClass parent_class;
+};
+</programlisting>
+</refsect2>
+<refsect2 id="EpsaraDataIsotopeIonicElossPrivate" role="struct">
+<title>EpsaraDataIsotopeIonicElossPrivate</title>
+<indexterm zone="EpsaraDataIsotopeIonicElossPrivate"><primary>EpsaraDataIsotopeIonicElossPrivate</primary></indexterm>
+<programlisting language="C">typedef struct _EpsaraDataIsotopeIonicElossPrivate EpsaraDataIsotopeIonicElossPrivate;</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="EpsaraDataIsotopeIonicEloss.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="EpsaraDataIsotopeIonicEloss--eloss" role="property"><title>The <literal>“eloss”</literal> property</title>
+<indexterm zone="EpsaraDataIsotopeIonicEloss--eloss"><primary>EpsaraDataIsotopeIonicEloss:eloss</primary></indexterm>
+<programlisting>  “eloss”                    <link linkend="gint"><type>gint</type></link></programlisting>
+<para>specify energy-loss calcul.</para><para>Flags: Read / Write</para>
+<para>Allowed values: [0,2]</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="EpsaraDataIsotopeIonicEloss--state" role="property"><title>The <literal>“state”</literal> property</title>
+<indexterm zone="EpsaraDataIsotopeIonicEloss--state"><primary>EpsaraDataIsotopeIonicEloss:state</primary></indexterm>
+<programlisting>  “state”                    <link linkend="EpsaraMaterialState"><type>EpsaraMaterialState</type></link></programlisting>
+<para>determines the physical state, the material is present.</para><para>Flags: Read / Write</para>
+<para>Default value: EPSARA_SOLID</para>
+</refsect2>
+<refsect2 id="EpsaraDataIsotopeIonicEloss--straggling" role="property"><title>The <literal>“straggling”</literal> property</title>
+<indexterm zone="EpsaraDataIsotopeIonicEloss--straggling"><primary>EpsaraDataIsotopeIonicEloss:straggling</primary></indexterm>
+<programlisting>  “straggling”               <link linkend="EpsaraIonElossStraggType"><type>EpsaraIonElossStraggType</type></link></programlisting>
+<para>determines if energy-straggling will be calculated or not.</para><para>Flags: Read / Write</para>
+<para>Default value: EPSARA_YANG</para>
+</refsect2>
+
+</refsect1>
+
+</refentry>

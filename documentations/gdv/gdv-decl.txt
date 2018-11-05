@@ -1,0 +1,1558 @@
+<STRUCT>
+<NAME>GdvDataPoint</NAME>
+struct _GdvDataPoint
+{
+  gdouble x;
+  gdouble y;
+  gdouble z;
+};
+</STRUCT>
+<STRUCT>
+<NAME>GdvDataPointSingleExtended</NAME>
+struct _GdvDataPointSingleExtended
+{
+  GdvDataPoint *point;
+  GdvDataPoint *neg_range_1;
+  GdvDataPoint *pos_range_1;
+};
+</STRUCT>
+<STRUCT>
+<NAME>GdvDataPointDoubleExtended</NAME>
+struct _GdvDataPointDoubleExtended
+{
+  GdvDataPointSingleExtended *point;
+  GdvDataPoint *neg_range_2;
+  GdvDataPoint *pos_range_2;
+};
+</STRUCT>
+<STRUCT>
+<NAME>GdvDataNPoint</NAME>
+struct _GdvDataNPoint
+{
+  guint N;
+  gdouble *x;
+};
+</STRUCT>
+<STRUCT>
+<NAME>GdvDataDirection</NAME>
+struct _GdvDataDirection
+{
+  GdvDataPoint origin;
+  GdvDataPoint direction;
+};
+</STRUCT>
+<STRUCT>
+<NAME>GdvDataPolygon</NAME>
+struct _GdvDataPolygon
+{
+  GdvDataPoint point1;
+  GdvDataPoint point2;
+  GdvDataPoint point3;
+};
+</STRUCT>
+<STRUCT>
+<NAME>GdvDataPixel</NAME>
+struct _GdvDataPixel
+{
+  gint x;
+  gint y;
+};
+</STRUCT>
+<FUNCTION>
+<NAME>gdv_data_point_equal</NAME>
+<RETURNS>gboolean  </RETURNS>
+const GdvDataPoint *point1, const GdvDataPoint *point2
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_data_point_metric</NAME>
+<RETURNS>gdouble  </RETURNS>
+const GdvDataPoint *point1, const GdvDataPoint *point2
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_data_point_distance_to_origin</NAME>
+<RETURNS>gdouble  </RETURNS>
+const GdvDataPoint *point
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_data_point_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_data_n_point_equal</NAME>
+<RETURNS>gboolean  </RETURNS>
+const GdvDataNPoint *point1, const GdvDataNPoint *point2
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_data_n_point_metric</NAME>
+<RETURNS>gdouble  </RETURNS>
+const GdvDataNPoint *point1, const GdvDataNPoint *point2
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_data_n_point_get</NAME>
+<RETURNS>gdouble  </RETURNS>
+const GdvDataNPoint *point1, const guint n
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_data_n_point_set</NAME>
+<RETURNS>void  </RETURNS>
+GdvDataNPoint *point1, const guint n, gdouble x
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_data_n_point_set_and_expand</NAME>
+<RETURNS>GdvDataNPoint  *</RETURNS>
+GdvDataNPoint *point1, const guint n, gdouble x
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_data_n_point_distance_to_origin</NAME>
+<RETURNS>gdouble  </RETURNS>
+const GdvDataNPoint *point
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_data_n_point_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_data_direction_equal</NAME>
+<RETURNS>gboolean  </RETURNS>
+const GdvDataDirection *direction1, const GdvDataDirection *direction2
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_data_direction_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_data_polygon_equal</NAME>
+<RETURNS>gboolean  </RETURNS>
+const GdvDataPolygon *polygon1, const GdvDataPolygon *polygon2
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_data_polygon_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_data_pixel_equal</NAME>
+<RETURNS>gboolean  </RETURNS>
+const GdvDataPixel *pixel1, const GdvDataPixel *pixel2
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_data_pixel_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<MACRO>
+<NAME>GDV_TYPE_DATA_POINT</NAME>
+#define GDV_TYPE_DATA_POINT\
+  (gdv_data_point_get_type ())
+</MACRO>
+<MACRO>
+<NAME>GDV_TYPE_DATA_POINT_SINGLE_EXTENDED</NAME>
+#define GDV_TYPE_DATA_POINT_SINGLE_EXTENDED\
+  (gdv_data_point_single_extended_get_type ())
+</MACRO>
+<MACRO>
+<NAME>GDV_TYPE_DATA_POINT_DOUBLE_EXTENDED</NAME>
+#define GDV_TYPE_DATA_POINT_DOUBLE_EXTENDED\
+  (gdv_data_point_double_extended_get_type ())
+</MACRO>
+<MACRO>
+<NAME>GDV_TYPE_DATA_N_POINT</NAME>
+#define GDV_TYPE_DATA_N_POINT\
+  (gdv_data_n_point_get_type ())
+</MACRO>
+<MACRO>
+<NAME>GDV_TYPE_DATA_DIRECTION</NAME>
+#define GDV_TYPE_DATA_DIRECTION\
+  (gdv_data_direction_get_type ())
+</MACRO>
+<MACRO>
+<NAME>GDV_TYPE_DATA_POLYGON</NAME>
+#define GDV_TYPE_DATA_POLYGON\
+  (gdv_data_polygon_get_type ())
+</MACRO>
+<MACRO>
+<NAME>GDV_TYPE_DATA_PIXEL</NAME>
+#define GDV_TYPE_DATA_PIXEL\
+  (gdv_data_pixel_get_type ())
+</MACRO>
+<STRUCT>
+<NAME>GdvDataDirection</NAME>
+</STRUCT>
+<STRUCT>
+<NAME>GdvDataNPoint</NAME>
+</STRUCT>
+<STRUCT>
+<NAME>GdvDataPixel</NAME>
+</STRUCT>
+<STRUCT>
+<NAME>GdvDataPoint</NAME>
+</STRUCT>
+<STRUCT>
+<NAME>GdvDataPointDoubleExtended</NAME>
+</STRUCT>
+<STRUCT>
+<NAME>GdvDataPointSingleExtended</NAME>
+</STRUCT>
+<STRUCT>
+<NAME>GdvDataPolygon</NAME>
+</STRUCT>
+<ENUM>
+<NAME>GdvOnedLayerType</NAME>
+typedef enum
+{
+  GDV_NORMAL_STRAIGHT,
+  GDV_DRUM_SCALE,
+  GDV_BAR_GRAPH,
+  GDV_BOX_GRAPH
+} GdvOnedLayerType;
+</ENUM>
+<ENUM>
+<NAME>GdvTwodAxisType</NAME>
+typedef enum
+{
+  GDV_X1_AXIS,
+  GDV_X2_AXIS,
+  GDV_Y1_AXIS,
+  GDV_Y2_AXIS
+} GdvTwodAxisType;
+</ENUM>
+<ENUM>
+<NAME>GdvDistributionType</NAME>
+typedef enum
+{
+  GDV_UPPER_DIST,
+  GDV_SYMMETRIC_DIST,
+  GDV_LOWER_DIST,
+} GdvDistributionType;
+</ENUM>
+<MACRO>
+<NAME>GDV_TYPE_AXIS</NAME>
+#define GDV_TYPE_AXIS\
+  (gdv_axis_get_type ())
+</MACRO>
+<MACRO>
+<NAME>GDV_AXIS</NAME>
+#define GDV_AXIS(obj)\
+  (G_TYPE_CHECK_INSTANCE_CAST ((obj), GDV_TYPE_AXIS, GdvAxis))
+</MACRO>
+<MACRO>
+<NAME>GDV_IS_AXIS</NAME>
+#define GDV_IS_AXIS(obj)\
+  (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GDV_TYPE_AXIS))
+</MACRO>
+<MACRO>
+<NAME>GDV_AXIS_CLASS</NAME>
+#define GDV_AXIS_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_CAST ((klass), GDV_TYPE_AXIS, GdvAxisClass))
+</MACRO>
+<MACRO>
+<NAME>GDV_AXIS_IS_CLASS</NAME>
+#define GDV_AXIS_IS_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_TYPE ((klass), GDV_TYPE_AXIS))
+</MACRO>
+<MACRO>
+<NAME>GDV_AXIS_GET_CLASS</NAME>
+#define GDV_AXIS_GET_CLASS(obj)\
+  (G_TYPE_INSTANCE_GET_CLASS ((obj), GDV_TYPE_AXIS, GdvAxisClass))
+</MACRO>
+<STRUCT>
+<NAME>GdvAxis</NAME>
+struct _GdvAxis
+{
+  GtkContainer parent;
+
+  /*< private >*/
+  GdvAxisPrivate *priv;
+};
+</STRUCT>
+<STRUCT>
+<NAME>GdvAxisClass</NAME>
+struct _GdvAxisClass
+{
+  GtkContainerClass parent_class;
+
+  /*< public >*/
+  gboolean (*get_point)       (GdvAxis            *axis,
+                               gdouble             value,
+                               gdouble            *pos_x,
+                               gdouble            *pos_y);
+
+  gboolean (*get_inner_dir)   (GdvAxis            *axis,
+                               gdouble             value,
+                               gdouble            *pos_x,
+                               gdouble            *pos_y);
+
+  gchar *(*make_tic_label_markup)       (GdvAxis            *axis,
+                                         gdouble             value);
+
+  /*< private >*/
+
+  /* virtual private methods */
+  void (*get_space_to_beg_position) (
+    GdvAxis             *axis,
+    GtkPositionType      direction,
+    int                  for_size,
+    int                 *minimum,
+    int                 *natural,
+    gpointer             data);
+
+  void (*get_space_to_end_position) (
+    GdvAxis             *axis,
+    GtkPositionType      direction,
+    int                  for_size,
+    int                 *minimum,
+    int                 *natural,
+    gpointer             data);
+
+  /* Padding to allow adding up to 12 new virtual functions without
+   * breaking ABI. */
+  gpointer _gdv_reserve[12];
+};
+</STRUCT>
+<FUNCTION>
+<NAME>gdv_axis_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_axis_new</NAME>
+<RETURNS>GdvAxis  *</RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_axis_get_tic_for_value</NAME>
+<RETURNS>GdvTic  *</RETURNS>
+GdvAxis *axis, gdouble value
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_axis_get_tic_list</NAME>
+<RETURNS>GList  *</RETURNS>
+GdvAxis *axis
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_axis_get_mtic_list</NAME>
+<RETURNS>GList  *</RETURNS>
+GdvAxis *axis
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_axis_get_indicator_list</NAME>
+<RETURNS>GList  *</RETURNS>
+GdvAxis *axis
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_axis_title_set_markup</NAME>
+<RETURNS>void  </RETURNS>
+GdvAxis *axis, gchar *markup
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_axis_get_title</NAME>
+<RETURNS>const gchar  *</RETURNS>
+GdvAxis *axis
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_axis_set_title_widget</NAME>
+<RETURNS>void  </RETURNS>
+GdvAxis  *axis, GtkWidget *title_widget
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_axis_get_show_title</NAME>
+<RETURNS>gboolean  </RETURNS>
+GdvAxis *axis
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_axis_get_borders</NAME>
+<RETURNS>void</RETURNS>
+GdvAxis *axis, gdouble *max_val, gdouble *min_val, guint *max_pix_x, guint *min_pix_x, guint *max_pix_y, guint *min_pix_y
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_axis_queue_value_interval</NAME>
+<RETURNS>gboolean  </RETURNS>
+GdvAxis *axis, gdouble value
+</FUNCTION>
+<STRUCT>
+<NAME>GdvAxisPrivate</NAME>
+</STRUCT>
+<MACRO>
+<NAME>N_</NAME>
+#define N_(String) String
+</MACRO>
+<MACRO>
+<NAME>I_</NAME>
+#define I_(String) String
+</MACRO>
+<MACRO>
+<NAME>P_</NAME>
+#define P_(String) String
+</MACRO>
+<MACRO>
+<NAME>textdomain</NAME>
+#define textdomain(Domain)
+</MACRO>
+<MACRO>
+<NAME>bindtextdomain</NAME>
+#define bindtextdomain(Package, Directory)
+</MACRO>
+<FUNCTION>
+<NAME>gdv_is_within_range</NAME>
+<RETURNS>gboolean  </RETURNS>
+gdouble value, gdouble upper, gdouble lower
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_is_within_range_f</NAME>
+<RETURNS>gboolean  </RETURNS>
+gfloat value, gfloat upper, gfloat lower
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_is_nearly_identical</NAME>
+<RETURNS>gboolean  </RETURNS>
+gdouble value1, gdouble value2, gdouble difference
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_is_nearly_identical_f</NAME>
+<RETURNS>gboolean  </RETURNS>
+gfloat value1, gfloat value2, gfloat difference
+</FUNCTION>
+<MACRO>
+<NAME>GDV_TYPE_INDICATOR</NAME>
+#define GDV_TYPE_INDICATOR\
+  (gdv_indicator_get_type ())
+</MACRO>
+<MACRO>
+<NAME>GDV_INDICATOR</NAME>
+#define GDV_INDICATOR(obj)\
+  (G_TYPE_CHECK_INSTANCE_CAST ((obj), GDV_TYPE_INDICATOR, GdvIndicator))
+</MACRO>
+<MACRO>
+<NAME>GDV_IS_INDICATOR</NAME>
+#define GDV_IS_INDICATOR(obj)\
+  (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GDV_TYPE_INDICATOR))
+</MACRO>
+<MACRO>
+<NAME>GDV_INDICATOR_CLASS</NAME>
+#define GDV_INDICATOR_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_CAST ((klass), GDV_TYPE_INDICATOR, GdvIndicatorClass))
+</MACRO>
+<MACRO>
+<NAME>GDV_INDICATOR_IS_CLASS</NAME>
+#define GDV_INDICATOR_IS_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_TYPE ((klass), GDV_TYPE_INDICATOR))
+</MACRO>
+<MACRO>
+<NAME>GDV_INDICATOR_GET_CLASS</NAME>
+#define GDV_INDICATOR_GET_CLASS(obj)\
+  (G_TYPE_INSTANCE_GET_CLASS ((obj), GDV_TYPE_INDICATOR, GdvIndicatorClass))
+</MACRO>
+<STRUCT>
+<NAME>GdvIndicator</NAME>
+struct _GdvIndicator
+{
+  GtkContainer parent;
+
+  /*< private >*/
+  GdvIndicatorPrivate *priv;
+};
+</STRUCT>
+<STRUCT>
+<NAME>GdvIndicatorClass</NAME>
+struct _GdvIndicatorClass
+{
+  GtkContainerClass parent_class;
+
+  /* Padding to allow adding up to 12 new virtual functions without
+   * breaking ABI. */
+  gpointer _gdv_reserve[12];
+};
+</STRUCT>
+<FUNCTION>
+<NAME>gdv_indicator_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_indicator_new</NAME>
+<RETURNS>GdvIndicator  *</RETURNS>
+void
+</FUNCTION>
+<STRUCT>
+<NAME>GdvIndicatorPrivate</NAME>
+</STRUCT>
+<MACRO>
+<NAME>GDV_TYPE_LAYER</NAME>
+#define GDV_TYPE_LAYER\
+  (gdv_layer_get_type ())
+</MACRO>
+<MACRO>
+<NAME>GDV_LAYER</NAME>
+#define GDV_LAYER(obj)\
+  (G_TYPE_CHECK_INSTANCE_CAST ((obj), GDV_TYPE_LAYER, GdvLayer))
+</MACRO>
+<MACRO>
+<NAME>GDV_IS_LAYER</NAME>
+#define GDV_IS_LAYER(obj)\
+  (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GDV_TYPE_LAYER))
+</MACRO>
+<MACRO>
+<NAME>GDV_LAYER_CLASS</NAME>
+#define GDV_LAYER_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_CAST ((klass), GDV_TYPE_LAYER, GdvLayerClass))
+</MACRO>
+<MACRO>
+<NAME>GDV_LAYER_IS_CLASS</NAME>
+#define GDV_LAYER_IS_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_TYPE ((klass), GDV_TYPE_LAYER))
+</MACRO>
+<MACRO>
+<NAME>GDV_LAYER_GET_CLASS</NAME>
+#define GDV_LAYER_GET_CLASS(obj)\
+  (G_TYPE_INSTANCE_GET_CLASS ((obj), GDV_TYPE_LAYER, GdvLayerClass))
+</MACRO>
+<STRUCT>
+<NAME>GdvLayer</NAME>
+struct _GdvLayer
+{
+  GtkOverlay parent;
+
+  /*< private > */
+  GdvLayerPrivate *priv;
+};
+</STRUCT>
+<STRUCT>
+<NAME>GdvLayerClass</NAME>
+struct _GdvLayerClass
+{
+  GtkOverlayClass parent_class;
+
+  /*< public >*/
+  gboolean (*evaluate_point)       (GdvLayer *layer,
+                                    gdouble             x_value,
+                                    gdouble             y_value,
+                                    gdouble             z_value,
+                                    gdouble            *pos_x,
+                                    gdouble            *pos_y);
+
+  gboolean (*eval_inner_point)     (GdvLayer      *layer,
+                                    guint point_1_x, guint point_1_y,
+                                    guint point_2_x, guint point_2_y);
+
+  /*< private >*/
+
+  /* Padding to allow adding up to 12 new virtual functions without
+   * breaking ABI. */
+  gpointer _gdv_reserve[12];
+};
+</STRUCT>
+<FUNCTION>
+<NAME>gdv_layer_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_layer_new</NAME>
+<RETURNS>GdvLayer  *</RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_layer_has_layer_content</NAME>
+<RETURNS>gboolean  </RETURNS>
+GdvLayer *layer, GdvLayerContent *layer_content
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_layer_evaluate_data_point</NAME>
+<RETURNS>gboolean  </RETURNS>
+GdvLayer *layer, gdouble data_point_x_value, gdouble data_point_y_value, gdouble data_point_z_value, gdouble *pos_x, gdouble *pos_y
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_layer_get_content_list</NAME>
+<RETURNS>GList  *</RETURNS>
+GdvLayer *layer
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_layer_get_axis_list</NAME>
+<RETURNS>GList  *</RETURNS>
+GdvLayer *layer
+</FUNCTION>
+<STRUCT>
+<NAME>GdvLayerPrivate</NAME>
+</STRUCT>
+<MACRO>
+<NAME>GDV_LAYER_TYPE_CONTENT</NAME>
+#define GDV_LAYER_TYPE_CONTENT\
+  (gdv_layer_content_get_type ())
+</MACRO>
+<MACRO>
+<NAME>GDV_LAYER_CONTENT</NAME>
+#define GDV_LAYER_CONTENT(obj)\
+  (G_TYPE_CHECK_INSTANCE_CAST ((obj),\
+    GDV_LAYER_TYPE_CONTENT, GdvLayerContent))
+</MACRO>
+<MACRO>
+<NAME>GDV_LAYER_IS_CONTENT</NAME>
+#define GDV_LAYER_IS_CONTENT(obj)\
+  (G_TYPE_CHECK_INSTANCE_TYPE ((obj),\
+    GDV_LAYER_TYPE_CONTENT))
+</MACRO>
+<MACRO>
+<NAME>GDV_LAYER_CONTENT_CLASS</NAME>
+#define GDV_LAYER_CONTENT_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_CAST ((klass),\
+    GDV_LAYER_TYPE_CONTENT, GdvLayerContentClass))
+</MACRO>
+<MACRO>
+<NAME>GDV_LAYER_CONTENT_IS_CLASS</NAME>
+#define GDV_LAYER_CONTENT_IS_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_TYPE ((klass),\
+    GDV_LAYER_TYPE_CONTENT))
+</MACRO>
+<MACRO>
+<NAME>GDV_LAYER_CONTENT_GET_CLASS</NAME>
+#define GDV_LAYER_CONTENT_GET_CLASS(obj)\
+  (G_TYPE_INSTANCE_GET_CLASS ((obj),\
+    GDV_LAYER_TYPE_CONTENT, GdvLayerContentClass))
+</MACRO>
+<STRUCT>
+<NAME>GdvLayerContent</NAME>
+struct _GdvLayerContent
+{
+  GtkWidget parent;
+
+  /*< private > */
+  GdvLayerContentPrivate *priv;
+};
+</STRUCT>
+<STRUCT>
+<NAME>GdvLayerContentClass</NAME>
+struct _GdvLayerContentClass
+{
+  GtkWidgetClass parent_class;
+
+  /* Padding to allow adding up to 12 new virtual functions without
+   * breaking ABI. */
+  gpointer _gdv_reserve[12];
+};
+</STRUCT>
+<FUNCTION>
+<NAME>gdv_layer_content_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_layer_content_new</NAME>
+<RETURNS>GdvLayerContent  *</RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_layer_content_add_data_point</NAME>
+<RETURNS>void</RETURNS>
+GdvLayerContent *layer_content, gdouble          x_value, gdouble          y_value, gdouble          z_value
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_layer_content_remove_data_point_by_index</NAME>
+<RETURNS>gboolean</RETURNS>
+GdvLayerContent *layer_content, gint             index
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_layer_content_get_content</NAME>
+<RETURNS>GList  *</RETURNS>
+GdvLayerContent *content
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_layer_content_get_min_max_x</NAME>
+<RETURNS>void</RETURNS>
+GdvLayerContent *content, gdouble *min_x, gdouble *max_x
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_layer_content_get_min_max_y</NAME>
+<RETURNS>void</RETURNS>
+GdvLayerContent *content, gdouble *min_y, gdouble *max_y
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_layer_content_get_min_max_z</NAME>
+<RETURNS>void</RETURNS>
+GdvLayerContent *content, gdouble *min_z, gdouble *max_z
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_layer_content_reset</NAME>
+<RETURNS>void</RETURNS>
+GdvLayerContent *layer_content
+</FUNCTION>
+<STRUCT>
+<NAME>GdvLayerContentPrivate</NAME>
+</STRUCT>
+<MACRO>
+<NAME>GDV_LEGEND_TYPE</NAME>
+#define GDV_LEGEND_TYPE                 (gdv_legend_get_type ())
+</MACRO>
+<MACRO>
+<NAME>GDV_LEGEND</NAME>
+#define GDV_LEGEND(obj)                 (G_TYPE_CHECK_INSTANCE_CAST ((obj),\
+                                         GDV_LEGEND_TYPE, GdvLegend))
+</MACRO>
+<MACRO>
+<NAME>GDV_IS_LEGEND</NAME>
+#define GDV_IS_LEGEND(obj)              (G_TYPE_CHECK_INSTANCE_TYPE ((obj),\
+                                          GDV_LEGEND_TYPE))
+</MACRO>
+<MACRO>
+<NAME>GDV_LEGEND_CLASS</NAME>
+#define GDV_LEGEND_CLASS(klass)         (G_TYPE_CHECK_CLASS_CAST ((klass),\
+                                          GDV_LEGEND_TYPE, GdvLegendClass))
+</MACRO>
+<MACRO>
+<NAME>GDV_LEGEND_IS_CLASS</NAME>
+#define GDV_LEGEND_IS_CLASS(klass)      (G_TYPE_CHECK_CLASS_TYPE ((klass),\
+                                         GDV_LEGEND_TYPE))
+</MACRO>
+<MACRO>
+<NAME>GDV_LEGEND_GET_CLASS</NAME>
+#define GDV_LEGEND_GET_CLASS(obj)       (G_TYPE_INSTANCE_GET_CLASS ((obj),\
+                                          GDV_LEGEND_TYPE, GdvLegendClass))
+</MACRO>
+<STRUCT>
+<NAME>GdvLegend</NAME>
+struct _GdvLegend
+{
+  GtkFrame parent;
+
+  /*< private >*/
+  GdvLegendPrivate *priv;
+};
+</STRUCT>
+<STRUCT>
+<NAME>GdvLegendClass</NAME>
+struct _GdvLegendClass
+{
+  GtkFrameClass parent_class;
+
+  /* Padding to allow adding up to 12 new virtual functions without
+   * breaking ABI. */
+  gpointer _gdv_reserve[12];
+};
+</STRUCT>
+<FUNCTION>
+<NAME>gdv_legend_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_legend_new</NAME>
+<RETURNS>GdvLegend  *</RETURNS>
+void
+</FUNCTION>
+<STRUCT>
+<NAME>GdvLegendPrivate</NAME>
+</STRUCT>
+<MACRO>
+<NAME>GDV_TYPE_LEGEND_ELEMENT</NAME>
+#define GDV_TYPE_LEGEND_ELEMENT\
+  (gdv_legend_element_get_type ())
+</MACRO>
+<MACRO>
+<NAME>GDV_LEGEND_ELEMENT</NAME>
+#define GDV_LEGEND_ELEMENT(obj)\
+  (G_TYPE_CHECK_INSTANCE_CAST ((obj), GDV_TYPE_LEGEND_ELEMENT, GdvLegendElement))
+</MACRO>
+<MACRO>
+<NAME>GDV_IS_LEGEND_ELEMENT</NAME>
+#define GDV_IS_LEGEND_ELEMENT(obj)\
+  (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GDV_TYPE_LEGEND_ELEMENT))
+</MACRO>
+<MACRO>
+<NAME>GDV_LEGEND_ELEMENT_CLASS</NAME>
+#define GDV_LEGEND_ELEMENT_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_CAST ((klass), GDV_TYPE_LEGEND_ELEMENT, GdvLegendElementClass))
+</MACRO>
+<MACRO>
+<NAME>GDV_LEGEND_ELEMENT_IS_CLASS</NAME>
+#define GDV_LEGEND_ELEMENT_IS_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_TYPE ((klass), GDV_TYPE_LEGEND_ELEMENT))
+</MACRO>
+<MACRO>
+<NAME>GDV_LEGEND_ELEMENT_GET_CLASS</NAME>
+#define GDV_LEGEND_ELEMENT_GET_CLASS(obj)\
+  (G_TYPE_INSTANCE_GET_CLASS ((obj), GDV_TYPE_LEGEND_ELEMENT, GdvLegendElementClass))
+</MACRO>
+<STRUCT>
+<NAME>GdvLegendElement</NAME>
+struct _GdvLegendElement
+{
+  GtkContainer parent;
+
+  /*< private >*/
+  GdvLegendElementPrivate *priv;
+};
+</STRUCT>
+<STRUCT>
+<NAME>GdvLegendElementClass</NAME>
+struct _GdvLegendElementClass
+{
+  GtkContainerClass parent_class;
+
+  /* Padding to allow adding up to 12 new virtual functions without
+   * breaking ABI. */
+  gpointer _gdv_reserve[12];
+};
+</STRUCT>
+<FUNCTION>
+<NAME>gdv_legend_element_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_legend_element_new</NAME>
+<RETURNS>GdvLegendElement  *</RETURNS>
+void
+</FUNCTION>
+<STRUCT>
+<NAME>GdvLegendElementPrivate</NAME>
+</STRUCT>
+<MACRO>
+<NAME>GDV_LINEAR_TYPE_AXIS</NAME>
+#define GDV_LINEAR_TYPE_AXIS\
+  (gdv_linear_axis_get_type ())
+</MACRO>
+<MACRO>
+<NAME>GDV_LINEAR_AXIS</NAME>
+#define GDV_LINEAR_AXIS(obj)\
+  (G_TYPE_CHECK_INSTANCE_CAST ((obj), GDV_LINEAR_TYPE_AXIS, GdvLinearAxis))
+</MACRO>
+<MACRO>
+<NAME>GDV_LINEAR_IS_AXIS</NAME>
+#define GDV_LINEAR_IS_AXIS(obj)\
+  (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GDV_LINEAR_TYPE_AXIS))
+</MACRO>
+<MACRO>
+<NAME>GDV_LINEAR_AXIS_CLASS</NAME>
+#define GDV_LINEAR_AXIS_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_CAST ((klass), GDV_LINEAR_TYPE_AXIS, GdvLinearAxisClass))
+</MACRO>
+<MACRO>
+<NAME>GDV_LINEAR_AXIS_IS_CLASS</NAME>
+#define GDV_LINEAR_AXIS_IS_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_TYPE ((klass), GDV_LINEAR_TYPE_AXIS))
+</MACRO>
+<MACRO>
+<NAME>GDV_LINEAR_AXIS_GET_CLASS</NAME>
+#define GDV_LINEAR_AXIS_GET_CLASS(obj)\
+  (G_TYPE_INSTANCE_GET_CLASS ((obj), GDV_LINEAR_TYPE_AXIS, GdvLinearAxisClass))
+</MACRO>
+<STRUCT>
+<NAME>GdvLinearAxis</NAME>
+struct _GdvLinearAxis
+{
+  GdvAxis parent;
+
+  /*< private >*/
+  GdvLinearAxisPrivate *priv;
+};
+</STRUCT>
+<STRUCT>
+<NAME>GdvLinearAxisClass</NAME>
+struct _GdvLinearAxisClass
+{
+  GdvAxisClass parent_class;
+
+  /* Padding to allow adding up to 12 new virtual functions without
+   * breaking ABI. */
+  gpointer _gdv_reserve[12];
+};
+</STRUCT>
+<FUNCTION>
+<NAME>gdv_linear_axis_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_linear_axis_new</NAME>
+<RETURNS>GdvLinearAxis  *</RETURNS>
+void
+</FUNCTION>
+<STRUCT>
+<NAME>GdvLinearAxisPrivate</NAME>
+</STRUCT>
+<MACRO>
+<NAME>GDV_LOG_TYPE_AXIS</NAME>
+#define GDV_LOG_TYPE_AXIS\
+  (gdv_log_axis_get_type ())
+</MACRO>
+<MACRO>
+<NAME>GDV_LOG_AXIS</NAME>
+#define GDV_LOG_AXIS(obj)\
+  (G_TYPE_CHECK_INSTANCE_CAST ((obj), GDV_LOG_TYPE_AXIS, GdvLogAxis))
+</MACRO>
+<MACRO>
+<NAME>GDV_LOG_IS_AXIS</NAME>
+#define GDV_LOG_IS_AXIS(obj)\
+  (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GDV_LOG_TYPE_AXIS))
+</MACRO>
+<MACRO>
+<NAME>GDV_LOG_AXIS_CLASS</NAME>
+#define GDV_LOG_AXIS_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_CAST ((klass), GDV_LOG_TYPE_AXIS, GdvLogAxisClass))
+</MACRO>
+<MACRO>
+<NAME>GDV_LOG_AXIS_IS_CLASS</NAME>
+#define GDV_LOG_AXIS_IS_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_TYPE ((klass), GDV_LOG_TYPE_AXIS))
+</MACRO>
+<MACRO>
+<NAME>GDV_LOG_AXIS_GET_CLASS</NAME>
+#define GDV_LOG_AXIS_GET_CLASS(obj)\
+  (G_TYPE_INSTANCE_GET_CLASS ((obj), GDV_LOG_TYPE_AXIS, GdvLogAxisClass))
+</MACRO>
+<STRUCT>
+<NAME>GdvLogAxis</NAME>
+struct _GdvLogAxis
+{
+  GdvAxis parent;
+
+  /*< private >*/
+  GdvLogAxisPrivate *priv;
+};
+</STRUCT>
+<STRUCT>
+<NAME>GdvLogAxisClass</NAME>
+struct _GdvLogAxisClass
+{
+  GdvAxisClass parent_class;
+
+  /* Padding to allow adding up to 12 new virtual functions without
+   * breaking ABI. */
+  gpointer _gdv_reserve[12];
+};
+</STRUCT>
+<FUNCTION>
+<NAME>gdv_log_axis_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_log_axis_new</NAME>
+<RETURNS>GdvLogAxis  *</RETURNS>
+void
+</FUNCTION>
+<STRUCT>
+<NAME>GdvLogAxisPrivate</NAME>
+</STRUCT>
+<MACRO>
+<NAME>GDV_TYPE_MTIC</NAME>
+#define GDV_TYPE_MTIC\
+  (gdv_mtic_get_type ())
+</MACRO>
+<MACRO>
+<NAME>GDV_MTIC</NAME>
+#define GDV_MTIC(obj)\
+  (G_TYPE_CHECK_INSTANCE_CAST ((obj), GDV_TYPE_MTIC, GdvMtic))
+</MACRO>
+<MACRO>
+<NAME>GDV_IS_MTIC</NAME>
+#define GDV_IS_MTIC(obj)\
+  (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GDV_TYPE_MTIC))
+</MACRO>
+<MACRO>
+<NAME>GDV_MTIC_CLASS</NAME>
+#define GDV_MTIC_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_CAST ((klass), GDV_TYPE_MTIC, GdvMticClass))
+</MACRO>
+<MACRO>
+<NAME>GDV_MTIC_IS_CLASS</NAME>
+#define GDV_MTIC_IS_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_TYPE ((klass), GDV_TYPE_MTIC))
+</MACRO>
+<MACRO>
+<NAME>GDV_MTIC_GET_CLASS</NAME>
+#define GDV_MTIC_GET_CLASS(obj)\
+  (G_TYPE_INSTANCE_GET_CLASS ((obj), GDV_TYPE_MTIC, GdvMticClass))
+</MACRO>
+<STRUCT>
+<NAME>GdvMtic</NAME>
+struct _GdvMtic
+{
+  GdvTic parent;
+
+  /*< private >*/
+  GdvMticPrivate *priv;
+};
+</STRUCT>
+<STRUCT>
+<NAME>GdvMticClass</NAME>
+struct _GdvMticClass
+{
+  GdvTicClass parent_class;
+
+  /* Padding to allow adding up to 12 new virtual functions without
+   * breaking ABI. */
+  gpointer _gdv_reserve[12];
+};
+</STRUCT>
+<FUNCTION>
+<NAME>gdv_mtic_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_mtic_new</NAME>
+<RETURNS>GdvMtic  *</RETURNS>
+void
+</FUNCTION>
+<STRUCT>
+<NAME>GdvMticPrivate</NAME>
+</STRUCT>
+<MACRO>
+<NAME>GDV_ONED_LAYER_TYPE</NAME>
+#define GDV_ONED_LAYER_TYPE                 (gdv_oned_layer_get_type ())
+</MACRO>
+<MACRO>
+<NAME>GDV_ONED_LAYER</NAME>
+#define GDV_ONED_LAYER(obj)                 (G_TYPE_CHECK_INSTANCE_CAST ((obj), GDV_ONED_LAYER_TYPE, GdvOnedLayer))
+</MACRO>
+<MACRO>
+<NAME>GDV_ONED_IS_LAYER</NAME>
+#define GDV_ONED_IS_LAYER(obj)              (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GDV_ONED_LAYER_TYPE))
+</MACRO>
+<MACRO>
+<NAME>GDV_ONED_LAYER_CLASS</NAME>
+#define GDV_ONED_LAYER_CLASS(klass)         (G_TYPE_CHECK_CLASS_CAST ((klass), GDV_ONED_LAYER_TYPE, GdvOnedLayerClass))
+</MACRO>
+<MACRO>
+<NAME>GDV_ONED_LAYER_IS_CLASS</NAME>
+#define GDV_ONED_LAYER_IS_CLASS(klass)      (G_TYPE_CHECK_CLASS_TYPE ((klass), GDV_ONED_LAYER_TYPE))
+</MACRO>
+<MACRO>
+<NAME>GDV_ONED_LAYER_GET_CLASS</NAME>
+#define GDV_ONED_LAYER_GET_CLASS(obj)       (G_TYPE_INSTANCE_GET_CLASS ((obj), GDV_ONED_LAYER_TYPE, GdvOnedLayerClass))
+</MACRO>
+<STRUCT>
+<NAME>GdvOnedLayer</NAME>
+struct _GdvOnedLayer
+{
+  GdvLayer parent;
+
+  /*< private >*/
+  GdvOnedLayerPrivate *priv;
+};
+</STRUCT>
+<STRUCT>
+<NAME>GdvOnedLayerClass</NAME>
+struct _GdvOnedLayerClass
+{
+  GdvLayerClass parent_class;
+
+  /* Padding to allow adding up to 12 new virtual functions without
+   * breaking ABI. */
+  gpointer _gdv_reserve[12];
+};
+</STRUCT>
+<FUNCTION>
+<NAME>gdv_oned_layer_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_oned_layer_new</NAME>
+<RETURNS>GdvOnedLayer  *</RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_oned_layer_replace_axis</NAME>
+<RETURNS>void  </RETURNS>
+GdvOnedLayer *layer, GdvAxis *axis
+</FUNCTION>
+<STRUCT>
+<NAME>GdvOnedLayerPrivate</NAME>
+</STRUCT>
+<MACRO>
+<NAME>GDV_TYPE_TIC</NAME>
+#define GDV_TYPE_TIC\
+  (gdv_tic_get_type ())
+</MACRO>
+<MACRO>
+<NAME>GDV_TIC</NAME>
+#define GDV_TIC(obj)\
+  (G_TYPE_CHECK_INSTANCE_CAST ((obj), GDV_TYPE_TIC, GdvTic))
+</MACRO>
+<MACRO>
+<NAME>GDV_IS_TIC</NAME>
+#define GDV_IS_TIC(obj)\
+  (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GDV_TYPE_TIC))
+</MACRO>
+<MACRO>
+<NAME>GDV_TIC_CLASS</NAME>
+#define GDV_TIC_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_CAST ((klass), GDV_TYPE_TIC, GdvTicClass))
+</MACRO>
+<MACRO>
+<NAME>GDV_TIC_IS_CLASS</NAME>
+#define GDV_TIC_IS_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_TYPE ((klass), GDV_TYPE_TIC))
+</MACRO>
+<MACRO>
+<NAME>GDV_TIC_GET_CLASS</NAME>
+#define GDV_TIC_GET_CLASS(obj)\
+  (G_TYPE_INSTANCE_GET_CLASS ((obj), GDV_TYPE_TIC, GdvTicClass))
+</MACRO>
+<STRUCT>
+<NAME>GdvTic</NAME>
+struct _GdvTic
+{
+  GtkBin parent;
+
+  /*< private >*/
+  GdvTicPrivate *priv;
+};
+</STRUCT>
+<STRUCT>
+<NAME>GdvTicClass</NAME>
+struct _GdvTicClass
+{
+  GtkBinClass parent_class;
+
+  /* Padding to allow adding up to 12 new virtual functions without
+   * breaking ABI. */
+  gpointer _gdv_reserve[12];
+};
+</STRUCT>
+<FUNCTION>
+<NAME>gdv_tic_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_tic_new</NAME>
+<RETURNS>GdvTic  *</RETURNS>
+const gchar *label
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_tic_label_set_markup</NAME>
+<RETURNS>void  </RETURNS>
+GdvTic *tic, gchar *markup
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_tic_get_label</NAME>
+<RETURNS>const gchar  *</RETURNS>
+GdvTic *tic
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_tic_set_label_widget</NAME>
+<RETURNS>void  </RETURNS>
+GdvTic  *tic, GtkWidget *label_widget
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_tic_set_tic_position</NAME>
+<RETURNS>void  </RETURNS>
+GdvTic  *tic, gfloat x, gfloat y
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_tic_get_show_label</NAME>
+<RETURNS>gboolean  </RETURNS>
+GdvTic *tic
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_tic_get_space_to_tic_position</NAME>
+<RETURNS>void</RETURNS>
+GdvTic              *tic, GtkPositionType      direction, int                  for_size, int                 *minimum, int                 *natural, gpointer             data
+</FUNCTION>
+<STRUCT>
+<NAME>GdvTicPrivate</NAME>
+</STRUCT>
+<MACRO>
+<NAME>GDV_TWOD_LAYER_TYPE</NAME>
+#define GDV_TWOD_LAYER_TYPE                 (gdv_twod_layer_get_type ())
+</MACRO>
+<MACRO>
+<NAME>GDV_TWOD_LAYER</NAME>
+#define GDV_TWOD_LAYER(obj)                 (G_TYPE_CHECK_INSTANCE_CAST ((obj), GDV_TWOD_LAYER_TYPE, GdvTwodLayer))
+</MACRO>
+<MACRO>
+<NAME>GDV_TWOD_IS_LAYER</NAME>
+#define GDV_TWOD_IS_LAYER(obj)              (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GDV_TWOD_LAYER_TYPE))
+</MACRO>
+<MACRO>
+<NAME>GDV_TWOD_LAYER_CLASS</NAME>
+#define GDV_TWOD_LAYER_CLASS(klass)         (G_TYPE_CHECK_CLASS_CAST ((klass), GDV_TWOD_LAYER_TYPE, GdvTwodLayerClass))
+</MACRO>
+<MACRO>
+<NAME>GDV_TWOD_LAYER_IS_CLASS</NAME>
+#define GDV_TWOD_LAYER_IS_CLASS(klass)      (G_TYPE_CHECK_CLASS_TYPE ((klass), GDV_TWOD_LAYER_TYPE))
+</MACRO>
+<MACRO>
+<NAME>GDV_TWOD_LAYER_GET_CLASS</NAME>
+#define GDV_TWOD_LAYER_GET_CLASS(obj)       (G_TYPE_INSTANCE_GET_CLASS ((obj), GDV_TWOD_LAYER_TYPE, GdvTwodLayerClass))
+</MACRO>
+<STRUCT>
+<NAME>GdvTwodLayer</NAME>
+struct _GdvTwodLayer
+{
+  GdvLayer parent;
+
+  /*< private >*/
+  GdvTwodLayerPrivate *priv;
+};
+</STRUCT>
+<STRUCT>
+<NAME>GdvTwodLayerClass</NAME>
+struct _GdvTwodLayerClass
+{
+  GdvLayerClass parent_class;
+
+  /* Padding to allow adding up to 12 new virtual functions without
+   * breaking ABI. */
+  gpointer _gdv_reserve[12];
+};
+</STRUCT>
+<FUNCTION>
+<NAME>gdv_twod_layer_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_twod_layer_new</NAME>
+<RETURNS>GdvTwodLayer  *</RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_twod_layer_set_xrange</NAME>
+<RETURNS>void  </RETURNS>
+GdvTwodLayer *layer, gdouble x_beg, gdouble x_end
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_twod_layer_set_yrange</NAME>
+<RETURNS>void  </RETURNS>
+GdvTwodLayer *layer, gdouble y_beg, gdouble y_end
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_twod_layer_get_xrange</NAME>
+<RETURNS>void  </RETURNS>
+GdvTwodLayer *layer, gdouble *x_beg, gdouble *x_end
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_twod_layer_get_yrange</NAME>
+<RETURNS>void  </RETURNS>
+GdvTwodLayer *layer, gdouble *y_beg, gdouble *y_end
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_twod_layer_get_axis</NAME>
+<RETURNS>GdvAxis  *</RETURNS>
+GdvTwodLayer *layer, GdvTwodAxisType axis_type
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_twod_layer_set_axis</NAME>
+<RETURNS>void  </RETURNS>
+GdvTwodLayer *layer, GdvAxis *axis, GdvTwodAxisType axis_type
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_twod_layer_unset_axis</NAME>
+<RETURNS>void  </RETURNS>
+GdvTwodLayer *layer, GdvTwodAxisType axis_type
+</FUNCTION>
+<STRUCT>
+<NAME>GdvTwodLayerPrivate</NAME>
+</STRUCT>
+<MACRO>
+<NAME>GDV_TYPE_SPECIAL_CHECKED_INDICATOR</NAME>
+#define GDV_TYPE_SPECIAL_CHECKED_INDICATOR\
+  (gdv_special_checked_indicator_get_type ())
+</MACRO>
+<MACRO>
+<NAME>GDV_SPECIAL_CHECKED_INDICATOR</NAME>
+#define GDV_SPECIAL_CHECKED_INDICATOR(obj)\
+  (G_TYPE_CHECK_INSTANCE_CAST ((obj), GDV_TYPE_SPECIAL_CHECKED_INDICATOR,\
+   GdvSpecialCheckedIndicator))
+</MACRO>
+<MACRO>
+<NAME>GDV_IS_SPECIAL_CHECKED_INDICATOR</NAME>
+#define GDV_IS_SPECIAL_CHECKED_INDICATOR(obj)\
+  (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GDV_TYPE_SPECIAL_CHECKED_INDICATOR))
+</MACRO>
+<MACRO>
+<NAME>GDV_SPECIAL_CHECKED_INDICATOR_CLASS</NAME>
+#define GDV_SPECIAL_CHECKED_INDICATOR_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_CAST ((klass), GDV_TYPE_SPECIAL_CHECKED_INDICATOR,\
+   GdvSpecialCheckedIndicatorClass))
+</MACRO>
+<MACRO>
+<NAME>GDV_SPECIAL_CHECKED_INDICATOR_IS_CLASS</NAME>
+#define GDV_SPECIAL_CHECKED_INDICATOR_IS_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_TYPE ((klass), GDV_TYPE_SPECIAL_CHECKED_INDICATOR))
+</MACRO>
+<MACRO>
+<NAME>GDV_SPECIAL_CHECKED_INDICATOR_GET_CLASS</NAME>
+#define GDV_SPECIAL_CHECKED_INDICATOR_GET_CLASS(obj)\
+  (G_TYPE_INSTANCE_GET_CLASS ((obj), GDV_TYPE_SPECIAL_CHECKED_INDICATOR,\
+   GdvSpecialCheckedIndicatorClass))
+</MACRO>
+<STRUCT>
+<NAME>GdvSpecialCheckedIndicator</NAME>
+struct _GdvSpecialCheckedIndicator
+{
+  /*< private >*/
+  GdvIndicator parent;
+
+  GdvSpecialCheckedIndicatorPrivate *priv;
+};
+</STRUCT>
+<STRUCT>
+<NAME>GdvSpecialCheckedIndicatorClass</NAME>
+struct _GdvSpecialCheckedIndicatorClass
+{
+  /*< private >*/
+  GdvIndicatorClass parent_class;
+
+  /* Padding to allow adding up to 12 new virtual functions without
+   * breaking ABI. */
+  gpointer _gdv_reserve[12];
+};
+</STRUCT>
+<FUNCTION>
+<NAME>gdv_special_checked_indicator_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_special_checked_indicator_new</NAME>
+<RETURNS>GdvSpecialCheckedIndicator  *</RETURNS>
+void
+</FUNCTION>
+<MACRO>
+<NAME>GDV_TYPE_SPECIAL_CONTENT_AXIS</NAME>
+#define GDV_TYPE_SPECIAL_CONTENT_AXIS\
+  (gdv_special_content_axis_get_type ())
+</MACRO>
+<MACRO>
+<NAME>GDV_SPECIAL_CONTENT_AXIS</NAME>
+#define GDV_SPECIAL_CONTENT_AXIS(obj)\
+  (G_TYPE_CHECK_INSTANCE_CAST ((obj), GDV_TYPE_SPECIAL_CONTENT_AXIS, GdvSpecialContentAxis))
+</MACRO>
+<MACRO>
+<NAME>GDV_SPECIAL_CONTENT_IS_AXIS</NAME>
+#define GDV_SPECIAL_CONTENT_IS_AXIS(obj)\
+  (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GDV_TYPE_SPECIAL_CONTENT_AXIS))
+</MACRO>
+<MACRO>
+<NAME>GDV_SPECIAL_CONTENT_AXIS_CLASS</NAME>
+#define GDV_SPECIAL_CONTENT_AXIS_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_CAST ((klass), GDV_TYPE_SPECIAL_CONTENT_AXIS, GdvSpecialContentAxis))
+</MACRO>
+<MACRO>
+<NAME>GDV_SPECIAL_CONTENT_AXIS_IS_CLASS</NAME>
+#define GDV_SPECIAL_CONTENT_AXIS_IS_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_TYPE ((klass), GDV_TYPE_SPECIAL_CONTENT_AXIS))
+</MACRO>
+<MACRO>
+<NAME>GDV_SPECIAL_CONTENT_AXIS_GET_CLASS</NAME>
+#define GDV_SPECIAL_CONTENT_AXIS_GET_CLASS(obj)\
+  (G_TYPE_INSTANCE_GET_CLASS ((obj), GDV_TYPE_SPECIAL_CONTENT_AXIS, GdvSpecialContentAxis))
+</MACRO>
+<STRUCT>
+<NAME>GdvSpecialContentAxis</NAME>
+struct _GdvSpecialContentAxis
+{
+  GdvAxis     parent_instance;
+
+  /*< private >*/
+  GdvSpecialContentAxisPrivate *priv;
+};
+</STRUCT>
+<STRUCT>
+<NAME>GdvSpecialContentAxisClass</NAME>
+struct _GdvSpecialContentAxisClass
+{
+  GdvAxisClass     parent_class;
+
+  /*< private >*/
+  gpointer padding[12];
+};
+</STRUCT>
+<FUNCTION>
+<NAME>gdv_special_content_axis_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_special_content_axis_new</NAME>
+<RETURNS>GdvSpecialContentAxis  *</RETURNS>
+void
+</FUNCTION>
+<STRUCT>
+<NAME>GdvSpecialContentAxisPrivate</NAME>
+</STRUCT>
+<MACRO>
+<NAME>GDV_TYPE_SPECIAL_DRUM_DISPLAY</NAME>
+#define GDV_TYPE_SPECIAL_DRUM_DISPLAY\
+  (gdv_special_drum_display_get_type ())
+</MACRO>
+<MACRO>
+<NAME>GDV_SPECIAL_DRUM_DISPLAY</NAME>
+#define GDV_SPECIAL_DRUM_DISPLAY(obj)\
+  (G_TYPE_CHECK_INSTANCE_CAST ((obj), GDV_TYPE_SPECIAL_DRUM_DISPLAY, GdvSpecialDrumDisplay))
+</MACRO>
+<MACRO>
+<NAME>GDV_SPECIAL_DRUM_IS_DISPLAY</NAME>
+#define GDV_SPECIAL_DRUM_IS_DISPLAY(obj)\
+  (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GDV_TYPE_SPECIAL_DRUM_DISPLAY))
+</MACRO>
+<MACRO>
+<NAME>GDV_SPECIAL_DRUM_DISPLAY_CLASS</NAME>
+#define GDV_SPECIAL_DRUM_DISPLAY_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_CAST ((klass), GDV_TYPE_SPECIAL_DRUM_DISPLAY, GdvSpecialDrumDisplay))
+</MACRO>
+<MACRO>
+<NAME>GDV_SPECIAL_DRUM_DISPLAY_IS_CLASS</NAME>
+#define GDV_SPECIAL_DRUM_DISPLAY_IS_CLASS(klass)\
+  (G_TYPE_CHECK_CLASS_TYPE ((klass), GDV_TYPE_SPECIAL_DRUM_DISPLAY))
+</MACRO>
+<MACRO>
+<NAME>GDV_SPECIAL_DRUM_DISPLAY_GET_CLASS</NAME>
+#define GDV_SPECIAL_DRUM_DISPLAY_GET_CLASS(obj)\
+  (G_TYPE_INSTANCE_GET_CLASS ((obj), GDV_TYPE_SPECIAL_DRUM_DISPLAY, GdvSpecialDrumDisplay))
+</MACRO>
+<STRUCT>
+<NAME>GdvSpecialDrumDisplay</NAME>
+struct _GdvSpecialDrumDisplay
+{
+  GdvOnedLayer     parent_instance;
+
+  /*< private >*/
+  GdvSpecialDrumDisplayPrivate *priv;
+};
+</STRUCT>
+<STRUCT>
+<NAME>GdvSpecialDrumDisplayClass</NAME>
+struct _GdvSpecialDrumDisplayClass
+{
+  GdvOnedLayerClass     parent_class;
+
+  /*< private >*/
+  gpointer padding[12];
+};
+</STRUCT>
+<FUNCTION>
+<NAME>gdv_special_drum_display_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_special_drum_display_new</NAME>
+<RETURNS>GdvSpecialDrumDisplay  *</RETURNS>
+void
+</FUNCTION>
+<STRUCT>
+<NAME>GdvSpecialDrumDisplayPrivate</NAME>
+</STRUCT>
+<MACRO>
+<NAME>GDV_SPECIAL_TIME_AXIS_TYPE</NAME>
+#define GDV_SPECIAL_TIME_AXIS_TYPE                 (gdv_special_time_axis_get_type ())
+</MACRO>
+<MACRO>
+<NAME>GDV_SPECIAL_TIME_AXIS</NAME>
+#define GDV_SPECIAL_TIME_AXIS(obj)                 (G_TYPE_CHECK_INSTANCE_CAST ((obj), GDV_SPECIAL_TIME_AXIS_TYPE, GdvSpecialTimeAxis))
+</MACRO>
+<MACRO>
+<NAME>GDV_SPECIAL_TIME_IS_AXIS</NAME>
+#define GDV_SPECIAL_TIME_IS_AXIS(obj)              (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GDV_SPECIAL_TIME_AXIS_TYPE))
+</MACRO>
+<MACRO>
+<NAME>GDV_SPECIAL_TIME_AXIS_CLASS</NAME>
+#define GDV_SPECIAL_TIME_AXIS_CLASS(klass)         (G_TYPE_CHECK_CLASS_CAST ((klass), GDV_SPECIAL_TIME_AXIS_TYPE, GdvSpecialTimeAxisClass))
+</MACRO>
+<MACRO>
+<NAME>GDV_SPECIAL_TIME_AXIS_IS_CLASS</NAME>
+#define GDV_SPECIAL_TIME_AXIS_IS_CLASS(klass)      (G_TYPE_CHECK_CLASS_TYPE ((klass), GDV_SPECIAL_TIME_AXIS_TYPE))
+</MACRO>
+<MACRO>
+<NAME>GDV_SPECIAL_TIME_AXIS_GET_CLASS</NAME>
+#define GDV_SPECIAL_TIME_AXIS_GET_CLASS(obj)       (G_TYPE_INSTANCE_GET_CLASS ((obj), GDV_SPECIAL_TIME_AXIS_TYPE, GdvSpecialTimeAxisClass))
+</MACRO>
+<STRUCT>
+<NAME>GdvSpecialTimeAxis</NAME>
+struct _GdvSpecialTimeAxis
+{
+  GdvLinearAxis parent;
+
+  /*< private > */
+  GdvSpecialTimeAxisPrivate *priv;
+};
+</STRUCT>
+<STRUCT>
+<NAME>GdvSpecialTimeAxisClass</NAME>
+struct _GdvSpecialTimeAxisClass
+{
+  GdvLinearAxisClass parent_class;
+
+  /*< public >*/
+};
+</STRUCT>
+<FUNCTION>
+<NAME>gdv_special_time_axis_get_type</NAME>
+<RETURNS>GType  </RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>gdv_special_time_axis_new</NAME>
+<RETURNS>GdvSpecialTimeAxis  *</RETURNS>
+void
+</FUNCTION>
+<STRUCT>
+<NAME>GdvSpecialTimeAxisPrivate</NAME>
+</STRUCT>
+<MACRO>
+<NAME>GDV_ENABLE_TRACE</NAME>
+# define GDV_ENABLE_TRACE 0
+</MACRO>
+<MACRO>
+<NAME>GDV_LOG_LEVEL_TRACE</NAME>
+# define GDV_LOG_LEVEL_TRACE ((GLogLevelFlags)(1 << G_LOG_LEVEL_USER_SHIFT))
+</MACRO>
+<MACRO>
+<NAME>GDV_TRACE_MSG</NAME>
+# define GDV_TRACE_MSG(fmt, ...)                                         \
+   g_log(G_LOG_DOMAIN, GDV_LOG_LEVEL_TRACE, "  MSG: %s():%d: " fmt,       \
+         G_STRFUNC, __LINE__, ##__VA_ARGS__)
+</MACRO>
+<MACRO>
+<NAME>GDV_PROBE</NAME>
+# define GDV_PROBE                                                       \
+   g_log(G_LOG_DOMAIN, GDV_LOG_LEVEL_TRACE, "PROBE: %s():%d",            \
+         G_STRFUNC, __LINE__)
+</MACRO>
+<MACRO>
+<NAME>GDV_TODO</NAME>
+# define GDV_TODO(_msg)                                                  \
+   g_log(G_LOG_DOMAIN, GDV_LOG_LEVEL_TRACE, " TODO: %s():%d: %s",        \
+         G_STRFUNC, __LINE__, _msg)
+</MACRO>
+<MACRO>
+<NAME>GDV_ENTRY</NAME>
+# define GDV_ENTRY                                                       \
+   g_log(G_LOG_DOMAIN, GDV_LOG_LEVEL_TRACE, "ENTRY: %s():%d",            \
+         G_STRFUNC, __LINE__)
+</MACRO>
+<MACRO>
+<NAME>GDV_EXIT</NAME>
+# define GDV_EXIT                                                        \
+   G_STMT_START {                                                        \
+      g_log(G_LOG_DOMAIN, GDV_LOG_LEVEL_TRACE, " EXIT: %s():%d",         \
+            G_STRFUNC, __LINE__);                                        \
+      return;                                                            \
+   } G_STMT_END
+</MACRO>
+<MACRO>
+<NAME>GDV_GOTO</NAME>
+# define GDV_GOTO(_l)                                                    \
+   G_STMT_START {                                                        \
+      g_log(G_LOG_DOMAIN, GDV_LOG_LEVEL_TRACE, " GOTO: %s():%d ("#_l")", \
+            G_STRFUNC, __LINE__);                                        \
+      goto _l;                                                           \
+   } G_STMT_END
+</MACRO>
+<MACRO>
+<NAME>GDV_RETURN</NAME>
+# define GDV_RETURN(_r)                                                  \
+   G_STMT_START {                                                        \
+      g_log(G_LOG_DOMAIN, GDV_LOG_LEVEL_TRACE, " EXIT: %s():%d ",        \
+            G_STRFUNC, __LINE__);                                        \
+      return _r;                                                         \
+   } G_STMT_END
+</MACRO>

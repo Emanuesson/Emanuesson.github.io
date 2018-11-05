@@ -1,0 +1,294 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="EpsaraDataDetector">
+<refmeta>
+<refentrytitle role="top_of_page" id="EpsaraDataDetector.top_of_page">The Detector</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>EPSARA Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>The Detector</refname>
+<refpurpose>The fundamental instance for any kind of detector-system</refpurpose>
+</refnamediv>
+
+<refsect1 id="EpsaraDataDetector.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-detector-add-roi">epsara_data_detector_add_roi</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-detector-get-roi-from-index">epsara_data_detector_get_roi_from_index</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-detector-remove-roi">epsara_data_detector_remove_roi</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-detector-calc-det-coeff">epsara_data_detector_calc_det_coeff</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-detector-angle-to-source">epsara_data_detector_angle_to_source</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-detector-back-scattering-angle-to-source">epsara_data_detector_back_scattering_angle_to_source</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataDetector.properties" role="properties">
+<title role="properties.title">Properties</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="properties_type" colwidth="150px"/>
+<colspec colname="properties_name" colwidth="300px"/>
+<colspec colname="properties_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="property_type"><link linkend="EpsaraDataMaterial"><type>EpsaraDataMaterial</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraDataDetector--detector-dead-layer">detector-dead-layer</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="EpsaraDataPoint"><type>EpsaraDataPoint</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraDataDetector--direction">direction</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="EpsaraDataPoint"><type>EpsaraDataPoint</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraDataDetector--origin">origin</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="EpsaraDataDetector--solid-angle">solid-angle</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="EpsaraDataMatrix"><type>EpsaraDataMatrix</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraDataDetector--spectrum">spectrum</link></entry><entry role="property_flags">Read / Write</entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataDetector.signals" role="signal_proto">
+<title role="signal_proto.title">Signals</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="signals_return" colwidth="150px"/>
+<colspec colname="signals_name" colwidth="300px"/>
+<colspec colname="signals_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="signal_type"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link></entry><entry role="signal_name"><link linkend="EpsaraDataDetector-calculate-estimator">calculate-estimator</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-ACTION:CAPS">Action</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataDetector.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="EpsaraDataDetector-struct">EpsaraDataDetector</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="EpsaraDataDetectorClass">EpsaraDataDetectorClass</link></entry></row>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="EpsaraDataDetectorPrivate">EpsaraDataDetectorPrivate</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataDetector.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="EpsaraDataElement">EpsaraDataElement</link>
+        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> EpsaraDataDetector
+            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="EpsaraDataParticleDetector">EpsaraDataParticleDetector</link>
+</screen>
+</refsect1>
+<refsect1 id="EpsaraDataDetector.implemented-interfaces" role="impl_interfaces">
+<title role="impl_interfaces.title">Implemented Interfaces</title>
+<para>
+EpsaraDataDetector implements
+ <link linkend="JsonSerializable">JsonSerializable</link>.</para>
+
+</refsect1>
+
+
+<refsect1 id="EpsaraDataDetector.description" role="desc">
+<title role="desc.title">Description</title>
+<para>I owe you a long description, what the detector-class is all about.</para>
+<para>The detector also contains the calculation of a detector-specific estimator-value. The decision
+to delegate the calculation down to the detector class relies on the nature of measurements.
+Different detectors may be based on different statistical principles, e.g. count-rate detection
+is almost always a poisson-process that requires a different estimator-calculation as e.g. the
+gaussian distribution of a position-measurement.
+Further the different detectors are assigned with different regions of interest in a common
+analysis.</para>
+
+</refsect1>
+<refsect1 id="EpsaraDataDetector.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="epsara-data-detector-add-roi" role="function">
+<title>epsara_data_detector_add_roi&#160;()</title>
+<indexterm zone="epsara-data-detector-add-roi"><primary>epsara_data_detector_add_roi</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+epsara_data_detector_add_roi (<parameter><link linkend="EpsaraDataDetector"><type>EpsaraDataDetector</type></link> *detector</parameter>,
+                              <parameter><link linkend="gint"><type>gint</type></link> lower_channel</parameter>,
+                              <parameter><link linkend="gint"><type>gint</type></link> upper_channel</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-detector-get-roi-from-index" role="function">
+<title>epsara_data_detector_get_roi_from_index&#160;()</title>
+<indexterm zone="epsara-data-detector-get-roi-from-index"><primary>epsara_data_detector_get_roi_from_index</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+epsara_data_detector_get_roi_from_index
+                               (<parameter><link linkend="EpsaraDataDetector"><type>EpsaraDataDetector</type></link> *detector</parameter>,
+                                <parameter><link linkend="guint"><type>guint</type></link> no_of_roi</parameter>,
+                                <parameter><link linkend="gint"><type>gint</type></link> *lower_channel</parameter>,
+                                <parameter><link linkend="gint"><type>gint</type></link> *upper_channel</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-detector-remove-roi" role="function">
+<title>epsara_data_detector_remove_roi&#160;()</title>
+<indexterm zone="epsara-data-detector-remove-roi"><primary>epsara_data_detector_remove_roi</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+epsara_data_detector_remove_roi (<parameter><link linkend="EpsaraDataDetector"><type>EpsaraDataDetector</type></link> *detector</parameter>,
+                                 <parameter><link linkend="guint"><type>guint</type></link> no_of_roi</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-detector-calc-det-coeff" role="function">
+<title>epsara_data_detector_calc_det_coeff&#160;()</title>
+<indexterm zone="epsara-data-detector-calc-det-coeff"><primary>epsara_data_detector_calc_det_coeff</primary></indexterm>
+<programlisting language="C"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+epsara_data_detector_calc_det_coeff (<parameter><link linkend="EpsaraDataDetector"><type>EpsaraDataDetector</type></link> *detector</parameter>,
+                                     <parameter><link linkend="EpsaraDataMatrix"><type>EpsaraDataMatrix</type></link> *simulated_spectrum</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-detector-angle-to-source" role="function">
+<title>epsara_data_detector_angle_to_source&#160;()</title>
+<indexterm zone="epsara-data-detector-angle-to-source"><primary>epsara_data_detector_angle_to_source</primary></indexterm>
+<programlisting language="C"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+epsara_data_detector_angle_to_source (<parameter><link linkend="EpsaraDataDetector"><type>EpsaraDataDetector</type></link> *detector</parameter>,
+                                      <parameter><link linkend="EpsaraDataSource"><type>EpsaraDataSource</type></link> *source</parameter>);</programlisting>
+<para>Calculates the angle between the <parameter>source</parameter>
+ and <parameter>detector</parameter>
+-direction.</para>
+<refsect3 id="epsara-data-detector-angle-to-source.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>detector</para></entry>
+<entry role="parameter_description"><para>an <link linkend="EpsaraDataDetector"><type>EpsaraDataDetector</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>source</para></entry>
+<entry role="parameter_description"><para>an <link linkend="EpsaraDataSource"><type>EpsaraDataSource</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="epsara-data-detector-angle-to-source.returns" role="returns">
+<title>Returns</title>
+<para>    the angle between the two directions in gradients</para>
+</refsect3></refsect2>
+<refsect2 id="epsara-data-detector-back-scattering-angle-to-source" role="function">
+<title>epsara_data_detector_back_scattering_angle_to_source&#160;()</title>
+<indexterm zone="epsara-data-detector-back-scattering-angle-to-source"><primary>epsara_data_detector_back_scattering_angle_to_source</primary></indexterm>
+<programlisting language="C"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+epsara_data_detector_back_scattering_angle_to_source
+                               (<parameter><link linkend="EpsaraDataDetector"><type>EpsaraDataDetector</type></link> *detector</parameter>,
+                                <parameter><link linkend="EpsaraDataSource"><type>EpsaraDataSource</type></link> *source</parameter>);</programlisting>
+<para>Calculates the so called scattering angle, which is just Pi minus the
+  angle between detector and source.</para>
+<refsect3 id="epsara-data-detector-back-scattering-angle-to-source.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>detector</para></entry>
+<entry role="parameter_description"><para>an <link linkend="EpsaraDataDetector"><type>EpsaraDataDetector</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>source</para></entry>
+<entry role="parameter_description"><para>an <link linkend="EpsaraDataSource"><type>EpsaraDataSource</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="epsara-data-detector-back-scattering-angle-to-source.returns" role="returns">
+<title>Returns</title>
+<para>    the scattering angle</para>
+</refsect3></refsect2>
+
+</refsect1>
+<refsect1 id="EpsaraDataDetector.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="EpsaraDataDetector-struct" role="struct">
+<title>struct EpsaraDataDetector</title>
+<indexterm zone="EpsaraDataDetector-struct"><primary>EpsaraDataDetector</primary></indexterm>
+<programlisting language="C">struct EpsaraDataDetector;</programlisting>
+</refsect2>
+<refsect2 id="EpsaraDataDetectorClass" role="struct">
+<title>struct EpsaraDataDetectorClass</title>
+<indexterm zone="EpsaraDataDetectorClass"><primary>EpsaraDataDetectorClass</primary></indexterm>
+<programlisting language="C">struct EpsaraDataDetectorClass {
+  EpsaraDataElementClass parent_class;
+
+  gdouble  (*calculate_estimator)      (EpsaraDataDetector *detector,
+                                        gdouble             calculated_val,
+                                        gdouble             measured_val);
+};
+</programlisting>
+<refsect3 id="EpsaraDataDetectorClass.members" role="struct_members">
+<title>Members</title>
+<informaltable role="struct_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="struct_members_name" colwidth="300px"/>
+<colspec colname="struct_members_description"/>
+<colspec colname="struct_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="member"><entry role="struct_member_name"><para><structfield id="EpsaraDataDetectorClass.calculate-estimator">calculate_estimator</structfield>&#160;()</para></entry>
+<entry role="struct_member_description"><para>Signal emitted whenever the estimator for a measured and a calculated
+set of values needs to be calculated.</para></entry>
+<entry role="struct_member_annotations"></entry>
+</row>
+</tbody></tgroup></informaltable>
+</refsect3>
+</refsect2>
+<refsect2 id="EpsaraDataDetectorPrivate" role="struct">
+<title>EpsaraDataDetectorPrivate</title>
+<indexterm zone="EpsaraDataDetectorPrivate"><primary>EpsaraDataDetectorPrivate</primary></indexterm>
+<programlisting language="C">typedef struct _EpsaraDataDetectorPrivate EpsaraDataDetectorPrivate;</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="EpsaraDataDetector.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="EpsaraDataDetector--detector-dead-layer" role="property"><title>The <literal>“detector-dead-layer”</literal> property</title>
+<indexterm zone="EpsaraDataDetector--detector-dead-layer"><primary>EpsaraDataDetector:detector-dead-layer</primary></indexterm>
+<programlisting>  “detector-dead-layer”      <link linkend="EpsaraDataMaterial"><type>EpsaraDataMaterial</type></link>&#160;*</programlisting>
+<para>holds the dead-layer material of the detector.</para><para>Flags: Read / Write</para>
+</refsect2>
+<refsect2 id="EpsaraDataDetector--direction" role="property"><title>The <literal>“direction”</literal> property</title>
+<indexterm zone="EpsaraDataDetector--direction"><primary>EpsaraDataDetector:direction</primary></indexterm>
+<programlisting>  “direction”                <link linkend="EpsaraDataPoint"><type>EpsaraDataPoint</type></link>&#160;*</programlisting>
+<para>holds the direction point of the detector.</para><para>Flags: Read / Write</para>
+</refsect2>
+<refsect2 id="EpsaraDataDetector--origin" role="property"><title>The <literal>“origin”</literal> property</title>
+<indexterm zone="EpsaraDataDetector--origin"><primary>EpsaraDataDetector:origin</primary></indexterm>
+<programlisting>  “origin”                   <link linkend="EpsaraDataPoint"><type>EpsaraDataPoint</type></link>&#160;*</programlisting>
+<para>holds the origin point of the detector.</para><para>Flags: Read / Write</para>
+</refsect2>
+<refsect2 id="EpsaraDataDetector--solid-angle" role="property"><title>The <literal>“solid-angle”</literal> property</title>
+<indexterm zone="EpsaraDataDetector--solid-angle"><primary>EpsaraDataDetector:solid-angle</primary></indexterm>
+<programlisting>  “solid-angle”              <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Holds the value of the detector-solid-angle in msr.</para><para>Flags: Read / Write</para>
+<para>Allowed values: [0,12566.4]</para>
+<para>Default value: 4</para>
+</refsect2>
+<refsect2 id="EpsaraDataDetector--spectrum" role="property"><title>The <literal>“spectrum”</literal> property</title>
+<indexterm zone="EpsaraDataDetector--spectrum"><primary>EpsaraDataDetector:spectrum</primary></indexterm>
+<programlisting>  “spectrum”                 <link linkend="EpsaraDataMatrix"><type>EpsaraDataMatrix</type></link>&#160;*</programlisting>
+<para>pointer to gsl_matrix with calculated spectrum on schedule.</para><para>Flags: Read / Write</para>
+</refsect2>
+
+</refsect1>
+<refsect1 id="EpsaraDataDetector.signal-details" role="signals">
+<title role="signals.title">Signal Details</title>
+<refsect2 id="EpsaraDataDetector-calculate-estimator" role="signal"><title>The <literal>“calculate-estimator”</literal> signal</title>
+<indexterm zone="EpsaraDataDetector-calculate-estimator"><primary>EpsaraDataDetector::calculate-estimator</primary></indexterm>
+<programlisting language="C"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+user_function (<link linkend="EpsaraDataDetector"><type>EpsaraDataDetector</type></link> *epsaradatadetector,
+               <link linkend="gdouble"><type>gdouble</type></link>             arg1,
+               <link linkend="gdouble"><type>gdouble</type></link>             arg2,
+               <link linkend="gpointer"><type>gpointer</type></link>            user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-ACTION:CAPS">Action</link></para>
+</refsect2>
+</refsect1>
+
+</refentry>

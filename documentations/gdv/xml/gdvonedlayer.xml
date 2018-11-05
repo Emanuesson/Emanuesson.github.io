@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="GdvOnedLayer">
+<refmeta>
+<refentrytitle role="top_of_page" id="GdvOnedLayer.top_of_page">GdvOnedLayer</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>GDV Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>GdvOnedLayer</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="GdvOnedLayer.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="GdvOnedLayer"><returnvalue>GdvOnedLayer</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="gdv-oned-layer-new">gdv_oned_layer_new</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-oned-layer-replace-axis">gdv_oned_layer_replace_axis</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="GdvOnedLayer.properties" role="properties">
+<title role="properties.title">Properties</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="properties_type" colwidth="150px"/>
+<colspec colname="properties_name" colwidth="300px"/>
+<colspec colname="properties_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="property_type"><link linkend="GdvAxis"><type>GdvAxis</type></link>&#160;*</entry><entry role="property_name"><link linkend="GdvOnedLayer--axis">axis</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="GtkOrientation"><type>GtkOrientation</type></link></entry><entry role="property_name"><link linkend="GdvOnedLayer--base-orientation">base-orientation</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="GdvOnedLayer--orientation">orientation</link></entry><entry role="property_flags">Read / Write</entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="GdvOnedLayer.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="GDV-ONED-LAYER-TYPE:CAPS">GDV_ONED_LAYER_TYPE</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="GdvOnedLayer-struct">GdvOnedLayer</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="GdvOnedLayerClass">GdvOnedLayerClass</link></entry></row>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="GdvOnedLayerPrivate">GdvOnedLayerPrivate</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="GdvOnedLayer.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GInitiallyUnowned">GInitiallyUnowned</link>
+        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkWidget">GtkWidget</link>
+            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkContainer">GtkContainer</link>
+                <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkBin">GtkBin</link>
+                    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkOverlay">GtkOverlay</link>
+                        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GdvLayer">GdvLayer</link>
+                            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> GdvOnedLayer
+                                <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GdvSpecialDrumDisplay">GdvSpecialDrumDisplay</link>
+</screen>
+</refsect1>
+<refsect1 id="GdvOnedLayer.implemented-interfaces" role="impl_interfaces">
+<title role="impl_interfaces.title">Implemented Interfaces</title>
+<para>
+GdvOnedLayer implements
+ <link linkend="AtkImplementorIface">AtkImplementorIface</link> and  <link linkend="GtkBuildable">GtkBuildable</link>.</para>
+
+</refsect1>
+
+
+<refsect1 id="GdvOnedLayer.description" role="desc">
+<title role="desc.title">Description</title>
+<para><link linkend="GdvOnedLayer"><type>GdvOnedLayer</type></link> defines a simple layer showing just a single axis. This can be
+ combined with <link linkend="GdvIndicator"><type>GdvIndicator</type></link> to make an simple scale-widget</para>
+<refsect2><title>CSS nodes</title><para>GdvOnedLayer uses a single CSS node with name layeroned.</para>
+</refsect2>
+
+</refsect1>
+<refsect1 id="GdvOnedLayer.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="gdv-oned-layer-new" role="function">
+<title>gdv_oned_layer_new&#160;()</title>
+<indexterm zone="gdv-oned-layer-new"><primary>gdv_oned_layer_new</primary></indexterm>
+<programlisting language="C"><link linkend="GdvOnedLayer"><returnvalue>GdvOnedLayer</returnvalue></link>&#160;*
+gdv_oned_layer_new (<parameter><type>void</type></parameter>);</programlisting>
+</refsect2>
+<refsect2 id="gdv-oned-layer-replace-axis" role="function">
+<title>gdv_oned_layer_replace_axis&#160;()</title>
+<indexterm zone="gdv-oned-layer-replace-axis"><primary>gdv_oned_layer_replace_axis</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+gdv_oned_layer_replace_axis (<parameter><link linkend="GdvOnedLayer"><type>GdvOnedLayer</type></link> *layer</parameter>,
+                             <parameter><link linkend="GdvAxis"><type>GdvAxis</type></link> *axis</parameter>);</programlisting>
+<para>Replaces the main axis attached to the layer.</para>
+<refsect3 id="gdv-oned-layer-replace-axis.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>layer</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvOnedLayer"><type>GdvOnedLayer</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>axis</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvAxis"><type>GdvAxis</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+
+</refsect1>
+<refsect1 id="GdvOnedLayer.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="GDV-ONED-LAYER-TYPE:CAPS" role="macro">
+<title>GDV_ONED_LAYER_TYPE</title>
+<indexterm zone="GDV-ONED-LAYER-TYPE:CAPS"><primary>GDV_ONED_LAYER_TYPE</primary></indexterm>
+<programlisting language="C">#define GDV_ONED_LAYER_TYPE                 (gdv_oned_layer_get_type ())
+</programlisting>
+</refsect2>
+<refsect2 id="GdvOnedLayer-struct" role="struct">
+<title>struct GdvOnedLayer</title>
+<indexterm zone="GdvOnedLayer-struct"><primary>GdvOnedLayer</primary></indexterm>
+<programlisting language="C">struct GdvOnedLayer;</programlisting>
+</refsect2>
+<refsect2 id="GdvOnedLayerClass" role="struct">
+<title>struct GdvOnedLayerClass</title>
+<indexterm zone="GdvOnedLayerClass"><primary>GdvOnedLayerClass</primary></indexterm>
+<programlisting language="C">struct GdvOnedLayerClass {
+  GdvLayerClass parent_class;
+
+  /* Padding to allow adding up to 12 new virtual functions without
+   * breaking ABI. */
+  gpointer _gdv_reserve[12];
+};
+</programlisting>
+</refsect2>
+<refsect2 id="GdvOnedLayerPrivate" role="struct">
+<title>GdvOnedLayerPrivate</title>
+<indexterm zone="GdvOnedLayerPrivate"><primary>GdvOnedLayerPrivate</primary></indexterm>
+<programlisting language="C">typedef struct _GdvOnedLayerPrivate GdvOnedLayerPrivate;</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="GdvOnedLayer.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="GdvOnedLayer--axis" role="property"><title>The <literal>“axis”</literal> property</title>
+<indexterm zone="GdvOnedLayer--axis" role="0.1"><primary>GdvOnedLayer:axis</primary></indexterm>
+<programlisting>  “axis”                     <link linkend="GdvAxis"><type>GdvAxis</type></link>&#160;*</programlisting>
+<para>Gets the assigned axis.</para>
+<para>Flags: Read / Write</para>
+<para role="since">Since: <link linkend="api-index-0.1">0.1</link></para></refsect2>
+<refsect2 id="GdvOnedLayer--base-orientation" role="property"><title>The <literal>“base-orientation”</literal> property</title>
+<indexterm zone="GdvOnedLayer--base-orientation" role="0.1"><primary>GdvOnedLayer:base-orientation</primary></indexterm>
+<programlisting>  “base-orientation”         <link linkend="GtkOrientation"><type>GtkOrientation</type></link></programlisting>
+<para>Sets the basic orientation of the axis.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: GTK_ORIENTATION_VERTICAL</para>
+<para role="since">Since: <link linkend="api-index-0.1">0.1</link></para></refsect2>
+<refsect2 id="GdvOnedLayer--orientation" role="property"><title>The <literal>“orientation”</literal> property</title>
+<indexterm zone="GdvOnedLayer--orientation" role="0.1"><primary>GdvOnedLayer:orientation</primary></indexterm>
+<programlisting>  “orientation”              <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Sets the orientation as an angular value relative to the base-orientation
+of the axis.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: 0</para>
+<para role="since">Since: <link linkend="api-index-0.1">0.1</link></para></refsect2>
+
+</refsect1>
+
+</refentry>

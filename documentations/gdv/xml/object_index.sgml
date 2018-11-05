@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE informaltable PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colwidth="1*"/>
+<colspec colwidth="1*"/>
+<colspec colwidth="1*"/>
+<tbody>
+<row>
+<entry><link linkend="GBoxed">GBoxed</link></entry>
+<entry><link linkend="GInitiallyUnowned">GInitiallyUnowned</link></entry>
+<entry><link linkend="GObject">GObject</link></entry>
+</row>
+<row>
+<entry><link linkend="GdvAxis">GdvAxis</link></entry>
+<entry><link linkend="GdvDataDirection">GdvDataDirection</link></entry>
+<entry><link linkend="GdvDataNPoint">GdvDataNPoint</link></entry>
+</row>
+<row>
+<entry><link linkend="GdvDataPixel">GdvDataPixel</link></entry>
+<entry><link linkend="GdvDataPoint">GdvDataPoint</link></entry>
+<entry><link linkend="GdvDataPolygon">GdvDataPolygon</link></entry>
+</row>
+<row>
+<entry><link linkend="GdvIndicator">GdvIndicator</link></entry>
+<entry><link linkend="GdvLayer">GdvLayer</link></entry>
+<entry><link linkend="GdvLayerContent">GdvLayerContent</link></entry>
+</row>
+<row>
+<entry><link linkend="GdvLegend">GdvLegend</link></entry>
+<entry><link linkend="GdvLegendElement">GdvLegendElement</link></entry>
+<entry><link linkend="GdvLinearAxis">GdvLinearAxis</link></entry>
+</row>
+<row>
+<entry><link linkend="GdvLogAxis">GdvLogAxis</link></entry>
+<entry><link linkend="GdvMtic">GdvMtic</link></entry>
+<entry><link linkend="GdvOnedLayer">GdvOnedLayer</link></entry>
+</row>
+<row>
+<entry><link linkend="GdvSpecialCheckedIndicator">GdvSpecialCheckedIndicator</link></entry>
+<entry><link linkend="GdvSpecialContentAxis">GdvSpecialContentAxis</link></entry>
+<entry><link linkend="GdvSpecialDrumDisplay">GdvSpecialDrumDisplay</link></entry>
+</row>
+<row>
+<entry><link linkend="GdvSpecialTimeAxis">GdvSpecialTimeAxis</link></entry>
+<entry><link linkend="GdvTic">GdvTic</link></entry>
+<entry><link linkend="GdvTwodLayer">GdvTwodLayer</link></entry>
+</row>
+<row>
+<entry><link linkend="GtkBin">GtkBin</link></entry>
+<entry><link linkend="GtkContainer">GtkContainer</link></entry>
+<entry><link linkend="GtkFrame">GtkFrame</link></entry>
+</row>
+<row>
+<entry><link linkend="GtkOverlay">GtkOverlay</link></entry>
+<entry><link linkend="GtkWidget">GtkWidget</link></entry>
+</row>
+</tbody></tgroup></informaltable>

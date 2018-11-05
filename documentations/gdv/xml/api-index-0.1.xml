@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE indexdiv PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<indexdiv id="api-index-0.1">
+<indexdiv><title>L</title>
+<indexentry><primaryie linkends="GdvLegend--layer"><link linkend="GdvLegend--layer">GdvLegend:layer</link>, object property in <link linkend="GdvLegend">GdvLegend</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvLegend--rows"><link linkend="GdvLegend--rows">GdvLegend:rows</link>, object property in <link linkend="GdvLegend">GdvLegend</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvLegendElement--element"><link linkend="GdvLegendElement--element">GdvLegendElement:element</link>, object property in <link linkend="GdvLegendElement">GdvLegendElement</link></primaryie></indexentry>
+</indexdiv>
+<indexdiv><title>O</title>
+<indexentry><primaryie linkends="GdvOnedLayer--axis"><link linkend="GdvOnedLayer--axis">GdvOnedLayer:axis</link>, object property in <link linkend="GdvOnedLayer">GdvOnedLayer</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvOnedLayer--base-orientation"><link linkend="GdvOnedLayer--base-orientation">GdvOnedLayer:base-orientation</link>, object property in <link linkend="GdvOnedLayer">GdvOnedLayer</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvOnedLayer--orientation"><link linkend="GdvOnedLayer--orientation">GdvOnedLayer:orientation</link>, object property in <link linkend="GdvOnedLayer">GdvOnedLayer</link></primaryie></indexentry>
+</indexdiv>
+<indexdiv><title>T</title>
+<indexentry><primaryie linkends="GdvTic--axis-inner-dir-x"><link linkend="GdvTic--axis-inner-dir-x">GdvTic:axis-inner-dir-x</link>, object property in <link linkend="GdvTic">GdvTic</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvTic--axis-inner-dir-y"><link linkend="GdvTic--axis-inner-dir-y">GdvTic:axis-inner-dir-y</link>, object property in <link linkend="GdvTic">GdvTic</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvTic--label"><link linkend="GdvTic--label">GdvTic:label</link>, object property in <link linkend="GdvTic">GdvTic</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvTic--label-widget"><link linkend="GdvTic--label-widget">GdvTic:label-widget</link>, object property in <link linkend="GdvTic">GdvTic</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvTic--label-xalign"><link linkend="GdvTic--label-xalign">GdvTic:label-xalign</link>, object property in <link linkend="GdvTic">GdvTic</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvTic--label-yalign"><link linkend="GdvTic--label-yalign">GdvTic:label-yalign</link>, object property in <link linkend="GdvTic">GdvTic</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvTic--pos-x"><link linkend="GdvTic--pos-x">GdvTic:pos-x</link>, object property in <link linkend="GdvTic">GdvTic</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvTic--pos-y"><link linkend="GdvTic--pos-y">GdvTic:pos-y</link>, object property in <link linkend="GdvTic">GdvTic</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvTic--value"><link linkend="GdvTic--value">GdvTic:value</link>, object property in <link linkend="GdvTic">GdvTic</link></primaryie></indexentry>
+</indexdiv>
+</indexdiv>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="epsara-epsara-data-type-builtins">
+<refmeta>
+<refentrytitle role="top_of_page" id="epsara-epsara-data-type-builtins.top_of_page">epsara-data-type-builtins</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>EPSARA Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>epsara-data-type-builtins</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+
+
+<refsect1 id="epsara-epsara-data-type-builtins.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="epsara-epsara-data-type-builtins.functions_details" role="details">
+<title role="details.title">Functions</title>
+<para />
+</refsect1>
+<refsect1 id="epsara-epsara-data-type-builtins.other_details" role="details">
+<title role="details.title">Types and Values</title>
+
+</refsect1>
+
+</refentry>

@@ -1,0 +1,118 @@
+<SIGNAL>
+<NAME>EpsaraDataDetector::calculate-estimator</NAME>
+<RETURNS>gdouble</RETURNS>
+<FLAGS>la</FLAGS>
+EpsaraDataDetector *epsaradatadetector
+gdouble  arg1
+gdouble  arg2
+</SIGNAL>
+
+<SIGNAL>
+<NAME>EpsaraDataIsotope::add</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>f</FLAGS>
+EpsaraDataIsotope *epsaradataisotope
+EpsaraDataInteraction *arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>EpsaraDataIsotope::remove</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>f</FLAGS>
+EpsaraDataIsotope *epsaradataisotope
+EpsaraDataInteraction *arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>EpsaraDataMaterial::add</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>f</FLAGS>
+EpsaraDataMaterial *epsaradatamaterial
+GObject *arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>EpsaraDataMaterial::distribution</NAME>
+<RETURNS>gdouble</RETURNS>
+<FLAGS>la</FLAGS>
+EpsaraDataMaterial *epsaradatamaterial
+EpsaraDataPoint *arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>EpsaraDataMaterial::integrate-material</NAME>
+<RETURNS>gdouble</RETURNS>
+<FLAGS>la</FLAGS>
+EpsaraDataMaterial *epsaradatamaterial
+EpsaraDataPoint *arg1
+EpsaraDataPoint *arg2
+</SIGNAL>
+
+<SIGNAL>
+<NAME>EpsaraDataMaterial::remove</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>f</FLAGS>
+EpsaraDataMaterial *epsaradatamaterial
+GObject *arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>EpsaraDataMeasurement::add</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>f</FLAGS>
+EpsaraDataMeasurement *epsaradatameasurement
+GObject *arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>EpsaraDataMeasurement::calculate</NAME>
+<RETURNS>gboolean</RETURNS>
+<FLAGS>la</FLAGS>
+EpsaraDataMeasurement *epsaradatameasurement
+</SIGNAL>
+
+<SIGNAL>
+<NAME>EpsaraDataMeasurement::estimator</NAME>
+<RETURNS>gdouble</RETURNS>
+<FLAGS>la</FLAGS>
+EpsaraDataMeasurement *epsaradatameasurement
+</SIGNAL>
+
+<SIGNAL>
+<NAME>EpsaraDataMeasurement::remove</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>f</FLAGS>
+EpsaraDataMeasurement *epsaradatameasurement
+GObject *arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>EpsaraDataSet::add</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>f</FLAGS>
+EpsaraDataSet *epsaradataset
+EpsaraDataMeasurement *arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>EpsaraDataSet::calculate</NAME>
+<RETURNS>gboolean</RETURNS>
+<FLAGS>la</FLAGS>
+EpsaraDataSet *epsaradataset
+</SIGNAL>
+
+<SIGNAL>
+<NAME>EpsaraDataSet::fit</NAME>
+<RETURNS>gboolean</RETURNS>
+<FLAGS>la</FLAGS>
+EpsaraDataSet *epsaradataset
+</SIGNAL>
+
+<SIGNAL>
+<NAME>EpsaraDataSet::remove</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>f</FLAGS>
+EpsaraDataSet *epsaradataset
+EpsaraDataMeasurement *arg1
+</SIGNAL>
+

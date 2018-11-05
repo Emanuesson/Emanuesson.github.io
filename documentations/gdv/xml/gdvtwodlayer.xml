@@ -1,0 +1,335 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="GdvTwodLayer">
+<refmeta>
+<refentrytitle role="top_of_page" id="GdvTwodLayer.top_of_page">GdvTowdLayer</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>GDV Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>GdvTowdLayer</refname>
+<refpurpose>A plain two-dimensional layer</refpurpose>
+</refnamediv>
+
+<refsect1 id="GdvTwodLayer.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="GdvTwodLayer"><returnvalue>GdvTwodLayer</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="gdv-twod-layer-new">gdv_twod_layer_new</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-twod-layer-set-xrange">gdv_twod_layer_set_xrange</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-twod-layer-set-yrange">gdv_twod_layer_set_yrange</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-twod-layer-get-xrange">gdv_twod_layer_get_xrange</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-twod-layer-get-yrange">gdv_twod_layer_get_yrange</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GdvAxis"><returnvalue>GdvAxis</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="gdv-twod-layer-get-axis">gdv_twod_layer_get_axis</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-twod-layer-set-axis">gdv_twod_layer_set_axis</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-twod-layer-unset-axis">gdv_twod_layer_unset_axis</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="GdvTwodLayer.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="GDV-TWOD-LAYER-TYPE:CAPS">GDV_TWOD_LAYER_TYPE</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="GdvTwodLayer-struct">GdvTwodLayer</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="GdvTwodLayerClass">GdvTwodLayerClass</link></entry></row>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="GdvTwodLayerPrivate">GdvTwodLayerPrivate</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="GdvTwodLayer.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GInitiallyUnowned">GInitiallyUnowned</link>
+        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkWidget">GtkWidget</link>
+            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkContainer">GtkContainer</link>
+                <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkBin">GtkBin</link>
+                    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkOverlay">GtkOverlay</link>
+                        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GdvLayer">GdvLayer</link>
+                            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> GdvTwodLayer
+</screen>
+</refsect1>
+<refsect1 id="GdvTwodLayer.implemented-interfaces" role="impl_interfaces">
+<title role="impl_interfaces.title">Implemented Interfaces</title>
+<para>
+GdvTwodLayer implements
+ <link linkend="AtkImplementorIface">AtkImplementorIface</link> and  <link linkend="GtkBuildable">GtkBuildable</link>.</para>
+
+</refsect1>
+
+
+<refsect1 id="GdvTwodLayer.description" role="desc">
+<title role="desc.title">Description</title>
+<para>GdvTowdLayer plots an usual cartesian XY-style graph. It handles GdvAxis- and
+GdvLayerContent-Objects.</para>
+
+</refsect1>
+<refsect1 id="GdvTwodLayer.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="gdv-twod-layer-new" role="function">
+<title>gdv_twod_layer_new&#160;()</title>
+<indexterm zone="gdv-twod-layer-new"><primary>gdv_twod_layer_new</primary></indexterm>
+<programlisting language="C"><link linkend="GdvTwodLayer"><returnvalue>GdvTwodLayer</returnvalue></link>&#160;*
+gdv_twod_layer_new (<parameter><type>void</type></parameter>);</programlisting>
+<para>Just a common constructor.</para>
+<refsect3 id="gdv-twod-layer-new.returns" role="returns">
+<title>Returns</title>
+<para> a new <link linkend="GdvTwodLayer"><type>GdvTwodLayer</type></link></para>
+</refsect3></refsect2>
+<refsect2 id="gdv-twod-layer-set-xrange" role="function">
+<title>gdv_twod_layer_set_xrange&#160;()</title>
+<indexterm zone="gdv-twod-layer-set-xrange"><primary>gdv_twod_layer_set_xrange</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+gdv_twod_layer_set_xrange (<parameter><link linkend="GdvTwodLayer"><type>GdvTwodLayer</type></link> *layer</parameter>,
+                           <parameter><link linkend="gdouble"><type>gdouble</type></link> x_beg</parameter>,
+                           <parameter><link linkend="gdouble"><type>gdouble</type></link> x_end</parameter>);</programlisting>
+<para>Can be used to fastly change the layer-range.</para>
+<refsect3 id="gdv-twod-layer-set-xrange.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>layer</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvTwodLayer"><type>GdvTwodLayer</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>x_beg</para></entry>
+<entry role="parameter_description"><para>the new scale begin in x-direction</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>x_end</para></entry>
+<entry role="parameter_description"><para>the new scale end in x-direction</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="gdv-twod-layer-set-yrange" role="function">
+<title>gdv_twod_layer_set_yrange&#160;()</title>
+<indexterm zone="gdv-twod-layer-set-yrange"><primary>gdv_twod_layer_set_yrange</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+gdv_twod_layer_set_yrange (<parameter><link linkend="GdvTwodLayer"><type>GdvTwodLayer</type></link> *layer</parameter>,
+                           <parameter><link linkend="gdouble"><type>gdouble</type></link> y_beg</parameter>,
+                           <parameter><link linkend="gdouble"><type>gdouble</type></link> y_end</parameter>);</programlisting>
+<para>Can be used to fastly change the layer-range.</para>
+<refsect3 id="gdv-twod-layer-set-yrange.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>layer</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvTwodLayer"><type>GdvTwodLayer</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>y_beg</para></entry>
+<entry role="parameter_description"><para>the new scale begin in y-direction</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>y_end</para></entry>
+<entry role="parameter_description"><para>the new scale end in y-direction</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="gdv-twod-layer-get-xrange" role="function">
+<title>gdv_twod_layer_get_xrange&#160;()</title>
+<indexterm zone="gdv-twod-layer-get-xrange"><primary>gdv_twod_layer_get_xrange</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+gdv_twod_layer_get_xrange (<parameter><link linkend="GdvTwodLayer"><type>GdvTwodLayer</type></link> *layer</parameter>,
+                           <parameter><link linkend="gdouble"><type>gdouble</type></link> *x_beg</parameter>,
+                           <parameter><link linkend="gdouble"><type>gdouble</type></link> *x_end</parameter>);</programlisting>
+<para>Returns the maximum and minimum of both x-axes.</para>
+<refsect3 id="gdv-twod-layer-get-xrange.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>layer</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvTwodLayer"><type>GdvTwodLayer</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>x_beg</para></entry>
+<entry role="parameter_description"><para>the position to store the begin of this layer in x-direction</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>x_end</para></entry>
+<entry role="parameter_description"><para>the position to store the end of this layer in x-direction</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="gdv-twod-layer-get-yrange" role="function">
+<title>gdv_twod_layer_get_yrange&#160;()</title>
+<indexterm zone="gdv-twod-layer-get-yrange"><primary>gdv_twod_layer_get_yrange</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+gdv_twod_layer_get_yrange (<parameter><link linkend="GdvTwodLayer"><type>GdvTwodLayer</type></link> *layer</parameter>,
+                           <parameter><link linkend="gdouble"><type>gdouble</type></link> *y_beg</parameter>,
+                           <parameter><link linkend="gdouble"><type>gdouble</type></link> *y_end</parameter>);</programlisting>
+<para>Returns the maximum and minimum of both y-axes.</para>
+<refsect3 id="gdv-twod-layer-get-yrange.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>layer</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvTwodLayer"><type>GdvTwodLayer</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>y_beg</para></entry>
+<entry role="parameter_description"><para>the position to store the begin of this layer in y-direction</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>y_end</para></entry>
+<entry role="parameter_description"><para>the position to store the end of this layer in y-direction</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="gdv-twod-layer-get-axis" role="function">
+<title>gdv_twod_layer_get_axis&#160;()</title>
+<indexterm zone="gdv-twod-layer-get-axis"><primary>gdv_twod_layer_get_axis</primary></indexterm>
+<programlisting language="C"><link linkend="GdvAxis"><returnvalue>GdvAxis</returnvalue></link>&#160;*
+gdv_twod_layer_get_axis (<parameter><link linkend="GdvTwodLayer"><type>GdvTwodLayer</type></link> *layer</parameter>,
+                         <parameter><link linkend="GdvTwodAxisType"><type>GdvTwodAxisType</type></link> axis_type</parameter>);</programlisting>
+<para>This function can be used to receive a particular axis of an <link linkend="GdvTwodLayer"><type>GdvTwodLayer</type></link>.</para>
+<refsect3 id="gdv-twod-layer-get-axis.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>layer</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvTwodLayer"><type>GdvTwodLayer</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>axis_type</para></entry>
+<entry role="parameter_description"><para>the axis-type</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="gdv-twod-layer-get-axis.returns" role="returns">
+<title>Returns</title>
+<para>A pointer to the axis. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="gdv-twod-layer-set-axis" role="function">
+<title>gdv_twod_layer_set_axis&#160;()</title>
+<indexterm zone="gdv-twod-layer-set-axis"><primary>gdv_twod_layer_set_axis</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+gdv_twod_layer_set_axis (<parameter><link linkend="GdvTwodLayer"><type>GdvTwodLayer</type></link> *layer</parameter>,
+                         <parameter><link linkend="GdvAxis"><type>GdvAxis</type></link> *axis</parameter>,
+                         <parameter><link linkend="GdvTwodAxisType"><type>GdvTwodAxisType</type></link> axis_type</parameter>);</programlisting>
+<para>This function replaces an single axis of the <parameter>layer</parameter>
+.</para>
+<refsect3 id="gdv-twod-layer-set-axis.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>layer</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvTwodLayer"><type>GdvTwodLayer</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>axis</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvAxis"><type>GdvAxis</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>axis_type</para></entry>
+<entry role="parameter_description"><para>the axis-type</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="gdv-twod-layer-unset-axis" role="function">
+<title>gdv_twod_layer_unset_axis&#160;()</title>
+<indexterm zone="gdv-twod-layer-unset-axis"><primary>gdv_twod_layer_unset_axis</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+gdv_twod_layer_unset_axis (<parameter><link linkend="GdvTwodLayer"><type>GdvTwodLayer</type></link> *layer</parameter>,
+                           <parameter><link linkend="GdvTwodAxisType"><type>GdvTwodAxisType</type></link> axis_type</parameter>);</programlisting>
+<para>Removes an axis from the <parameter>layer</parameter>
+.</para>
+<refsect3 id="gdv-twod-layer-unset-axis.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>layer</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvTwodLayer"><type>GdvTwodLayer</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>axis_type</para></entry>
+<entry role="parameter_description"><para>the axis-type</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+
+</refsect1>
+<refsect1 id="GdvTwodLayer.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="GDV-TWOD-LAYER-TYPE:CAPS" role="macro">
+<title>GDV_TWOD_LAYER_TYPE</title>
+<indexterm zone="GDV-TWOD-LAYER-TYPE:CAPS"><primary>GDV_TWOD_LAYER_TYPE</primary></indexterm>
+<programlisting language="C">#define GDV_TWOD_LAYER_TYPE                 (gdv_twod_layer_get_type ())
+</programlisting>
+</refsect2>
+<refsect2 id="GdvTwodLayer-struct" role="struct">
+<title>struct GdvTwodLayer</title>
+<indexterm zone="GdvTwodLayer-struct"><primary>GdvTwodLayer</primary></indexterm>
+<programlisting language="C">struct GdvTwodLayer;</programlisting>
+</refsect2>
+<refsect2 id="GdvTwodLayerClass" role="struct">
+<title>struct GdvTwodLayerClass</title>
+<indexterm zone="GdvTwodLayerClass"><primary>GdvTwodLayerClass</primary></indexterm>
+<programlisting language="C">struct GdvTwodLayerClass {
+  GdvLayerClass parent_class;
+
+  /* Padding to allow adding up to 12 new virtual functions without
+   * breaking ABI. */
+  gpointer _gdv_reserve[12];
+};
+</programlisting>
+<refsect3 id="GdvTwodLayerClass.members" role="struct_members">
+<title>Members</title>
+<informaltable role="struct_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="struct_members_name" colwidth="300px"/>
+<colspec colname="struct_members_description"/>
+<colspec colname="struct_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="member"><entry role="struct_member_name"><para><link linkend="gpointer"><type>gpointer</type></link>&#160;<structfield id="GdvTwodLayerClass.-gdv-reserve">_gdv_reserve</structfield>[12];</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3>
+</refsect2>
+<refsect2 id="GdvTwodLayerPrivate" role="struct">
+<title>GdvTwodLayerPrivate</title>
+<indexterm zone="GdvTwodLayerPrivate"><primary>GdvTwodLayerPrivate</primary></indexterm>
+<programlisting language="C">typedef struct _GdvTwodLayerPrivate GdvTwodLayerPrivate;</programlisting>
+</refsect2>
+
+</refsect1>
+
+</refentry>

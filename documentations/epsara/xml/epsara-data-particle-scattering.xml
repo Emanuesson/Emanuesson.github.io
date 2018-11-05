@@ -1,0 +1,379 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="EpsaraDataParticleScattering">
+<refmeta>
+<refentrytitle role="top_of_page" id="EpsaraDataParticleScattering.top_of_page">EpsaraDataParticleScattering</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>EPSARA Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>EpsaraDataParticleScattering</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="EpsaraDataParticleScattering.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-material-make-natural-rbs-elements">epsara_data_material_make_natural_rbs_elements</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GSList"><returnvalue>GSList</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="epsara-data-material-particle-scattering-filter-same">epsara_data_material_particle_scattering_filter_same</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GSList"><returnvalue>GSList</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="epsara-data-material-particle-scattering-filter-by-beam">epsara_data_material_particle_scattering_filter_by_beam</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-particle-scattering-kinematic-after-scattering">epsara_data_particle_scattering_kinematic_after_scattering</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-particle-scattering-kinematic-before-scattering">epsara_data_particle_scattering_kinematic_before_scattering</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-particle-scattering-add-cross-section">epsara_data_particle_scattering_add_cross_section</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-particle-scattering-remove-cross-section">epsara_data_particle_scattering_remove_cross_section</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-particle-scattering-integrate-cross-section-over-energy">epsara_data_particle_scattering_integrate_cross_section_over_energy</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataParticleScattering.properties" role="properties">
+<title role="properties.title">Properties</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="properties_type" colwidth="150px"/>
+<colspec colname="properties_name" colwidth="300px"/>
+<colspec colname="properties_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="EpsaraDataParticleScattering--atomic-mass-in-ion">atomic-mass-in-ion</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="EpsaraDataParticleScattering--atomic-mass-init-target">atomic-mass-init-target</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="EpsaraDataParticleScattering--atomic-mass-out-ion">atomic-mass-out-ion</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="EpsaraDataParticleScattering--atomic-mass-remain-target">atomic-mass-remain-target</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="gint"><type>gint</type></link></entry><entry role="property_name"><link linkend="EpsaraDataParticleScattering--atomic-no-in-ion">atomic-no-in-ion</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gint"><type>gint</type></link></entry><entry role="property_name"><link linkend="EpsaraDataParticleScattering--atomic-no-init-target">atomic-no-init-target</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gint"><type>gint</type></link></entry><entry role="property_name"><link linkend="EpsaraDataParticleScattering--atomic-no-out-ion">atomic-no-out-ion</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gint"><type>gint</type></link></entry><entry role="property_name"><link linkend="EpsaraDataParticleScattering--atomic-no-remain-target">atomic-no-remain-target</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gint"><type>gint</type></link></entry><entry role="property_name"><link linkend="EpsaraDataParticleScattering--mass-no-in-ion">mass-no-in-ion</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gint"><type>gint</type></link></entry><entry role="property_name"><link linkend="EpsaraDataParticleScattering--mass-no-init-target">mass-no-init-target</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gint"><type>gint</type></link></entry><entry role="property_name"><link linkend="EpsaraDataParticleScattering--mass-no-out-ion">mass-no-out-ion</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gint"><type>gint</type></link></entry><entry role="property_name"><link linkend="EpsaraDataParticleScattering--mass-no-remain-target">mass-no-remain-target</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="EpsaraDataParticleScattering--q-value">q-value</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gboolean"><type>gboolean</type></link></entry><entry role="property_name"><link linkend="EpsaraDataParticleScattering--rutherford-cs">rutherford-cs</link></entry><entry role="property_flags">Read / Write</entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataParticleScattering.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="EpsaraDataParticleScattering-struct">EpsaraDataParticleScattering</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="EpsaraDataParticleScatteringClass">EpsaraDataParticleScatteringClass</link></entry></row>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="EpsaraDataParticleScatteringPrivate">EpsaraDataParticleScatteringPrivate</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataParticleScattering.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="EpsaraDataElement">EpsaraDataElement</link>
+        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="EpsaraDataInteraction">EpsaraDataInteraction</link>
+            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> EpsaraDataParticleScattering
+</screen>
+</refsect1>
+<refsect1 id="EpsaraDataParticleScattering.implemented-interfaces" role="impl_interfaces">
+<title role="impl_interfaces.title">Implemented Interfaces</title>
+<para>
+EpsaraDataParticleScattering implements
+ <link linkend="JsonSerializable">JsonSerializable</link>.</para>
+
+</refsect1>
+
+
+<refsect1 id="EpsaraDataParticleScattering.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="EpsaraDataParticleScattering.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="epsara-data-material-make-natural-rbs-elements" role="function">
+<title>epsara_data_material_make_natural_rbs_elements&#160;()</title>
+<indexterm zone="epsara-data-material-make-natural-rbs-elements"><primary>epsara_data_material_make_natural_rbs_elements</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+epsara_data_material_make_natural_rbs_elements
+                               (<parameter><link linkend="EpsaraDataMaterial"><type>EpsaraDataMaterial</type></link> *material</parameter>,
+                                <parameter><link linkend="gint"><type>gint</type></link> atomic_number</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-material-particle-scattering-filter-same" role="function" condition="since:0.02">
+<title>epsara_data_material_particle_scattering_filter_same&#160;()</title>
+<indexterm zone="epsara-data-material-particle-scattering-filter-same" role="0.02"><primary>epsara_data_material_particle_scattering_filter_same</primary></indexterm>
+<programlisting language="C"><link linkend="GSList"><returnvalue>GSList</returnvalue></link>&#160;*
+epsara_data_material_particle_scattering_filter_same
+                               (<parameter><link linkend="GSList"><type>GSList</type></link> *list</parameter>);</programlisting>
+<para>Usefull method to filter a list of particle-reactions for duplicates.</para>
+<refsect3 id="epsara-data-material-particle-scattering-filter-same.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>list</para></entry>
+<entry role="parameter_description"><para>List of particle scatterings. </para></entry>
+<entry role="parameter_annotations"><emphasis role="annotation">[<acronym>element-type</acronym> Epsara.DataParticleScattering]</emphasis></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="epsara-data-material-particle-scattering-filter-same.returns" role="returns">
+<title>Returns</title>
+<para>a link to the full
+list of materials as one material. </para>
+<para><emphasis role="annotation">[<acronym>element-type</acronym> Epsara.DataParticleScattering][<acronym>transfer container</acronym>]</emphasis></para>
+</refsect3><para role="since">Since: <link linkend="api-index-0.02">0.02</link></para></refsect2>
+<refsect2 id="epsara-data-material-particle-scattering-filter-by-beam" role="function" condition="since:0.02">
+<title>epsara_data_material_particle_scattering_filter_by_beam&#160;()</title>
+<indexterm zone="epsara-data-material-particle-scattering-filter-by-beam" role="0.02"><primary>epsara_data_material_particle_scattering_filter_by_beam</primary></indexterm>
+<programlisting language="C"><link linkend="GSList"><returnvalue>GSList</returnvalue></link>&#160;*
+epsara_data_material_particle_scattering_filter_by_beam
+                               (<parameter><link linkend="GSList"><type>GSList</type></link> *list</parameter>,
+                                <parameter><link linkend="gint"><type>gint</type></link> ion_atomic_no</parameter>,
+                                <parameter><link linkend="gint"><type>gint</type></link> ion_mass_no</parameter>);</programlisting>
+<para>Usefull method to filter a list of particle-reactions for duplicates by their .</para>
+<refsect3 id="epsara-data-material-particle-scattering-filter-by-beam.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>list</para></entry>
+<entry role="parameter_description"><para>List of particle scattering interactions. </para></entry>
+<entry role="parameter_annotations"><emphasis role="annotation">[<acronym>element-type</acronym> Epsara.DataParticleScattering]</emphasis></entry></row>
+<row><entry role="parameter_name"><para>ion_atomic_no</para></entry>
+<entry role="parameter_description"><para>the</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="epsara-data-material-particle-scattering-filter-by-beam.returns" role="returns">
+<title>Returns</title>
+<para>a link to the list
+of interactions. </para>
+<para><emphasis role="annotation">[<acronym>element-type</acronym> Epsara.DataParticleScattering][<acronym>transfer container</acronym>]</emphasis></para>
+</refsect3><para role="since">Since: <link linkend="api-index-0.02">0.02</link></para></refsect2>
+<refsect2 id="epsara-data-particle-scattering-kinematic-after-scattering" role="function">
+<title>epsara_data_particle_scattering_kinematic_after_scattering&#160;()</title>
+<indexterm zone="epsara-data-particle-scattering-kinematic-after-scattering"><primary>epsara_data_particle_scattering_kinematic_after_scattering</primary></indexterm>
+<programlisting language="C"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+epsara_data_particle_scattering_kinematic_after_scattering
+                               (<parameter><link linkend="EpsaraDataParticleScattering"><type>EpsaraDataParticleScattering</type></link> *scattering</parameter>,
+                                <parameter><link linkend="gdouble"><type>gdouble</type></link> ion_mass</parameter>,
+                                <parameter><link linkend="gdouble"><type>gdouble</type></link> ion_energy_before_scattering</parameter>,
+                                <parameter><link linkend="gdouble"><type>gdouble</type></link> scattering_angle</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-particle-scattering-kinematic-before-scattering" role="function">
+<title>epsara_data_particle_scattering_kinematic_before_scattering&#160;()</title>
+<indexterm zone="epsara-data-particle-scattering-kinematic-before-scattering"><primary>epsara_data_particle_scattering_kinematic_before_scattering</primary></indexterm>
+<programlisting language="C"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+epsara_data_particle_scattering_kinematic_before_scattering
+                               (<parameter><link linkend="EpsaraDataParticleScattering"><type>EpsaraDataParticleScattering</type></link> *scattering</parameter>,
+                                <parameter><link linkend="gdouble"><type>gdouble</type></link> ion_mass</parameter>,
+                                <parameter><link linkend="gdouble"><type>gdouble</type></link> ion_energy_after_scattering</parameter>,
+                                <parameter><link linkend="gdouble"><type>gdouble</type></link> cos_scattering_angle</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-particle-scattering-add-cross-section" role="function" condition="since:0.02">
+<title>epsara_data_particle_scattering_add_cross_section&#160;()</title>
+<indexterm zone="epsara-data-particle-scattering-add-cross-section" role="0.02"><primary>epsara_data_particle_scattering_add_cross_section</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+epsara_data_particle_scattering_add_cross_section
+                               (<parameter><link linkend="EpsaraDataParticleScattering"><type>EpsaraDataParticleScattering</type></link> *scattering</parameter>,
+                                <parameter><link linkend="EpsaraDataMatrix"><type>EpsaraDataMatrix</type></link> *cross_section</parameter>,
+                                <parameter><link linkend="gdouble"><type>gdouble</type></link> scattering_angle</parameter>);</programlisting>
+<para>Adds the cross-section to the scattering-event.</para>
+<refsect3 id="epsara-data-particle-scattering-add-cross-section.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>scattering</para></entry>
+<entry role="parameter_description"><para>the <link linkend="EpsaraDataParticleScattering"><type>EpsaraDataParticleScattering</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>cross_section</para></entry>
+<entry role="parameter_description"><para>a <link linkend="EpsaraDataMatrix"><type>EpsaraDataMatrix</type></link>, filled with the cross-section</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>scattering_angle</para></entry>
+<entry role="parameter_description"><para>the scattering-angle used for this specific cross-section (currently in degrees)</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><para role="since">Since: <link linkend="api-index-0.02">0.02</link></para></refsect2>
+<refsect2 id="epsara-data-particle-scattering-remove-cross-section" role="function" condition="since:0.02">
+<title>epsara_data_particle_scattering_remove_cross_section&#160;()</title>
+<indexterm zone="epsara-data-particle-scattering-remove-cross-section" role="0.02"><primary>epsara_data_particle_scattering_remove_cross_section</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+epsara_data_particle_scattering_remove_cross_section
+                               (<parameter><link linkend="EpsaraDataParticleScattering"><type>EpsaraDataParticleScattering</type></link> *scattering</parameter>,
+                                <parameter><link linkend="gdouble"><type>gdouble</type></link> scattering_angle</parameter>);</programlisting>
+<para>Removes the cross-section to the scattering-event.</para>
+<refsect3 id="epsara-data-particle-scattering-remove-cross-section.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>scattering</para></entry>
+<entry role="parameter_description"><para>the <link linkend="EpsaraDataParticleScattering"><type>EpsaraDataParticleScattering</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>scattering_angle</para></entry>
+<entry role="parameter_description"><para>the scattering-angle used for this specific cross-section (currently in degrees)</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><para role="since">Since: <link linkend="api-index-0.02">0.02</link></para></refsect2>
+<refsect2 id="epsara-data-particle-scattering-integrate-cross-section-over-energy" role="function">
+<title>epsara_data_particle_scattering_integrate_cross_section_over_energy&#160;()</title>
+<indexterm zone="epsara-data-particle-scattering-integrate-cross-section-over-energy"><primary>epsara_data_particle_scattering_integrate_cross_section_over_energy</primary></indexterm>
+<programlisting language="C"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+epsara_data_particle_scattering_integrate_cross_section_over_energy
+                               (<parameter><link linkend="EpsaraDataParticleScattering"><type>EpsaraDataParticleScattering</type></link> *scattering</parameter>,
+                                <parameter><link linkend="gdouble"><type>gdouble</type></link> scattering_angle</parameter>,
+                                <parameter><link linkend="gint"><type>gint</type></link> ion_atomic_no</parameter>,
+                                <parameter><link linkend="gdouble"><type>gdouble</type></link> ion_mass</parameter>,
+                                <parameter><link linkend="gdouble"><type>gdouble</type></link> energy_start</parameter>,
+                                <parameter><link linkend="gdouble"><type>gdouble</type></link> energy_end</parameter>,
+                                <parameter><link linkend="gdouble"><type>gdouble</type></link> straggling</parameter>);</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="EpsaraDataParticleScattering.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="EpsaraDataParticleScattering-struct" role="struct">
+<title>struct EpsaraDataParticleScattering</title>
+<indexterm zone="EpsaraDataParticleScattering-struct"><primary>EpsaraDataParticleScattering</primary></indexterm>
+<programlisting language="C">struct EpsaraDataParticleScattering;</programlisting>
+</refsect2>
+<refsect2 id="EpsaraDataParticleScatteringClass" role="struct">
+<title>struct EpsaraDataParticleScatteringClass</title>
+<indexterm zone="EpsaraDataParticleScatteringClass"><primary>EpsaraDataParticleScatteringClass</primary></indexterm>
+<programlisting language="C">struct EpsaraDataParticleScatteringClass {
+  EpsaraDataInteractionClass parent_class;
+};
+</programlisting>
+</refsect2>
+<refsect2 id="EpsaraDataParticleScatteringPrivate" role="struct">
+<title>EpsaraDataParticleScatteringPrivate</title>
+<indexterm zone="EpsaraDataParticleScatteringPrivate"><primary>EpsaraDataParticleScatteringPrivate</primary></indexterm>
+<programlisting language="C">typedef struct _EpsaraDataParticleScatteringPrivate EpsaraDataParticleScatteringPrivate;</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="EpsaraDataParticleScattering.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="EpsaraDataParticleScattering--atomic-mass-in-ion" role="property"><title>The <literal>“atomic-mass-in-ion”</literal> property</title>
+<indexterm zone="EpsaraDataParticleScattering--atomic-mass-in-ion"><primary>EpsaraDataParticleScattering:atomic-mass-in-ion</primary></indexterm>
+<programlisting>  “atomic-mass-in-ion”       <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Holds the isotopic mass of the inc. ion in amu.</para><para>Flags: Read</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="EpsaraDataParticleScattering--atomic-mass-init-target" role="property"><title>The <literal>“atomic-mass-init-target”</literal> property</title>
+<indexterm zone="EpsaraDataParticleScattering--atomic-mass-init-target"><primary>EpsaraDataParticleScattering:atomic-mass-init-target</primary></indexterm>
+<programlisting>  “atomic-mass-init-target”  <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Holds the isotopic mass of the init. target in amu.</para><para>Flags: Read</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="EpsaraDataParticleScattering--atomic-mass-out-ion" role="property"><title>The <literal>“atomic-mass-out-ion”</literal> property</title>
+<indexterm zone="EpsaraDataParticleScattering--atomic-mass-out-ion"><primary>EpsaraDataParticleScattering:atomic-mass-out-ion</primary></indexterm>
+<programlisting>  “atomic-mass-out-ion”      <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Holds the isotopic mass of the outg. ion in amu.</para><para>Flags: Read</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="EpsaraDataParticleScattering--atomic-mass-remain-target" role="property"><title>The <literal>“atomic-mass-remain-target”</literal> property</title>
+<indexterm zone="EpsaraDataParticleScattering--atomic-mass-remain-target"><primary>EpsaraDataParticleScattering:atomic-mass-remain-target</primary></indexterm>
+<programlisting>  “atomic-mass-remain-target” <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Holds the isotopic mass of the rem. target in amu.</para><para>Flags: Read</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="EpsaraDataParticleScattering--atomic-no-in-ion" role="property"><title>The <literal>“atomic-no-in-ion”</literal> property</title>
+<indexterm zone="EpsaraDataParticleScattering--atomic-no-in-ion"><primary>EpsaraDataParticleScattering:atomic-no-in-ion</primary></indexterm>
+<programlisting>  “atomic-no-in-ion”         <link linkend="gint"><type>gint</type></link></programlisting>
+<para>atomic number of the incident ion.</para><para>Flags: Read / Write</para>
+<para>Allowed values: [0,94]</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="EpsaraDataParticleScattering--atomic-no-init-target" role="property"><title>The <literal>“atomic-no-init-target”</literal> property</title>
+<indexterm zone="EpsaraDataParticleScattering--atomic-no-init-target"><primary>EpsaraDataParticleScattering:atomic-no-init-target</primary></indexterm>
+<programlisting>  “atomic-no-init-target”    <link linkend="gint"><type>gint</type></link></programlisting>
+<para>atomic number of initial target-atom.</para><para>Flags: Read / Write</para>
+<para>Allowed values: [0,94]</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="EpsaraDataParticleScattering--atomic-no-out-ion" role="property"><title>The <literal>“atomic-no-out-ion”</literal> property</title>
+<indexterm zone="EpsaraDataParticleScattering--atomic-no-out-ion"><primary>EpsaraDataParticleScattering:atomic-no-out-ion</primary></indexterm>
+<programlisting>  “atomic-no-out-ion”        <link linkend="gint"><type>gint</type></link></programlisting>
+<para>atomic number of detected ion.</para><para>Flags: Read / Write</para>
+<para>Allowed values: [0,94]</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="EpsaraDataParticleScattering--atomic-no-remain-target" role="property"><title>The <literal>“atomic-no-remain-target”</literal> property</title>
+<indexterm zone="EpsaraDataParticleScattering--atomic-no-remain-target"><primary>EpsaraDataParticleScattering:atomic-no-remain-target</primary></indexterm>
+<programlisting>  “atomic-no-remain-target”  <link linkend="gint"><type>gint</type></link></programlisting>
+<para>atomic number of remaining target-atom.</para><para>Flags: Read / Write</para>
+<para>Allowed values: [0,94]</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="EpsaraDataParticleScattering--mass-no-in-ion" role="property"><title>The <literal>“mass-no-in-ion”</literal> property</title>
+<indexterm zone="EpsaraDataParticleScattering--mass-no-in-ion"><primary>EpsaraDataParticleScattering:mass-no-in-ion</primary></indexterm>
+<programlisting>  “mass-no-in-ion”           <link linkend="gint"><type>gint</type></link></programlisting>
+<para>mass number of the incident ion.</para><para>Flags: Read / Write</para>
+<para>Allowed values: &gt;= 0</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="EpsaraDataParticleScattering--mass-no-init-target" role="property"><title>The <literal>“mass-no-init-target”</literal> property</title>
+<indexterm zone="EpsaraDataParticleScattering--mass-no-init-target"><primary>EpsaraDataParticleScattering:mass-no-init-target</primary></indexterm>
+<programlisting>  “mass-no-init-target”      <link linkend="gint"><type>gint</type></link></programlisting>
+<para>mass number of initial target-atom.</para><para>Flags: Read / Write</para>
+<para>Allowed values: &gt;= 0</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="EpsaraDataParticleScattering--mass-no-out-ion" role="property"><title>The <literal>“mass-no-out-ion”</literal> property</title>
+<indexterm zone="EpsaraDataParticleScattering--mass-no-out-ion"><primary>EpsaraDataParticleScattering:mass-no-out-ion</primary></indexterm>
+<programlisting>  “mass-no-out-ion”          <link linkend="gint"><type>gint</type></link></programlisting>
+<para>mass number of detected ion.</para><para>Flags: Read / Write</para>
+<para>Allowed values: &gt;= 0</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="EpsaraDataParticleScattering--mass-no-remain-target" role="property"><title>The <literal>“mass-no-remain-target”</literal> property</title>
+<indexterm zone="EpsaraDataParticleScattering--mass-no-remain-target"><primary>EpsaraDataParticleScattering:mass-no-remain-target</primary></indexterm>
+<programlisting>  “mass-no-remain-target”    <link linkend="gint"><type>gint</type></link></programlisting>
+<para>mass number of remaining target-atom.</para><para>Flags: Read / Write</para>
+<para>Allowed values: &gt;= 0</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="EpsaraDataParticleScattering--q-value" role="property"><title>The <literal>“q-value”</literal> property</title>
+<indexterm zone="EpsaraDataParticleScattering--q-value"><primary>EpsaraDataParticleScattering:q-value</primary></indexterm>
+<programlisting>  “q-value”                  <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>nuclear reaction Q-value [keV].</para><para>Flags: Read / Write</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="EpsaraDataParticleScattering--rutherford-cs" role="property"><title>The <literal>“rutherford-cs”</literal> property</title>
+<indexterm zone="EpsaraDataParticleScattering--rutherford-cs"><primary>EpsaraDataParticleScattering:rutherford-cs</primary></indexterm>
+<programlisting>  “rutherford-cs”            <link linkend="gboolean"><type>gboolean</type></link></programlisting>
+<para>specifies if rutherford or individual cs. should be used.</para><para>Flags: Read / Write</para>
+<para>Default value: TRUE</para>
+</refsect2>
+
+</refsect1>
+
+</refentry>

@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="GdvIndicator">
+<refmeta>
+<refentrytitle role="top_of_page" id="GdvIndicator.top_of_page">GdvIndicator</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>GDV Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>GdvIndicator</refname>
+<refpurpose>an indicator on an axis</refpurpose>
+</refnamediv>
+
+<refsect1 id="GdvIndicator.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="GdvIndicator"><returnvalue>GdvIndicator</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="gdv-indicator-new">gdv_indicator_new</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="GdvIndicator.properties" role="properties">
+<title role="properties.title">Properties</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="properties_type" colwidth="150px"/>
+<colspec colname="properties_name" colwidth="300px"/>
+<colspec colname="properties_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="property_type"><link linkend="gboolean"><type>gboolean</type></link></entry><entry role="property_name"><link linkend="GdvIndicator--rotate-widget-with-axis">rotate-widget-with-axis</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gboolean"><type>gboolean</type></link></entry><entry role="property_name"><link linkend="GdvIndicator--show-in-legend">show-in-legend</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gboolean"><type>gboolean</type></link></entry><entry role="property_name"><link linkend="GdvIndicator--show-in-out-of-range">show-in-out-of-range</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gchar"><type>gchar</type></link>&#160;*</entry><entry role="property_name"><link linkend="GdvIndicator--title">title</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="GdvIndicator--value">value</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="GtkWidget"><type>GtkWidget</type></link>&#160;*</entry><entry role="property_name"><link linkend="GdvIndicator--widget">widget</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="GdvIndicator--widget-xalign">widget-xalign</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="GdvIndicator--widget-yalign">widget-yalign</link></entry><entry role="property_flags">Read / Write</entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="GdvIndicator.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="GdvIndicatorClass">GdvIndicatorClass</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="GdvIndicator.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GInitiallyUnowned">GInitiallyUnowned</link>
+        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkWidget">GtkWidget</link>
+            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkContainer">GtkContainer</link>
+                <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> GdvIndicator
+                    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GdvSpecialCheckedIndicator">GdvSpecialCheckedIndicator</link>
+</screen>
+</refsect1>
+
+
+<refsect1 id="GdvIndicator.description" role="desc">
+<title role="desc.title">Description</title>
+<para><link linkend="GdvIndicator"><type>GdvIndicator</type></link> is an object-class, that displays an indicator for any given
+value on a single axis.</para>
+<refsect2><title>CSS nodes</title><para>GdvIndicator uses a single CSS node with name indicator.</para>
+</refsect2>
+
+</refsect1>
+<refsect1 id="GdvIndicator.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="gdv-indicator-new" role="function">
+<title>gdv_indicator_new&#160;()</title>
+<indexterm zone="gdv-indicator-new"><primary>gdv_indicator_new</primary></indexterm>
+<programlisting language="C"><link linkend="GdvIndicator"><returnvalue>GdvIndicator</returnvalue></link>&#160;*
+gdv_indicator_new (<parameter><type>void</type></parameter>);</programlisting>
+<para>Just a common constructor.</para>
+<refsect3 id="gdv-indicator-new.returns" role="returns">
+<title>Returns</title>
+<para> a new <link linkend="GdvIndicator"><type>GdvIndicator</type></link></para>
+</refsect3></refsect2>
+
+</refsect1>
+<refsect1 id="GdvIndicator.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="GdvIndicatorClass" role="struct">
+<title>struct GdvIndicatorClass</title>
+<indexterm zone="GdvIndicatorClass"><primary>GdvIndicatorClass</primary></indexterm>
+<programlisting language="C">struct GdvIndicatorClass {
+  GtkContainerClass parent_class;
+
+  /* Padding to allow adding up to 12 new virtual functions without
+   * breaking ABI. */
+  gpointer _gdv_reserve[12];
+};
+</programlisting>
+<refsect3 id="GdvIndicatorClass.members" role="struct_members">
+<title>Members</title>
+<informaltable role="struct_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="struct_members_name" colwidth="300px"/>
+<colspec colname="struct_members_description"/>
+<colspec colname="struct_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="member"><entry role="struct_member_name"><para><link linkend="gpointer"><type>gpointer</type></link>&#160;<structfield id="GdvIndicatorClass.-gdv-reserve">_gdv_reserve</structfield>[12];</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3>
+</refsect2>
+
+</refsect1>
+<refsect1 id="GdvIndicator.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="GdvIndicator--rotate-widget-with-axis" role="property"><title>The <literal>“rotate-widget-with-axis”</literal> property</title>
+<indexterm zone="GdvIndicator--rotate-widget-with-axis"><primary>GdvIndicator:rotate-widget-with-axis</primary></indexterm>
+<programlisting>  “rotate-widget-with-axis”  <link linkend="gboolean"><type>gboolean</type></link></programlisting>
+<para>If possible, rotate the widget along the local axis-slope.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: FALSE</para>
+</refsect2>
+<refsect2 id="GdvIndicator--show-in-legend" role="property"><title>The <literal>“show-in-legend”</literal> property</title>
+<indexterm zone="GdvIndicator--show-in-legend"><primary>GdvIndicator:show-in-legend</primary></indexterm>
+<programlisting>  “show-in-legend”           <link linkend="gboolean"><type>gboolean</type></link></programlisting>
+<para>If the indicator should be listed in the legend of the affilliated layer.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: TRUE</para>
+</refsect2>
+<refsect2 id="GdvIndicator--show-in-out-of-range" role="property"><title>The <literal>“show-in-out-of-range”</literal> property</title>
+<indexterm zone="GdvIndicator--show-in-out-of-range"><primary>GdvIndicator:show-in-out-of-range</primary></indexterm>
+<programlisting>  “show-in-out-of-range”     <link linkend="gboolean"><type>gboolean</type></link></programlisting>
+<para>If the indicator should be shown even if the value is out of the range of
+the assigned axis. In some technical applications and if the indicator value
+is more important, than an actual remark, this should be considered.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: FALSE</para>
+</refsect2>
+<refsect2 id="GdvIndicator--title" role="property"><title>The <literal>“title”</literal> property</title>
+<indexterm zone="GdvIndicator--title"><primary>GdvIndicator:title</primary></indexterm>
+<programlisting>  “title”                    <link linkend="gchar"><type>gchar</type></link>&#160;*</programlisting>
+<para>The title of an indicator.</para>
+<para>This property is pretty useless for the moment.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: "new indicator"</para>
+</refsect2>
+<refsect2 id="GdvIndicator--value" role="property"><title>The <literal>“value”</literal> property</title>
+<indexterm zone="GdvIndicator--value"><primary>GdvIndicator:value</primary></indexterm>
+<programlisting>  “value”                    <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Determines the current value of the indicator.</para><para>Flags: Read / Write</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="GdvIndicator--widget" role="property"><title>The <literal>“widget”</literal> property</title>
+<indexterm zone="GdvIndicator--widget"><primary>GdvIndicator:widget</primary></indexterm>
+<programlisting>  “widget”                   <link linkend="GtkWidget"><type>GtkWidget</type></link>&#160;*</programlisting>
+<para>A widget, that should be displayed instead of the indicator.</para>
+<para>Flags: Read / Write</para>
+</refsect2>
+<refsect2 id="GdvIndicator--widget-xalign" role="property"><title>The <literal>“widget-xalign”</literal> property</title>
+<indexterm zone="GdvIndicator--widget-xalign"><primary>GdvIndicator:widget-xalign</primary></indexterm>
+<programlisting>  “widget-xalign”            <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>The horizontal alignment of the widget.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: 0.5</para>
+</refsect2>
+<refsect2 id="GdvIndicator--widget-yalign" role="property"><title>The <literal>“widget-yalign”</literal> property</title>
+<indexterm zone="GdvIndicator--widget-yalign"><primary>GdvIndicator:widget-yalign</primary></indexterm>
+<programlisting>  “widget-yalign”            <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>The vertical alignment of the widget.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: 0.5</para>
+</refsect2>
+
+</refsect1>
+
+</refentry>

@@ -1,0 +1,271 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="EpsaraDataRbsMeasurement">
+<refmeta>
+<refentrytitle role="top_of_page" id="EpsaraDataRbsMeasurement.top_of_page">EpsaraDataRbsMeasurement</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>EPSARA Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>EpsaraDataRbsMeasurement</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="EpsaraDataRbsMeasurement.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="EpsaraDataMatrix"><returnvalue>EpsaraDataMatrix</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="epsara-data-rbs-measurement-calc-simple-spec">epsara_data_rbs_measurement_calc_simple_spec</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="EpsaraDataMatrix"><returnvalue>EpsaraDataMatrix</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="epsara-data-rbs-measurement-get-beam-eloss">epsara_data_rbs_measurement_get_beam_eloss</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="EpsaraDataMatrix"><returnvalue>EpsaraDataMatrix</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="epsara-data-rbs-measurement-get-detector-eloss">epsara_data_rbs_measurement_get_detector_eloss</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataRbsMeasurement.properties" role="properties">
+<title role="properties.title">Properties</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="properties_type" colwidth="150px"/>
+<colspec colname="properties_name" colwidth="300px"/>
+<colspec colname="properties_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="property_type"><link linkend="EpsaraBsCalculationType"><type>EpsaraBsCalculationType</type></link></entry><entry role="property_name"><link linkend="EpsaraDataRbsMeasurement--calculation-type">calculation-type</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="EpsaraDataRbsMeasurement--depth-granularity">depth-granularity</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="EpsaraDataRbsMeasurement--ini-precision-in">ini-precision-in</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="EpsaraDataRbsMeasurement--ini-precision-out">ini-precision-out</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="EpsaraDataRbsMeasurement--max-precision-in">max-precision-in</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="EpsaraDataRbsMeasurement--max-precision-out">max-precision-out</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gboolean"><type>gboolean</type></link></entry><entry role="property_name"><link linkend="EpsaraDataRbsMeasurement--suppress-dispersion">suppress-dispersion</link></entry><entry role="property_flags">Read / Write</entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataRbsMeasurement.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="EpsaraDataRbsMeasurement-struct">EpsaraDataRbsMeasurement</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="EpsaraDataRbsMeasurementClass">EpsaraDataRbsMeasurementClass</link></entry></row>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="EpsaraDataRbsMeasurementPrivate">EpsaraDataRbsMeasurementPrivate</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataRbsMeasurement.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="EpsaraDataElement">EpsaraDataElement</link>
+        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="EpsaraDataMeasurement">EpsaraDataMeasurement</link>
+            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> EpsaraDataRbsMeasurement
+</screen>
+</refsect1>
+<refsect1 id="EpsaraDataRbsMeasurement.implemented-interfaces" role="impl_interfaces">
+<title role="impl_interfaces.title">Implemented Interfaces</title>
+<para>
+EpsaraDataRbsMeasurement implements
+ <link linkend="JsonSerializable">JsonSerializable</link>.</para>
+
+</refsect1>
+
+
+<refsect1 id="EpsaraDataRbsMeasurement.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="EpsaraDataRbsMeasurement.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="epsara-data-rbs-measurement-calc-simple-spec" role="function">
+<title>epsara_data_rbs_measurement_calc_simple_spec&#160;()</title>
+<indexterm zone="epsara-data-rbs-measurement-calc-simple-spec"><primary>epsara_data_rbs_measurement_calc_simple_spec</primary></indexterm>
+<programlisting language="C"><link linkend="EpsaraDataMatrix"><returnvalue>EpsaraDataMatrix</returnvalue></link>&#160;*
+epsara_data_rbs_measurement_calc_simple_spec
+                               (<parameter><link linkend="EpsaraDataRbsMeasurement"><type>EpsaraDataRbsMeasurement</type></link> *data</parameter>,
+                                <parameter><link linkend="EpsaraDataParticleDetector"><type>EpsaraDataParticleDetector</type></link> *detector</parameter>,
+                                <parameter><link linkend="EpsaraDataParticleBeam"><type>EpsaraDataParticleBeam</type></link> *beam</parameter>);</programlisting>
+<para>Returns a newly allocated matrix containing the calculated spectrum. The matrix contains columns
+in the following order: Matrix[:,0] = channel number; Matrix[:,1] = detector-energy;
+Matrix[:;2] = ...</para>
+<refsect3 id="epsara-data-rbs-measurement-calc-simple-spec.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>data</para></entry>
+<entry role="parameter_description"><para>the <link linkend="EpsaraDataRbsMeasurement"><type>EpsaraDataRbsMeasurement</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>detector</para></entry>
+<entry role="parameter_description"><para>an <link linkend="EpsaraDataParticleDetector"><type>EpsaraDataParticleDetector</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>beam</para></entry>
+<entry role="parameter_description"><para>an <link linkend="EpsaraDataParticleBeam"><type>EpsaraDataParticleBeam</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="epsara-data-rbs-measurement-calc-simple-spec.returns" role="returns">
+<title>Returns</title>
+<para>a newly allocated matrix with all energy-spectra data. </para>
+<para><emphasis role="annotation">[<acronym>transfer full</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="epsara-data-rbs-measurement-get-beam-eloss" role="function" condition="since:0.02">
+<title>epsara_data_rbs_measurement_get_beam_eloss&#160;()</title>
+<indexterm zone="epsara-data-rbs-measurement-get-beam-eloss" role="0.02"><primary>epsara_data_rbs_measurement_get_beam_eloss</primary></indexterm>
+<programlisting language="C"><link linkend="EpsaraDataMatrix"><returnvalue>EpsaraDataMatrix</returnvalue></link>&#160;*
+epsara_data_rbs_measurement_get_beam_eloss
+                               (<parameter><link linkend="EpsaraDataRbsMeasurement"><type>EpsaraDataRbsMeasurement</type></link> *data</parameter>,
+                                <parameter><link linkend="EpsaraDataParticleBeam"><type>EpsaraDataParticleBeam</type></link> *beam</parameter>);</programlisting>
+<para>Gets the inward energy loss as table.</para>
+<refsect3 id="epsara-data-rbs-measurement-get-beam-eloss.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>data</para></entry>
+<entry role="parameter_description"><para>an <link linkend="EpsaraDataRbsMeasurement"><type>EpsaraDataRbsMeasurement</type></link> object</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>beam</para></entry>
+<entry role="parameter_description"><para>an <link linkend="EpsaraDataParticleBeam"><type>EpsaraDataParticleBeam</type></link> object</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="epsara-data-rbs-measurement-get-beam-eloss.returns" role="returns">
+<title>Returns</title>
+<para>The inward energy loss, or NULL if beam is not found. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>][<acronym>allow-none</acronym>]</emphasis></para>
+</refsect3><para role="since">Since: <link linkend="api-index-0.02">0.02</link></para></refsect2>
+<refsect2 id="epsara-data-rbs-measurement-get-detector-eloss" role="function" condition="since:0.02">
+<title>epsara_data_rbs_measurement_get_detector_eloss&#160;()</title>
+<indexterm zone="epsara-data-rbs-measurement-get-detector-eloss" role="0.02"><primary>epsara_data_rbs_measurement_get_detector_eloss</primary></indexterm>
+<programlisting language="C"><link linkend="EpsaraDataMatrix"><returnvalue>EpsaraDataMatrix</returnvalue></link>&#160;*
+epsara_data_rbs_measurement_get_detector_eloss
+                               (<parameter><link linkend="EpsaraDataRbsMeasurement"><type>EpsaraDataRbsMeasurement</type></link> *data</parameter>,
+                                <parameter><link linkend="EpsaraDataParticleDetector"><type>EpsaraDataParticleDetector</type></link> *detector</parameter>,
+                                <parameter><link linkend="EpsaraDataParticleBeam"><type>EpsaraDataParticleBeam</type></link> *beam</parameter>,
+                                <parameter><link linkend="EpsaraDataParticleScattering"><type>EpsaraDataParticleScattering</type></link> *interaction</parameter>,
+                                <parameter><link linkend="gint"><type>gint</type></link> channel</parameter>);</programlisting>
+<para>Gets the outward energy loss as table. It is important to see this more as the</para>
+<refsect3 id="epsara-data-rbs-measurement-get-detector-eloss.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>data</para></entry>
+<entry role="parameter_description"><para>an <link linkend="EpsaraDataRbsMeasurement"><type>EpsaraDataRbsMeasurement</type></link> object</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>detector</para></entry>
+<entry role="parameter_description"><para>an <link linkend="EpsaraDataParticleDetector"><type>EpsaraDataParticleDetector</type></link> object</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>beam</para></entry>
+<entry role="parameter_description"><para>an <link linkend="EpsaraDataParticleBeam"><type>EpsaraDataParticleBeam</type></link> object</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>interaction</para></entry>
+<entry role="parameter_description"><para>an <link linkend="EpsaraDataParticleScattering"><type>EpsaraDataParticleScattering</type></link> object</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="epsara-data-rbs-measurement-get-detector-eloss.returns" role="returns">
+<title>Returns</title>
+<para>The inward energy loss, or NULL if detector is not found. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>][<acronym>allow-none</acronym>]</emphasis></para>
+</refsect3><para role="since">Since: <link linkend="api-index-0.02">0.02</link></para></refsect2>
+
+</refsect1>
+<refsect1 id="EpsaraDataRbsMeasurement.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="EpsaraDataRbsMeasurement-struct" role="struct">
+<title>struct EpsaraDataRbsMeasurement</title>
+<indexterm zone="EpsaraDataRbsMeasurement-struct"><primary>EpsaraDataRbsMeasurement</primary></indexterm>
+<programlisting language="C">struct EpsaraDataRbsMeasurement;</programlisting>
+</refsect2>
+<refsect2 id="EpsaraDataRbsMeasurementClass" role="struct">
+<title>struct EpsaraDataRbsMeasurementClass</title>
+<indexterm zone="EpsaraDataRbsMeasurementClass"><primary>EpsaraDataRbsMeasurementClass</primary></indexterm>
+<programlisting language="C">struct EpsaraDataRbsMeasurementClass {
+  EpsaraDataMeasurementClass parent_class;
+};
+</programlisting>
+</refsect2>
+<refsect2 id="EpsaraDataRbsMeasurementPrivate" role="struct">
+<title>EpsaraDataRbsMeasurementPrivate</title>
+<indexterm zone="EpsaraDataRbsMeasurementPrivate"><primary>EpsaraDataRbsMeasurementPrivate</primary></indexterm>
+<programlisting language="C">typedef struct _EpsaraDataRbsMeasurementPrivate EpsaraDataRbsMeasurementPrivate;</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="EpsaraDataRbsMeasurement.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="EpsaraDataRbsMeasurement--calculation-type" role="property"><title>The <literal>“calculation-type”</literal> property</title>
+<indexterm zone="EpsaraDataRbsMeasurement--calculation-type"><primary>EpsaraDataRbsMeasurement:calculation-type</primary></indexterm>
+<programlisting>  “calculation-type”         <link linkend="EpsaraBsCalculationType"><type>EpsaraBsCalculationType</type></link></programlisting>
+<para>Determines the calculation type. Usually Epsara uses the full analytic-calculation. However this
+
+  might provide a higher precision but has the disadvantage of extraordinary long calculation times.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: EPSARA_BS_CHUS_TYPE</para>
+</refsect2>
+<refsect2 id="EpsaraDataRbsMeasurement--depth-granularity" role="property"><title>The <literal>“depth-granularity”</literal> property</title>
+<indexterm zone="EpsaraDataRbsMeasurement--depth-granularity"><primary>EpsaraDataRbsMeasurement:depth-granularity</primary></indexterm>
+<programlisting>  “depth-granularity”        <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>the minimum resolved depth-difference in the calculation of energy-losses determines the accuracy of the simulation, but is always a trade-off to the performance.</para><para>Flags: Read / Write</para>
+<para>Allowed values: &gt;= 0</para>
+<para>Default value: 1</para>
+</refsect2>
+<refsect2 id="EpsaraDataRbsMeasurement--ini-precision-in" role="property"><title>The <literal>“ini-precision-in”</literal> property</title>
+<indexterm zone="EpsaraDataRbsMeasurement--ini-precision-in"><primary>EpsaraDataRbsMeasurement:ini-precision-in</primary></indexterm>
+<programlisting>  “ini-precision-in”         <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>the initial precision, that will be applied to the integration of the ion-trajectory on the invard-path.</para><para>Flags: Read / Write</para>
+<para>Allowed values: &gt;= 0</para>
+<para>Default value: 0.005</para>
+</refsect2>
+<refsect2 id="EpsaraDataRbsMeasurement--ini-precision-out" role="property"><title>The <literal>“ini-precision-out”</literal> property</title>
+<indexterm zone="EpsaraDataRbsMeasurement--ini-precision-out"><primary>EpsaraDataRbsMeasurement:ini-precision-out</primary></indexterm>
+<programlisting>  “ini-precision-out”        <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>the initial precision, that will be applied to the integration of the ion-trajectory on the out-path.</para><para>Flags: Read / Write</para>
+<para>Allowed values: &gt;= 0</para>
+<para>Default value: 0.005</para>
+</refsect2>
+<refsect2 id="EpsaraDataRbsMeasurement--max-precision-in" role="property"><title>The <literal>“max-precision-in”</literal> property</title>
+<indexterm zone="EpsaraDataRbsMeasurement--max-precision-in"><primary>EpsaraDataRbsMeasurement:max-precision-in</primary></indexterm>
+<programlisting>  “max-precision-in”         <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>the maximum precision, that will be applied to the integration of the ion-trajectory on the invard-path.</para><para>Flags: Read / Write</para>
+<para>Allowed values: &gt;= 0</para>
+<para>Default value: 1e-08</para>
+</refsect2>
+<refsect2 id="EpsaraDataRbsMeasurement--max-precision-out" role="property"><title>The <literal>“max-precision-out”</literal> property</title>
+<indexterm zone="EpsaraDataRbsMeasurement--max-precision-out"><primary>EpsaraDataRbsMeasurement:max-precision-out</primary></indexterm>
+<programlisting>  “max-precision-out”        <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>the maximum precision, that will be applied to the integration of the ion-trajectory on the out-path.</para><para>Flags: Read / Write</para>
+<para>Allowed values: &gt;= 0</para>
+<para>Default value: 1e-08</para>
+</refsect2>
+<refsect2 id="EpsaraDataRbsMeasurement--suppress-dispersion" role="property"><title>The <literal>“suppress-dispersion”</literal> property</title>
+<indexterm zone="EpsaraDataRbsMeasurement--suppress-dispersion"><primary>EpsaraDataRbsMeasurement:suppress-dispersion</primary></indexterm>
+<programlisting>  “suppress-dispersion”      <link linkend="gboolean"><type>gboolean</type></link></programlisting>
+<para>suppresses all folding calculation with energy dispersion effects (e.g. E-straggling, beam-dispersion, detector-resolution). Is effective to accelerate the calculation time.</para><para>Flags: Read / Write</para>
+<para>Default value: FALSE</para>
+</refsect2>
+
+</refsect1>
+
+</refentry>

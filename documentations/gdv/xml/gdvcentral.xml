@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="gdv-gdvcentral">
+<refmeta>
+<refentrytitle role="top_of_page" id="gdv-gdvcentral.top_of_page">gdvcentral</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>GDV Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>gdvcentral</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="gdv-gdvcentral.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="N-:CAPS">N_</link><phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="I-:CAPS">I_</link><phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="P-:CAPS">P_</link><phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="textdomain">textdomain</link><phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="bindtextdomain">bindtextdomain</link><phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-is-within-range">gdv_is_within_range</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-is-within-range-f">gdv_is_within_range_f</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-is-nearly-identical">gdv_is_nearly_identical</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-is-nearly-identical-f">gdv_is_nearly_identical_f</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+
+<refsect1 id="gdv-gdvcentral.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="gdv-gdvcentral.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="N-:CAPS" role="macro">
+<title>N_()</title>
+<indexterm zone="N-:CAPS"><primary>N_</primary></indexterm>
+<programlisting language="C">#define N_(String) String
+</programlisting>
+</refsect2>
+<refsect2 id="I-:CAPS" role="macro">
+<title>I_()</title>
+<indexterm zone="I-:CAPS"><primary>I_</primary></indexterm>
+<programlisting language="C">#define I_(String) String
+</programlisting>
+</refsect2>
+<refsect2 id="P-:CAPS" role="macro">
+<title>P_()</title>
+<indexterm zone="P-:CAPS"><primary>P_</primary></indexterm>
+<programlisting language="C">#define P_(String) String
+</programlisting>
+</refsect2>
+<refsect2 id="textdomain" role="macro">
+<title>textdomain()</title>
+<indexterm zone="textdomain"><primary>textdomain</primary></indexterm>
+<programlisting language="C">#define textdomain(Domain)
+</programlisting>
+</refsect2>
+<refsect2 id="bindtextdomain" role="macro">
+<title>bindtextdomain()</title>
+<indexterm zone="bindtextdomain"><primary>bindtextdomain</primary></indexterm>
+<programlisting language="C">#define bindtextdomain(Package, Directory)
+</programlisting>
+</refsect2>
+<refsect2 id="gdv-is-within-range" role="function">
+<title>gdv_is_within_range&#160;()</title>
+<indexterm zone="gdv-is-within-range"><primary>gdv_is_within_range</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+gdv_is_within_range (<parameter><link linkend="gdouble"><type>gdouble</type></link> value</parameter>,
+                     <parameter><link linkend="gdouble"><type>gdouble</type></link> upper</parameter>,
+                     <parameter><link linkend="gdouble"><type>gdouble</type></link> lower</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="gdv-is-within-range-f" role="function">
+<title>gdv_is_within_range_f&#160;()</title>
+<indexterm zone="gdv-is-within-range-f"><primary>gdv_is_within_range_f</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+gdv_is_within_range_f (<parameter><link linkend="gfloat"><type>gfloat</type></link> value</parameter>,
+                       <parameter><link linkend="gfloat"><type>gfloat</type></link> upper</parameter>,
+                       <parameter><link linkend="gfloat"><type>gfloat</type></link> lower</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="gdv-is-nearly-identical" role="function">
+<title>gdv_is_nearly_identical&#160;()</title>
+<indexterm zone="gdv-is-nearly-identical"><primary>gdv_is_nearly_identical</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+gdv_is_nearly_identical (<parameter><link linkend="gdouble"><type>gdouble</type></link> value1</parameter>,
+                         <parameter><link linkend="gdouble"><type>gdouble</type></link> value2</parameter>,
+                         <parameter><link linkend="gdouble"><type>gdouble</type></link> difference</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="gdv-is-nearly-identical-f" role="function">
+<title>gdv_is_nearly_identical_f&#160;()</title>
+<indexterm zone="gdv-is-nearly-identical-f"><primary>gdv_is_nearly_identical_f</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+gdv_is_nearly_identical_f (<parameter><link linkend="gfloat"><type>gfloat</type></link> value1</parameter>,
+                           <parameter><link linkend="gfloat"><type>gfloat</type></link> value2</parameter>,
+                           <parameter><link linkend="gfloat"><type>gfloat</type></link> difference</parameter>);</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="gdv-gdvcentral.other_details" role="details">
+<title role="details.title">Types and Values</title>
+
+</refsect1>
+
+</refentry>

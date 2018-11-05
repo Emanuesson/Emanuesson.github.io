@@ -1,0 +1,229 @@
+<?xml version="1.0"?>
+<!DOCTYPE indexdiv PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<indexdiv id="api-index-full">
+<indexdiv><title>A</title>
+<indexentry><primaryie linkends="GdvAxis-get-inner-dir"><link linkend="GdvAxis-get-inner-dir">GdvAxis::get-inner-dir</link>, object signal in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvAxis-get-point"><link linkend="GdvAxis-get-point">GdvAxis::get-point</link>, object signal in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvAxis-make-tic-label-markup"><link linkend="GdvAxis-make-tic-label-markup">GdvAxis::make-tic-label-markup</link>, object signal in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvAxis--axis-beg-at-screen-x"><link linkend="GdvAxis--axis-beg-at-screen-x">GdvAxis:axis-beg-at-screen-x</link>, object property in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvAxis--axis-beg-at-screen-y"><link linkend="GdvAxis--axis-beg-at-screen-y">GdvAxis:axis-beg-at-screen-y</link>, object property in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvAxis--axis-beg-pix-x"><link linkend="GdvAxis--axis-beg-pix-x">GdvAxis:axis-beg-pix-x</link>, object property in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvAxis--axis-beg-pix-y"><link linkend="GdvAxis--axis-beg-pix-y">GdvAxis:axis-beg-pix-y</link>, object property in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvAxis--axis-direction-outside"><link linkend="GdvAxis--axis-direction-outside">GdvAxis:axis-direction-outside</link>, object property in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvAxis--axis-end-at-screen-x"><link linkend="GdvAxis--axis-end-at-screen-x">GdvAxis:axis-end-at-screen-x</link>, object property in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvAxis--axis-end-at-screen-y"><link linkend="GdvAxis--axis-end-at-screen-y">GdvAxis:axis-end-at-screen-y</link>, object property in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvAxis--axis-end-pix-x"><link linkend="GdvAxis--axis-end-pix-x">GdvAxis:axis-end-pix-x</link>, object property in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvAxis--axis-end-pix-y"><link linkend="GdvAxis--axis-end-pix-y">GdvAxis:axis-end-pix-y</link>, object property in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvAxis--axis-orientation"><link linkend="GdvAxis--axis-orientation">GdvAxis:axis-orientation</link>, object property in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvAxis--force-beg-end"><link linkend="GdvAxis--force-beg-end">GdvAxis:force-beg-end</link>, object property in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvAxis--mtics"><link linkend="GdvAxis--mtics">GdvAxis:mtics</link>, object property in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvAxis--mtics-automatic"><link linkend="GdvAxis--mtics-automatic">GdvAxis:mtics-automatic</link>, object property in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvAxis--mtics-beg-val"><link linkend="GdvAxis--mtics-beg-val">GdvAxis:mtics-beg-val</link>, object property in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvAxis--mtics-end-val"><link linkend="GdvAxis--mtics-end-val">GdvAxis:mtics-end-val</link>, object property in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvAxis--resize-during-redraw"><link linkend="GdvAxis--resize-during-redraw">GdvAxis:resize-during-redraw</link>, object property in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvAxis--scale-auto-increment"><link linkend="GdvAxis--scale-auto-increment">GdvAxis:scale-auto-increment</link>, object property in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvAxis--scale-beg-val"><link linkend="GdvAxis--scale-beg-val">GdvAxis:scale-beg-val</link>, object property in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvAxis--scale-end-val"><link linkend="GdvAxis--scale-end-val">GdvAxis:scale-end-val</link>, object property in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvAxis--scale-increment-val"><link linkend="GdvAxis--scale-increment-val">GdvAxis:scale-increment-val</link>, object property in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvAxis--scale-limits-automatic"><link linkend="GdvAxis--scale-limits-automatic">GdvAxis:scale-limits-automatic</link>, object property in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvAxis--tics-automatic"><link linkend="GdvAxis--tics-automatic">GdvAxis:tics-automatic</link>, object property in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvAxis--tics-beg-val"><link linkend="GdvAxis--tics-beg-val">GdvAxis:tics-beg-val</link>, object property in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvAxis--tics-end-val"><link linkend="GdvAxis--tics-end-val">GdvAxis:tics-end-val</link>, object property in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvAxis--title"><link linkend="GdvAxis--title">GdvAxis:title</link>, object property in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvAxis--title-widget"><link linkend="GdvAxis--title-widget">GdvAxis:title-widget</link>, object property in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvAxisClass"><link linkend="GdvAxisClass">GdvAxisClass</link>, struct in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-axis-get-borders"><link linkend="gdv-axis-get-borders">gdv_axis_get_borders</link>, function in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-axis-get-indicator-list"><link linkend="gdv-axis-get-indicator-list">gdv_axis_get_indicator_list</link>, function in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-axis-get-mtic-list"><link linkend="gdv-axis-get-mtic-list">gdv_axis_get_mtic_list</link>, function in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-axis-get-show-title"><link linkend="gdv-axis-get-show-title">gdv_axis_get_show_title</link>, function in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-axis-get-tic-for-value"><link linkend="gdv-axis-get-tic-for-value">gdv_axis_get_tic_for_value</link>, function in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-axis-get-tic-list"><link linkend="gdv-axis-get-tic-list">gdv_axis_get_tic_list</link>, function in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-axis-get-title"><link linkend="gdv-axis-get-title">gdv_axis_get_title</link>, function in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-axis-new"><link linkend="gdv-axis-new">gdv_axis_new</link>, function in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-axis-queue-value-interval"><link linkend="gdv-axis-queue-value-interval">gdv_axis_queue_value_interval</link>, function in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-axis-set-title-widget"><link linkend="gdv-axis-set-title-widget">gdv_axis_set_title_widget</link>, function in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-axis-title-set-markup"><link linkend="gdv-axis-title-set-markup">gdv_axis_title_set_markup</link>, function in <link linkend="GdvAxis">GdvAxis</link></primaryie></indexentry>
+</indexdiv>
+<indexdiv><title>B</title>
+<indexentry><primaryie linkends="bindtextdomain"><link linkend="bindtextdomain">bindtextdomain</link>, macro in <link linkend="gdv-gdvcentral">gdvcentral</link></primaryie></indexentry>
+</indexdiv>
+<indexdiv><title>D</title>
+<indexentry><primaryie linkends="GdvDataPointDoubleExtended"><link linkend="GdvDataPointDoubleExtended">GdvDataPointDoubleExtended</link>, struct in <link linkend="gdv-gdv-data-boxed">gdv-data-boxed</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvDataPointSingleExtended"><link linkend="GdvDataPointSingleExtended">GdvDataPointSingleExtended</link>, struct in <link linkend="gdv-gdv-data-boxed">gdv-data-boxed</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-data-direction-equal"><link linkend="gdv-data-direction-equal">gdv_data_direction_equal</link>, function in <link linkend="gdv-gdv-data-boxed">gdv-data-boxed</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-data-n-point-distance-to-origin"><link linkend="gdv-data-n-point-distance-to-origin">gdv_data_n_point_distance_to_origin</link>, function in <link linkend="gdv-gdv-data-boxed">gdv-data-boxed</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-data-n-point-equal"><link linkend="gdv-data-n-point-equal">gdv_data_n_point_equal</link>, function in <link linkend="gdv-gdv-data-boxed">gdv-data-boxed</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-data-n-point-get"><link linkend="gdv-data-n-point-get">gdv_data_n_point_get</link>, function in <link linkend="gdv-gdv-data-boxed">gdv-data-boxed</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-data-n-point-metric"><link linkend="gdv-data-n-point-metric">gdv_data_n_point_metric</link>, function in <link linkend="gdv-gdv-data-boxed">gdv-data-boxed</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-data-n-point-set"><link linkend="gdv-data-n-point-set">gdv_data_n_point_set</link>, function in <link linkend="gdv-gdv-data-boxed">gdv-data-boxed</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-data-n-point-set-and-expand"><link linkend="gdv-data-n-point-set-and-expand">gdv_data_n_point_set_and_expand</link>, function in <link linkend="gdv-gdv-data-boxed">gdv-data-boxed</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-data-pixel-equal"><link linkend="gdv-data-pixel-equal">gdv_data_pixel_equal</link>, function in <link linkend="gdv-gdv-data-boxed">gdv-data-boxed</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-data-point-distance-to-origin"><link linkend="gdv-data-point-distance-to-origin">gdv_data_point_distance_to_origin</link>, function in <link linkend="gdv-gdv-data-boxed">gdv-data-boxed</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-data-point-equal"><link linkend="gdv-data-point-equal">gdv_data_point_equal</link>, function in <link linkend="gdv-gdv-data-boxed">gdv-data-boxed</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-data-point-metric"><link linkend="gdv-data-point-metric">gdv_data_point_metric</link>, function in <link linkend="gdv-gdv-data-boxed">gdv-data-boxed</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-data-polygon-equal"><link linkend="gdv-data-polygon-equal">gdv_data_polygon_equal</link>, function in <link linkend="gdv-gdv-data-boxed">gdv-data-boxed</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvDistributionType"><link linkend="GdvDistributionType">GdvDistributionType</link>, enum in <link linkend="gdv-gdv-enums">gdv-enums</link></primaryie></indexentry>
+</indexdiv>
+<indexdiv><title>E</title>
+<indexentry><primaryie linkends="GDV-ENABLE-TRACE:CAPS"><link linkend="GDV-ENABLE-TRACE:CAPS">GDV_ENABLE_TRACE</link>, macro in <link linkend="gdv-gdv-debug">gdv-debug</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GDV-ENTRY:CAPS"><link linkend="GDV-ENTRY:CAPS">GDV_ENTRY</link>, macro in <link linkend="gdv-gdv-debug">gdv-debug</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GDV-EXIT:CAPS"><link linkend="GDV-EXIT:CAPS">GDV_EXIT</link>, macro in <link linkend="gdv-gdv-debug">gdv-debug</link></primaryie></indexentry>
+</indexdiv>
+<indexdiv><title>G</title>
+<indexentry><primaryie linkends="GDV-GOTO:CAPS"><link linkend="GDV-GOTO:CAPS">GDV_GOTO</link>, macro in <link linkend="gdv-gdv-debug">gdv-debug</link></primaryie></indexentry>
+</indexdiv>
+<indexdiv><title>I</title>
+<indexentry><primaryie linkends="GdvIndicator--rotate-widget-with-axis"><link linkend="GdvIndicator--rotate-widget-with-axis">GdvIndicator:rotate-widget-with-axis</link>, object property in <link linkend="GdvIndicator">GdvIndicator</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvIndicator--show-in-legend"><link linkend="GdvIndicator--show-in-legend">GdvIndicator:show-in-legend</link>, object property in <link linkend="GdvIndicator">GdvIndicator</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvIndicator--show-in-out-of-range"><link linkend="GdvIndicator--show-in-out-of-range">GdvIndicator:show-in-out-of-range</link>, object property in <link linkend="GdvIndicator">GdvIndicator</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvIndicator--title"><link linkend="GdvIndicator--title">GdvIndicator:title</link>, object property in <link linkend="GdvIndicator">GdvIndicator</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvIndicator--value"><link linkend="GdvIndicator--value">GdvIndicator:value</link>, object property in <link linkend="GdvIndicator">GdvIndicator</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvIndicator--widget"><link linkend="GdvIndicator--widget">GdvIndicator:widget</link>, object property in <link linkend="GdvIndicator">GdvIndicator</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvIndicator--widget-xalign"><link linkend="GdvIndicator--widget-xalign">GdvIndicator:widget-xalign</link>, object property in <link linkend="GdvIndicator">GdvIndicator</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvIndicator--widget-yalign"><link linkend="GdvIndicator--widget-yalign">GdvIndicator:widget-yalign</link>, object property in <link linkend="GdvIndicator">GdvIndicator</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvIndicatorClass"><link linkend="GdvIndicatorClass">GdvIndicatorClass</link>, struct in <link linkend="GdvIndicator">GdvIndicator</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-indicator-new"><link linkend="gdv-indicator-new">gdv_indicator_new</link>, function in <link linkend="GdvIndicator">GdvIndicator</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-is-nearly-identical"><link linkend="gdv-is-nearly-identical">gdv_is_nearly_identical</link>, function in <link linkend="gdv-gdvcentral">gdvcentral</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-is-nearly-identical-f"><link linkend="gdv-is-nearly-identical-f">gdv_is_nearly_identical_f</link>, function in <link linkend="gdv-gdvcentral">gdvcentral</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-is-within-range"><link linkend="gdv-is-within-range">gdv_is_within_range</link>, function in <link linkend="gdv-gdvcentral">gdvcentral</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-is-within-range-f"><link linkend="gdv-is-within-range-f">gdv_is_within_range_f</link>, function in <link linkend="gdv-gdvcentral">gdvcentral</link></primaryie></indexentry>
+<indexentry><primaryie linkends="I-:CAPS"><link linkend="I-:CAPS">I_</link>, macro in <link linkend="gdv-gdvcentral">gdvcentral</link></primaryie></indexentry>
+</indexdiv>
+<indexdiv><title>L</title>
+<indexentry><primaryie linkends="GdvLayerClass"><link linkend="GdvLayerClass">GdvLayerClass</link>, struct in <link linkend="GdvLayer">GdvLayer</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvLayerContent-struct"><link linkend="GdvLayerContent-struct">GdvLayerContent</link>, struct in <link linkend="GdvLayerContent">GdvLayerContent</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvLayerContent--data-point"><link linkend="GdvLayerContent--data-point">GdvLayerContent:data-point</link>, object property in <link linkend="GdvLayerContent">GdvLayerContent</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvLayerContent--fill-above"><link linkend="GdvLayerContent--fill-above">GdvLayerContent:fill-above</link>, object property in <link linkend="GdvLayerContent">GdvLayerContent</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvLayerContent--fill-below"><link linkend="GdvLayerContent--fill-below">GdvLayerContent:fill-below</link>, object property in <link linkend="GdvLayerContent">GdvLayerContent</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvLayerContent--line-style"><link linkend="GdvLayerContent--line-style">GdvLayerContent:line-style</link>, object property in <link linkend="GdvLayerContent">GdvLayerContent</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvLayerContent--point-line-width"><link linkend="GdvLayerContent--point-line-width">GdvLayerContent:point-line-width</link>, object property in <link linkend="GdvLayerContent">GdvLayerContent</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvLayerContent--point-type"><link linkend="GdvLayerContent--point-type">GdvLayerContent:point-type</link>, object property in <link linkend="GdvLayerContent">GdvLayerContent</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvLayerContent--show-in-legend"><link linkend="GdvLayerContent--show-in-legend">GdvLayerContent:show-in-legend</link>, object property in <link linkend="GdvLayerContent">GdvLayerContent</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvLayerContent--title"><link linkend="GdvLayerContent--title">GdvLayerContent:title</link>, object property in <link linkend="GdvLayerContent">GdvLayerContent</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvLayerContentClass"><link linkend="GdvLayerContentClass">GdvLayerContentClass</link>, struct in <link linkend="GdvLayerContent">GdvLayerContent</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvLayerContentPrivate"><link linkend="GdvLayerContentPrivate">GdvLayerContentPrivate</link>, struct in <link linkend="GdvLayerContent">GdvLayerContent</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-layer-content-add-data-point"><link linkend="gdv-layer-content-add-data-point">gdv_layer_content_add_data_point</link>, function in <link linkend="GdvLayerContent">GdvLayerContent</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-layer-content-get-content"><link linkend="gdv-layer-content-get-content">gdv_layer_content_get_content</link>, function in <link linkend="GdvLayerContent">GdvLayerContent</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-layer-content-get-min-max-x"><link linkend="gdv-layer-content-get-min-max-x">gdv_layer_content_get_min_max_x</link>, function in <link linkend="GdvLayerContent">GdvLayerContent</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-layer-content-get-min-max-y"><link linkend="gdv-layer-content-get-min-max-y">gdv_layer_content_get_min_max_y</link>, function in <link linkend="GdvLayerContent">GdvLayerContent</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-layer-content-get-min-max-z"><link linkend="gdv-layer-content-get-min-max-z">gdv_layer_content_get_min_max_z</link>, function in <link linkend="GdvLayerContent">GdvLayerContent</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-layer-content-new"><link linkend="gdv-layer-content-new">gdv_layer_content_new</link>, function in <link linkend="GdvLayerContent">GdvLayerContent</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-layer-content-remove-data-point-by-index"><link linkend="gdv-layer-content-remove-data-point-by-index">gdv_layer_content_remove_data_point_by_index</link>, function in <link linkend="GdvLayerContent">GdvLayerContent</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-layer-content-reset"><link linkend="gdv-layer-content-reset">gdv_layer_content_reset</link>, function in <link linkend="GdvLayerContent">GdvLayerContent</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-layer-evaluate-data-point"><link linkend="gdv-layer-evaluate-data-point">gdv_layer_evaluate_data_point</link>, function in <link linkend="GdvLayer">GdvLayer</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-layer-get-axis-list"><link linkend="gdv-layer-get-axis-list">gdv_layer_get_axis_list</link>, function in <link linkend="GdvLayer">GdvLayer</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-layer-get-content-list"><link linkend="gdv-layer-get-content-list">gdv_layer_get_content_list</link>, function in <link linkend="GdvLayer">GdvLayer</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-layer-has-layer-content"><link linkend="gdv-layer-has-layer-content">gdv_layer_has_layer_content</link>, function in <link linkend="GdvLayer">GdvLayer</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-layer-new"><link linkend="gdv-layer-new">gdv_layer_new</link>, function in <link linkend="GdvLayer">GdvLayer</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvLegend--columns"><link linkend="GdvLegend--columns">GdvLegend:columns</link>, object property in <link linkend="GdvLegend">GdvLegend</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvLegend--layer"><link linkend="GdvLegend--layer">GdvLegend:layer</link>, object property in <link linkend="GdvLegend">GdvLegend</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvLegend--rows"><link linkend="GdvLegend--rows">GdvLegend:rows</link>, object property in <link linkend="GdvLegend">GdvLegend</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvLegend--text-position"><link linkend="GdvLegend--text-position">GdvLegend:text-position</link>, object property in <link linkend="GdvLegend">GdvLegend</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvLegendClass"><link linkend="GdvLegendClass">GdvLegendClass</link>, struct in <link linkend="GdvLegend">GdvLegend</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvLegendElement--descriptor"><link linkend="GdvLegendElement--descriptor">GdvLegendElement:descriptor</link>, object property in <link linkend="GdvLegendElement">GdvLegendElement</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvLegendElement--element"><link linkend="GdvLegendElement--element">GdvLegendElement:element</link>, object property in <link linkend="GdvLegendElement">GdvLegendElement</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvLegendElement--sample-length"><link linkend="GdvLegendElement--sample-length">GdvLegendElement:sample-length</link>, object property in <link linkend="GdvLegendElement">GdvLegendElement</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvLegendElementClass"><link linkend="GdvLegendElementClass">GdvLegendElementClass</link>, struct in <link linkend="GdvLegendElement">GdvLegendElement</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-legend-element-new"><link linkend="gdv-legend-element-new">gdv_legend_element_new</link>, function in <link linkend="GdvLegendElement">GdvLegendElement</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-legend-new"><link linkend="gdv-legend-new">gdv_legend_new</link>, function in <link linkend="GdvLegend">GdvLegend</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GDV-LEGEND-TYPE:CAPS"><link linkend="GDV-LEGEND-TYPE:CAPS">GDV_LEGEND_TYPE</link>, macro in <link linkend="GdvLegend">GdvLegend</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvLinearAxis-struct"><link linkend="GdvLinearAxis-struct">GdvLinearAxis</link>, struct in <link linkend="GdvLinearAxis">GdvLinearAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvLinearAxis--scale-increment-base"><link linkend="GdvLinearAxis--scale-increment-base">GdvLinearAxis:scale-increment-base</link>, object property in <link linkend="GdvLinearAxis">GdvLinearAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvLinearAxisClass"><link linkend="GdvLinearAxisClass">GdvLinearAxisClass</link>, struct in <link linkend="GdvLinearAxis">GdvLinearAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvLinearAxisPrivate"><link linkend="GdvLinearAxisPrivate">GdvLinearAxisPrivate</link>, struct in <link linkend="GdvLinearAxis">GdvLinearAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-linear-axis-new"><link linkend="gdv-linear-axis-new">gdv_linear_axis_new</link>, function in <link linkend="GdvLinearAxis">GdvLinearAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvLogAxis-struct"><link linkend="GdvLogAxis-struct">GdvLogAxis</link>, struct in <link linkend="GdvLogAxis">GdvLogAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvLogAxisClass"><link linkend="GdvLogAxisClass">GdvLogAxisClass</link>, struct in <link linkend="GdvLogAxis">GdvLogAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvLogAxisPrivate"><link linkend="GdvLogAxisPrivate">GdvLogAxisPrivate</link>, struct in <link linkend="GdvLogAxis">GdvLogAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-log-axis-new"><link linkend="gdv-log-axis-new">gdv_log_axis_new</link>, function in <link linkend="GdvLogAxis">GdvLogAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GDV-LOG-LEVEL-TRACE:CAPS"><link linkend="GDV-LOG-LEVEL-TRACE:CAPS">GDV_LOG_LEVEL_TRACE</link>, macro in <link linkend="gdv-gdv-debug">gdv-debug</link></primaryie></indexentry>
+</indexdiv>
+<indexdiv><title>M</title>
+<indexentry><primaryie linkends="GdvMticClass"><link linkend="GdvMticClass">GdvMticClass</link>, struct in <link linkend="GdvMtic">GdvMtic</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-mtic-new"><link linkend="gdv-mtic-new">gdv_mtic_new</link>, function in <link linkend="GdvMtic">GdvMtic</link></primaryie></indexentry>
+</indexdiv>
+<indexdiv><title>N</title>
+<indexentry><primaryie linkends="N-:CAPS"><link linkend="N-:CAPS">N_</link>, macro in <link linkend="gdv-gdvcentral">gdvcentral</link></primaryie></indexentry>
+</indexdiv>
+<indexdiv><title>O</title>
+<indexentry><primaryie linkends="GdvOnedLayer-struct"><link linkend="GdvOnedLayer-struct">GdvOnedLayer</link>, struct in <link linkend="GdvOnedLayer">GdvOnedLayer</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvOnedLayer--axis"><link linkend="GdvOnedLayer--axis">GdvOnedLayer:axis</link>, object property in <link linkend="GdvOnedLayer">GdvOnedLayer</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvOnedLayer--base-orientation"><link linkend="GdvOnedLayer--base-orientation">GdvOnedLayer:base-orientation</link>, object property in <link linkend="GdvOnedLayer">GdvOnedLayer</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvOnedLayer--orientation"><link linkend="GdvOnedLayer--orientation">GdvOnedLayer:orientation</link>, object property in <link linkend="GdvOnedLayer">GdvOnedLayer</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvOnedLayerClass"><link linkend="GdvOnedLayerClass">GdvOnedLayerClass</link>, struct in <link linkend="GdvOnedLayer">GdvOnedLayer</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvOnedLayerPrivate"><link linkend="GdvOnedLayerPrivate">GdvOnedLayerPrivate</link>, struct in <link linkend="GdvOnedLayer">GdvOnedLayer</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvOnedLayerType"><link linkend="GdvOnedLayerType">GdvOnedLayerType</link>, enum in <link linkend="gdv-gdv-enums">gdv-enums</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-oned-layer-new"><link linkend="gdv-oned-layer-new">gdv_oned_layer_new</link>, function in <link linkend="GdvOnedLayer">GdvOnedLayer</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-oned-layer-replace-axis"><link linkend="gdv-oned-layer-replace-axis">gdv_oned_layer_replace_axis</link>, function in <link linkend="GdvOnedLayer">GdvOnedLayer</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GDV-ONED-LAYER-TYPE:CAPS"><link linkend="GDV-ONED-LAYER-TYPE:CAPS">GDV_ONED_LAYER_TYPE</link>, macro in <link linkend="GdvOnedLayer">GdvOnedLayer</link></primaryie></indexentry>
+</indexdiv>
+<indexdiv><title>P</title>
+<indexentry><primaryie linkends="GDV-PROBE:CAPS"><link linkend="GDV-PROBE:CAPS">GDV_PROBE</link>, macro in <link linkend="gdv-gdv-debug">gdv-debug</link></primaryie></indexentry>
+<indexentry><primaryie linkends="P-:CAPS"><link linkend="P-:CAPS">P_</link>, macro in <link linkend="gdv-gdvcentral">gdvcentral</link></primaryie></indexentry>
+</indexdiv>
+<indexdiv><title>R</title>
+<indexentry><primaryie linkends="GDV-RETURN:CAPS"><link linkend="GDV-RETURN:CAPS">GDV_RETURN</link>, macro in <link linkend="gdv-gdv-debug">gdv-debug</link></primaryie></indexentry>
+</indexdiv>
+<indexdiv><title>S</title>
+<indexentry><primaryie linkends="GdvSpecialCheckedIndicator--in-length"><link linkend="GdvSpecialCheckedIndicator--in-length">GdvSpecialCheckedIndicator:in-length</link>, object property in <link linkend="GdvSpecialCheckedIndicator">GdvSpecialCheckedIndicator</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvSpecialCheckedIndicator--out-length"><link linkend="GdvSpecialCheckedIndicator--out-length">GdvSpecialCheckedIndicator:out-length</link>, object property in <link linkend="GdvSpecialCheckedIndicator">GdvSpecialCheckedIndicator</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvSpecialCheckedIndicatorClass"><link linkend="GdvSpecialCheckedIndicatorClass">GdvSpecialCheckedIndicatorClass</link>, struct in <link linkend="GdvSpecialCheckedIndicator">GdvSpecialCheckedIndicator</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvSpecialContentAxis-struct"><link linkend="GdvSpecialContentAxis-struct">GdvSpecialContentAxis</link>, struct in <link linkend="GdvSpecialContentAxis">GdvSpecialContentAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvSpecialContentAxisClass"><link linkend="GdvSpecialContentAxisClass">GdvSpecialContentAxisClass</link>, struct in <link linkend="GdvSpecialContentAxis">GdvSpecialContentAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvSpecialContentAxisPrivate"><link linkend="GdvSpecialContentAxisPrivate">GdvSpecialContentAxisPrivate</link>, struct in <link linkend="GdvSpecialContentAxis">GdvSpecialContentAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvSpecialDrumDisplay-struct"><link linkend="GdvSpecialDrumDisplay-struct">GdvSpecialDrumDisplay</link>, struct in <link linkend="GdvSpecialDrumDisplay">GdvSpecialDrumDisplay</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvSpecialDrumDisplay--center-value"><link linkend="GdvSpecialDrumDisplay--center-value">GdvSpecialDrumDisplay:center-value</link>, object property in <link linkend="GdvSpecialDrumDisplay">GdvSpecialDrumDisplay</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvSpecialDrumDisplay--left-right-range"><link linkend="GdvSpecialDrumDisplay--left-right-range">GdvSpecialDrumDisplay:left-right-range</link>, object property in <link linkend="GdvSpecialDrumDisplay">GdvSpecialDrumDisplay</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvSpecialDrumDisplayClass"><link linkend="GdvSpecialDrumDisplayClass">GdvSpecialDrumDisplayClass</link>, struct in <link linkend="GdvSpecialDrumDisplay">GdvSpecialDrumDisplay</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvSpecialDrumDisplayPrivate"><link linkend="GdvSpecialDrumDisplayPrivate">GdvSpecialDrumDisplayPrivate</link>, struct in <link linkend="GdvSpecialDrumDisplay">GdvSpecialDrumDisplay</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvSpecialTimeAxis-struct"><link linkend="GdvSpecialTimeAxis-struct">GdvSpecialTimeAxis</link>, struct in <link linkend="GdvSpecialTimeAxis">GdvSpecialTimeAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvSpecialTimeAxis--is-unix-time"><link linkend="GdvSpecialTimeAxis--is-unix-time">GdvSpecialTimeAxis:is-unix-time</link>, object property in <link linkend="GdvSpecialTimeAxis">GdvSpecialTimeAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvSpecialTimeAxisClass"><link linkend="GdvSpecialTimeAxisClass">GdvSpecialTimeAxisClass</link>, struct in <link linkend="GdvSpecialTimeAxis">GdvSpecialTimeAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvSpecialTimeAxisPrivate"><link linkend="GdvSpecialTimeAxisPrivate">GdvSpecialTimeAxisPrivate</link>, struct in <link linkend="GdvSpecialTimeAxis">GdvSpecialTimeAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-special-checked-indicator-new"><link linkend="gdv-special-checked-indicator-new">gdv_special_checked_indicator_new</link>, function in <link linkend="GdvSpecialCheckedIndicator">GdvSpecialCheckedIndicator</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-special-content-axis-new"><link linkend="gdv-special-content-axis-new">gdv_special_content_axis_new</link>, function in <link linkend="GdvSpecialContentAxis">GdvSpecialContentAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-special-drum-display-new"><link linkend="gdv-special-drum-display-new">gdv_special_drum_display_new</link>, function in <link linkend="GdvSpecialDrumDisplay">GdvSpecialDrumDisplay</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-special-time-axis-new"><link linkend="gdv-special-time-axis-new">gdv_special_time_axis_new</link>, function in <link linkend="GdvSpecialTimeAxis">GdvSpecialTimeAxis</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GDV-SPECIAL-TIME-AXIS-TYPE:CAPS"><link linkend="GDV-SPECIAL-TIME-AXIS-TYPE:CAPS">GDV_SPECIAL_TIME_AXIS_TYPE</link>, macro in <link linkend="GdvSpecialTimeAxis">GdvSpecialTimeAxis</link></primaryie></indexentry>
+</indexdiv>
+<indexdiv><title>T</title>
+<indexentry><primaryie linkends="textdomain"><link linkend="textdomain">textdomain</link>, macro in <link linkend="gdv-gdvcentral">gdvcentral</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvTic--axis-inner-dir-x"><link linkend="GdvTic--axis-inner-dir-x">GdvTic:axis-inner-dir-x</link>, object property in <link linkend="GdvTic">GdvTic</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvTic--axis-inner-dir-y"><link linkend="GdvTic--axis-inner-dir-y">GdvTic:axis-inner-dir-y</link>, object property in <link linkend="GdvTic">GdvTic</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvTic--label"><link linkend="GdvTic--label">GdvTic:label</link>, object property in <link linkend="GdvTic">GdvTic</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvTic--label-widget"><link linkend="GdvTic--label-widget">GdvTic:label-widget</link>, object property in <link linkend="GdvTic">GdvTic</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvTic--label-xalign"><link linkend="GdvTic--label-xalign">GdvTic:label-xalign</link>, object property in <link linkend="GdvTic">GdvTic</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvTic--label-yalign"><link linkend="GdvTic--label-yalign">GdvTic:label-yalign</link>, object property in <link linkend="GdvTic">GdvTic</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvTic--pos-x"><link linkend="GdvTic--pos-x">GdvTic:pos-x</link>, object property in <link linkend="GdvTic">GdvTic</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvTic--pos-y"><link linkend="GdvTic--pos-y">GdvTic:pos-y</link>, object property in <link linkend="GdvTic">GdvTic</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvTic--value"><link linkend="GdvTic--value">GdvTic:value</link>, object property in <link linkend="GdvTic">GdvTic</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvTicClass"><link linkend="GdvTicClass">GdvTicClass</link>, struct in <link linkend="GdvTic">GdvTic</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-tic-get-label"><link linkend="gdv-tic-get-label">gdv_tic_get_label</link>, function in <link linkend="GdvTic">GdvTic</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-tic-get-show-label"><link linkend="gdv-tic-get-show-label">gdv_tic_get_show_label</link>, function in <link linkend="GdvTic">GdvTic</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-tic-get-space-to-tic-position"><link linkend="gdv-tic-get-space-to-tic-position">gdv_tic_get_space_to_tic_position</link>, function in <link linkend="GdvTic">GdvTic</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-tic-label-set-markup"><link linkend="gdv-tic-label-set-markup">gdv_tic_label_set_markup</link>, function in <link linkend="GdvTic">GdvTic</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-tic-new"><link linkend="gdv-tic-new">gdv_tic_new</link>, function in <link linkend="GdvTic">GdvTic</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-tic-set-label-widget"><link linkend="gdv-tic-set-label-widget">gdv_tic_set_label_widget</link>, function in <link linkend="GdvTic">GdvTic</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-tic-set-tic-position"><link linkend="gdv-tic-set-tic-position">gdv_tic_set_tic_position</link>, function in <link linkend="GdvTic">GdvTic</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GDV-TODO:CAPS"><link linkend="GDV-TODO:CAPS">GDV_TODO</link>, macro in <link linkend="gdv-gdv-debug">gdv-debug</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GDV-TRACE-MSG:CAPS"><link linkend="GDV-TRACE-MSG:CAPS">GDV_TRACE_MSG</link>, macro in <link linkend="gdv-gdv-debug">gdv-debug</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvTwodAxisType"><link linkend="GdvTwodAxisType">GdvTwodAxisType</link>, enum in <link linkend="gdv-gdv-enums">gdv-enums</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvTwodLayer-struct"><link linkend="GdvTwodLayer-struct">GdvTwodLayer</link>, struct in <link linkend="GdvTwodLayer">GdvTwodLayer</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvTwodLayerClass"><link linkend="GdvTwodLayerClass">GdvTwodLayerClass</link>, struct in <link linkend="GdvTwodLayer">GdvTwodLayer</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvTwodLayerPrivate"><link linkend="GdvTwodLayerPrivate">GdvTwodLayerPrivate</link>, struct in <link linkend="GdvTwodLayer">GdvTwodLayer</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-twod-layer-get-axis"><link linkend="gdv-twod-layer-get-axis">gdv_twod_layer_get_axis</link>, function in <link linkend="GdvTwodLayer">GdvTwodLayer</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-twod-layer-get-xrange"><link linkend="gdv-twod-layer-get-xrange">gdv_twod_layer_get_xrange</link>, function in <link linkend="GdvTwodLayer">GdvTwodLayer</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-twod-layer-get-yrange"><link linkend="gdv-twod-layer-get-yrange">gdv_twod_layer_get_yrange</link>, function in <link linkend="GdvTwodLayer">GdvTwodLayer</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-twod-layer-new"><link linkend="gdv-twod-layer-new">gdv_twod_layer_new</link>, function in <link linkend="GdvTwodLayer">GdvTwodLayer</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-twod-layer-set-axis"><link linkend="gdv-twod-layer-set-axis">gdv_twod_layer_set_axis</link>, function in <link linkend="GdvTwodLayer">GdvTwodLayer</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-twod-layer-set-xrange"><link linkend="gdv-twod-layer-set-xrange">gdv_twod_layer_set_xrange</link>, function in <link linkend="GdvTwodLayer">GdvTwodLayer</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-twod-layer-set-yrange"><link linkend="gdv-twod-layer-set-yrange">gdv_twod_layer_set_yrange</link>, function in <link linkend="GdvTwodLayer">GdvTwodLayer</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GDV-TWOD-LAYER-TYPE:CAPS"><link linkend="GDV-TWOD-LAYER-TYPE:CAPS">GDV_TWOD_LAYER_TYPE</link>, macro in <link linkend="GdvTwodLayer">GdvTwodLayer</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-twod-layer-unset-axis"><link linkend="gdv-twod-layer-unset-axis">gdv_twod_layer_unset_axis</link>, function in <link linkend="GdvTwodLayer">GdvTwodLayer</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GDV-TYPE-DATA-POINT-DOUBLE-EXTENDED:CAPS"><link linkend="GDV-TYPE-DATA-POINT-DOUBLE-EXTENDED:CAPS">GDV_TYPE_DATA_POINT_DOUBLE_EXTENDED</link>, macro in <link linkend="gdv-gdv-data-boxed">gdv-data-boxed</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GDV-TYPE-DATA-POINT-SINGLE-EXTENDED:CAPS"><link linkend="GDV-TYPE-DATA-POINT-SINGLE-EXTENDED:CAPS">GDV_TYPE_DATA_POINT_SINGLE_EXTENDED</link>, macro in <link linkend="gdv-gdv-data-boxed">gdv-data-boxed</link></primaryie></indexentry>
+</indexdiv>
+</indexdiv>

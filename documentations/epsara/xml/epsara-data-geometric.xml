@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="epsara-Geoemtry-types">
+<refmeta>
+<refentrytitle role="top_of_page" id="epsara-Geoemtry-types.top_of_page">Geoemtry types</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>EPSARA Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>Geoemtry types</refname>
+<refpurpose>Basic structures for geometry functions</refpurpose>
+</refnamediv>
+
+<refsect1 id="epsara-Geoemtry-types.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-point-equal">epsara_data_point_equal</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-point-scalar-product">epsara_data_point_scalar_product</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-point-metric">epsara_data_point_metric</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-point-distance-to-origin">epsara_data_point_distance_to_origin</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-direction-equal">epsara_data_direction_equal</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-polygon-equal">epsara_data_polygon_equal</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<anchor id="EpsaraDataDirection"/><anchor id="EpsaraDataPoint"/><anchor id="EpsaraDataPolygon"/><refsect1 id="epsara-Geoemtry-types.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GBoxed">GBoxed</link>
+    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> EpsaraDataDirection
+    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> EpsaraDataPoint
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> EpsaraDataPolygon
+</screen>
+</refsect1>
+
+
+<refsect1 id="epsara-Geoemtry-types.description" role="desc">
+<title role="desc.title">Description</title>
+<para>I owe you a long description, what the geometric-structs are all about.</para>
+
+</refsect1>
+<refsect1 id="epsara-Geoemtry-types.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="epsara-data-point-equal" role="function" condition="since:0.50">
+<title>epsara_data_point_equal&#160;()</title>
+<indexterm zone="epsara-data-point-equal" role="0.50"><primary>epsara_data_point_equal</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+epsara_data_point_equal (<parameter>const <link linkend="EpsaraDataPoint"><type>EpsaraDataPoint</type></link> *point1</parameter>,
+                         <parameter>const <link linkend="EpsaraDataPoint"><type>EpsaraDataPoint</type></link> *point2</parameter>);</programlisting>
+<para>Checks if the two given points are equal.</para>
+<refsect3 id="epsara-data-point-equal.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>point1</para></entry>
+<entry role="parameter_description"><para>a <link linkend="EpsaraDataPoint"><type>EpsaraDataPoint</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>point2</para></entry>
+<entry role="parameter_description"><para>a <link linkend="EpsaraDataPoint"><type>EpsaraDataPoint</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="epsara-data-point-equal.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the points are equal.</para>
+</refsect3><para role="since">Since: <link linkend="api-index-0.50">0.50</link></para></refsect2>
+<refsect2 id="epsara-data-point-scalar-product" role="function">
+<title>epsara_data_point_scalar_product&#160;()</title>
+<indexterm zone="epsara-data-point-scalar-product"><primary>epsara_data_point_scalar_product</primary></indexterm>
+<programlisting language="C"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+epsara_data_point_scalar_product (<parameter>const <link linkend="EpsaraDataPoint"><type>EpsaraDataPoint</type></link> *point1</parameter>,
+                                  <parameter>const <link linkend="EpsaraDataPoint"><type>EpsaraDataPoint</type></link> *point2</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-point-metric" role="function">
+<title>epsara_data_point_metric&#160;()</title>
+<indexterm zone="epsara-data-point-metric"><primary>epsara_data_point_metric</primary></indexterm>
+<programlisting language="C"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+epsara_data_point_metric (<parameter>const <link linkend="EpsaraDataPoint"><type>EpsaraDataPoint</type></link> *point1</parameter>,
+                          <parameter>const <link linkend="EpsaraDataPoint"><type>EpsaraDataPoint</type></link> *point2</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-point-distance-to-origin" role="function">
+<title>epsara_data_point_distance_to_origin&#160;()</title>
+<indexterm zone="epsara-data-point-distance-to-origin"><primary>epsara_data_point_distance_to_origin</primary></indexterm>
+<programlisting language="C"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+epsara_data_point_distance_to_origin (<parameter>const <link linkend="EpsaraDataPoint"><type>EpsaraDataPoint</type></link> *point</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-direction-equal" role="function" condition="since:0.50">
+<title>epsara_data_direction_equal&#160;()</title>
+<indexterm zone="epsara-data-direction-equal" role="0.50"><primary>epsara_data_direction_equal</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+epsara_data_direction_equal (<parameter>const <link linkend="EpsaraDataDirection"><type>EpsaraDataDirection</type></link> *direction1</parameter>,
+                             <parameter>const <link linkend="EpsaraDataDirection"><type>EpsaraDataDirection</type></link> *direction2</parameter>);</programlisting>
+<para>Checks if the two given directions are equal.</para>
+<refsect3 id="epsara-data-direction-equal.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>direction1</para></entry>
+<entry role="parameter_description"><para>a <link linkend="EpsaraDataDirection"><type>EpsaraDataDirection</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>direction2</para></entry>
+<entry role="parameter_description"><para>a <link linkend="EpsaraDataDirection"><type>EpsaraDataDirection</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="epsara-data-direction-equal.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the directions are equal.</para>
+</refsect3><para role="since">Since: <link linkend="api-index-0.50">0.50</link></para></refsect2>
+<refsect2 id="epsara-data-polygon-equal" role="function">
+<title>epsara_data_polygon_equal&#160;()</title>
+<indexterm zone="epsara-data-polygon-equal"><primary>epsara_data_polygon_equal</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+epsara_data_polygon_equal (<parameter>const <link linkend="EpsaraDataPolygon"><type>EpsaraDataPolygon</type></link> *polygon1</parameter>,
+                           <parameter>const <link linkend="EpsaraDataPolygon"><type>EpsaraDataPolygon</type></link> *polygon2</parameter>);</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="epsara-Geoemtry-types.other_details" role="details">
+<title role="details.title">Types and Values</title>
+
+</refsect1>
+
+</refentry>

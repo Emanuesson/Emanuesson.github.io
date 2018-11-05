@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE indexdiv PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<indexdiv id="api-index-0.7.3">
+<indexdiv><title>S</title>
+<indexentry><primaryie linkends="GdvSpecialDrumDisplay--center-value"><link linkend="GdvSpecialDrumDisplay--center-value">GdvSpecialDrumDisplay:center-value</link>, object property in <link linkend="GdvSpecialDrumDisplay">GdvSpecialDrumDisplay</link></primaryie></indexentry>
+<indexentry><primaryie linkends="GdvSpecialDrumDisplay--left-right-range"><link linkend="GdvSpecialDrumDisplay--left-right-range">GdvSpecialDrumDisplay:left-right-range</link>, object property in <link linkend="GdvSpecialDrumDisplay">GdvSpecialDrumDisplay</link></primaryie></indexentry>
+</indexdiv>
+</indexdiv>

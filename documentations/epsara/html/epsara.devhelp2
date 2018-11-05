@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<book xmlns="http://www.devhelp.net/book" title="Epsara Reference Manual" link="index.html" author="" name="epsara" version="2" language="c">
+  <chapters>
+    <sub name="Overview" link="epsara.html">
+      <sub name="" link="overview.html"/>
+      <sub name="The physics behind Epsara" link="physics-descr.html"/>
+      <sub name="" link="example1.html"/>
+    </sub>
+    <sub name="Epsara Objects and Instances" link="epsara-objects.html">
+      <sub name="Fundamental structure" link="fundamental-structure.html">
+        <sub name="The Data-Set" link="EpsaraDataSet.html"/>
+        <sub name="EpsaraDataMeasurement" link="EpsaraDataMeasurement.html"/>
+        <sub name="The Detector" link="EpsaraDataDetector.html"/>
+        <sub name="EpsaraDataSource" link="EpsaraDataSource.html"/>
+        <sub name="EpsaraDataMaterial" link="EpsaraDataMaterial.html"/>
+        <sub name="EpsaraDataIsotope" link="EpsaraDataIsotope.html"/>
+      </sub>
+      <sub name="Ion-beam-analysis-specific objects" link="iba-specific.html">
+        <sub name="EpsaraDataParticleDetector" link="EpsaraDataParticleDetector.html"/>
+        <sub name="EpsaraDataParticleBeam" link="EpsaraDataParticleBeam.html"/>
+        <sub name="EpsaraDataIsotopeIonicEloss" link="EpsaraDataIsotopeIonicEloss.html"/>
+        <sub name="EpsaraDataRbsMeasurement" link="EpsaraDataRbsMeasurement.html"/>
+      </sub>
+      <sub name="Basic numerics" link="numeric.html">
+        <sub name="Geoemtry types" link="epsara-Geoemtry-types.html"/>
+        <sub name="EpsaraDataVector" link="EpsaraDataVector.html"/>
+        <sub name="EpsaraDataMatrix" link="EpsaraDataMatrix.html"/>
+      </sub>
+    </sub>
+    <sub name="Technical discussions" link="design-issues.html">
+      <sub name="Description of open work" link="roadmap.html"/>
+    </sub>
+  </chapters>
+  <functions>
+    <keyword type="function" name="EpsaraForallCallback ()" link="EpsaraDataSet.html#EpsaraForallCallback"/>
+    <keyword type="function" name="epsara_data_set_contains ()" link="EpsaraDataSet.html#epsara-data-set-contains" since="0.02"/>
+    <keyword type="function" name="epsara_data_set_save_results ()" link="EpsaraDataSet.html#epsara-data-set-save-results"/>
+    <keyword type="function" name="epsara_data_set_perform_calculation ()" link="EpsaraDataSet.html#epsara-data-set-perform-calculation" since="0.02"/>
+    <keyword type="function" name="epsara_data_set_get_fitting_schedule ()" link="EpsaraDataSet.html#epsara-data-set-get-fitting-schedule" since="0.02"/>
+    <keyword type="function" name="epsara_data_set_add_to_fitting_schedule ()" link="EpsaraDataSet.html#epsara-data-set-add-to-fitting-schedule" since="0.02"/>
+    <keyword type="function" name="epsara_data_set_get_measurements ()" link="EpsaraDataSet.html#epsara-data-set-get-measurements" since="0.02"/>
+    <keyword type="function" name="epsara_data_set_get_top_data_set ()" link="EpsaraDataSet.html#epsara-data-set-get-top-data-set" since="0.02"/>
+    <keyword type="function" name="epsara_data_set_calculate_minimizer_value ()" link="EpsaraDataSet.html#epsara-data-set-calculate-minimizer-value"/>
+    <keyword type="struct" name="struct EpsaraDataSet" link="EpsaraDataSet.html#EpsaraDataSet-struct"/>
+    <keyword type="struct" name="struct EpsaraDataSetClass" link="EpsaraDataSet.html#EpsaraDataSetClass"/>
+    <keyword type="struct" name="EpsaraDataSetPrivate" link="EpsaraDataSet.html#EpsaraDataSetPrivate"/>
+    <keyword type="property" name="The “iterations” property" link="EpsaraDataSet.html#EpsaraDataSet--iterations"/>
+    <keyword type="property" name="The “minimizer-type” property" link="EpsaraDataSet.html#EpsaraDataSet--minimizer-type"/>
+    <keyword type="property" name="The “result-table” property" link="EpsaraDataSet.html#EpsaraDataSet--result-table"/>
+    <keyword type="property" name="The “tolerance” property" link="EpsaraDataSet.html#EpsaraDataSet--tolerance"/>
+    <keyword type="signal" name="The “add” signal" link="EpsaraDataSet.html#EpsaraDataSet-add"/>
+    <keyword type="signal" name="The “calculate” signal" link="EpsaraDataSet.html#EpsaraDataSet-calculate"/>
+    <keyword type="signal" name="The “fit” signal" link="EpsaraDataSet.html#EpsaraDataSet-fit"/>
+    <keyword type="signal" name="The “remove” signal" link="EpsaraDataSet.html#EpsaraDataSet-remove"/>
+    <keyword type="function" name="EpsaraDataMeasurementForallCallback ()" link="EpsaraDataMeasurement.html#EpsaraDataMeasurementForallCallback"/>
+    <keyword type="function" name="epsara_data_measurement_add ()" link="EpsaraDataMeasurement.html#epsara-data-measurement-add"/>
+    <keyword type="function" name="epsara_data_measurement_remove ()" link="EpsaraDataMeasurement.html#epsara-data-measurement-remove"/>
+    <keyword type="function" name="epsara_data_measurement_get_detectors ()" link="EpsaraDataMeasurement.html#epsara-data-measurement-get-detectors" since="0.02"/>
+    <keyword type="function" name="epsara_data_measurement_get_sources ()" link="EpsaraDataMeasurement.html#epsara-data-measurement-get-sources" since="0.02"/>
+    <keyword type="function" name="epsara_data_measurement_get_materials ()" link="EpsaraDataMeasurement.html#epsara-data-measurement-get-materials" since="0.02"/>
+    <keyword type="function" name="epsara_data_measurement_perform_calculation ()" link="EpsaraDataMeasurement.html#epsara-data-measurement-perform-calculation" since="0.02"/>
+    <keyword type="function" name="epsara_data_measurement_recalculate ()" link="EpsaraDataMeasurement.html#epsara-data-measurement-recalculate"/>
+    <keyword type="function" name="epsara_data_measurement_get_full_materials ()" link="EpsaraDataMeasurement.html#epsara-data-measurement-get-full-materials" since="0.02"/>
+    <keyword type="function" name="epsara_data_measurement_get_calculated_spectrum ()" link="EpsaraDataMeasurement.html#epsara-data-measurement-get-calculated-spectrum" since="0.02"/>
+    <keyword type="function" name="epsara_data_measurement_set_calculated_spectrum ()" link="EpsaraDataMeasurement.html#epsara-data-measurement-set-calculated-spectrum"/>
+    <keyword type="function" name="epsara_data_measurement_reset_spectrum ()" link="EpsaraDataMeasurement.html#epsara-data-measurement-reset-spectrum"/>
+    <keyword type="struct" name="struct EpsaraDataMeasurement" link="EpsaraDataMeasurement.html#EpsaraDataMeasurement-struct"/>
+    <keyword type="struct" name="struct EpsaraDataMeasurementClass" link="EpsaraDataMeasurement.html#EpsaraDataMeasurementClass"/>
+    <keyword type="struct" name="EpsaraDataMeasurementPrivate" link="EpsaraDataMeasurement.html#EpsaraDataMeasurementPrivate"/>
+    <keyword type="property" name="The “duration-time” property" link="EpsaraDataMeasurement.html#EpsaraDataMeasurement--duration-time"/>
+    <keyword type="property" name="The “id” property" link="EpsaraDataMeasurement.html#EpsaraDataMeasurement--id"/>
+    <keyword type="property" name="The “start-time” property" link="EpsaraDataMeasurement.html#EpsaraDataMeasurement--start-time"/>
+    <keyword type="property" name="The “stop-time” property" link="EpsaraDataMeasurement.html#EpsaraDataMeasurement--stop-time"/>
+    <keyword type="signal" name="The “add” signal" link="EpsaraDataMeasurement.html#EpsaraDataMeasurement-add"/>
+    <keyword type="signal" name="The “calculate” signal" link="EpsaraDataMeasurement.html#EpsaraDataMeasurement-calculate"/>
+    <keyword type="signal" name="The “estimator” signal" link="EpsaraDataMeasurement.html#EpsaraDataMeasurement-estimator"/>
+    <keyword type="signal" name="The “remove” signal" link="EpsaraDataMeasurement.html#EpsaraDataMeasurement-remove"/>
+    <keyword type="function" name="epsara_data_detector_add_roi ()" link="EpsaraDataDetector.html#epsara-data-detector-add-roi"/>
+    <keyword type="function" name="epsara_data_detector_get_roi_from_index ()" link="EpsaraDataDetector.html#epsara-data-detector-get-roi-from-index"/>
+    <keyword type="function" name="epsara_data_detector_remove_roi ()" link="EpsaraDataDetector.html#epsara-data-detector-remove-roi"/>
+    <keyword type="function" name="epsara_data_detector_calc_det_coeff ()" link="EpsaraDataDetector.html#epsara-data-detector-calc-det-coeff"/>
+    <keyword type="function" name="epsara_data_detector_angle_to_source ()" link="EpsaraDataDetector.html#epsara-data-detector-angle-to-source"/>
+    <keyword type="function" name="epsara_data_detector_back_scattering_angle_to_source ()" link="EpsaraDataDetector.html#epsara-data-detector-back-scattering-angle-to-source"/>
+    <keyword type="struct" name="struct EpsaraDataDetector" link="EpsaraDataDetector.html#EpsaraDataDetector-struct"/>
+    <keyword type="struct" name="struct EpsaraDataDetectorClass" link="EpsaraDataDetector.html#EpsaraDataDetectorClass"/>
+    <keyword type="struct" name="EpsaraDataDetectorPrivate" link="EpsaraDataDetector.html#EpsaraDataDetectorPrivate"/>
+    <keyword type="property" name="The “detector-dead-layer” property" link="EpsaraDataDetector.html#EpsaraDataDetector--detector-dead-layer"/>
+    <keyword type="property" name="The “direction” property" link="EpsaraDataDetector.html#EpsaraDataDetector--direction"/>
+    <keyword type="property" name="The “origin” property" link="EpsaraDataDetector.html#EpsaraDataDetector--origin"/>
+    <keyword type="property" name="The “solid-angle” property" link="EpsaraDataDetector.html#EpsaraDataDetector--solid-angle"/>
+    <keyword type="property" name="The “spectrum” property" link="EpsaraDataDetector.html#EpsaraDataDetector--spectrum"/>
+    <keyword type="signal" name="The “calculate-estimator” signal" link="EpsaraDataDetector.html#EpsaraDataDetector-calculate-estimator"/>
+    <keyword type="struct" name="struct EpsaraDataSource" link="EpsaraDataSource.html#EpsaraDataSource-struct"/>
+    <keyword type="struct" name="struct EpsaraDataSourceClass" link="EpsaraDataSource.html#EpsaraDataSourceClass"/>
+    <keyword type="struct" name="EpsaraDataSourcePrivate" link="EpsaraDataSource.html#EpsaraDataSourcePrivate"/>
+    <keyword type="property" name="The “dead-layer” property" link="EpsaraDataSource.html#EpsaraDataSource--dead-layer"/>
+    <keyword type="property" name="The “direction” property" link="EpsaraDataSource.html#EpsaraDataSource--direction"/>
+    <keyword type="property" name="The “origin” property" link="EpsaraDataSource.html#EpsaraDataSource--origin"/>
+    <keyword type="function" name="epsara_data_material_get_concentration_at_point ()" link="EpsaraDataMaterial.html#epsara-data-material-get-concentration-at-point"/>
+    <keyword type="function" name="epsara_data_material_get_sub_isotope_concentration_at_point ()" link="EpsaraDataMaterial.html#epsara-data-material-get-sub-isotope-concentration-at-point"/>
+    <keyword type="function" name="epsara_data_material_get_sub_interact_concentration_at_point ()" link="EpsaraDataMaterial.html#epsara-data-material-get-sub-interact-concentration-at-point"/>
+    <keyword type="function" name="epsara_data_material_integrate_sub_interact_over_length ()" link="EpsaraDataMaterial.html#epsara-data-material-integrate-sub-interact-over-length"/>
+    <keyword type="function" name="epsara_data_material_integrate_material_over_length ()" link="EpsaraDataMaterial.html#epsara-data-material-integrate-material-over-length"/>
+    <keyword type="function" name="epsara_data_material_get_distance ()" link="EpsaraDataMaterial.html#epsara-data-material-get-distance"/>
+    <keyword type="function" name="epsara_data_material_get_submaterials ()" link="EpsaraDataMaterial.html#epsara-data-material-get-submaterials" since="0.02"/>
+    <keyword type="function" name="epsara_data_material_get_subisotopes ()" link="EpsaraDataMaterial.html#epsara-data-material-get-subisotopes" since="0.02"/>
+    <keyword type="function" name="epsara_data_material_get_all_interactions ()" link="EpsaraDataMaterial.html#epsara-data-material-get-all-interactions" since="0.02"/>
+    <keyword type="function" name="epsara_data_material_get_all_subisotopes ()" link="EpsaraDataMaterial.html#epsara-data-material-get-all-subisotopes"/>
+    <keyword type="struct" name="struct EpsaraDataMaterial" link="EpsaraDataMaterial.html#EpsaraDataMaterial-struct"/>
+    <keyword type="struct" name="struct EpsaraDataMaterialClass" link="EpsaraDataMaterial.html#EpsaraDataMaterialClass"/>
+    <keyword type="struct" name="EpsaraDataMaterialPrivate" link="EpsaraDataMaterial.html#EpsaraDataMaterialPrivate"/>
+    <keyword type="property" name="The “concentration” property" link="EpsaraDataMaterial.html#EpsaraDataMaterial--concentration"/>
+    <keyword type="property" name="The “header” property" link="EpsaraDataMaterial.html#EpsaraDataMaterial--header"/>
+    <keyword type="signal" name="The “add” signal" link="EpsaraDataMaterial.html#EpsaraDataMaterial-add"/>
+    <keyword type="signal" name="The “distribution” signal" link="EpsaraDataMaterial.html#EpsaraDataMaterial-distribution"/>
+    <keyword type="signal" name="The “integrate-material” signal" link="EpsaraDataMaterial.html#EpsaraDataMaterial-integrate-material"/>
+    <keyword type="signal" name="The “remove” signal" link="EpsaraDataMaterial.html#EpsaraDataMaterial-remove"/>
+    <keyword type="function" name="epsara_data_isotope_get_interactions ()" link="EpsaraDataIsotope.html#epsara-data-isotope-get-interactions"/>
+    <keyword type="struct" name="struct EpsaraDataIsotope" link="EpsaraDataIsotope.html#EpsaraDataIsotope-struct"/>
+    <keyword type="struct" name="struct EpsaraDataIsotopeClass" link="EpsaraDataIsotope.html#EpsaraDataIsotopeClass"/>
+    <keyword type="struct" name="EpsaraDataIsotopePrivate" link="EpsaraDataIsotope.html#EpsaraDataIsotopePrivate"/>
+    <keyword type="property" name="The “abundance” property" link="EpsaraDataIsotope.html#EpsaraDataIsotope--abundance"/>
+    <keyword type="property" name="The “atomic-no” property" link="EpsaraDataIsotope.html#EpsaraDataIsotope--atomic-no"/>
+    <keyword type="property" name="The “mass” property" link="EpsaraDataIsotope.html#EpsaraDataIsotope--mass"/>
+    <keyword type="property" name="The “mass-no” property" link="EpsaraDataIsotope.html#EpsaraDataIsotope--mass-no"/>
+    <keyword type="signal" name="The “add” signal" link="EpsaraDataIsotope.html#EpsaraDataIsotope-add"/>
+    <keyword type="signal" name="The “remove” signal" link="EpsaraDataIsotope.html#EpsaraDataIsotope-remove"/>
+    <keyword type="function" name="epsara_data_particle_detector_energy_at_channel ()" link="EpsaraDataParticleDetector.html#epsara-data-particle-detector-energy-at-channel"/>
+    <keyword type="function" name="epsara_data_particle_detector_generate_energy_vs_channel ()" link="EpsaraDataParticleDetector.html#epsara-data-particle-detector-generate-energy-vs-channel" since="0.02"/>
+    <keyword type="struct" name="struct EpsaraDataParticleDetector" link="EpsaraDataParticleDetector.html#EpsaraDataParticleDetector-struct"/>
+    <keyword type="struct" name="struct EpsaraDataParticleDetectorClass" link="EpsaraDataParticleDetector.html#EpsaraDataParticleDetectorClass"/>
+    <keyword type="struct" name="EpsaraDataParticleDetectorPrivate" link="EpsaraDataParticleDetector.html#EpsaraDataParticleDetectorPrivate"/>
+    <keyword type="property" name="The “energy-offset” property" link="EpsaraDataParticleDetector.html#EpsaraDataParticleDetector--energy-offset"/>
+    <keyword type="property" name="The “energy-per-channel” property" link="EpsaraDataParticleDetector.html#EpsaraDataParticleDetector--energy-per-channel"/>
+    <keyword type="property" name="The “energy-per-channel-cube” property" link="EpsaraDataParticleDetector.html#EpsaraDataParticleDetector--energy-per-channel-cube"/>
+    <keyword type="property" name="The “energy-per-channel-square” property" link="EpsaraDataParticleDetector.html#EpsaraDataParticleDetector--energy-per-channel-square"/>
+    <keyword type="property" name="The “energy-resolution” property" link="EpsaraDataParticleDetector.html#EpsaraDataParticleDetector--energy-resolution"/>
+    <keyword type="property" name="The “max-channel” property" link="EpsaraDataParticleDetector.html#EpsaraDataParticleDetector--max-channel"/>
+    <keyword type="property" name="The “min-channel” property" link="EpsaraDataParticleDetector.html#EpsaraDataParticleDetector--min-channel"/>
+    <keyword type="property" name="The “pulse-rate” property" link="EpsaraDataParticleDetector.html#EpsaraDataParticleDetector--pulse-rate"/>
+    <keyword type="property" name="The “sharping-time” property" link="EpsaraDataParticleDetector.html#EpsaraDataParticleDetector--sharping-time"/>
+    <keyword type="struct" name="struct EpsaraDataParticleBeam" link="EpsaraDataParticleBeam.html#EpsaraDataParticleBeam-struct"/>
+    <keyword type="struct" name="struct EpsaraDataParticleBeamClass" link="EpsaraDataParticleBeam.html#EpsaraDataParticleBeamClass"/>
+    <keyword type="struct" name="EpsaraDataParticleBeamPrivate" link="EpsaraDataParticleBeam.html#EpsaraDataParticleBeamPrivate"/>
+    <keyword type="property" name="The “atomic-mass-inc-ion” property" link="EpsaraDataParticleBeam.html#EpsaraDataParticleBeam--atomic-mass-inc-ion"/>
+    <keyword type="property" name="The “atomic-no-inc-ion” property" link="EpsaraDataParticleBeam.html#EpsaraDataParticleBeam--atomic-no-inc-ion"/>
+    <keyword type="property" name="The “charge-state” property" link="EpsaraDataParticleBeam.html#EpsaraDataParticleBeam--charge-state"/>
+    <keyword type="property" name="The “dispersion” property" link="EpsaraDataParticleBeam.html#EpsaraDataParticleBeam--dispersion"/>
+    <keyword type="property" name="The “ion-count-rate” property" link="EpsaraDataParticleBeam.html#EpsaraDataParticleBeam--ion-count-rate"/>
+    <keyword type="property" name="The “ion-energy” property" link="EpsaraDataParticleBeam.html#EpsaraDataParticleBeam--ion-energy"/>
+    <keyword type="property" name="The “mass-no-inc-ion” property" link="EpsaraDataParticleBeam.html#EpsaraDataParticleBeam--mass-no-inc-ion"/>
+    <keyword type="function" name="epsara_data_isotope_ionic_eloss_calc_eloss ()" link="EpsaraDataIsotopeIonicEloss.html#epsara-data-isotope-ionic-eloss-calc-eloss"/>
+    <keyword type="function" name="epsara_data_isotope_ionic_eloss_calc_nuclear_eloss ()" link="EpsaraDataIsotopeIonicEloss.html#epsara-data-isotope-ionic-eloss-calc-nuclear-eloss"/>
+    <keyword type="function" name="epsara_data_isotope_ionic_eloss_calc_electronic_eloss ()" link="EpsaraDataIsotopeIonicEloss.html#epsara-data-isotope-ionic-eloss-calc-electronic-eloss"/>
+    <keyword type="function" name="epsara_data_isotope_ionic_eloss_straggling ()" link="EpsaraDataIsotopeIonicEloss.html#epsara-data-isotope-ionic-eloss-straggling"/>
+    <keyword type="function" name="epsara_data_isotope_ionic_eloss_at_pos ()" link="EpsaraDataIsotopeIonicEloss.html#epsara-data-isotope-ionic-eloss-at-pos"/>
+    <keyword type="struct" name="struct EpsaraDataIsotopeIonicEloss" link="EpsaraDataIsotopeIonicEloss.html#EpsaraDataIsotopeIonicEloss-struct"/>
+    <keyword type="struct" name="struct EpsaraDataIsotopeIonicElossClass" link="EpsaraDataIsotopeIonicEloss.html#EpsaraDataIsotopeIonicElossClass"/>
+    <keyword type="struct" name="EpsaraDataIsotopeIonicElossPrivate" link="EpsaraDataIsotopeIonicEloss.html#EpsaraDataIsotopeIonicElossPrivate"/>
+    <keyword type="property" name="The “eloss” property" link="EpsaraDataIsotopeIonicEloss.html#EpsaraDataIsotopeIonicEloss--eloss"/>
+    <keyword type="property" name="The “state” property" link="EpsaraDataIsotopeIonicEloss.html#EpsaraDataIsotopeIonicEloss--state"/>
+    <keyword type="property" name="The “straggling” property" link="EpsaraDataIsotopeIonicEloss.html#EpsaraDataIsotopeIonicEloss--straggling"/>
+    <keyword type="function" name="epsara_data_rbs_measurement_calc_simple_spec ()" link="EpsaraDataRbsMeasurement.html#epsara-data-rbs-measurement-calc-simple-spec"/>
+    <keyword type="function" name="epsara_data_rbs_measurement_get_beam_eloss ()" link="EpsaraDataRbsMeasurement.html#epsara-data-rbs-measurement-get-beam-eloss" since="0.02"/>
+    <keyword type="function" name="epsara_data_rbs_measurement_get_detector_eloss ()" link="EpsaraDataRbsMeasurement.html#epsara-data-rbs-measurement-get-detector-eloss" since="0.02"/>
+    <keyword type="struct" name="struct EpsaraDataRbsMeasurement" link="EpsaraDataRbsMeasurement.html#EpsaraDataRbsMeasurement-struct"/>
+    <keyword type="struct" name="struct EpsaraDataRbsMeasurementClass" link="EpsaraDataRbsMeasurement.html#EpsaraDataRbsMeasurementClass"/>
+    <keyword type="struct" name="EpsaraDataRbsMeasurementPrivate" link="EpsaraDataRbsMeasurement.html#EpsaraDataRbsMeasurementPrivate"/>
+    <keyword type="property" name="The “calculation-type” property" link="EpsaraDataRbsMeasurement.html#EpsaraDataRbsMeasurement--calculation-type"/>
+    <keyword type="property" name="The “depth-granularity” property" link="EpsaraDataRbsMeasurement.html#EpsaraDataRbsMeasurement--depth-granularity"/>
+    <keyword type="property" name="The “ini-precision-in” property" link="EpsaraDataRbsMeasurement.html#EpsaraDataRbsMeasurement--ini-precision-in"/>
+    <keyword type="property" name="The “ini-precision-out” property" link="EpsaraDataRbsMeasurement.html#EpsaraDataRbsMeasurement--ini-precision-out"/>
+    <keyword type="property" name="The “max-precision-in” property" link="EpsaraDataRbsMeasurement.html#EpsaraDataRbsMeasurement--max-precision-in"/>
+    <keyword type="property" name="The “max-precision-out” property" link="EpsaraDataRbsMeasurement.html#EpsaraDataRbsMeasurement--max-precision-out"/>
+    <keyword type="property" name="The “suppress-dispersion” property" link="EpsaraDataRbsMeasurement.html#EpsaraDataRbsMeasurement--suppress-dispersion"/>
+    <keyword type="function" name="epsara_data_point_equal ()" link="epsara-Geoemtry-types.html#epsara-data-point-equal" since="0.50"/>
+    <keyword type="function" name="epsara_data_point_scalar_product ()" link="epsara-Geoemtry-types.html#epsara-data-point-scalar-product"/>
+    <keyword type="function" name="epsara_data_point_metric ()" link="epsara-Geoemtry-types.html#epsara-data-point-metric"/>
+    <keyword type="function" name="epsara_data_point_distance_to_origin ()" link="epsara-Geoemtry-types.html#epsara-data-point-distance-to-origin"/>
+    <keyword type="function" name="epsara_data_direction_equal ()" link="epsara-Geoemtry-types.html#epsara-data-direction-equal" since="0.50"/>
+    <keyword type="function" name="epsara_data_polygon_equal ()" link="epsara-Geoemtry-types.html#epsara-data-polygon-equal"/>
+    <keyword type="function" name="epsara_data_vector_new ()" link="EpsaraDataVector.html#epsara-data-vector-new"/>
+    <keyword type="function" name="epsara_data_vector_get ()" link="EpsaraDataVector.html#epsara-data-vector-get"/>
+    <keyword type="function" name="epsara_data_vector_set ()" link="EpsaraDataVector.html#epsara-data-vector-set"/>
+    <keyword type="function" name="epsara_data_vector_set_and_expand ()" link="EpsaraDataVector.html#epsara-data-vector-set-and-expand" since="0.02"/>
+    <keyword type="function" name="epsara_data_vector_set_all ()" link="EpsaraDataVector.html#epsara-data-vector-set-all"/>
+    <keyword type="function" name="epsara_data_vector_set_zero ()" link="EpsaraDataVector.html#epsara-data-vector-set-zero"/>
+    <keyword type="function" name="epsara_data_vector_set_basis ()" link="EpsaraDataVector.html#epsara-data-vector-set-basis"/>
+    <keyword type="function" name="epsara_data_vector_copy ()" link="EpsaraDataVector.html#epsara-data-vector-copy"/>
+    <keyword type="function" name="epsara_data_vector_swap ()" link="EpsaraDataVector.html#epsara-data-vector-swap"/>
+    <keyword type="function" name="epsara_data_vector_swap_elements ()" link="EpsaraDataVector.html#epsara-data-vector-swap-elements"/>
+    <keyword type="function" name="epsara_data_vector_reverse ()" link="EpsaraDataVector.html#epsara-data-vector-reverse"/>
+    <keyword type="function" name="epsara_data_vector_add ()" link="EpsaraDataVector.html#epsara-data-vector-add"/>
+    <keyword type="function" name="epsara_data_vector_sub ()" link="EpsaraDataVector.html#epsara-data-vector-sub"/>
+    <keyword type="function" name="epsara_data_vector_mul ()" link="EpsaraDataVector.html#epsara-data-vector-mul"/>
+    <keyword type="function" name="epsara_data_vector_div ()" link="EpsaraDataVector.html#epsara-data-vector-div"/>
+    <keyword type="function" name="epsara_data_vector_scale ()" link="EpsaraDataVector.html#epsara-data-vector-scale"/>
+    <keyword type="function" name="epsara_data_vector_add_constant ()" link="EpsaraDataVector.html#epsara-data-vector-add-constant"/>
+    <keyword type="function" name="epsara_data_vector_max ()" link="EpsaraDataVector.html#epsara-data-vector-max"/>
+    <keyword type="function" name="epsara_data_vector_min ()" link="EpsaraDataVector.html#epsara-data-vector-min"/>
+    <keyword type="function" name="epsara_data_vector_minmax ()" link="EpsaraDataVector.html#epsara-data-vector-minmax"/>
+    <keyword type="function" name="epsara_data_vector_max_index ()" link="EpsaraDataVector.html#epsara-data-vector-max-index"/>
+    <keyword type="function" name="epsara_data_vector_min_index ()" link="EpsaraDataVector.html#epsara-data-vector-min-index"/>
+    <keyword type="function" name="epsara_data_vector_minmax_index ()" link="EpsaraDataVector.html#epsara-data-vector-minmax-index"/>
+    <keyword type="struct" name="struct EpsaraDataVector" link="EpsaraDataVector.html#EpsaraDataVector-struct"/>
+    <keyword type="struct" name="struct EpsaraDataVectorClass" link="EpsaraDataVector.html#EpsaraDataVectorClass"/>
+    <keyword type="struct" name="EpsaraDataVectorPrivate" link="EpsaraDataVector.html#EpsaraDataVectorPrivate"/>
+    <keyword type="property" name="The “size” property" link="EpsaraDataVector.html#EpsaraDataVector--size"/>
+    <keyword type="function" name="epsara_data_matrix_new ()" link="EpsaraDataMatrix.html#epsara-data-matrix-new"/>
+    <keyword type="function" name="epsara_data_matrix_get ()" link="EpsaraDataMatrix.html#epsara-data-matrix-get" since="0.02"/>
+    <keyword type="function" name="epsara_data_matrix_set ()" link="EpsaraDataMatrix.html#epsara-data-matrix-set" since="0.02"/>
+    <keyword type="function" name="epsara_data_matrix_set_and_expand ()" link="EpsaraDataMatrix.html#epsara-data-matrix-set-and-expand" since="0.02"/>
+    <keyword type="function" name="epsara_data_matrix_set_all ()" link="EpsaraDataMatrix.html#epsara-data-matrix-set-all"/>
+    <keyword type="function" name="epsara_data_matrix_set_zero ()" link="EpsaraDataMatrix.html#epsara-data-matrix-set-zero"/>
+    <keyword type="function" name="epsara_data_matrix_set_identity ()" link="EpsaraDataMatrix.html#epsara-data-matrix-set-identity"/>
+    <keyword type="function" name="epsara_data_matrix_copy ()" link="EpsaraDataMatrix.html#epsara-data-matrix-copy"/>
+    <keyword type="function" name="epsara_data_matrix_swap ()" link="EpsaraDataMatrix.html#epsara-data-matrix-swap"/>
+    <keyword type="function" name="epsara_data_matrix_get_row ()" link="EpsaraDataMatrix.html#epsara-data-matrix-get-row" since="0.02"/>
+    <keyword type="function" name="epsara_data_matrix_get_column ()" link="EpsaraDataMatrix.html#epsara-data-matrix-get-column" since="0.02"/>
+    <keyword type="function" name="epsara_data_matrix_memcpy_submatrix ()" link="EpsaraDataMatrix.html#epsara-data-matrix-memcpy-submatrix"/>
+    <keyword type="function" name="epsara_data_matrix_memcpy_row ()" link="EpsaraDataMatrix.html#epsara-data-matrix-memcpy-row"/>
+    <keyword type="function" name="epsara_data_matrix_memcpy_col ()" link="EpsaraDataMatrix.html#epsara-data-matrix-memcpy-col"/>
+    <keyword type="function" name="epsara_data_matrix_add ()" link="EpsaraDataMatrix.html#epsara-data-matrix-add"/>
+    <keyword type="function" name="epsara_data_matrix_sub ()" link="EpsaraDataMatrix.html#epsara-data-matrix-sub"/>
+    <keyword type="function" name="epsara_data_matrix_mul_elements ()" link="EpsaraDataMatrix.html#epsara-data-matrix-mul-elements"/>
+    <keyword type="function" name="epsara_data_matrix_div_elements ()" link="EpsaraDataMatrix.html#epsara-data-matrix-div-elements"/>
+    <keyword type="function" name="epsara_data_matrix_scale ()" link="EpsaraDataMatrix.html#epsara-data-matrix-scale"/>
+    <keyword type="function" name="epsara_data_matrix_add_constant ()" link="EpsaraDataMatrix.html#epsara-data-matrix-add-constant"/>
+    <keyword type="function" name="epsara_data_matrix_max ()" link="EpsaraDataMatrix.html#epsara-data-matrix-max"/>
+    <keyword type="function" name="epsara_data_matrix_min ()" link="EpsaraDataMatrix.html#epsara-data-matrix-min"/>
+    <keyword type="function" name="epsara_data_matrix_minmax ()" link="EpsaraDataMatrix.html#epsara-data-matrix-minmax"/>
+    <keyword type="function" name="epsara_data_matrix_max_index ()" link="EpsaraDataMatrix.html#epsara-data-matrix-max-index"/>
+    <keyword type="function" name="epsara_data_matrix_min_index ()" link="EpsaraDataMatrix.html#epsara-data-matrix-min-index"/>
+    <keyword type="function" name="epsara_data_matrix_minmax_index ()" link="EpsaraDataMatrix.html#epsara-data-matrix-minmax-index"/>
+    <keyword type="function" name="epsara_data_matrix_integrate_column ()" link="EpsaraDataMatrix.html#epsara-data-matrix-integrate-column" since="0.1"/>
+    <keyword type="function" name="epsara_data_matrix_get_mean_column_value_near_row ()" link="EpsaraDataMatrix.html#epsara-data-matrix-get-mean-column-value-near-row"/>
+    <keyword type="function" name="epsara_data_matrix_get_mean_column_value ()" link="EpsaraDataMatrix.html#epsara-data-matrix-get-mean-column-value"/>
+    <keyword type="function" name="epsara_data_matrix_sort_along_column ()" link="EpsaraDataMatrix.html#epsara-data-matrix-sort-along-column" since="0.1"/>
+    <keyword type="function" name="epsara_data_matrix_print ()" link="EpsaraDataMatrix.html#epsara-data-matrix-print"/>
+    <keyword type="function" name="epsara_data_matrix_save_to_file ()" link="EpsaraDataMatrix.html#epsara-data-matrix-save-to-file" since="0.1"/>
+    <keyword type="function" name="epsara_data_matrix_get_raw_values ()" link="EpsaraDataMatrix.html#epsara-data-matrix-get-raw-values"/>
+    <keyword type="struct" name="struct EpsaraDataMatrix" link="EpsaraDataMatrix.html#EpsaraDataMatrix-struct"/>
+    <keyword type="struct" name="struct EpsaraDataMatrixClass" link="EpsaraDataMatrix.html#EpsaraDataMatrixClass"/>
+    <keyword type="struct" name="EpsaraDataMatrixPrivate" link="EpsaraDataMatrix.html#EpsaraDataMatrixPrivate"/>
+    <keyword type="property" name="The “columns” property" link="EpsaraDataMatrix.html#EpsaraDataMatrix--columns"/>
+    <keyword type="property" name="The “rows” property" link="EpsaraDataMatrix.html#EpsaraDataMatrix--rows"/>
+    <keyword type="member" name="EpsaraDataDetectorClass.calculate-estimator" link="EpsaraDataDetector.html#EpsaraDataDetectorClass.calculate-estimator"/>
+  </functions>
+</book>

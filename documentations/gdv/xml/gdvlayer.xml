@@ -1,0 +1,251 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="GdvLayer">
+<refmeta>
+<refentrytitle role="top_of_page" id="GdvLayer.top_of_page">GdvLayer</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>GDV Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>GdvLayer</refname>
+<refpurpose>a layer base class</refpurpose>
+</refnamediv>
+
+<refsect1 id="GdvLayer.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="GdvLayer"><returnvalue>GdvLayer</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="gdv-layer-new">gdv_layer_new</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-layer-has-layer-content">gdv_layer_has_layer_content</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-layer-evaluate-data-point">gdv_layer_evaluate_data_point</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GList"><returnvalue>GList</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="gdv-layer-get-content-list">gdv_layer_get_content_list</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GList"><returnvalue>GList</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="gdv-layer-get-axis-list">gdv_layer_get_axis_list</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="GdvLayer.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="GdvLayerClass">GdvLayerClass</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="GdvLayer.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GInitiallyUnowned">GInitiallyUnowned</link>
+        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkWidget">GtkWidget</link>
+            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkContainer">GtkContainer</link>
+                <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkBin">GtkBin</link>
+                    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkOverlay">GtkOverlay</link>
+                        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> GdvLayer
+                            <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="GdvOnedLayer">GdvOnedLayer</link>
+                            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GdvTwodLayer">GdvTwodLayer</link>
+</screen>
+</refsect1>
+
+
+<refsect1 id="GdvLayer.description" role="desc">
+<title role="desc.title">Description</title>
+<para><link linkend="GdvLayer"><type>GdvLayer</type></link> is a object-class, that contains
+2-dimensional plots of numerical data.</para>
+<refsect2><title>CSS nodes</title><para>GdvLayer uses a single CSS node with name layer.</para>
+</refsect2>
+
+</refsect1>
+<refsect1 id="GdvLayer.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="gdv-layer-new" role="function">
+<title>gdv_layer_new&#160;()</title>
+<indexterm zone="gdv-layer-new"><primary>gdv_layer_new</primary></indexterm>
+<programlisting language="C"><link linkend="GdvLayer"><returnvalue>GdvLayer</returnvalue></link>&#160;*
+gdv_layer_new (<parameter><type>void</type></parameter>);</programlisting>
+<para>Just a common constructor.</para>
+<refsect3 id="gdv-layer-new.returns" role="returns">
+<title>Returns</title>
+<para> a new <link linkend="GdvLayer"><type>GdvLayer</type></link></para>
+</refsect3></refsect2>
+<refsect2 id="gdv-layer-has-layer-content" role="function">
+<title>gdv_layer_has_layer_content&#160;()</title>
+<indexterm zone="gdv-layer-has-layer-content"><primary>gdv_layer_has_layer_content</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+gdv_layer_has_layer_content (<parameter><link linkend="GdvLayer"><type>GdvLayer</type></link> *layer</parameter>,
+                             <parameter><link linkend="GdvLayerContent"><type>GdvLayerContent</type></link> *layer_content</parameter>);</programlisting>
+<para>This is a convenient function to determine if a <link linkend="GdvLayerContent-instance"><type>GdvLayerContent-instance</type></link>
+is affiliated to a layer.</para>
+<refsect3 id="gdv-layer-has-layer-content.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>layer</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvLayer"><type>GdvLayer</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>layer_content</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvLayerContent"><type>GdvLayerContent</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="gdv-layer-evaluate-data-point" role="function">
+<title>gdv_layer_evaluate_data_point&#160;()</title>
+<indexterm zone="gdv-layer-evaluate-data-point"><primary>gdv_layer_evaluate_data_point</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+gdv_layer_evaluate_data_point (<parameter><link linkend="GdvLayer"><type>GdvLayer</type></link> *layer</parameter>,
+                               <parameter><link linkend="gdouble"><type>gdouble</type></link> data_point_x_value</parameter>,
+                               <parameter><link linkend="gdouble"><type>gdouble</type></link> data_point_y_value</parameter>,
+                               <parameter><link linkend="gdouble"><type>gdouble</type></link> data_point_z_value</parameter>,
+                               <parameter><link linkend="gdouble"><type>gdouble</type></link> *pos_x</parameter>,
+                               <parameter><link linkend="gdouble"><type>gdouble</type></link> *pos_y</parameter>);</programlisting>
+<para>This function calculates the position of a data-point within the allocated
+space of a layer-instance in pixel units. It simply applies the
+<link linkend="GdvLayer-evaluate-point"><type>“evaluate_point”</type></link> method.</para>
+<refsect3 id="gdv-layer-evaluate-data-point.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>layer</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvLayer"><type>GdvLayer</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>data_point_x_value</para></entry>
+<entry role="parameter_description"><para>the x coordinate of the point</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>data_point_y_value</para></entry>
+<entry role="parameter_description"><para>the y coordinate of the point</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>data_point_z_value</para></entry>
+<entry role="parameter_description"><para>the z coordinate of the point</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>pos_x</para></entry>
+<entry role="parameter_description"><para>the place to store the x-position on screen</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>pos_y</para></entry>
+<entry role="parameter_description"><para>the place to store the y-position on screen</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="gdv-layer-evaluate-data-point.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the point is within the range of the layer-axes and <link linkend="FALSE:CAPS"><literal>FALSE</literal></link>
+otherwise</para>
+</refsect3></refsect2>
+<refsect2 id="gdv-layer-get-content-list" role="function">
+<title>gdv_layer_get_content_list&#160;()</title>
+<indexterm zone="gdv-layer-get-content-list"><primary>gdv_layer_get_content_list</primary></indexterm>
+<programlisting language="C"><link linkend="GList"><returnvalue>GList</returnvalue></link>&#160;*
+gdv_layer_get_content_list (<parameter><link linkend="GdvLayer"><type>GdvLayer</type></link> *layer</parameter>);</programlisting>
+<para>Lists <link linkend="GdvLayerContent"><type>GdvLayerContent</type></link> instances that are used by the <parameter>layer</parameter>
+.</para>
+<refsect3 id="gdv-layer-get-content-list.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>layer</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvLayer"><type>GdvLayer</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="gdv-layer-get-content-list.returns" role="returns">
+<title>Returns</title>
+<para>a newly allocated <link linkend="GList"><type>GList</type></link> of contents. </para>
+<para><emphasis role="annotation">[<acronym>transfer container</acronym>][<acronym>element-type</acronym> GdvLayerContent]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="gdv-layer-get-axis-list" role="function">
+<title>gdv_layer_get_axis_list&#160;()</title>
+<indexterm zone="gdv-layer-get-axis-list"><primary>gdv_layer_get_axis_list</primary></indexterm>
+<programlisting language="C"><link linkend="GList"><returnvalue>GList</returnvalue></link>&#160;*
+gdv_layer_get_axis_list (<parameter><link linkend="GdvLayer"><type>GdvLayer</type></link> *layer</parameter>);</programlisting>
+<para>Lists <link linkend="GdvAxis"><type>GdvAxis</type></link> instances that are used by the <parameter>layer</parameter>
+.</para>
+<refsect3 id="gdv-layer-get-axis-list.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>layer</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvLayer"><type>GdvLayer</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="gdv-layer-get-axis-list.returns" role="returns">
+<title>Returns</title>
+<para>a newly allocated <link linkend="GList"><type>GList</type></link> of axes. </para>
+<para><emphasis role="annotation">[<acronym>transfer container</acronym>][<acronym>element-type</acronym> GdvAxis]</emphasis></para>
+</refsect3></refsect2>
+
+</refsect1>
+<refsect1 id="GdvLayer.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="GdvLayerClass" role="struct">
+<title>struct GdvLayerClass</title>
+<indexterm zone="GdvLayerClass"><primary>GdvLayerClass</primary></indexterm>
+<programlisting language="C">struct GdvLayerClass {
+  GtkOverlayClass parent_class;
+
+  gboolean (*evaluate_point)       (GdvLayer *layer,
+                                    gdouble             x_value,
+                                    gdouble             y_value,
+                                    gdouble             z_value,
+                                    gdouble            *pos_x,
+                                    gdouble            *pos_y);
+
+  gboolean (*eval_inner_point)     (GdvLayer      *layer,
+                                    guint point_1_x, guint point_1_y,
+                                    guint point_2_x, guint point_2_y);
+};
+</programlisting>
+<refsect3 id="GdvLayerClass.members" role="struct_members">
+<title>Members</title>
+<informaltable role="struct_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="struct_members_name" colwidth="300px"/>
+<colspec colname="struct_members_description"/>
+<colspec colname="struct_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="member"><entry role="struct_member_name"><para><structfield id="GdvLayerClass.evaluate-point">evaluate_point</structfield>&#160;()</para></entry>
+<entry role="struct_member_description"><para>The method used to derive the position on screen during drawing.
+This signal should be implemented in order to plot <link linkend="GdvLayerContent"><type>GdvLayerContent</type></link> correctly.</para></entry>
+<entry role="struct_member_annotations"></entry>
+</row>
+<row role="member"><entry role="struct_member_name"><para><structfield id="GdvLayerClass.eval-inner-point">eval_inner_point</structfield>&#160;()</para></entry>
+<entry role="struct_member_description"><para>Method to evaluate if a point on screen is more central
+with respect to the layer than another one. This is used by <link linkend="GdvTic"><type>GdvTic</type></link> to know where
+to plot the outside- and inside-length.</para></entry>
+<entry role="struct_member_annotations"></entry>
+</row>
+</tbody></tgroup></informaltable>
+</refsect3>
+</refsect2>
+
+</refsect1>
+
+</refentry>

@@ -1,0 +1,321 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="EpsaraFileParserR33">
+<refmeta>
+<refentrytitle role="top_of_page" id="EpsaraFileParserR33.top_of_page">EpsaraFileParserR33</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>EPSARA Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>EpsaraFileParserR33</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="EpsaraFileParserR33.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-file-parser-r33-parse-string">epsara_file_parser_r33_parse_string</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-file-parser-r33-parse-file">epsara_file_parser_r33_parse_file</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="EpsaraDataMatrix"><returnvalue>EpsaraDataMatrix</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="epsara-file-parser-r33-get-cross-section">epsara_file_parser_r33_get_cross_section</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraFileParserR33.properties" role="properties">
+<title role="properties.title">Properties</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="properties_type" colwidth="150px"/>
+<colspec colname="properties_name" colwidth="300px"/>
+<colspec colname="properties_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="property_type"><link linkend="GString"><type>GString</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraFileParserR33--address1">address1</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="GString"><type>GString</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraFileParserR33--address2">address2</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="GString"><type>GString</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraFileParserR33--address3">address3</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="GString"><type>GString</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraFileParserR33--address4">address4</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="GString"><type>GString</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraFileParserR33--address5">address5</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="GString"><type>GString</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraFileParserR33--address6">address6</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="GString"><type>GString</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraFileParserR33--address7">address7</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="GString"><type>GString</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraFileParserR33--address8">address8</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="GString"><type>GString</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraFileParserR33--address9">address9</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="GString"><type>GString</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraFileParserR33--comment">comment</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="EpsaraDataMatrix"><type>EpsaraDataMatrix</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraFileParserR33--data">data</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="GString"><type>GString</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraFileParserR33--egamma">egamma</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="EpsaraFileParserR33--energy">energy</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraFileParserR33--enfactors">enfactors</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="GString"><type>GString</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraFileParserR33--keyword">keyword</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraFileParserR33--masses">masses</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="GString"><type>GString</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraFileParserR33--name">name</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="guint"><type>guint</type></link></entry><entry role="property_name"><link linkend="EpsaraFileParserR33--nvalues">nvalues</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraFileParserR33--qvalue">qvalue</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="GString"><type>GString</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraFileParserR33--reaction">reaction</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="GString"><type>GString</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraFileParserR33--serial-number">serial-number</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraFileParserR33--sigfactors">sigfactors</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="GString"><type>GString</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraFileParserR33--source">source</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="GString"><type>GString</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraFileParserR33--subfile">subfile</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="GString"><type>GString</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraFileParserR33--target">target</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="EpsaraFileParserR33--theta">theta</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="GString"><type>GString</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraFileParserR33--version">version</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="GString"><type>GString</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraFileParserR33--x4number">x4number</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraFileParserR33--zeds">zeds</link></entry><entry role="property_flags">Read / Write</entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraFileParserR33.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="EpsaraFileParserR33-struct">EpsaraFileParserR33</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="EpsaraFileParserR33Class">EpsaraFileParserR33Class</link></entry></row>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="EpsaraFileParserR33Private">EpsaraFileParserR33Private</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraFileParserR33.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> EpsaraFileParserR33
+</screen>
+</refsect1>
+
+
+<refsect1 id="EpsaraFileParserR33.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="EpsaraFileParserR33.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="epsara-file-parser-r33-parse-string" role="function">
+<title>epsara_file_parser_r33_parse_string&#160;()</title>
+<indexterm zone="epsara-file-parser-r33-parse-string"><primary>epsara_file_parser_r33_parse_string</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+epsara_file_parser_r33_parse_string (<parameter><link linkend="EpsaraFileParserR33"><type>EpsaraFileParserR33</type></link> *parser</parameter>,
+                                     <parameter>const <link linkend="gchar"><type>gchar</type></link> *string</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-file-parser-r33-parse-file" role="function">
+<title>epsara_file_parser_r33_parse_file&#160;()</title>
+<indexterm zone="epsara-file-parser-r33-parse-file"><primary>epsara_file_parser_r33_parse_file</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+epsara_file_parser_r33_parse_file (<parameter><link linkend="EpsaraFileParserR33"><type>EpsaraFileParserR33</type></link> *parser</parameter>,
+                                   <parameter><link linkend="GFile"><type>GFile</type></link> *file</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-file-parser-r33-get-cross-section" role="function" condition="since:0.02">
+<title>epsara_file_parser_r33_get_cross_section&#160;()</title>
+<indexterm zone="epsara-file-parser-r33-get-cross-section" role="0.02"><primary>epsara_file_parser_r33_get_cross_section</primary></indexterm>
+<programlisting language="C"><link linkend="EpsaraDataMatrix"><returnvalue>EpsaraDataMatrix</returnvalue></link>&#160;*
+epsara_file_parser_r33_get_cross_section
+                               (<parameter><link linkend="EpsaraFileParserR33"><type>EpsaraFileParserR33</type></link> *parser</parameter>);</programlisting>
+<para>Gives the parsed cross-section</para>
+<refsect3 id="epsara-file-parser-r33-get-cross-section.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>parser</para></entry>
+<entry role="parameter_description"><para>the curren r33-parser</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="epsara-file-parser-r33-get-cross-section.returns" role="returns">
+<title>Returns</title>
+<para>The cross-section stored in the matrix. </para>
+<para><emphasis role="annotation">[<acronym>transfer full</acronym>]</emphasis></para>
+</refsect3><para role="since">Since: <link linkend="api-index-0.02">0.02</link></para></refsect2>
+
+</refsect1>
+<refsect1 id="EpsaraFileParserR33.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="EpsaraFileParserR33-struct" role="struct">
+<title>struct EpsaraFileParserR33</title>
+<indexterm zone="EpsaraFileParserR33-struct"><primary>EpsaraFileParserR33</primary></indexterm>
+<programlisting language="C">struct EpsaraFileParserR33;</programlisting>
+</refsect2>
+<refsect2 id="EpsaraFileParserR33Class" role="struct">
+<title>struct EpsaraFileParserR33Class</title>
+<indexterm zone="EpsaraFileParserR33Class"><primary>EpsaraFileParserR33Class</primary></indexterm>
+<programlisting language="C">struct EpsaraFileParserR33Class {
+  GObjectClass parent_class;
+};
+</programlisting>
+</refsect2>
+<refsect2 id="EpsaraFileParserR33Private" role="struct">
+<title>EpsaraFileParserR33Private</title>
+<indexterm zone="EpsaraFileParserR33Private"><primary>EpsaraFileParserR33Private</primary></indexterm>
+<programlisting language="C">typedef struct _EpsaraFileParserR33Private EpsaraFileParserR33Private;</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="EpsaraFileParserR33.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="EpsaraFileParserR33--address1" role="property"><title>The <literal>“address1”</literal> property</title>
+<indexterm zone="EpsaraFileParserR33--address1"><primary>EpsaraFileParserR33:address1</primary></indexterm>
+<programlisting>  “address1”                 <link linkend="GString"><type>GString</type></link>&#160;*</programlisting>
+<para>Flags: Read / Write</para>
+</refsect2>
+<refsect2 id="EpsaraFileParserR33--address2" role="property"><title>The <literal>“address2”</literal> property</title>
+<indexterm zone="EpsaraFileParserR33--address2"><primary>EpsaraFileParserR33:address2</primary></indexterm>
+<programlisting>  “address2”                 <link linkend="GString"><type>GString</type></link>&#160;*</programlisting>
+<para>Flags: Read / Write</para>
+</refsect2>
+<refsect2 id="EpsaraFileParserR33--address3" role="property"><title>The <literal>“address3”</literal> property</title>
+<indexterm zone="EpsaraFileParserR33--address3"><primary>EpsaraFileParserR33:address3</primary></indexterm>
+<programlisting>  “address3”                 <link linkend="GString"><type>GString</type></link>&#160;*</programlisting>
+<para>Flags: Read / Write</para>
+</refsect2>
+<refsect2 id="EpsaraFileParserR33--address4" role="property"><title>The <literal>“address4”</literal> property</title>
+<indexterm zone="EpsaraFileParserR33--address4"><primary>EpsaraFileParserR33:address4</primary></indexterm>
+<programlisting>  “address4”                 <link linkend="GString"><type>GString</type></link>&#160;*</programlisting>
+<para>Flags: Read / Write</para>
+</refsect2>
+<refsect2 id="EpsaraFileParserR33--address5" role="property"><title>The <literal>“address5”</literal> property</title>
+<indexterm zone="EpsaraFileParserR33--address5"><primary>EpsaraFileParserR33:address5</primary></indexterm>
+<programlisting>  “address5”                 <link linkend="GString"><type>GString</type></link>&#160;*</programlisting>
+<para>Flags: Read / Write</para>
+</refsect2>
+<refsect2 id="EpsaraFileParserR33--address6" role="property"><title>The <literal>“address6”</literal> property</title>
+<indexterm zone="EpsaraFileParserR33--address6"><primary>EpsaraFileParserR33:address6</primary></indexterm>
+<programlisting>  “address6”                 <link linkend="GString"><type>GString</type></link>&#160;*</programlisting>
+<para>Flags: Read / Write</para>
+</refsect2>
+<refsect2 id="EpsaraFileParserR33--address7" role="property"><title>The <literal>“address7”</literal> property</title>
+<indexterm zone="EpsaraFileParserR33--address7"><primary>EpsaraFileParserR33:address7</primary></indexterm>
+<programlisting>  “address7”                 <link linkend="GString"><type>GString</type></link>&#160;*</programlisting>
+<para>Flags: Read / Write</para>
+</refsect2>
+<refsect2 id="EpsaraFileParserR33--address8" role="property"><title>The <literal>“address8”</literal> property</title>
+<indexterm zone="EpsaraFileParserR33--address8"><primary>EpsaraFileParserR33:address8</primary></indexterm>
+<programlisting>  “address8”                 <link linkend="GString"><type>GString</type></link>&#160;*</programlisting>
+<para>Flags: Read / Write</para>
+</refsect2>
+<refsect2 id="EpsaraFileParserR33--address9" role="property"><title>The <literal>“address9”</literal> property</title>
+<indexterm zone="EpsaraFileParserR33--address9"><primary>EpsaraFileParserR33:address9</primary></indexterm>
+<programlisting>  “address9”                 <link linkend="GString"><type>GString</type></link>&#160;*</programlisting>
+<para>Flags: Read / Write</para>
+</refsect2>
+<refsect2 id="EpsaraFileParserR33--comment" role="property"><title>The <literal>“comment”</literal> property</title>
+<indexterm zone="EpsaraFileParserR33--comment"><primary>EpsaraFileParserR33:comment</primary></indexterm>
+<programlisting>  “comment”                  <link linkend="GString"><type>GString</type></link>&#160;*</programlisting>
+<para>Flags: Read / Write</para>
+</refsect2>
+<refsect2 id="EpsaraFileParserR33--data" role="property"><title>The <literal>“data”</literal> property</title>
+<indexterm zone="EpsaraFileParserR33--data"><primary>EpsaraFileParserR33:data</primary></indexterm>
+<programlisting>  “data”                     <link linkend="EpsaraDataMatrix"><type>EpsaraDataMatrix</type></link>&#160;*</programlisting>
+<para>Flags: Read / Write</para>
+</refsect2>
+<refsect2 id="EpsaraFileParserR33--egamma" role="property"><title>The <literal>“egamma”</literal> property</title>
+<indexterm zone="EpsaraFileParserR33--egamma"><primary>EpsaraFileParserR33:egamma</primary></indexterm>
+<programlisting>  “egamma”                   <link linkend="GString"><type>GString</type></link>&#160;*</programlisting>
+<para>Flags: Read / Write</para>
+</refsect2>
+<refsect2 id="EpsaraFileParserR33--energy" role="property"><title>The <literal>“energy”</literal> property</title>
+<indexterm zone="EpsaraFileParserR33--energy"><primary>EpsaraFileParserR33:energy</primary></indexterm>
+<programlisting>  “energy”                   <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>the energy of the particle in unspecefied units.</para><para>Flags: Read / Write</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="EpsaraFileParserR33--enfactors" role="property"><title>The <literal>“enfactors”</literal> property</title>
+<indexterm zone="EpsaraFileParserR33--enfactors"><primary>EpsaraFileParserR33:enfactors</primary></indexterm>
+<programlisting>  “enfactors”                <link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link>&#160;*</programlisting>
+<para>Flags: Read / Write</para>
+</refsect2>
+<refsect2 id="EpsaraFileParserR33--keyword" role="property"><title>The <literal>“keyword”</literal> property</title>
+<indexterm zone="EpsaraFileParserR33--keyword"><primary>EpsaraFileParserR33:keyword</primary></indexterm>
+<programlisting>  “keyword”                  <link linkend="GString"><type>GString</type></link>&#160;*</programlisting>
+<para>this content was included, due to a improper documentation of the file format.</para><para>Flags: Read / Write</para>
+</refsect2>
+<refsect2 id="EpsaraFileParserR33--masses" role="property"><title>The <literal>“masses”</literal> property</title>
+<indexterm zone="EpsaraFileParserR33--masses"><primary>EpsaraFileParserR33:masses</primary></indexterm>
+<programlisting>  “masses”                   <link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link>&#160;*</programlisting>
+<para>Flags: Read / Write</para>
+</refsect2>
+<refsect2 id="EpsaraFileParserR33--name" role="property"><title>The <literal>“name”</literal> property</title>
+<indexterm zone="EpsaraFileParserR33--name"><primary>EpsaraFileParserR33:name</primary></indexterm>
+<programlisting>  “name”                     <link linkend="GString"><type>GString</type></link>&#160;*</programlisting>
+<para>contains the author name.</para><para>Flags: Read / Write</para>
+</refsect2>
+<refsect2 id="EpsaraFileParserR33--nvalues" role="property"><title>The <literal>“nvalues”</literal> property</title>
+<indexterm zone="EpsaraFileParserR33--nvalues"><primary>EpsaraFileParserR33:nvalues</primary></indexterm>
+<programlisting>  “nvalues”                  <link linkend="guint"><type>guint</type></link></programlisting>
+<para>Flags: Read / Write</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="EpsaraFileParserR33--qvalue" role="property"><title>The <literal>“qvalue”</literal> property</title>
+<indexterm zone="EpsaraFileParserR33--qvalue"><primary>EpsaraFileParserR33:qvalue</primary></indexterm>
+<programlisting>  “qvalue”                   <link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link>&#160;*</programlisting>
+<para>Flags: Read / Write</para>
+</refsect2>
+<refsect2 id="EpsaraFileParserR33--reaction" role="property"><title>The <literal>“reaction”</literal> property</title>
+<indexterm zone="EpsaraFileParserR33--reaction"><primary>EpsaraFileParserR33:reaction</primary></indexterm>
+<programlisting>  “reaction”                 <link linkend="GString"><type>GString</type></link>&#160;*</programlisting>
+<para>Flags: Read / Write</para>
+</refsect2>
+<refsect2 id="EpsaraFileParserR33--serial-number" role="property"><title>The <literal>“serial-number”</literal> property</title>
+<indexterm zone="EpsaraFileParserR33--serial-number"><primary>EpsaraFileParserR33:serial-number</primary></indexterm>
+<programlisting>  “serial-number”            <link linkend="GString"><type>GString</type></link>&#160;*</programlisting>
+<para>Flags: Read / Write</para>
+</refsect2>
+<refsect2 id="EpsaraFileParserR33--sigfactors" role="property"><title>The <literal>“sigfactors”</literal> property</title>
+<indexterm zone="EpsaraFileParserR33--sigfactors"><primary>EpsaraFileParserR33:sigfactors</primary></indexterm>
+<programlisting>  “sigfactors”               <link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link>&#160;*</programlisting>
+<para>Flags: Read / Write</para>
+</refsect2>
+<refsect2 id="EpsaraFileParserR33--source" role="property"><title>The <literal>“source”</literal> property</title>
+<indexterm zone="EpsaraFileParserR33--source"><primary>EpsaraFileParserR33:source</primary></indexterm>
+<programlisting>  “source”                   <link linkend="GString"><type>GString</type></link>&#160;*</programlisting>
+<para>Flags: Read / Write</para>
+</refsect2>
+<refsect2 id="EpsaraFileParserR33--subfile" role="property"><title>The <literal>“subfile”</literal> property</title>
+<indexterm zone="EpsaraFileParserR33--subfile"><primary>EpsaraFileParserR33:subfile</primary></indexterm>
+<programlisting>  “subfile”                  <link linkend="GString"><type>GString</type></link>&#160;*</programlisting>
+<para>Flags: Read / Write</para>
+</refsect2>
+<refsect2 id="EpsaraFileParserR33--target" role="property"><title>The <literal>“target”</literal> property</title>
+<indexterm zone="EpsaraFileParserR33--target"><primary>EpsaraFileParserR33:target</primary></indexterm>
+<programlisting>  “target”                   <link linkend="GString"><type>GString</type></link>&#160;*</programlisting>
+<para>Flags: Read / Write</para>
+</refsect2>
+<refsect2 id="EpsaraFileParserR33--theta" role="property"><title>The <literal>“theta”</literal> property</title>
+<indexterm zone="EpsaraFileParserR33--theta"><primary>EpsaraFileParserR33:theta</primary></indexterm>
+<programlisting>  “theta”                    <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>the scattering angle for the reaction in deg.</para><para>Flags: Read / Write</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="EpsaraFileParserR33--version" role="property"><title>The <literal>“version”</literal> property</title>
+<indexterm zone="EpsaraFileParserR33--version"><primary>EpsaraFileParserR33:version</primary></indexterm>
+<programlisting>  “version”                  <link linkend="GString"><type>GString</type></link>&#160;*</programlisting>
+<para>Flags: Read / Write</para>
+</refsect2>
+<refsect2 id="EpsaraFileParserR33--x4number" role="property"><title>The <literal>“x4number”</literal> property</title>
+<indexterm zone="EpsaraFileParserR33--x4number"><primary>EpsaraFileParserR33:x4number</primary></indexterm>
+<programlisting>  “x4number”                 <link linkend="GString"><type>GString</type></link>&#160;*</programlisting>
+<para>Flags: Read / Write</para>
+</refsect2>
+<refsect2 id="EpsaraFileParserR33--zeds" role="property"><title>The <literal>“zeds”</literal> property</title>
+<indexterm zone="EpsaraFileParserR33--zeds"><primary>EpsaraFileParserR33:zeds</primary></indexterm>
+<programlisting>  “zeds”                     <link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link>&#160;*</programlisting>
+<para>Flags: Read / Write</para>
+</refsect2>
+
+</refsect1>
+
+</refentry>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE indexdiv PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<indexdiv id="api-index-0.10">
+<indexdiv><title>D</title>
+<indexentry><primaryie linkends="gdv-data-direction-equal"><link linkend="gdv-data-direction-equal">gdv_data_direction_equal</link>, function in <link linkend="gdv-gdv-data-boxed">gdv-data-boxed</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-data-n-point-equal"><link linkend="gdv-data-n-point-equal">gdv_data_n_point_equal</link>, function in <link linkend="gdv-gdv-data-boxed">gdv-data-boxed</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gdv-data-point-equal"><link linkend="gdv-data-point-equal">gdv_data_point_equal</link>, function in <link linkend="gdv-gdv-data-boxed">gdv-data-boxed</link></primaryie></indexentry>
+</indexdiv>
+</indexdiv>

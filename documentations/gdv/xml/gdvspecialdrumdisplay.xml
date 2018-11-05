@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="GdvSpecialDrumDisplay">
+<refmeta>
+<refentrytitle role="top_of_page" id="GdvSpecialDrumDisplay.top_of_page">GdvSpecialDrumDisplay</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>GDV Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>GdvSpecialDrumDisplay</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="GdvSpecialDrumDisplay.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="GdvSpecialDrumDisplay"><returnvalue>GdvSpecialDrumDisplay</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="gdv-special-drum-display-new">gdv_special_drum_display_new</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="GdvSpecialDrumDisplay.properties" role="properties">
+<title role="properties.title">Properties</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="properties_type" colwidth="150px"/>
+<colspec colname="properties_name" colwidth="300px"/>
+<colspec colname="properties_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="GdvSpecialDrumDisplay--center-value">center-value</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="GdvSpecialDrumDisplay--left-right-range">left-right-range</link></entry><entry role="property_flags">Read / Write</entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="GdvSpecialDrumDisplay.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="GdvSpecialDrumDisplay-struct">GdvSpecialDrumDisplay</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="GdvSpecialDrumDisplayClass">GdvSpecialDrumDisplayClass</link></entry></row>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="GdvSpecialDrumDisplayPrivate">GdvSpecialDrumDisplayPrivate</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="GdvSpecialDrumDisplay.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GInitiallyUnowned">GInitiallyUnowned</link>
+        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkWidget">GtkWidget</link>
+            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkContainer">GtkContainer</link>
+                <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkBin">GtkBin</link>
+                    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkOverlay">GtkOverlay</link>
+                        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GdvLayer">GdvLayer</link>
+                            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GdvOnedLayer">GdvOnedLayer</link>
+                                <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> GdvSpecialDrumDisplay
+</screen>
+</refsect1>
+<refsect1 id="GdvSpecialDrumDisplay.implemented-interfaces" role="impl_interfaces">
+<title role="impl_interfaces.title">Implemented Interfaces</title>
+<para>
+GdvSpecialDrumDisplay implements
+ <link linkend="AtkImplementorIface">AtkImplementorIface</link> and  <link linkend="GtkBuildable">GtkBuildable</link>.</para>
+
+</refsect1>
+
+
+<refsect1 id="GdvSpecialDrumDisplay.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="GdvSpecialDrumDisplay.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="gdv-special-drum-display-new" role="function">
+<title>gdv_special_drum_display_new&#160;()</title>
+<indexterm zone="gdv-special-drum-display-new"><primary>gdv_special_drum_display_new</primary></indexterm>
+<programlisting language="C"><link linkend="GdvSpecialDrumDisplay"><returnvalue>GdvSpecialDrumDisplay</returnvalue></link>&#160;*
+gdv_special_drum_display_new (<parameter><type>void</type></parameter>);</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="GdvSpecialDrumDisplay.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="GdvSpecialDrumDisplay-struct" role="struct">
+<title>struct GdvSpecialDrumDisplay</title>
+<indexterm zone="GdvSpecialDrumDisplay-struct"><primary>GdvSpecialDrumDisplay</primary></indexterm>
+<programlisting language="C">struct GdvSpecialDrumDisplay;</programlisting>
+</refsect2>
+<refsect2 id="GdvSpecialDrumDisplayClass" role="struct">
+<title>struct GdvSpecialDrumDisplayClass</title>
+<indexterm zone="GdvSpecialDrumDisplayClass"><primary>GdvSpecialDrumDisplayClass</primary></indexterm>
+<programlisting language="C">struct GdvSpecialDrumDisplayClass {
+  GdvOnedLayerClass     parent_class;
+};
+</programlisting>
+</refsect2>
+<refsect2 id="GdvSpecialDrumDisplayPrivate" role="struct">
+<title>GdvSpecialDrumDisplayPrivate</title>
+<indexterm zone="GdvSpecialDrumDisplayPrivate"><primary>GdvSpecialDrumDisplayPrivate</primary></indexterm>
+<programlisting language="C">typedef struct _GdvSpecialDrumDisplayPrivate GdvSpecialDrumDisplayPrivate;</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="GdvSpecialDrumDisplay.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="GdvSpecialDrumDisplay--center-value" role="property"><title>The <literal>“center-value”</literal> property</title>
+<indexterm zone="GdvSpecialDrumDisplay--center-value" role="0.7.3"><primary>GdvSpecialDrumDisplay:center-value</primary></indexterm>
+<programlisting>  “center-value”             <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Sets the center value that the axis will display.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: 50</para>
+<para role="since">Since: <link linkend="api-index-0.7.3">0.7.3</link></para></refsect2>
+<refsect2 id="GdvSpecialDrumDisplay--left-right-range" role="property"><title>The <literal>“left-right-range”</literal> property</title>
+<indexterm zone="GdvSpecialDrumDisplay--left-right-range" role="0.7.3"><primary>GdvSpecialDrumDisplay:left-right-range</primary></indexterm>
+<programlisting>  “left-right-range”         <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Range of values to display on left and right of the center.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: 50</para>
+<para role="since">Since: <link linkend="api-index-0.7.3">0.7.3</link></para></refsect2>
+
+</refsect1>
+
+</refentry>

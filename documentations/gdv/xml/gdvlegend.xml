@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="GdvLegend">
+<refmeta>
+<refentrytitle role="top_of_page" id="GdvLegend.top_of_page">GdvLegend</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>GDV Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>GdvLegend</refname>
+<refpurpose>a Gtk+-Widget that displays a legend</refpurpose>
+</refnamediv>
+
+<refsect1 id="GdvLegend.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="GdvLegend"><returnvalue>GdvLegend</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="gdv-legend-new">gdv_legend_new</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="GdvLegend.properties" role="properties">
+<title role="properties.title">Properties</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="properties_type" colwidth="150px"/>
+<colspec colname="properties_name" colwidth="300px"/>
+<colspec colname="properties_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="property_type"><link linkend="guint"><type>guint</type></link></entry><entry role="property_name"><link linkend="GdvLegend--columns">columns</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="GdvLayer"><type>GdvLayer</type></link>&#160;*</entry><entry role="property_name"><link linkend="GdvLegend--layer">layer</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="guint"><type>guint</type></link></entry><entry role="property_name"><link linkend="GdvLegend--rows">rows</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="GtkPositionType"><type>GtkPositionType</type></link></entry><entry role="property_name"><link linkend="GdvLegend--text-position">text-position</link></entry><entry role="property_flags">Read / Write</entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="GdvLegend.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="GDV-LEGEND-TYPE:CAPS">GDV_LEGEND_TYPE</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="GdvLegendClass">GdvLegendClass</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="GdvLegend.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GInitiallyUnowned">GInitiallyUnowned</link>
+        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkWidget">GtkWidget</link>
+            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkContainer">GtkContainer</link>
+                <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkBin">GtkBin</link>
+                    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkFrame">GtkFrame</link>
+                        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> GdvLegend
+</screen>
+</refsect1>
+
+
+<refsect1 id="GdvLegend.description" role="desc">
+<title role="desc.title">Description</title>
+<para><link linkend="GdvLegend"><type>GdvLegend</type></link> is an object-class, that displays an overview over the
+layer-content- and indicator-elements that belong to a single layer.</para>
+<refsect2><title>CSS nodes</title><para>GdvLegend uses a single CSS node with name legend.</para>
+</refsect2>
+
+</refsect1>
+<refsect1 id="GdvLegend.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="gdv-legend-new" role="function">
+<title>gdv_legend_new&#160;()</title>
+<indexterm zone="gdv-legend-new"><primary>gdv_legend_new</primary></indexterm>
+<programlisting language="C"><link linkend="GdvLegend"><returnvalue>GdvLegend</returnvalue></link>&#160;*
+gdv_legend_new (<parameter><type>void</type></parameter>);</programlisting>
+<para>Just a common constructor.</para>
+<refsect3 id="gdv-legend-new.returns" role="returns">
+<title>Returns</title>
+<para> a new <link linkend="GdvLegend"><type>GdvLegend</type></link></para>
+</refsect3></refsect2>
+
+</refsect1>
+<refsect1 id="GdvLegend.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="GDV-LEGEND-TYPE:CAPS" role="macro">
+<title>GDV_LEGEND_TYPE</title>
+<indexterm zone="GDV-LEGEND-TYPE:CAPS"><primary>GDV_LEGEND_TYPE</primary></indexterm>
+<programlisting language="C">#define GDV_LEGEND_TYPE                 (gdv_legend_get_type ())
+</programlisting>
+</refsect2>
+<refsect2 id="GdvLegendClass" role="struct">
+<title>struct GdvLegendClass</title>
+<indexterm zone="GdvLegendClass"><primary>GdvLegendClass</primary></indexterm>
+<programlisting language="C">struct GdvLegendClass {
+  GtkFrameClass parent_class;
+
+  /* Padding to allow adding up to 12 new virtual functions without
+   * breaking ABI. */
+  gpointer _gdv_reserve[12];
+};
+</programlisting>
+<refsect3 id="GdvLegendClass.members" role="struct_members">
+<title>Members</title>
+<informaltable role="struct_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="struct_members_name" colwidth="300px"/>
+<colspec colname="struct_members_description"/>
+<colspec colname="struct_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="member"><entry role="struct_member_name"><para><link linkend="gpointer"><type>gpointer</type></link>&#160;<structfield id="GdvLegendClass.-gdv-reserve">_gdv_reserve</structfield>[12];</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3>
+</refsect2>
+
+</refsect1>
+<refsect1 id="GdvLegend.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="GdvLegend--columns" role="property"><title>The <literal>“columns”</literal> property</title>
+<indexterm zone="GdvLegend--columns"><primary>GdvLegend:columns</primary></indexterm>
+<programlisting>  “columns”                  <link linkend="guint"><type>guint</type></link></programlisting>
+<para>determines the number of rows for the legend.</para><para>Flags: Read / Write</para>
+<para>Allowed values: &gt;= 1</para>
+<para>Default value: 1</para>
+</refsect2>
+<refsect2 id="GdvLegend--layer" role="property"><title>The <literal>“layer”</literal> property</title>
+<indexterm zone="GdvLegend--layer" role="0.1"><primary>GdvLegend:layer</primary></indexterm>
+<programlisting>  “layer”                    <link linkend="GdvLayer"><type>GdvLayer</type></link>&#160;*</programlisting>
+<para>The layer, that the legend is connected to.</para>
+<para>Flags: Read / Write</para>
+<para role="since">Since: <link linkend="api-index-0.1">0.1</link></para></refsect2>
+<refsect2 id="GdvLegend--rows" role="property"><title>The <literal>“rows”</literal> property</title>
+<indexterm zone="GdvLegend--rows" role="0.1"><primary>GdvLegend:rows</primary></indexterm>
+<programlisting>  “rows”                     <link linkend="guint"><type>guint</type></link></programlisting>
+<para>Sets the number of rows, that the legend should consist of.</para>
+<para>Flags: Read / Write</para>
+<para>Allowed values: &gt;= 1</para>
+<para>Default value: 4294967295</para>
+<para role="since">Since: <link linkend="api-index-0.1">0.1</link></para></refsect2>
+<refsect2 id="GdvLegend--text-position" role="property"><title>The <literal>“text-position”</literal> property</title>
+<indexterm zone="GdvLegend--text-position"><primary>GdvLegend:text-position</primary></indexterm>
+<programlisting>  “text-position”            <link linkend="GtkPositionType"><type>GtkPositionType</type></link></programlisting>
+<para>determines if the data-title is shown on the left, right, top or bottom to the data-examples.</para><para>Flags: Read / Write</para>
+<para>Default value: GTK_POS_RIGHT</para>
+</refsect2>
+
+</refsect1>
+
+</refentry>

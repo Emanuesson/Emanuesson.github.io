@@ -1,0 +1,788 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="GdvAxis">
+<refmeta>
+<refentrytitle role="top_of_page" id="GdvAxis.top_of_page">GdvAxis</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>GDV Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>GdvAxis</refname>
+<refpurpose>an axis widget</refpurpose>
+</refnamediv>
+
+<refsect1 id="GdvAxis.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="GdvAxis"><returnvalue>GdvAxis</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="gdv-axis-new">gdv_axis_new</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GdvTic"><returnvalue>GdvTic</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="gdv-axis-get-tic-for-value">gdv_axis_get_tic_for_value</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GList"><returnvalue>GList</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="gdv-axis-get-tic-list">gdv_axis_get_tic_list</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GList"><returnvalue>GList</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="gdv-axis-get-mtic-list">gdv_axis_get_mtic_list</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GList"><returnvalue>GList</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="gdv-axis-get-indicator-list">gdv_axis_get_indicator_list</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-axis-title-set-markup">gdv_axis_title_set_markup</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="gchar"><returnvalue>gchar</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="gdv-axis-get-title">gdv_axis_get_title</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-axis-set-title-widget">gdv_axis_set_title_widget</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-axis-get-show-title">gdv_axis_get_show_title</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-axis-get-borders">gdv_axis_get_borders</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-axis-queue-value-interval">gdv_axis_queue_value_interval</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="GdvAxis.properties" role="properties">
+<title role="properties.title">Properties</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="properties_type" colwidth="150px"/>
+<colspec colname="properties_name" colwidth="300px"/>
+<colspec colname="properties_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="GdvAxis--axis-beg-at-screen-x">axis-beg-at-screen-x</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="GdvAxis--axis-beg-at-screen-y">axis-beg-at-screen-y</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="GdvAxis--axis-beg-pix-x">axis-beg-pix-x</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="GdvAxis--axis-beg-pix-y">axis-beg-pix-y</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="GdvAxis--axis-direction-outside">axis-direction-outside</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="GdvAxis--axis-end-at-screen-x">axis-end-at-screen-x</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="GdvAxis--axis-end-at-screen-y">axis-end-at-screen-y</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="GdvAxis--axis-end-pix-x">axis-end-pix-x</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="GdvAxis--axis-end-pix-y">axis-end-pix-y</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="GdvAxis--axis-orientation">axis-orientation</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gboolean"><type>gboolean</type></link></entry><entry role="property_name"><link linkend="GdvAxis--force-beg-end">force-beg-end</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="guint"><type>guint</type></link></entry><entry role="property_name"><link linkend="GdvAxis--mtics">mtics</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gboolean"><type>gboolean</type></link></entry><entry role="property_name"><link linkend="GdvAxis--mtics-automatic">mtics-automatic</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="GdvAxis--mtics-beg-val">mtics-beg-val</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="GdvAxis--mtics-end-val">mtics-end-val</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gboolean"><type>gboolean</type></link></entry><entry role="property_name"><link linkend="GdvAxis--resize-during-redraw">resize-during-redraw</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="gboolean"><type>gboolean</type></link></entry><entry role="property_name"><link linkend="GdvAxis--scale-auto-increment">scale-auto-increment</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="GdvAxis--scale-beg-val">scale-beg-val</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="GdvAxis--scale-end-val">scale-end-val</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="GdvAxis--scale-increment-val">scale-increment-val</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gboolean"><type>gboolean</type></link></entry><entry role="property_name"><link linkend="GdvAxis--scale-limits-automatic">scale-limits-automatic</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gboolean"><type>gboolean</type></link></entry><entry role="property_name"><link linkend="GdvAxis--tics-automatic">tics-automatic</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="GdvAxis--tics-beg-val">tics-beg-val</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="GdvAxis--tics-end-val">tics-end-val</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gchar"><type>gchar</type></link>&#160;*</entry><entry role="property_name"><link linkend="GdvAxis--title">title</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="GtkWidget"><type>GtkWidget</type></link>&#160;*</entry><entry role="property_name"><link linkend="GdvAxis--title-widget">title-widget</link></entry><entry role="property_flags">Read / Write</entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="GdvAxis.signals" role="signal_proto">
+<title role="signal_proto.title">Signals</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="signals_return" colwidth="150px"/>
+<colspec colname="signals_name" colwidth="300px"/>
+<colspec colname="signals_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="signal_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link></entry><entry role="signal_name"><link linkend="GdvAxis-get-inner-dir">get-inner-dir</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link></entry><entry role="signal_name"><link linkend="GdvAxis-get-point">get-point</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+<row><entry role="signal_type"><link linkend="gchar"><returnvalue>gchar</returnvalue></link>*</entry><entry role="signal_name"><link linkend="GdvAxis-make-tic-label-markup">make-tic-label-markup</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="GdvAxis.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="GdvAxisClass">GdvAxisClass</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="GdvAxis.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GInitiallyUnowned">GInitiallyUnowned</link>
+        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkWidget">GtkWidget</link>
+            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkContainer">GtkContainer</link>
+                <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> GdvAxis
+                    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="GdvLinearAxis">GdvLinearAxis</link>
+                    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="GdvLogAxis">GdvLogAxis</link>
+                    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GdvSpecialContentAxis">GdvSpecialContentAxis</link>
+</screen>
+</refsect1>
+
+
+<refsect1 id="GdvAxis.description" role="desc">
+<title role="desc.title">Description</title>
+<para><link linkend="GdvAxis"><type>GdvAxis</type></link> is the base class of all single-dimensional axes. It is an
+container for the affiliated tics and indicators. The exact appearance of
+the axis is delegated to inherited class-definittions. However the
+implemented geometry handling can be used for any axis, that is a basically
+a straight line.</para>
+<refsect2><title>CSS nodes</title><para>GdvAxis uses a single CSS node with name axis.</para>
+</refsect2>
+
+</refsect1>
+<refsect1 id="GdvAxis.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="gdv-axis-new" role="function">
+<title>gdv_axis_new&#160;()</title>
+<indexterm zone="gdv-axis-new"><primary>gdv_axis_new</primary></indexterm>
+<programlisting language="C"><link linkend="GdvAxis"><returnvalue>GdvAxis</returnvalue></link>&#160;*
+gdv_axis_new (<parameter><type>void</type></parameter>);</programlisting>
+<para>Just a common constructor.</para>
+<refsect3 id="gdv-axis-new.returns" role="returns">
+<title>Returns</title>
+<para> a new <link linkend="GdvAxis"><type>GdvAxis</type></link></para>
+</refsect3></refsect2>
+<refsect2 id="gdv-axis-get-tic-for-value" role="function">
+<title>gdv_axis_get_tic_for_value&#160;()</title>
+<indexterm zone="gdv-axis-get-tic-for-value"><primary>gdv_axis_get_tic_for_value</primary></indexterm>
+<programlisting language="C"><link linkend="GdvTic"><returnvalue>GdvTic</returnvalue></link>&#160;*
+gdv_axis_get_tic_for_value (<parameter><link linkend="GdvAxis"><type>GdvAxis</type></link> *axis</parameter>,
+                            <parameter><link linkend="gdouble"><type>gdouble</type></link> value</parameter>);</programlisting>
+<para>Returns a <link linkend="GdvTic"><type>GdvTic</type></link> assigned to the axis with given value.</para>
+<para>This function should be used carefully. It is usual difficult to use due to
+problems with the precision of Tic-valus and rounding-issues. Most of the
+time it will be a better solution to use <link linkend="gdv-axis-get-tic-list"><function>gdv_axis_get_tic_list()</function></link> and compare
+the tic-values to a specific precision-criteria.</para>
+<refsect3 id="gdv-axis-get-tic-for-value.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>axis</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvAxis"><type>GdvAxis</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>value</para></entry>
+<entry role="parameter_description"><para>a given tic-value</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="gdv-axis-get-tic-for-value.returns" role="returns">
+<title>Returns</title>
+<para>The <link linkend="GdvTic"><type>GdvTic</type></link> with the given Tic-value. </para>
+<para><emphasis role="annotation">[<acronym>nullable</acronym>][<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="gdv-axis-get-tic-list" role="function">
+<title>gdv_axis_get_tic_list&#160;()</title>
+<indexterm zone="gdv-axis-get-tic-list"><primary>gdv_axis_get_tic_list</primary></indexterm>
+<programlisting language="C"><link linkend="GList"><returnvalue>GList</returnvalue></link>&#160;*
+gdv_axis_get_tic_list (<parameter><link linkend="GdvAxis"><type>GdvAxis</type></link> *axis</parameter>);</programlisting>
+<para>Lists the tics used by <parameter>axis</parameter>
+.</para>
+<refsect3 id="gdv-axis-get-tic-list.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>axis</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvAxis"><type>GdvAxis</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="gdv-axis-get-tic-list.returns" role="returns">
+<title>Returns</title>
+<para>a newly allocated <link linkend="GList"><type>GList</type></link> of tics. </para>
+<para><emphasis role="annotation">[<acronym>transfer container</acronym>][<acronym>element-type</acronym> GdvTic]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="gdv-axis-get-mtic-list" role="function">
+<title>gdv_axis_get_mtic_list&#160;()</title>
+<indexterm zone="gdv-axis-get-mtic-list"><primary>gdv_axis_get_mtic_list</primary></indexterm>
+<programlisting language="C"><link linkend="GList"><returnvalue>GList</returnvalue></link>&#160;*
+gdv_axis_get_mtic_list (<parameter><link linkend="GdvAxis"><type>GdvAxis</type></link> *axis</parameter>);</programlisting>
+<para>Lists the minor tics used by <parameter>axis</parameter>
+.</para>
+<refsect3 id="gdv-axis-get-mtic-list.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>axis</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvAxis"><type>GdvAxis</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="gdv-axis-get-mtic-list.returns" role="returns">
+<title>Returns</title>
+<para>a newly allocated <link linkend="GList"><type>GList</type></link> of mtics. </para>
+<para><emphasis role="annotation">[<acronym>transfer container</acronym>][<acronym>element-type</acronym> GdvMtic]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="gdv-axis-get-indicator-list" role="function">
+<title>gdv_axis_get_indicator_list&#160;()</title>
+<indexterm zone="gdv-axis-get-indicator-list"><primary>gdv_axis_get_indicator_list</primary></indexterm>
+<programlisting language="C"><link linkend="GList"><returnvalue>GList</returnvalue></link>&#160;*
+gdv_axis_get_indicator_list (<parameter><link linkend="GdvAxis"><type>GdvAxis</type></link> *axis</parameter>);</programlisting>
+<para>Lists the indicators used by <parameter>axis</parameter>
+.</para>
+<refsect3 id="gdv-axis-get-indicator-list.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>axis</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvAxis"><type>GdvAxis</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="gdv-axis-get-indicator-list.returns" role="returns">
+<title>Returns</title>
+<para>a newly allocated <link linkend="GList"><type>GList</type></link> of indicators. </para>
+<para><emphasis role="annotation">[<acronym>transfer container</acronym>][<acronym>element-type</acronym> GdvIndicator]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="gdv-axis-title-set-markup" role="function">
+<title>gdv_axis_title_set_markup&#160;()</title>
+<indexterm zone="gdv-axis-title-set-markup"><primary>gdv_axis_title_set_markup</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+gdv_axis_title_set_markup (<parameter><link linkend="GdvAxis"><type>GdvAxis</type></link> *axis</parameter>,
+                           <parameter><link linkend="gchar"><type>gchar</type></link> *markup</parameter>);</programlisting>
+<para>Sets the text of the title. If <parameter>markup</parameter>
+ is <link linkend="NULL:CAPS"><literal>NULL</literal></link>,
+the current title is removed.</para>
+<refsect3 id="gdv-axis-title-set-markup.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>axis</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvAxis"><type>GdvAxis</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>markup</para></entry>
+<entry role="parameter_description"><para>the text to use as the title of the axis. </para></entry>
+<entry role="parameter_annotations"><emphasis role="annotation">[<acronym>allow-none</acronym>]</emphasis></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="gdv-axis-get-title" role="function">
+<title>gdv_axis_get_title&#160;()</title>
+<indexterm zone="gdv-axis-get-title"><primary>gdv_axis_get_title</primary></indexterm>
+<programlisting language="C">const <link linkend="gchar"><returnvalue>gchar</returnvalue></link>&#160;*
+gdv_axis_get_title (<parameter><link linkend="GdvAxis"><type>GdvAxis</type></link> *axis</parameter>);</programlisting>
+<para>If the axis’ title widget is a <link linkend="GtkLabel"><type>GtkLabel</type></link>, returns the
+text in the label widget. (The frame will have a <link linkend="GtkLabel"><type>GtkLabel</type></link>
+for the title widget if a non-<link linkend="NULL:CAPS"><literal>NULL</literal></link> argument was passed
+to <link linkend="gtk-frame-new"><function>gtk_frame_new()</function></link>.)</para>
+<refsect3 id="gdv-axis-get-title.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>axis</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvAxis"><type>GdvAxis</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="gdv-axis-get-title.returns" role="returns">
+<title>Returns</title>
+<para>the text in the title, or <link linkend="NULL:CAPS"><literal>NULL</literal></link> if there
+was no title widget or the lable widget was not
+a <link linkend="GtkLabel"><type>GtkLabel</type></link>. This string is owned by GTK+ and
+must not be modified or freed. </para>
+<para><emphasis role="annotation">[<acronym>nullable</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="gdv-axis-set-title-widget" role="function">
+<title>gdv_axis_set_title_widget&#160;()</title>
+<indexterm zone="gdv-axis-set-title-widget"><primary>gdv_axis_set_title_widget</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+gdv_axis_set_title_widget (<parameter><link linkend="GdvAxis"><type>GdvAxis</type></link> *axis</parameter>,
+                           <parameter><link linkend="GtkWidget"><type>GtkWidget</type></link> *title_widget</parameter>);</programlisting>
+<para>Sets the title widget for the axis. This is the widget that
+will appear next to the axis as additional information.</para>
+<refsect3 id="gdv-axis-set-title-widget.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>axis</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvAxis"><type>GdvAxis</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>title_widget</para></entry>
+<entry role="parameter_description"><para>the <link linkend="GtkWidget"><type>GtkWidget</type></link> that should be used as new title. </para></entry>
+<entry role="parameter_annotations"><emphasis role="annotation">[<acronym>nullable</acronym>]</emphasis></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="gdv-axis-get-show-title" role="function">
+<title>gdv_axis_get_show_title&#160;()</title>
+<indexterm zone="gdv-axis-get-show-title"><primary>gdv_axis_get_show_title</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+gdv_axis_get_show_title (<parameter><link linkend="GdvAxis"><type>GdvAxis</type></link> *axis</parameter>);</programlisting>
+<refsect3 id="gdv-axis-get-show-title.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>axis</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvAxis"><type>GdvAxis</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="gdv-axis-get-show-title.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the title should be shown</para>
+</refsect3></refsect2>
+<refsect2 id="gdv-axis-get-borders" role="function">
+<title>gdv_axis_get_borders&#160;()</title>
+<indexterm zone="gdv-axis-get-borders"><primary>gdv_axis_get_borders</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+gdv_axis_get_borders (<parameter><link linkend="GdvAxis"><type>GdvAxis</type></link> *axis</parameter>,
+                      <parameter><link linkend="gdouble"><type>gdouble</type></link> *max_val</parameter>,
+                      <parameter><link linkend="gdouble"><type>gdouble</type></link> *min_val</parameter>,
+                      <parameter><link linkend="guint"><type>guint</type></link> *max_pix_x</parameter>,
+                      <parameter><link linkend="guint"><type>guint</type></link> *min_pix_x</parameter>,
+                      <parameter><link linkend="guint"><type>guint</type></link> *max_pix_y</parameter>,
+                      <parameter><link linkend="guint"><type>guint</type></link> *min_pix_y</parameter>);</programlisting>
+<refsect3 id="gdv-axis-get-borders.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>axis</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvAxis"><type>GdvAxis</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>max_val</para></entry>
+<entry role="parameter_description"><para>the maximum scale-value of the axis</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>min_val</para></entry>
+<entry role="parameter_description"><para>the minimum scale-value of the axis</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>max_pix_x</para></entry>
+<entry role="parameter_description"><para>the maximum x-value of the axis</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>min_pix_x</para></entry>
+<entry role="parameter_description"><para>the minimum x-value of the axis</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>max_pix_y</para></entry>
+<entry role="parameter_description"><para>the maximum y-value of the axis</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>min_pix_y</para></entry>
+<entry role="parameter_description"><para>the minimum y-value of the axis</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="gdv-axis-queue-value-interval" role="function">
+<title>gdv_axis_queue_value_interval&#160;()</title>
+<indexterm zone="gdv-axis-queue-value-interval"><primary>gdv_axis_queue_value_interval</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+gdv_axis_queue_value_interval (<parameter><link linkend="GdvAxis"><type>GdvAxis</type></link> *axis</parameter>,
+                               <parameter><link linkend="gdouble"><type>gdouble</type></link> value</parameter>);</programlisting>
+<para>The function compares the <link linkend="value"><type>value</type></link> against the scale-begin and -end. If the
+value is outside the <link linkend="axis"><type>axis</type></link> range, the <link linkend="axis"><type>axis</type></link> scale-beg-val or scale-end-val
+will be adjusted to the value.</para>
+<para>This function is in particular usefull to update an axis for new values.</para>
+<refsect3 id="gdv-axis-queue-value-interval.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>axis</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvAxis"><type>GdvAxis</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>value</para></entry>
+<entry role="parameter_description"><para>an new value</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="gdv-axis-queue-value-interval.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the point is oudside the range of the layer-axes and <link linkend="FALSE:CAPS"><literal>FALSE</literal></link>
+otherwise</para>
+</refsect3></refsect2>
+
+</refsect1>
+<refsect1 id="GdvAxis.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="GdvAxisClass" role="struct">
+<title>struct GdvAxisClass</title>
+<indexterm zone="GdvAxisClass"><primary>GdvAxisClass</primary></indexterm>
+<programlisting language="C">struct GdvAxisClass {
+  GtkContainerClass parent_class;
+
+  gboolean (*get_point)       (GdvAxis            *axis,
+                               gdouble             value,
+                               gdouble            *pos_x,
+                               gdouble            *pos_y);
+
+  gboolean (*get_inner_dir)   (GdvAxis            *axis,
+                               gdouble             value,
+                               gdouble            *pos_x,
+                               gdouble            *pos_y);
+
+  gchar *(*make_tic_label_markup)       (GdvAxis            *axis,
+                                         gdouble             value);
+};
+</programlisting>
+<refsect3 id="GdvAxisClass.members" role="struct_members">
+<title>Members</title>
+<informaltable role="struct_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="struct_members_name" colwidth="300px"/>
+<colspec colname="struct_members_description"/>
+<colspec colname="struct_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="member"><entry role="struct_member_name"><para><structfield id="GdvAxisClass.get-point">get_point</structfield>&#160;()</para></entry>
+<entry role="struct_member_description"><para>The signal used to derive the screen position of a value on the
+axis. It is essential for calculating the point-position of any axes.</para></entry>
+<entry role="struct_member_annotations"></entry>
+</row>
+<row role="member"><entry role="struct_member_name"><para><structfield id="GdvAxisClass.get-inner-dir">get_inner_dir</structfield>&#160;()</para></entry>
+<entry role="struct_member_description"><para>The signal used to derive the inner direction of a value on
+the axis. It is essential for calculating the tic-appearance on the axis.</para></entry>
+<entry role="struct_member_annotations"></entry>
+</row>
+<row role="member"><entry role="struct_member_name"><para><structfield id="GdvAxisClass.make-tic-label-markup">make_tic_label_markup</structfield>&#160;()</para></entry>
+<entry role="struct_member_description"><para>Signal that is used to create a tic-label for any
+given function value.</para></entry>
+<entry role="struct_member_annotations"></entry>
+</row>
+</tbody></tgroup></informaltable>
+</refsect3>
+</refsect2>
+
+</refsect1>
+<refsect1 id="GdvAxis.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="GdvAxis--axis-beg-at-screen-x" role="property"><title>The <literal>“axis-beg-at-screen-x”</literal> property</title>
+<indexterm zone="GdvAxis--axis-beg-at-screen-x"><primary>GdvAxis:axis-beg-at-screen-x</primary></indexterm>
+<programlisting>  “axis-beg-at-screen-x”     <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Determines the x-value origin point of the axis relative to the layer-area.</para>
+<para>See the GdvAxis:axis-beg-pix-x property</para>
+<para>Flags: Read / Write</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="GdvAxis--axis-beg-at-screen-y" role="property"><title>The <literal>“axis-beg-at-screen-y”</literal> property</title>
+<indexterm zone="GdvAxis--axis-beg-at-screen-y"><primary>GdvAxis:axis-beg-at-screen-y</primary></indexterm>
+<programlisting>  “axis-beg-at-screen-y”     <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Determines the x-value origin point of the axis relative to the layer-area.</para>
+<para>See the GdvAxis:axis-beg-pix-y property</para>
+<para>Flags: Read / Write</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="GdvAxis--axis-beg-pix-x" role="property"><title>The <literal>“axis-beg-pix-x”</literal> property</title>
+<indexterm zone="GdvAxis--axis-beg-pix-x"><primary>GdvAxis:axis-beg-pix-x</primary></indexterm>
+<programlisting>  “axis-beg-pix-x”           <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Determines the x-value origin point of the axis.</para>
+<para>Flags: Read / Write</para>
+<para>Allowed values: &gt;= 0</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="GdvAxis--axis-beg-pix-y" role="property"><title>The <literal>“axis-beg-pix-y”</literal> property</title>
+<indexterm zone="GdvAxis--axis-beg-pix-y"><primary>GdvAxis:axis-beg-pix-y</primary></indexterm>
+<programlisting>  “axis-beg-pix-y”           <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Determines the y-value origin point of the axis.</para>
+<para>Flags: Read / Write</para>
+<para>Allowed values: &gt;= 0</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="GdvAxis--axis-direction-outside" role="property"><title>The <literal>“axis-direction-outside”</literal> property</title>
+<indexterm zone="GdvAxis--axis-direction-outside"><primary>GdvAxis:axis-direction-outside</primary></indexterm>
+<programlisting>  “axis-direction-outside”   <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>The angle of orientation of the outside of the axis relative to the top.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: 1.5708</para>
+</refsect2>
+<refsect2 id="GdvAxis--axis-end-at-screen-x" role="property"><title>The <literal>“axis-end-at-screen-x”</literal> property</title>
+<indexterm zone="GdvAxis--axis-end-at-screen-x"><primary>GdvAxis:axis-end-at-screen-x</primary></indexterm>
+<programlisting>  “axis-end-at-screen-x”     <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Determines the x-value end point of the axis relative to the layer-area.</para>
+<para>See the GdvAxis:axis-end-pix-x property</para>
+<para>Flags: Read / Write</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="GdvAxis--axis-end-at-screen-y" role="property"><title>The <literal>“axis-end-at-screen-y”</literal> property</title>
+<indexterm zone="GdvAxis--axis-end-at-screen-y"><primary>GdvAxis:axis-end-at-screen-y</primary></indexterm>
+<programlisting>  “axis-end-at-screen-y”     <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Determines the x-value end point of the axis relative to the layer-area.</para>
+<para>See the GdvAxis:axis-end-pix-y property</para>
+<para>Flags: Read / Write</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="GdvAxis--axis-end-pix-x" role="property"><title>The <literal>“axis-end-pix-x”</literal> property</title>
+<indexterm zone="GdvAxis--axis-end-pix-x"><primary>GdvAxis:axis-end-pix-x</primary></indexterm>
+<programlisting>  “axis-end-pix-x”           <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Determines the x-value end point of the axis.</para>
+<para>Flags: Read / Write</para>
+<para>Allowed values: &gt;= 0</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="GdvAxis--axis-end-pix-y" role="property"><title>The <literal>“axis-end-pix-y”</literal> property</title>
+<indexterm zone="GdvAxis--axis-end-pix-y"><primary>GdvAxis:axis-end-pix-y</primary></indexterm>
+<programlisting>  “axis-end-pix-y”           <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Determines the y-value end point of the axis.</para>
+<para>Flags: Read / Write</para>
+<para>Allowed values: &gt;= 0</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="GdvAxis--axis-orientation" role="property"><title>The <literal>“axis-orientation”</literal> property</title>
+<indexterm zone="GdvAxis--axis-orientation"><primary>GdvAxis:axis-orientation</primary></indexterm>
+<programlisting>  “axis-orientation”         <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>angle between the beginning of the axis and the vertical on screen.</para><para>Flags: Read / Write</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="GdvAxis--force-beg-end" role="property"><title>The <literal>“force-beg-end”</literal> property</title>
+<indexterm zone="GdvAxis--force-beg-end"><primary>GdvAxis:force-beg-end</primary></indexterm>
+<programlisting>  “force-beg-end”            <link linkend="gboolean"><type>gboolean</type></link></programlisting>
+<para>This property forces the axis to use the manually assigned beg- and end-
+properties. This property should be used with care because it may lead
+to a bad geometry-handling. However, in some cases one wants to bind the
+axis-geomety to the geometry of a layer or underlying other widget.</para>
+<para>This might be usefull e.g. when painting an axis above a picture or live-stream.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: FALSE</para>
+</refsect2>
+<refsect2 id="GdvAxis--mtics" role="property"><title>The <literal>“mtics”</literal> property</title>
+<indexterm zone="GdvAxis--mtics"><primary>GdvAxis:mtics</primary></indexterm>
+<programlisting>  “mtics”                    <link linkend="guint"><type>guint</type></link></programlisting>
+<para>sets the absolute number of mtics per scale interval.</para><para>Flags: Read / Write</para>
+<para>Default value: 4</para>
+</refsect2>
+<refsect2 id="GdvAxis--mtics-automatic" role="property"><title>The <literal>“mtics-automatic”</literal> property</title>
+<indexterm zone="GdvAxis--mtics-automatic"><primary>GdvAxis:mtics-automatic</primary></indexterm>
+<programlisting>  “mtics-automatic”          <link linkend="gboolean"><type>gboolean</type></link></programlisting>
+<para>Determines whether mtics should be setted automatically.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: TRUE</para>
+</refsect2>
+<refsect2 id="GdvAxis--mtics-beg-val" role="property"><title>The <literal>“mtics-beg-val”</literal> property</title>
+<indexterm zone="GdvAxis--mtics-beg-val"><primary>GdvAxis:mtics-beg-val</primary></indexterm>
+<programlisting>  “mtics-beg-val”            <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Determines the beginning value of mtics-settings.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="GdvAxis--mtics-end-val" role="property"><title>The <literal>“mtics-end-val”</literal> property</title>
+<indexterm zone="GdvAxis--mtics-end-val"><primary>GdvAxis:mtics-end-val</primary></indexterm>
+<programlisting>  “mtics-end-val”            <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Determines the end value of mtics-settings.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: 100</para>
+</refsect2>
+<refsect2 id="GdvAxis--resize-during-redraw" role="property"><title>The <literal>“resize-during-redraw”</literal> property</title>
+<indexterm zone="GdvAxis--resize-during-redraw"><primary>GdvAxis:resize-during-redraw</primary></indexterm>
+<programlisting>  “resize-during-redraw”     <link linkend="gboolean"><type>gboolean</type></link></programlisting>
+<para>*placeholder*.</para><para>Flags: Read</para>
+<para>Default value: FALSE</para>
+</refsect2>
+<refsect2 id="GdvAxis--scale-auto-increment" role="property"><title>The <literal>“scale-auto-increment”</literal> property</title>
+<indexterm zone="GdvAxis--scale-auto-increment"><primary>GdvAxis:scale-auto-increment</primary></indexterm>
+<programlisting>  “scale-auto-increment”     <link linkend="gboolean"><type>gboolean</type></link></programlisting>
+<para>Determines whether the increment-value should be determined automatically.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: TRUE</para>
+</refsect2>
+<refsect2 id="GdvAxis--scale-beg-val" role="property"><title>The <literal>“scale-beg-val”</literal> property</title>
+<indexterm zone="GdvAxis--scale-beg-val"><primary>GdvAxis:scale-beg-val</primary></indexterm>
+<programlisting>  “scale-beg-val”            <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Determines the minimum value of the axis.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="GdvAxis--scale-end-val" role="property"><title>The <literal>“scale-end-val”</literal> property</title>
+<indexterm zone="GdvAxis--scale-end-val"><primary>GdvAxis:scale-end-val</primary></indexterm>
+<programlisting>  “scale-end-val”            <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Determines the maximum value of the axis.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: 100</para>
+</refsect2>
+<refsect2 id="GdvAxis--scale-increment-val" role="property"><title>The <literal>“scale-increment-val”</literal> property</title>
+<indexterm zone="GdvAxis--scale-increment-val"><primary>GdvAxis:scale-increment-val</primary></indexterm>
+<programlisting>  “scale-increment-val”      <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Determines the increment value of the axis.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: 100</para>
+</refsect2>
+<refsect2 id="GdvAxis--scale-limits-automatic" role="property"><title>The <literal>“scale-limits-automatic”</literal> property</title>
+<indexterm zone="GdvAxis--scale-limits-automatic"><primary>GdvAxis:scale-limits-automatic</primary></indexterm>
+<programlisting>  “scale-limits-automatic”   <link linkend="gboolean"><type>gboolean</type></link></programlisting>
+<para>Determines whether if the scale-borders should be rounded automatically up
+to the next better value.</para>
+<para>An annotation about the behaviour of GdvAxis:scale-limits-automatic:
+The property does not implie, that there should be absolutely no changes
+to the values of GdvAxis:tics-beg-val and GdvAxis:tics-end-val. It just
+means, that the GdvAxis:scale-beg-val and GdvAxis:scale-end-val should
+kept constant!</para>
+<para>Flags: Read / Write</para>
+<para>Default value: TRUE</para>
+</refsect2>
+<refsect2 id="GdvAxis--tics-automatic" role="property"><title>The <literal>“tics-automatic”</literal> property</title>
+<indexterm zone="GdvAxis--tics-automatic"><primary>GdvAxis:tics-automatic</primary></indexterm>
+<programlisting>  “tics-automatic”           <link linkend="gboolean"><type>gboolean</type></link></programlisting>
+<para>Determines whether tics should be setted automatically.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: TRUE</para>
+</refsect2>
+<refsect2 id="GdvAxis--tics-beg-val" role="property"><title>The <literal>“tics-beg-val”</literal> property</title>
+<indexterm zone="GdvAxis--tics-beg-val"><primary>GdvAxis:tics-beg-val</primary></indexterm>
+<programlisting>  “tics-beg-val”             <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Determines the beginning value of tics-settings.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="GdvAxis--tics-end-val" role="property"><title>The <literal>“tics-end-val”</literal> property</title>
+<indexterm zone="GdvAxis--tics-end-val"><primary>GdvAxis:tics-end-val</primary></indexterm>
+<programlisting>  “tics-end-val”             <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>Determines the end value of tics-settings.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: 100</para>
+</refsect2>
+<refsect2 id="GdvAxis--title" role="property"><title>The <literal>“title”</literal> property</title>
+<indexterm zone="GdvAxis--title"><primary>GdvAxis:title</primary></indexterm>
+<programlisting>  “title”                    <link linkend="gchar"><type>gchar</type></link>&#160;*</programlisting>
+<para>The title-string of the axis.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: NULL</para>
+</refsect2>
+<refsect2 id="GdvAxis--title-widget" role="property"><title>The <literal>“title-widget”</literal> property</title>
+<indexterm zone="GdvAxis--title-widget"><primary>GdvAxis:title-widget</primary></indexterm>
+<programlisting>  “title-widget”             <link linkend="GtkWidget"><type>GtkWidget</type></link>&#160;*</programlisting>
+<para>The title widget of the axis.</para>
+<para>Flags: Read / Write</para>
+</refsect2>
+
+</refsect1>
+<refsect1 id="GdvAxis.signal-details" role="signals">
+<title role="signals.title">Signal Details</title>
+<refsect2 id="GdvAxis-get-inner-dir" role="signal"><title>The <literal>“get-inner-dir”</literal> signal</title>
+<indexterm zone="GdvAxis-get-inner-dir"><primary>GdvAxis::get-inner-dir</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+user_function (<link linkend="GdvAxis"><type>GdvAxis</type></link> *axis,
+               <link linkend="gdouble"><type>gdouble</type></link>  value,
+               <link linkend="gpointer"><type>gpointer</type></link> pos_x,
+               <link linkend="gpointer"><type>gpointer</type></link> pos_y,
+               <link linkend="gpointer"><type>gpointer</type></link> user_data)</programlisting>
+<para>Signal to get the innder-dir of a value on the axis.</para>
+<refsect3 id="GdvAxis-get-inner-dir.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>axis</para></entry>
+<entry role="parameter_description"><para>the axis which received the signal</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>value</para></entry>
+<entry role="parameter_description"><para>the point-value on the axis</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>pos_x</para></entry>
+<entry role="parameter_description"><para>the place to store the x-component of the direction</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>pos_y</para></entry>
+<entry role="parameter_description"><para>the place to store the y-component of the direction</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><simpara>user_data</simpara></entry>
+<entry role="parameter_description"><simpara>user data set when the signal handler was connected.</simpara></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="GdvAxis-get-inner-dir.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the point lies in the range of the axis.</para>
+</refsect3><para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="GdvAxis-get-point" role="signal"><title>The <literal>“get-point”</literal> signal</title>
+<indexterm zone="GdvAxis-get-point"><primary>GdvAxis::get-point</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+user_function (<link linkend="GdvAxis"><type>GdvAxis</type></link> *axis,
+               <link linkend="gdouble"><type>gdouble</type></link>  value,
+               <link linkend="gpointer"><type>gpointer</type></link> pos_x,
+               <link linkend="gpointer"><type>gpointer</type></link> pos_y,
+               <link linkend="gpointer"><type>gpointer</type></link> user_data)</programlisting>
+<para>Signal to obtain the position of a value on screen for the axis.</para>
+<refsect3 id="GdvAxis-get-point.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>axis</para></entry>
+<entry role="parameter_description"><para>the axis which received the signal</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>value</para></entry>
+<entry role="parameter_description"><para>the point-value on the axis</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>pos_x</para></entry>
+<entry role="parameter_description"><para>the place to store the x-position</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>pos_y</para></entry>
+<entry role="parameter_description"><para>the place to store the y-position</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><simpara>user_data</simpara></entry>
+<entry role="parameter_description"><simpara>user data set when the signal handler was connected.</simpara></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="GdvAxis-get-point.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the point lies in the range of the axis.</para>
+</refsect3><para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2><refsect2 id="GdvAxis-make-tic-label-markup" role="signal"><title>The <literal>“make-tic-label-markup”</literal> signal</title>
+<indexterm zone="GdvAxis-make-tic-label-markup"><primary>GdvAxis::make-tic-label-markup</primary></indexterm>
+<programlisting language="C"><link linkend="gchar"><returnvalue>gchar</returnvalue></link>*
+user_function (<link linkend="GdvAxis"><type>GdvAxis</type></link> *axis,
+               <link linkend="gdouble"><type>gdouble</type></link>  value,
+               <link linkend="gpointer"><type>gpointer</type></link> user_data)</programlisting>
+<para>Signal to obtain a pango markup-text for a given value that is used to get
+the tic-label over the axis.</para>
+<refsect3 id="GdvAxis-make-tic-label-markup.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>axis</para></entry>
+<entry role="parameter_description"><para>the axis which received the signal</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>value</para></entry>
+<entry role="parameter_description"><para>the value that will be used for dermining the tic-label</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><simpara>user_data</simpara></entry>
+<entry role="parameter_description"><simpara>user data set when the signal handler was connected.</simpara></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><para>Flags: <link linkend="G-SIGNAL-RUN-LAST:CAPS">Run Last</link></para>
+</refsect2>
+</refsect1>
+
+</refentry>

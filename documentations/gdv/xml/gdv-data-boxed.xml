@@ -1,0 +1,265 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="gdv-gdv-data-boxed">
+<refmeta>
+<refentrytitle role="top_of_page" id="gdv-gdv-data-boxed.top_of_page">gdv-data-boxed</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>GDV Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>gdv-data-boxed</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="gdv-gdv-data-boxed.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-data-point-equal">gdv_data_point_equal</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-data-point-metric">gdv_data_point_metric</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-data-point-distance-to-origin">gdv_data_point_distance_to_origin</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-data-n-point-equal">gdv_data_n_point_equal</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-data-n-point-metric">gdv_data_n_point_metric</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-data-n-point-get">gdv_data_n_point_get</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-data-n-point-set">gdv_data_n_point_set</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GdvDataNPoint"><returnvalue>GdvDataNPoint</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="gdv-data-n-point-set-and-expand">gdv_data_n_point_set_and_expand</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-data-n-point-distance-to-origin">gdv_data_n_point_distance_to_origin</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-data-direction-equal">gdv_data_direction_equal</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-data-polygon-equal">gdv_data_polygon_equal</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-data-pixel-equal">gdv_data_pixel_equal</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<anchor id="GdvDataDirection"/><anchor id="GdvDataNPoint"/><anchor id="GdvDataPixel"/><anchor id="GdvDataPoint"/><anchor id="GdvDataPolygon"/><refsect1 id="gdv-gdv-data-boxed.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="GdvDataPointSingleExtended">GdvDataPointSingleExtended</link></entry></row>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="GdvDataPointDoubleExtended">GdvDataPointDoubleExtended</link></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="GDV-TYPE-DATA-POINT-SINGLE-EXTENDED:CAPS">GDV_TYPE_DATA_POINT_SINGLE_EXTENDED</link></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="GDV-TYPE-DATA-POINT-DOUBLE-EXTENDED:CAPS">GDV_TYPE_DATA_POINT_DOUBLE_EXTENDED</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="gdv-gdv-data-boxed.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GBoxed">GBoxed</link>
+    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> GdvDataDirection
+    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> GdvDataNPoint
+    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> GdvDataPixel
+    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> GdvDataPoint
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> GdvDataPolygon
+</screen>
+</refsect1>
+
+
+<refsect1 id="gdv-gdv-data-boxed.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="gdv-gdv-data-boxed.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="gdv-data-point-equal" role="function" condition="since:0.10">
+<title>gdv_data_point_equal&#160;()</title>
+<indexterm zone="gdv-data-point-equal" role="0.10"><primary>gdv_data_point_equal</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+gdv_data_point_equal (<parameter>const <link linkend="GdvDataPoint"><type>GdvDataPoint</type></link> *point1</parameter>,
+                      <parameter>const <link linkend="GdvDataPoint"><type>GdvDataPoint</type></link> *point2</parameter>);</programlisting>
+<para>Checks if the two given points are equal.</para>
+<refsect3 id="gdv-data-point-equal.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>point1</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvDataPoint"><type>GdvDataPoint</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>point2</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvDataPoint"><type>GdvDataPoint</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="gdv-data-point-equal.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the points are equal.</para>
+</refsect3><para role="since">Since: <link linkend="api-index-0.10">0.10</link></para></refsect2>
+<refsect2 id="gdv-data-point-metric" role="function">
+<title>gdv_data_point_metric&#160;()</title>
+<indexterm zone="gdv-data-point-metric"><primary>gdv_data_point_metric</primary></indexterm>
+<programlisting language="C"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+gdv_data_point_metric (<parameter>const <link linkend="GdvDataPoint"><type>GdvDataPoint</type></link> *point1</parameter>,
+                       <parameter>const <link linkend="GdvDataPoint"><type>GdvDataPoint</type></link> *point2</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="gdv-data-point-distance-to-origin" role="function">
+<title>gdv_data_point_distance_to_origin&#160;()</title>
+<indexterm zone="gdv-data-point-distance-to-origin"><primary>gdv_data_point_distance_to_origin</primary></indexterm>
+<programlisting language="C"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+gdv_data_point_distance_to_origin (<parameter>const <link linkend="GdvDataPoint"><type>GdvDataPoint</type></link> *point</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="gdv-data-n-point-equal" role="function" condition="since:0.10">
+<title>gdv_data_n_point_equal&#160;()</title>
+<indexterm zone="gdv-data-n-point-equal" role="0.10"><primary>gdv_data_n_point_equal</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+gdv_data_n_point_equal (<parameter>const <link linkend="GdvDataNPoint"><type>GdvDataNPoint</type></link> *point1</parameter>,
+                        <parameter>const <link linkend="GdvDataNPoint"><type>GdvDataNPoint</type></link> *point2</parameter>);</programlisting>
+<para>Checks if the two given n-dim. points are equal.</para>
+<refsect3 id="gdv-data-n-point-equal.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>point1</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvDataNPoint"><type>GdvDataNPoint</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>point2</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvDataNPoint"><type>GdvDataNPoint</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="gdv-data-n-point-equal.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the points are equal.</para>
+</refsect3><para role="since">Since: <link linkend="api-index-0.10">0.10</link></para></refsect2>
+<refsect2 id="gdv-data-n-point-metric" role="function">
+<title>gdv_data_n_point_metric&#160;()</title>
+<indexterm zone="gdv-data-n-point-metric"><primary>gdv_data_n_point_metric</primary></indexterm>
+<programlisting language="C"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+gdv_data_n_point_metric (<parameter>const <link linkend="GdvDataNPoint"><type>GdvDataNPoint</type></link> *point1</parameter>,
+                         <parameter>const <link linkend="GdvDataNPoint"><type>GdvDataNPoint</type></link> *point2</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="gdv-data-n-point-get" role="function">
+<title>gdv_data_n_point_get&#160;()</title>
+<indexterm zone="gdv-data-n-point-get"><primary>gdv_data_n_point_get</primary></indexterm>
+<programlisting language="C"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+gdv_data_n_point_get (<parameter>const <link linkend="GdvDataNPoint"><type>GdvDataNPoint</type></link> *point1</parameter>,
+                      <parameter>const <link linkend="guint"><type>guint</type></link> n</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="gdv-data-n-point-set" role="function">
+<title>gdv_data_n_point_set&#160;()</title>
+<indexterm zone="gdv-data-n-point-set"><primary>gdv_data_n_point_set</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+gdv_data_n_point_set (<parameter><link linkend="GdvDataNPoint"><type>GdvDataNPoint</type></link> *point1</parameter>,
+                      <parameter>const <link linkend="guint"><type>guint</type></link> n</parameter>,
+                      <parameter><link linkend="gdouble"><type>gdouble</type></link> x</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="gdv-data-n-point-set-and-expand" role="function">
+<title>gdv_data_n_point_set_and_expand&#160;()</title>
+<indexterm zone="gdv-data-n-point-set-and-expand"><primary>gdv_data_n_point_set_and_expand</primary></indexterm>
+<programlisting language="C"><link linkend="GdvDataNPoint"><returnvalue>GdvDataNPoint</returnvalue></link>&#160;*
+gdv_data_n_point_set_and_expand (<parameter><link linkend="GdvDataNPoint"><type>GdvDataNPoint</type></link> *point1</parameter>,
+                                 <parameter>const <link linkend="guint"><type>guint</type></link> n</parameter>,
+                                 <parameter><link linkend="gdouble"><type>gdouble</type></link> x</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="gdv-data-n-point-distance-to-origin" role="function">
+<title>gdv_data_n_point_distance_to_origin&#160;()</title>
+<indexterm zone="gdv-data-n-point-distance-to-origin"><primary>gdv_data_n_point_distance_to_origin</primary></indexterm>
+<programlisting language="C"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+gdv_data_n_point_distance_to_origin (<parameter>const <link linkend="GdvDataNPoint"><type>GdvDataNPoint</type></link> *point</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="gdv-data-direction-equal" role="function" condition="since:0.10">
+<title>gdv_data_direction_equal&#160;()</title>
+<indexterm zone="gdv-data-direction-equal" role="0.10"><primary>gdv_data_direction_equal</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+gdv_data_direction_equal (<parameter>const <link linkend="GdvDataDirection"><type>GdvDataDirection</type></link> *direction1</parameter>,
+                          <parameter>const <link linkend="GdvDataDirection"><type>GdvDataDirection</type></link> *direction2</parameter>);</programlisting>
+<para>Checks if the two given directions are equal.</para>
+<refsect3 id="gdv-data-direction-equal.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>direction1</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvDataDirection"><type>GdvDataDirection</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>direction2</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvDataDirection"><type>GdvDataDirection</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="gdv-data-direction-equal.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the directions are equal.</para>
+</refsect3><para role="since">Since: <link linkend="api-index-0.10">0.10</link></para></refsect2>
+<refsect2 id="gdv-data-polygon-equal" role="function">
+<title>gdv_data_polygon_equal&#160;()</title>
+<indexterm zone="gdv-data-polygon-equal"><primary>gdv_data_polygon_equal</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+gdv_data_polygon_equal (<parameter>const <link linkend="GdvDataPolygon"><type>GdvDataPolygon</type></link> *polygon1</parameter>,
+                        <parameter>const <link linkend="GdvDataPolygon"><type>GdvDataPolygon</type></link> *polygon2</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="gdv-data-pixel-equal" role="function">
+<title>gdv_data_pixel_equal&#160;()</title>
+<indexterm zone="gdv-data-pixel-equal"><primary>gdv_data_pixel_equal</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+gdv_data_pixel_equal (<parameter>const <link linkend="GdvDataPixel"><type>GdvDataPixel</type></link> *pixel1</parameter>,
+                      <parameter>const <link linkend="GdvDataPixel"><type>GdvDataPixel</type></link> *pixel2</parameter>);</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="gdv-gdv-data-boxed.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="GdvDataPointSingleExtended" role="struct">
+<title>GdvDataPointSingleExtended</title>
+<indexterm zone="GdvDataPointSingleExtended"><primary>GdvDataPointSingleExtended</primary></indexterm>
+<programlisting language="C">typedef struct {
+  GdvDataPoint *point;
+  GdvDataPoint *neg_range_1;
+  GdvDataPoint *pos_range_1;
+} GdvDataPointSingleExtended;
+</programlisting>
+</refsect2>
+<refsect2 id="GdvDataPointDoubleExtended" role="struct">
+<title>GdvDataPointDoubleExtended</title>
+<indexterm zone="GdvDataPointDoubleExtended"><primary>GdvDataPointDoubleExtended</primary></indexterm>
+<programlisting language="C">typedef struct {
+  GdvDataPointSingleExtended *point;
+  GdvDataPoint *neg_range_2;
+  GdvDataPoint *pos_range_2;
+} GdvDataPointDoubleExtended;
+</programlisting>
+</refsect2>
+<refsect2 id="GDV-TYPE-DATA-POINT-SINGLE-EXTENDED:CAPS" role="macro">
+<title>GDV_TYPE_DATA_POINT_SINGLE_EXTENDED</title>
+<indexterm zone="GDV-TYPE-DATA-POINT-SINGLE-EXTENDED:CAPS"><primary>GDV_TYPE_DATA_POINT_SINGLE_EXTENDED</primary></indexterm>
+<programlisting language="C">#define             GDV_TYPE_DATA_POINT_SINGLE_EXTENDED</programlisting>
+</refsect2>
+<refsect2 id="GDV-TYPE-DATA-POINT-DOUBLE-EXTENDED:CAPS" role="macro">
+<title>GDV_TYPE_DATA_POINT_DOUBLE_EXTENDED</title>
+<indexterm zone="GDV-TYPE-DATA-POINT-DOUBLE-EXTENDED:CAPS"><primary>GDV_TYPE_DATA_POINT_DOUBLE_EXTENDED</primary></indexterm>
+<programlisting language="C">#define             GDV_TYPE_DATA_POINT_DOUBLE_EXTENDED</programlisting>
+</refsect2>
+
+</refsect1>
+
+</refentry>

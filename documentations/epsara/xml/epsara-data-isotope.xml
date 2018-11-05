@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="EpsaraDataIsotope">
+<refmeta>
+<refentrytitle role="top_of_page" id="EpsaraDataIsotope.top_of_page">EpsaraDataIsotope</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>EPSARA Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>EpsaraDataIsotope</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="EpsaraDataIsotope.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="GSList"><returnvalue>GSList</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="epsara-data-isotope-get-interactions">epsara_data_isotope_get_interactions</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataIsotope.properties" role="properties">
+<title role="properties.title">Properties</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="properties_type" colwidth="150px"/>
+<colspec colname="properties_name" colwidth="300px"/>
+<colspec colname="properties_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="EpsaraDataIsotope--abundance">abundance</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gint"><type>gint</type></link></entry><entry role="property_name"><link linkend="EpsaraDataIsotope--atomic-no">atomic-no</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="EpsaraDataIsotope--mass">mass</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="gint"><type>gint</type></link></entry><entry role="property_name"><link linkend="EpsaraDataIsotope--mass-no">mass-no</link></entry><entry role="property_flags">Read / Write</entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataIsotope.signals" role="signal_proto">
+<title role="signal_proto.title">Signals</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="signals_return" colwidth="150px"/>
+<colspec colname="signals_name" colwidth="300px"/>
+<colspec colname="signals_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="EpsaraDataIsotope-add">add</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-FIRST:CAPS">Run First</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="EpsaraDataIsotope-remove">remove</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-FIRST:CAPS">Run First</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataIsotope.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="EpsaraDataIsotope-struct">EpsaraDataIsotope</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="EpsaraDataIsotopeClass">EpsaraDataIsotopeClass</link></entry></row>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="EpsaraDataIsotopePrivate">EpsaraDataIsotopePrivate</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataIsotope.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="EpsaraDataElement">EpsaraDataElement</link>
+        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> EpsaraDataIsotope
+            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="EpsaraDataIsotopeIonicEloss">EpsaraDataIsotopeIonicEloss</link>
+</screen>
+</refsect1>
+<refsect1 id="EpsaraDataIsotope.implemented-interfaces" role="impl_interfaces">
+<title role="impl_interfaces.title">Implemented Interfaces</title>
+<para>
+EpsaraDataIsotope implements
+ <link linkend="JsonSerializable">JsonSerializable</link>.</para>
+
+</refsect1>
+
+
+<refsect1 id="EpsaraDataIsotope.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="EpsaraDataIsotope.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="epsara-data-isotope-get-interactions" role="function">
+<title>epsara_data_isotope_get_interactions&#160;()</title>
+<indexterm zone="epsara-data-isotope-get-interactions"><primary>epsara_data_isotope_get_interactions</primary></indexterm>
+<programlisting language="C"><link linkend="GSList"><returnvalue>GSList</returnvalue></link>&#160;*
+epsara_data_isotope_get_interactions (<parameter><link linkend="EpsaraDataIsotope"><type>EpsaraDataIsotope</type></link> *isotope</parameter>);</programlisting>
+<para>Returns a pointer to the list of subinteractions of this isotope.</para>
+<refsect3 id="epsara-data-isotope-get-interactions.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>isotope</para></entry>
+<entry role="parameter_description"><para>an <link linkend="EpsaraDataIsotope"><type>EpsaraDataIsotope</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="epsara-data-isotope-get-interactions.returns" role="returns">
+<title>Returns</title>
+<para>the list of
+interactions bound to the isotope. </para>
+<para><emphasis role="annotation">[<acronym>element-type</acronym> EpsaraDataInteraction][<acronym>transfer none</acronym>][<acronym>allow-none</acronym>]</emphasis></para>
+</refsect3></refsect2>
+
+</refsect1>
+<refsect1 id="EpsaraDataIsotope.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="EpsaraDataIsotope-struct" role="struct">
+<title>struct EpsaraDataIsotope</title>
+<indexterm zone="EpsaraDataIsotope-struct"><primary>EpsaraDataIsotope</primary></indexterm>
+<programlisting language="C">struct EpsaraDataIsotope;</programlisting>
+</refsect2>
+<refsect2 id="EpsaraDataIsotopeClass" role="struct">
+<title>struct EpsaraDataIsotopeClass</title>
+<indexterm zone="EpsaraDataIsotopeClass"><primary>EpsaraDataIsotopeClass</primary></indexterm>
+<programlisting language="C">struct EpsaraDataIsotopeClass {
+  EpsaraDataElementClass parent_class;
+
+  void    (*add)       		(EpsaraDataIsotope *self,
+                  				 EpsaraDataInteraction *child);
+  void    (*remove)    		(EpsaraDataIsotope *self,
+                  				 EpsaraDataInteraction *child);
+//  void    (*forall)       (EpsaraDataMaterial  *self,
+//                           gboolean             include_internals,
+//                           GtkCallback          callback,
+//                           gpointer             callback_data);
+};
+</programlisting>
+</refsect2>
+<refsect2 id="EpsaraDataIsotopePrivate" role="struct">
+<title>EpsaraDataIsotopePrivate</title>
+<indexterm zone="EpsaraDataIsotopePrivate"><primary>EpsaraDataIsotopePrivate</primary></indexterm>
+<programlisting language="C">typedef struct _EpsaraDataIsotopePrivate EpsaraDataIsotopePrivate;</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="EpsaraDataIsotope.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="EpsaraDataIsotope--abundance" role="property"><title>The <literal>“abundance”</literal> property</title>
+<indexterm zone="EpsaraDataIsotope--abundance"><primary>EpsaraDataIsotope:abundance</primary></indexterm>
+<programlisting>  “abundance”                <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>abundance of interaction or material.</para><para>Flags: Read / Write</para>
+<para>Allowed values: &gt;= 0</para>
+<para>Default value: 1</para>
+</refsect2>
+<refsect2 id="EpsaraDataIsotope--atomic-no" role="property"><title>The <literal>“atomic-no”</literal> property</title>
+<indexterm zone="EpsaraDataIsotope--atomic-no"><primary>EpsaraDataIsotope:atomic-no</primary></indexterm>
+<programlisting>  “atomic-no”                <link linkend="gint"><type>gint</type></link></programlisting>
+<para>atomic number of the isotope.</para><para>Flags: Read / Write</para>
+<para>Allowed values: &gt;= 0</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="EpsaraDataIsotope--mass" role="property"><title>The <literal>“mass”</literal> property</title>
+<indexterm zone="EpsaraDataIsotope--mass"><primary>EpsaraDataIsotope:mass</primary></indexterm>
+<programlisting>  “mass”                     <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>mass of the isotope in amu.</para><para>Flags: Read</para>
+<para>Allowed values: &gt;= 0</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="EpsaraDataIsotope--mass-no" role="property"><title>The <literal>“mass-no”</literal> property</title>
+<indexterm zone="EpsaraDataIsotope--mass-no"><primary>EpsaraDataIsotope:mass-no</primary></indexterm>
+<programlisting>  “mass-no”                  <link linkend="gint"><type>gint</type></link></programlisting>
+<para>mass number of the isotope.</para><para>Flags: Read / Write</para>
+<para>Allowed values: &gt;= 0</para>
+<para>Default value: 0</para>
+</refsect2>
+
+</refsect1>
+<refsect1 id="EpsaraDataIsotope.signal-details" role="signals">
+<title role="signals.title">Signal Details</title>
+<refsect2 id="EpsaraDataIsotope-add" role="signal"><title>The <literal>“add”</literal> signal</title>
+<indexterm zone="EpsaraDataIsotope-add"><primary>EpsaraDataIsotope::add</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="EpsaraDataIsotope"><type>EpsaraDataIsotope</type></link>     *epsaradataisotope,
+               <link linkend="EpsaraDataInteraction"><type>EpsaraDataInteraction</type></link> *arg1,
+               <link linkend="gpointer"><type>gpointer</type></link>               user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-FIRST:CAPS">Run First</link></para>
+</refsect2><refsect2 id="EpsaraDataIsotope-remove" role="signal"><title>The <literal>“remove”</literal> signal</title>
+<indexterm zone="EpsaraDataIsotope-remove"><primary>EpsaraDataIsotope::remove</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="EpsaraDataIsotope"><type>EpsaraDataIsotope</type></link>     *epsaradataisotope,
+               <link linkend="EpsaraDataInteraction"><type>EpsaraDataInteraction</type></link> *arg1,
+               <link linkend="gpointer"><type>gpointer</type></link>               user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-FIRST:CAPS">Run First</link></para>
+</refsect2>
+</refsect1>
+
+</refentry>

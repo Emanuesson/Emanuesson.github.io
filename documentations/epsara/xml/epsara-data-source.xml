@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="EpsaraDataSource">
+<refmeta>
+<refentrytitle role="top_of_page" id="EpsaraDataSource.top_of_page">EpsaraDataSource</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>EPSARA Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>EpsaraDataSource</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="EpsaraDataSource.properties" role="properties">
+<title role="properties.title">Properties</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="properties_type" colwidth="150px"/>
+<colspec colname="properties_name" colwidth="300px"/>
+<colspec colname="properties_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="property_type"><link linkend="EpsaraDataMaterial"><type>EpsaraDataMaterial</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraDataSource--dead-layer">dead-layer</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="EpsaraDataPoint"><type>EpsaraDataPoint</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraDataSource--direction">direction</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="EpsaraDataPoint"><type>EpsaraDataPoint</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraDataSource--origin">origin</link></entry><entry role="property_flags">Read / Write</entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataSource.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="EpsaraDataSource-struct">EpsaraDataSource</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="EpsaraDataSourceClass">EpsaraDataSourceClass</link></entry></row>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="EpsaraDataSourcePrivate">EpsaraDataSourcePrivate</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataSource.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="EpsaraDataElement">EpsaraDataElement</link>
+        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> EpsaraDataSource
+            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="EpsaraDataParticleBeam">EpsaraDataParticleBeam</link>
+</screen>
+</refsect1>
+<refsect1 id="EpsaraDataSource.implemented-interfaces" role="impl_interfaces">
+<title role="impl_interfaces.title">Implemented Interfaces</title>
+<para>
+EpsaraDataSource implements
+ <link linkend="JsonSerializable">JsonSerializable</link>.</para>
+
+</refsect1>
+
+
+<refsect1 id="EpsaraDataSource.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="EpsaraDataSource.functions_details" role="details">
+<title role="details.title">Functions</title>
+<para />
+</refsect1>
+<refsect1 id="EpsaraDataSource.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="EpsaraDataSource-struct" role="struct">
+<title>struct EpsaraDataSource</title>
+<indexterm zone="EpsaraDataSource-struct"><primary>EpsaraDataSource</primary></indexterm>
+<programlisting language="C">struct EpsaraDataSource;</programlisting>
+</refsect2>
+<refsect2 id="EpsaraDataSourceClass" role="struct">
+<title>struct EpsaraDataSourceClass</title>
+<indexterm zone="EpsaraDataSourceClass"><primary>EpsaraDataSourceClass</primary></indexterm>
+<programlisting language="C">struct EpsaraDataSourceClass {
+  EpsaraDataElementClass parent_class;
+};
+</programlisting>
+</refsect2>
+<refsect2 id="EpsaraDataSourcePrivate" role="struct">
+<title>EpsaraDataSourcePrivate</title>
+<indexterm zone="EpsaraDataSourcePrivate"><primary>EpsaraDataSourcePrivate</primary></indexterm>
+<programlisting language="C">typedef struct _EpsaraDataSourcePrivate EpsaraDataSourcePrivate;</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="EpsaraDataSource.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="EpsaraDataSource--dead-layer" role="property"><title>The <literal>“dead-layer”</literal> property</title>
+<indexterm zone="EpsaraDataSource--dead-layer"><primary>EpsaraDataSource:dead-layer</primary></indexterm>
+<programlisting>  “dead-layer”               <link linkend="EpsaraDataMaterial"><type>EpsaraDataMaterial</type></link>&#160;*</programlisting>
+<para>holds the dead-layer material of the incident source.</para><para>Flags: Read / Write</para>
+</refsect2>
+<refsect2 id="EpsaraDataSource--direction" role="property"><title>The <literal>“direction”</literal> property</title>
+<indexterm zone="EpsaraDataSource--direction"><primary>EpsaraDataSource:direction</primary></indexterm>
+<programlisting>  “direction”                <link linkend="EpsaraDataPoint"><type>EpsaraDataPoint</type></link>&#160;*</programlisting>
+<para>holds the direction point of the probe source; if identical to origin, a point-source is assumed.</para><para>Flags: Read / Write</para>
+</refsect2>
+<refsect2 id="EpsaraDataSource--origin" role="property"><title>The <literal>“origin”</literal> property</title>
+<indexterm zone="EpsaraDataSource--origin"><primary>EpsaraDataSource:origin</primary></indexterm>
+<programlisting>  “origin”                   <link linkend="EpsaraDataPoint"><type>EpsaraDataPoint</type></link>&#160;*</programlisting>
+<para>holds the origin point of the probe source.</para><para>Flags: Read / Write</para>
+</refsect2>
+
+</refsect1>
+
+</refentry>

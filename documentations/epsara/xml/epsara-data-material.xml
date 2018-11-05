@@ -1,0 +1,379 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="EpsaraDataMaterial">
+<refmeta>
+<refentrytitle role="top_of_page" id="EpsaraDataMaterial.top_of_page">EpsaraDataMaterial</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>EPSARA Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>EpsaraDataMaterial</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="EpsaraDataMaterial.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-material-get-concentration-at-point">epsara_data_material_get_concentration_at_point</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-material-get-sub-isotope-concentration-at-point">epsara_data_material_get_sub_isotope_concentration_at_point</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-material-get-sub-interact-concentration-at-point">epsara_data_material_get_sub_interact_concentration_at_point</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-material-integrate-sub-interact-over-length">epsara_data_material_integrate_sub_interact_over_length</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-material-integrate-material-over-length">epsara_data_material_integrate_material_over_length</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-material-get-distance">epsara_data_material_get_distance</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GSList"><returnvalue>GSList</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="epsara-data-material-get-submaterials">epsara_data_material_get_submaterials</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GSList"><returnvalue>GSList</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="epsara-data-material-get-subisotopes">epsara_data_material_get_subisotopes</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GSList"><returnvalue>GSList</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="epsara-data-material-get-all-interactions">epsara_data_material_get_all_interactions</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GSList"><returnvalue>GSList</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="epsara-data-material-get-all-subisotopes">epsara_data_material_get_all_subisotopes</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataMaterial.properties" role="properties">
+<title role="properties.title">Properties</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="properties_type" colwidth="150px"/>
+<colspec colname="properties_name" colwidth="300px"/>
+<colspec colname="properties_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="EpsaraDataMaterial--concentration">concentration</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gchar"><type>gchar</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraDataMaterial--header">header</link></entry><entry role="property_flags">Read / Write</entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataMaterial.signals" role="signal_proto">
+<title role="signal_proto.title">Signals</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="signals_return" colwidth="150px"/>
+<colspec colname="signals_name" colwidth="300px"/>
+<colspec colname="signals_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="EpsaraDataMaterial-add">add</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-FIRST:CAPS">Run First</link></entry></row>
+<row><entry role="signal_type"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link></entry><entry role="signal_name"><link linkend="EpsaraDataMaterial-distribution">distribution</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-ACTION:CAPS">Action</link></entry></row>
+<row><entry role="signal_type"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link></entry><entry role="signal_name"><link linkend="EpsaraDataMaterial-integrate-material">integrate-material</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-ACTION:CAPS">Action</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="EpsaraDataMaterial-remove">remove</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-RUN-FIRST:CAPS">Run First</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataMaterial.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="EpsaraDataMaterial-struct">EpsaraDataMaterial</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="EpsaraDataMaterialClass">EpsaraDataMaterialClass</link></entry></row>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="EpsaraDataMaterialPrivate">EpsaraDataMaterialPrivate</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataMaterial.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="EpsaraDataElement">EpsaraDataElement</link>
+        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> EpsaraDataMaterial
+            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="EpsaraDataMaterialLayered">EpsaraDataMaterialLayered</link>
+</screen>
+</refsect1>
+<refsect1 id="EpsaraDataMaterial.implemented-interfaces" role="impl_interfaces">
+<title role="impl_interfaces.title">Implemented Interfaces</title>
+<para>
+EpsaraDataMaterial implements
+ <link linkend="JsonSerializable">JsonSerializable</link>.</para>
+
+</refsect1>
+
+
+<refsect1 id="EpsaraDataMaterial.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="EpsaraDataMaterial.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="epsara-data-material-get-concentration-at-point" role="function">
+<title>epsara_data_material_get_concentration_at_point&#160;()</title>
+<indexterm zone="epsara-data-material-get-concentration-at-point"><primary>epsara_data_material_get_concentration_at_point</primary></indexterm>
+<programlisting language="C"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+epsara_data_material_get_concentration_at_point
+                               (<parameter><link linkend="EpsaraDataMaterial"><type>EpsaraDataMaterial</type></link> *self</parameter>,
+                                <parameter><link linkend="EpsaraDataPoint"><type>EpsaraDataPoint</type></link> *position</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-material-get-sub-isotope-concentration-at-point" role="function">
+<title>epsara_data_material_get_sub_isotope_concentration_at_point&#160;()</title>
+<indexterm zone="epsara-data-material-get-sub-isotope-concentration-at-point"><primary>epsara_data_material_get_sub_isotope_concentration_at_point</primary></indexterm>
+<programlisting language="C"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+epsara_data_material_get_sub_isotope_concentration_at_point
+                               (<parameter><link linkend="EpsaraDataMaterial"><type>EpsaraDataMaterial</type></link> *self</parameter>,
+                                <parameter><link linkend="EpsaraDataPoint"><type>EpsaraDataPoint</type></link> *position</parameter>,
+                                <parameter><link linkend="EpsaraDataIsotope"><type>EpsaraDataIsotope</type></link> *isotope</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-material-get-sub-interact-concentration-at-point" role="function">
+<title>epsara_data_material_get_sub_interact_concentration_at_point&#160;()</title>
+<indexterm zone="epsara-data-material-get-sub-interact-concentration-at-point"><primary>epsara_data_material_get_sub_interact_concentration_at_point</primary></indexterm>
+<programlisting language="C"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+epsara_data_material_get_sub_interact_concentration_at_point
+                               (<parameter><link linkend="EpsaraDataMaterial"><type>EpsaraDataMaterial</type></link> *self</parameter>,
+                                <parameter><link linkend="EpsaraDataPoint"><type>EpsaraDataPoint</type></link> *position</parameter>,
+                                <parameter><link linkend="EpsaraDataInteraction"><type>EpsaraDataInteraction</type></link> *interaction</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-material-integrate-sub-interact-over-length" role="function">
+<title>epsara_data_material_integrate_sub_interact_over_length&#160;()</title>
+<indexterm zone="epsara-data-material-integrate-sub-interact-over-length"><primary>epsara_data_material_integrate_sub_interact_over_length</primary></indexterm>
+<programlisting language="C"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+epsara_data_material_integrate_sub_interact_over_length
+                               (<parameter><link linkend="EpsaraDataMaterial"><type>EpsaraDataMaterial</type></link> *self</parameter>,
+                                <parameter><link linkend="EpsaraDataPoint"><type>EpsaraDataPoint</type></link> *start</parameter>,
+                                <parameter><link linkend="EpsaraDataPoint"><type>EpsaraDataPoint</type></link> *end</parameter>,
+                                <parameter><link linkend="EpsaraDataInteraction"><type>EpsaraDataInteraction</type></link> *interaction</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-material-integrate-material-over-length" role="function">
+<title>epsara_data_material_integrate_material_over_length&#160;()</title>
+<indexterm zone="epsara-data-material-integrate-material-over-length"><primary>epsara_data_material_integrate_material_over_length</primary></indexterm>
+<programlisting language="C"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+epsara_data_material_integrate_material_over_length
+                               (<parameter><link linkend="EpsaraDataMaterial"><type>EpsaraDataMaterial</type></link> *self</parameter>,
+                                <parameter><link linkend="EpsaraDataPoint"><type>EpsaraDataPoint</type></link> *start</parameter>,
+                                <parameter><link linkend="EpsaraDataPoint"><type>EpsaraDataPoint</type></link> *end</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-material-get-distance" role="function">
+<title>epsara_data_material_get_distance&#160;()</title>
+<indexterm zone="epsara-data-material-get-distance"><primary>epsara_data_material_get_distance</primary></indexterm>
+<programlisting language="C"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+epsara_data_material_get_distance (<parameter><link linkend="EpsaraDataMaterial"><type>EpsaraDataMaterial</type></link> *material</parameter>,
+                                   <parameter><link linkend="EpsaraDataPoint"><type>EpsaraDataPoint</type></link> *point</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-material-get-submaterials" role="function" condition="since:0.02">
+<title>epsara_data_material_get_submaterials&#160;()</title>
+<indexterm zone="epsara-data-material-get-submaterials" role="0.02"><primary>epsara_data_material_get_submaterials</primary></indexterm>
+<programlisting language="C"><link linkend="GSList"><returnvalue>GSList</returnvalue></link>&#160;*
+epsara_data_material_get_submaterials (<parameter><link linkend="EpsaraDataMaterial"><type>EpsaraDataMaterial</type></link> *material</parameter>);</programlisting>
+<para>Returns pointer to the list of submaterials of this specific material.</para>
+<refsect3 id="epsara-data-material-get-submaterials.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>material</para></entry>
+<entry role="parameter_description"><para>a <link linkend="EpsaraDataMaterial"><type>EpsaraDataMaterial</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="epsara-data-material-get-submaterials.returns" role="returns">
+<title>Returns</title>
+<para>the list of materials
+bound to the material. </para>
+<para><emphasis role="annotation">[<acronym>element-type</acronym> EpsaraDataMaterial][<acronym>transfer none</acronym>][<acronym>allow-none</acronym>]</emphasis></para>
+</refsect3><para role="since">Since: <link linkend="api-index-0.02">0.02</link></para></refsect2>
+<refsect2 id="epsara-data-material-get-subisotopes" role="function" condition="since:0.02">
+<title>epsara_data_material_get_subisotopes&#160;()</title>
+<indexterm zone="epsara-data-material-get-subisotopes" role="0.02"><primary>epsara_data_material_get_subisotopes</primary></indexterm>
+<programlisting language="C"><link linkend="GSList"><returnvalue>GSList</returnvalue></link>&#160;*
+epsara_data_material_get_subisotopes (<parameter><link linkend="EpsaraDataMaterial"><type>EpsaraDataMaterial</type></link> *material</parameter>);</programlisting>
+<para>Returns pointer to the list of subisotopes of this specific material.</para>
+<refsect3 id="epsara-data-material-get-subisotopes.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>material</para></entry>
+<entry role="parameter_description"><para>a <link linkend="EpsaraDataMaterial"><type>EpsaraDataMaterial</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="epsara-data-material-get-subisotopes.returns" role="returns">
+<title>Returns</title>
+<para>the list of isotopes
+bound to the material. </para>
+<para><emphasis role="annotation">[<acronym>element-type</acronym> EpsaraDataMaterial][<acronym>transfer none</acronym>][<acronym>allow-none</acronym>]</emphasis></para>
+</refsect3><para role="since">Since: <link linkend="api-index-0.02">0.02</link></para></refsect2>
+<refsect2 id="epsara-data-material-get-all-interactions" role="function" condition="since:0.02">
+<title>epsara_data_material_get_all_interactions&#160;()</title>
+<indexterm zone="epsara-data-material-get-all-interactions" role="0.02"><primary>epsara_data_material_get_all_interactions</primary></indexterm>
+<programlisting language="C"><link linkend="GSList"><returnvalue>GSList</returnvalue></link>&#160;*
+epsara_data_material_get_all_interactions
+                               (<parameter><link linkend="EpsaraDataMaterial"><type>EpsaraDataMaterial</type></link> *material</parameter>);</programlisting>
+<refsect3 id="epsara-data-material-get-all-interactions.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>material</para></entry>
+<entry role="parameter_description"><para>an <link linkend="EpsaraDataMaterial"><type>EpsaraDataMaterial</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="epsara-data-material-get-all-interactions.returns" role="returns">
+<title>Returns</title>
+<para>a link to the list
+of all interactions associated with the <parameter>material</parameter>
+. </para>
+<para><emphasis role="annotation">[<acronym>element-type</acronym> EpsaraDataInteraction][<acronym>transfer container</acronym>]</emphasis></para>
+</refsect3><para role="since">Since: <link linkend="api-index-0.02">0.02</link></para></refsect2>
+<refsect2 id="epsara-data-material-get-all-subisotopes" role="function">
+<title>epsara_data_material_get_all_subisotopes&#160;()</title>
+<indexterm zone="epsara-data-material-get-all-subisotopes"><primary>epsara_data_material_get_all_subisotopes</primary></indexterm>
+<programlisting language="C"><link linkend="GSList"><returnvalue>GSList</returnvalue></link>&#160;*
+epsara_data_material_get_all_subisotopes
+                               (<parameter><link linkend="EpsaraDataMaterial"><type>EpsaraDataMaterial</type></link> *material</parameter>);</programlisting>
+<para>This function collects all isotopes associated to the <parameter>material</parameter>
+ or any of the
+subordinated materials.</para>
+<refsect3 id="epsara-data-material-get-all-subisotopes.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>material</para></entry>
+<entry role="parameter_description"><para>a <link linkend="EpsaraDataMaterial"><type>EpsaraDataMaterial</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="epsara-data-material-get-all-subisotopes.returns" role="returns">
+<title>Returns</title>
+<para>a list of all <link linkend="EpsaraDataIsotope-elements"><type>EpsaraDataIsotope-elements</type></link> associated with the <parameter>material</parameter>
+. </para>
+<para><emphasis role="annotation">[<acronym>nullable</acronym>][<acronym>transfer container</acronym>][<acronym>element-type</acronym> EpsaraDataIsotope]</emphasis></para>
+</refsect3></refsect2>
+
+</refsect1>
+<refsect1 id="EpsaraDataMaterial.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="EpsaraDataMaterial-struct" role="struct">
+<title>struct EpsaraDataMaterial</title>
+<indexterm zone="EpsaraDataMaterial-struct"><primary>EpsaraDataMaterial</primary></indexterm>
+<programlisting language="C">struct EpsaraDataMaterial;</programlisting>
+</refsect2>
+<refsect2 id="EpsaraDataMaterialClass" role="struct">
+<title>struct EpsaraDataMaterialClass</title>
+<indexterm zone="EpsaraDataMaterialClass"><primary>EpsaraDataMaterialClass</primary></indexterm>
+<programlisting language="C">struct EpsaraDataMaterialClass {
+  EpsaraDataElementClass parent_class;
+
+  void    (*add)       		(EpsaraDataMaterial *self,
+                  				 GObject *child);
+  void    (*remove)    		(EpsaraDataMaterial *self,
+                  				 GObject *child);
+//  void    (*forall)       (EpsaraDataMaterial  *self,
+//                           gboolean             include_internals,
+//                           GtkCallback          callback,
+//                           gpointer             callback_data);
+//  GType   (*child_type)		(EpsaraDataMaterial *self);
+//  gchar*  (*composite_name)&#160;(GtkContainer	 *container,
+  gdouble (*distribution) (EpsaraDataMaterial *self,
+                           EpsaraDataPoint    *position);
+  gdouble (*integrate_material) (EpsaraDataMaterial *self,
+                                 EpsaraDataPoint    *start,
+                                 EpsaraDataPoint    *end);
+
+  gdouble (*get_factor_at_pos) (EpsaraDataMaterial *self,
+                                EpsaraDataPoint    *position,
+                                gint type);
+
+//				 GtkWidget	 *child);
+//  void    (*set_child_property) (GtkContainer    *container,
+//				 GtkWidget       *child,
+//				 guint            property_id,
+//				 const GValue    *value,
+//				 GParamSpec      *pspec);
+//  void    (*get_child_property) (GtkContainer    *container,
+//                                 GtkWidget       *child,
+//				 guint            property_id,
+//				 GValue          *value,
+//				 GParamSpec      *pspec);
+  GSList *(*_points_of_interest) (EpsaraDataMaterial *self);
+};
+</programlisting>
+</refsect2>
+<refsect2 id="EpsaraDataMaterialPrivate" role="struct">
+<title>EpsaraDataMaterialPrivate</title>
+<indexterm zone="EpsaraDataMaterialPrivate"><primary>EpsaraDataMaterialPrivate</primary></indexterm>
+<programlisting language="C">typedef struct _EpsaraDataMaterialPrivate EpsaraDataMaterialPrivate;</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="EpsaraDataMaterial.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="EpsaraDataMaterial--concentration" role="property"><title>The <literal>“concentration”</literal> property</title>
+<indexterm zone="EpsaraDataMaterial--concentration"><primary>EpsaraDataMaterial:concentration</primary></indexterm>
+<programlisting>  “concentration”            <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>concentration of material.</para><para>Flags: Read / Write</para>
+<para>Allowed values: &gt;= 0</para>
+<para>Default value: 1</para>
+</refsect2>
+<refsect2 id="EpsaraDataMaterial--header" role="property"><title>The <literal>“header”</literal> property</title>
+<indexterm zone="EpsaraDataMaterial--header"><primary>EpsaraDataMaterial:header</primary></indexterm>
+<programlisting>  “header”                   <link linkend="gchar"><type>gchar</type></link>&#160;*</programlisting>
+<para>header string, e.g. the name of the material.</para><para>Flags: Read / Write</para>
+<para>Default value: ""</para>
+</refsect2>
+
+</refsect1>
+<refsect1 id="EpsaraDataMaterial.signal-details" role="signals">
+<title role="signals.title">Signal Details</title>
+<refsect2 id="EpsaraDataMaterial-add" role="signal"><title>The <literal>“add”</literal> signal</title>
+<indexterm zone="EpsaraDataMaterial-add"><primary>EpsaraDataMaterial::add</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="EpsaraDataMaterial"><type>EpsaraDataMaterial</type></link> *epsaradatamaterial,
+               <link linkend="GObject"><type>GObject</type></link>            *arg1,
+               <link linkend="gpointer"><type>gpointer</type></link>            user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-FIRST:CAPS">Run First</link></para>
+</refsect2><refsect2 id="EpsaraDataMaterial-distribution" role="signal"><title>The <literal>“distribution”</literal> signal</title>
+<indexterm zone="EpsaraDataMaterial-distribution"><primary>EpsaraDataMaterial::distribution</primary></indexterm>
+<programlisting language="C"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+user_function (<link linkend="EpsaraDataMaterial"><type>EpsaraDataMaterial</type></link> *epsaradatamaterial,
+               <link linkend="EpsaraDataPoint"><type>EpsaraDataPoint</type></link>    *arg1,
+               <link linkend="gpointer"><type>gpointer</type></link>            user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-ACTION:CAPS">Action</link></para>
+</refsect2><refsect2 id="EpsaraDataMaterial-integrate-material" role="signal"><title>The <literal>“integrate-material”</literal> signal</title>
+<indexterm zone="EpsaraDataMaterial-integrate-material"><primary>EpsaraDataMaterial::integrate-material</primary></indexterm>
+<programlisting language="C"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+user_function (<link linkend="EpsaraDataMaterial"><type>EpsaraDataMaterial</type></link> *epsaradatamaterial,
+               <link linkend="EpsaraDataPoint"><type>EpsaraDataPoint</type></link>    *arg1,
+               <link linkend="EpsaraDataPoint"><type>EpsaraDataPoint</type></link>    *arg2,
+               <link linkend="gpointer"><type>gpointer</type></link>            user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-ACTION:CAPS">Action</link></para>
+</refsect2><refsect2 id="EpsaraDataMaterial-remove" role="signal"><title>The <literal>“remove”</literal> signal</title>
+<indexterm zone="EpsaraDataMaterial-remove"><primary>EpsaraDataMaterial::remove</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="EpsaraDataMaterial"><type>EpsaraDataMaterial</type></link> *epsaradatamaterial,
+               <link linkend="GObject"><type>GObject</type></link>            *arg1,
+               <link linkend="gpointer"><type>gpointer</type></link>            user_data)</programlisting>
+<para>Flags: <link linkend="G-SIGNAL-RUN-FIRST:CAPS">Run First</link></para>
+</refsect2>
+</refsect1>
+
+</refentry>

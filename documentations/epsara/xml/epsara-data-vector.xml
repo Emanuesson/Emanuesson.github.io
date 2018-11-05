@@ -1,0 +1,337 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="EpsaraDataVector">
+<refmeta>
+<refentrytitle role="top_of_page" id="EpsaraDataVector.top_of_page">EpsaraDataVector</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>EPSARA Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>EpsaraDataVector</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="EpsaraDataVector.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="EpsaraDataVector"><returnvalue>EpsaraDataVector</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="epsara-data-vector-new">epsara_data_vector_new</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-vector-get">epsara_data_vector_get</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-vector-set">epsara_data_vector_set</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="EpsaraDataVector"><returnvalue>EpsaraDataVector</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="epsara-data-vector-set-and-expand">epsara_data_vector_set_and_expand</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-vector-set-all">epsara_data_vector_set_all</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-vector-set-zero">epsara_data_vector_set_zero</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gint"><returnvalue>gint</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-vector-set-basis">epsara_data_vector_set_basis</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gint"><returnvalue>gint</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-vector-copy">epsara_data_vector_copy</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gint"><returnvalue>gint</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-vector-swap">epsara_data_vector_swap</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gint"><returnvalue>gint</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-vector-swap-elements">epsara_data_vector_swap_elements</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gint"><returnvalue>gint</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-vector-reverse">epsara_data_vector_reverse</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gint"><returnvalue>gint</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-vector-add">epsara_data_vector_add</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gint"><returnvalue>gint</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-vector-sub">epsara_data_vector_sub</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gint"><returnvalue>gint</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-vector-mul">epsara_data_vector_mul</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gint"><returnvalue>gint</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-vector-div">epsara_data_vector_div</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gint"><returnvalue>gint</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-vector-scale">epsara_data_vector_scale</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gint"><returnvalue>gint</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-vector-add-constant">epsara_data_vector_add_constant</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-vector-max">epsara_data_vector_max</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-vector-min">epsara_data_vector_min</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-vector-minmax">epsara_data_vector_minmax</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gint"><returnvalue>gint</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-vector-max-index">epsara_data_vector_max_index</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gint"><returnvalue>gint</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-vector-min-index">epsara_data_vector_min_index</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-vector-minmax-index">epsara_data_vector_minmax_index</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataVector.properties" role="properties">
+<title role="properties.title">Properties</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="properties_type" colwidth="150px"/>
+<colspec colname="properties_name" colwidth="300px"/>
+<colspec colname="properties_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="property_type"><link linkend="gint"><type>gint</type></link></entry><entry role="property_name"><link linkend="EpsaraDataVector--size">size</link></entry><entry role="property_flags">Read / Write</entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataVector.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="EpsaraDataVector-struct">EpsaraDataVector</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="EpsaraDataVectorClass">EpsaraDataVectorClass</link></entry></row>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="EpsaraDataVectorPrivate">EpsaraDataVectorPrivate</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataVector.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> EpsaraDataVector
+</screen>
+</refsect1>
+
+
+<refsect1 id="EpsaraDataVector.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="EpsaraDataVector.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="epsara-data-vector-new" role="function">
+<title>epsara_data_vector_new&#160;()</title>
+<indexterm zone="epsara-data-vector-new"><primary>epsara_data_vector_new</primary></indexterm>
+<programlisting language="C"><link linkend="EpsaraDataVector"><returnvalue>EpsaraDataVector</returnvalue></link>&#160;*
+epsara_data_vector_new (<parameter><link linkend="gint"><type>gint</type></link> size</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-vector-get" role="function">
+<title>epsara_data_vector_get&#160;()</title>
+<indexterm zone="epsara-data-vector-get"><primary>epsara_data_vector_get</primary></indexterm>
+<programlisting language="C"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+epsara_data_vector_get (<parameter><link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link> *vector</parameter>,
+                        <parameter><link linkend="gint"><type>gint</type></link> i</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-vector-set" role="function">
+<title>epsara_data_vector_set&#160;()</title>
+<indexterm zone="epsara-data-vector-set"><primary>epsara_data_vector_set</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+epsara_data_vector_set (<parameter><link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link> *vector</parameter>,
+                        <parameter><link linkend="gint"><type>gint</type></link> i</parameter>,
+                        <parameter><link linkend="gdouble"><type>gdouble</type></link> x</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-vector-set-and-expand" role="function" condition="since:0.02">
+<title>epsara_data_vector_set_and_expand&#160;()</title>
+<indexterm zone="epsara-data-vector-set-and-expand" role="0.02"><primary>epsara_data_vector_set_and_expand</primary></indexterm>
+<programlisting language="C"><link linkend="EpsaraDataVector"><returnvalue>EpsaraDataVector</returnvalue></link>&#160;*
+epsara_data_vector_set_and_expand (<parameter><link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link> *vector</parameter>,
+                                   <parameter><link linkend="gint"><type>gint</type></link> i</parameter>,
+                                   <parameter><link linkend="gdouble"><type>gdouble</type></link> x</parameter>);</programlisting>
+<para>This is a hacky function to set an value into an existing vector. If i is out of the boundaries
+of the existing vector. The vector-size is increased up to i and x is inserted.</para>
+<refsect3 id="epsara-data-vector-set-and-expand.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>vector</para></entry>
+<entry role="parameter_description"><para>an <link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>i</para></entry>
+<entry role="parameter_description"><para>index to set</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>x</para></entry>
+<entry role="parameter_description"><para>value to set</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="epsara-data-vector-set-and-expand.returns" role="returns">
+<title>Returns</title>
+<para>the location of the new vector. </para>
+<para><emphasis role="annotation">[<acronym>transfer full</acronym>]</emphasis></para>
+</refsect3><para role="since">Since: <link linkend="api-index-0.02">0.02</link></para></refsect2>
+<refsect2 id="epsara-data-vector-set-all" role="function">
+<title>epsara_data_vector_set_all&#160;()</title>
+<indexterm zone="epsara-data-vector-set-all"><primary>epsara_data_vector_set_all</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+epsara_data_vector_set_all (<parameter><link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link> *vector</parameter>,
+                            <parameter><link linkend="gdouble"><type>gdouble</type></link> x</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-vector-set-zero" role="function">
+<title>epsara_data_vector_set_zero&#160;()</title>
+<indexterm zone="epsara-data-vector-set-zero"><primary>epsara_data_vector_set_zero</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+epsara_data_vector_set_zero (<parameter><link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link> *vector</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-vector-set-basis" role="function">
+<title>epsara_data_vector_set_basis&#160;()</title>
+<indexterm zone="epsara-data-vector-set-basis"><primary>epsara_data_vector_set_basis</primary></indexterm>
+<programlisting language="C"><link linkend="gint"><returnvalue>gint</returnvalue></link>
+epsara_data_vector_set_basis (<parameter><link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link> *vector</parameter>,
+                              <parameter><link linkend="gint"><type>gint</type></link> i</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-vector-copy" role="function">
+<title>epsara_data_vector_copy&#160;()</title>
+<indexterm zone="epsara-data-vector-copy"><primary>epsara_data_vector_copy</primary></indexterm>
+<programlisting language="C"><link linkend="gint"><returnvalue>gint</returnvalue></link>
+epsara_data_vector_copy (<parameter><link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link> *dest</parameter>,
+                         <parameter><link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link> *src</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-vector-swap" role="function">
+<title>epsara_data_vector_swap&#160;()</title>
+<indexterm zone="epsara-data-vector-swap"><primary>epsara_data_vector_swap</primary></indexterm>
+<programlisting language="C"><link linkend="gint"><returnvalue>gint</returnvalue></link>
+epsara_data_vector_swap (<parameter><link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link> *v</parameter>,
+                         <parameter><link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link> *w</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-vector-swap-elements" role="function">
+<title>epsara_data_vector_swap_elements&#160;()</title>
+<indexterm zone="epsara-data-vector-swap-elements"><primary>epsara_data_vector_swap_elements</primary></indexterm>
+<programlisting language="C"><link linkend="gint"><returnvalue>gint</returnvalue></link>
+epsara_data_vector_swap_elements (<parameter><link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link> *vector</parameter>,
+                                  <parameter><link linkend="gint"><type>gint</type></link> i</parameter>,
+                                  <parameter><link linkend="gint"><type>gint</type></link> j</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-vector-reverse" role="function">
+<title>epsara_data_vector_reverse&#160;()</title>
+<indexterm zone="epsara-data-vector-reverse"><primary>epsara_data_vector_reverse</primary></indexterm>
+<programlisting language="C"><link linkend="gint"><returnvalue>gint</returnvalue></link>
+epsara_data_vector_reverse (<parameter><link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link> *vector</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-vector-add" role="function">
+<title>epsara_data_vector_add&#160;()</title>
+<indexterm zone="epsara-data-vector-add"><primary>epsara_data_vector_add</primary></indexterm>
+<programlisting language="C"><link linkend="gint"><returnvalue>gint</returnvalue></link>
+epsara_data_vector_add (<parameter><link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link> *a</parameter>,
+                        <parameter>const <link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link> *b</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-vector-sub" role="function">
+<title>epsara_data_vector_sub&#160;()</title>
+<indexterm zone="epsara-data-vector-sub"><primary>epsara_data_vector_sub</primary></indexterm>
+<programlisting language="C"><link linkend="gint"><returnvalue>gint</returnvalue></link>
+epsara_data_vector_sub (<parameter><link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link> *a</parameter>,
+                        <parameter>const <link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link> *b</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-vector-mul" role="function">
+<title>epsara_data_vector_mul&#160;()</title>
+<indexterm zone="epsara-data-vector-mul"><primary>epsara_data_vector_mul</primary></indexterm>
+<programlisting language="C"><link linkend="gint"><returnvalue>gint</returnvalue></link>
+epsara_data_vector_mul (<parameter><link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link> *a</parameter>,
+                        <parameter>const <link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link> *b</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-vector-div" role="function">
+<title>epsara_data_vector_div&#160;()</title>
+<indexterm zone="epsara-data-vector-div"><primary>epsara_data_vector_div</primary></indexterm>
+<programlisting language="C"><link linkend="gint"><returnvalue>gint</returnvalue></link>
+epsara_data_vector_div (<parameter><link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link> *a</parameter>,
+                        <parameter>const <link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link> *b</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-vector-scale" role="function">
+<title>epsara_data_vector_scale&#160;()</title>
+<indexterm zone="epsara-data-vector-scale"><primary>epsara_data_vector_scale</primary></indexterm>
+<programlisting language="C"><link linkend="gint"><returnvalue>gint</returnvalue></link>
+epsara_data_vector_scale (<parameter><link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link> *a</parameter>,
+                          <parameter>const <link linkend="gdouble"><type>gdouble</type></link> x</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-vector-add-constant" role="function">
+<title>epsara_data_vector_add_constant&#160;()</title>
+<indexterm zone="epsara-data-vector-add-constant"><primary>epsara_data_vector_add_constant</primary></indexterm>
+<programlisting language="C"><link linkend="gint"><returnvalue>gint</returnvalue></link>
+epsara_data_vector_add_constant (<parameter><link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link> *a</parameter>,
+                                 <parameter>const <link linkend="gdouble"><type>gdouble</type></link> x</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-vector-max" role="function">
+<title>epsara_data_vector_max&#160;()</title>
+<indexterm zone="epsara-data-vector-max"><primary>epsara_data_vector_max</primary></indexterm>
+<programlisting language="C"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+epsara_data_vector_max (<parameter>const <link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link> *v</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-vector-min" role="function">
+<title>epsara_data_vector_min&#160;()</title>
+<indexterm zone="epsara-data-vector-min"><primary>epsara_data_vector_min</primary></indexterm>
+<programlisting language="C"><link linkend="gdouble"><returnvalue>gdouble</returnvalue></link>
+epsara_data_vector_min (<parameter>const <link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link> *v</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-vector-minmax" role="function">
+<title>epsara_data_vector_minmax&#160;()</title>
+<indexterm zone="epsara-data-vector-minmax"><primary>epsara_data_vector_minmax</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+epsara_data_vector_minmax (<parameter>const <link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link> *v</parameter>,
+                           <parameter><link linkend="gdouble"><type>gdouble</type></link> *min_out</parameter>,
+                           <parameter><link linkend="gdouble"><type>gdouble</type></link> *max_out</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-vector-max-index" role="function">
+<title>epsara_data_vector_max_index&#160;()</title>
+<indexterm zone="epsara-data-vector-max-index"><primary>epsara_data_vector_max_index</primary></indexterm>
+<programlisting language="C"><link linkend="gint"><returnvalue>gint</returnvalue></link>
+epsara_data_vector_max_index (<parameter>const <link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link> *v</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-vector-min-index" role="function">
+<title>epsara_data_vector_min_index&#160;()</title>
+<indexterm zone="epsara-data-vector-min-index"><primary>epsara_data_vector_min_index</primary></indexterm>
+<programlisting language="C"><link linkend="gint"><returnvalue>gint</returnvalue></link>
+epsara_data_vector_min_index (<parameter>const <link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link> *v</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-vector-minmax-index" role="function">
+<title>epsara_data_vector_minmax_index&#160;()</title>
+<indexterm zone="epsara-data-vector-minmax-index"><primary>epsara_data_vector_minmax_index</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+epsara_data_vector_minmax_index (<parameter>const <link linkend="EpsaraDataVector"><type>EpsaraDataVector</type></link> *v</parameter>,
+                                 <parameter><link linkend="gint"><type>gint</type></link> *imin</parameter>,
+                                 <parameter><link linkend="gint"><type>gint</type></link> *imax</parameter>);</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="EpsaraDataVector.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="EpsaraDataVector-struct" role="struct">
+<title>struct EpsaraDataVector</title>
+<indexterm zone="EpsaraDataVector-struct"><primary>EpsaraDataVector</primary></indexterm>
+<programlisting language="C">struct EpsaraDataVector;</programlisting>
+</refsect2>
+<refsect2 id="EpsaraDataVectorClass" role="struct">
+<title>struct EpsaraDataVectorClass</title>
+<indexterm zone="EpsaraDataVectorClass"><primary>EpsaraDataVectorClass</primary></indexterm>
+<programlisting language="C">struct EpsaraDataVectorClass {
+  GObjectClass parent_class;
+};
+</programlisting>
+</refsect2>
+<refsect2 id="EpsaraDataVectorPrivate" role="struct">
+<title>EpsaraDataVectorPrivate</title>
+<indexterm zone="EpsaraDataVectorPrivate"><primary>EpsaraDataVectorPrivate</primary></indexterm>
+<programlisting language="C">typedef struct _EpsaraDataVectorPrivate EpsaraDataVectorPrivate;</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="EpsaraDataVector.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="EpsaraDataVector--size" role="property"><title>The <literal>“size”</literal> property</title>
+<indexterm zone="EpsaraDataVector--size"><primary>EpsaraDataVector:size</primary></indexterm>
+<programlisting>  “size”                     <link linkend="gint"><type>gint</type></link></programlisting>
+<para>Holds the size of the vector.</para><para>Flags: Read / Write</para>
+<para>Allowed values: &gt;= 1</para>
+<para>Default value: 1</para>
+</refsect2>
+
+</refsect1>
+
+</refentry>

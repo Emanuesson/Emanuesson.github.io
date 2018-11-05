@@ -1,0 +1,223 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="EpsaraDataElement">
+<refmeta>
+<refentrytitle role="top_of_page" id="EpsaraDataElement.top_of_page">EpsaraDataElement</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>EPSARA Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>EpsaraDataElement</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="EpsaraDataElement.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-element-set-parent">epsara_data_element_set_parent</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="EpsaraDataElement"><returnvalue>EpsaraDataElement</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="epsara-data-element-get-parent">epsara_data_element_get_parent</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GList"><returnvalue>GList</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="epsara-data-element-get-children">epsara_data_element_get_children</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gchar"><returnvalue>gchar</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="epsara-data-element-get-uuid">epsara_data_element_get_uuid</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="epsara-data-element-unparent">epsara_data_element_unparent</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataElement.properties" role="properties">
+<title role="properties.title">Properties</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="properties_type" colwidth="150px"/>
+<colspec colname="properties_name" colwidth="300px"/>
+<colspec colname="properties_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="property_type"><link linkend="gpointer"><type>gpointer</type></link></entry><entry role="property_name"><link linkend="EpsaraDataElement--children">children</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="GString"><type>GString</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraDataElement--name">name</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="EpsaraDataElement"><type>EpsaraDataElement</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraDataElement--parent">parent</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="GBytes"><type>GBytes</type></link>&#160;*</entry><entry role="property_name"><link linkend="EpsaraDataElement--uuid">uuid</link></entry><entry role="property_flags">Read / Write / Construct Only</entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataElement.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="EpsaraDataElement-struct">EpsaraDataElement</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="EpsaraDataElementClass">EpsaraDataElementClass</link></entry></row>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="EpsaraDataElementPrivate">EpsaraDataElementPrivate</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="EpsaraDataElement.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> EpsaraDataElement
+        <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="EpsaraDataDetector">EpsaraDataDetector</link>
+        <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="EpsaraDataInteraction">EpsaraDataInteraction</link>
+        <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="EpsaraDataIsotope">EpsaraDataIsotope</link>
+        <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="EpsaraDataMaterial">EpsaraDataMaterial</link>
+        <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="EpsaraDataMeasurement">EpsaraDataMeasurement</link>
+        <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="EpsaraDataSource">EpsaraDataSource</link>
+        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="EpsaraDataSet">EpsaraDataSet</link>
+</screen>
+</refsect1>
+<refsect1 id="EpsaraDataElement.implemented-interfaces" role="impl_interfaces">
+<title role="impl_interfaces.title">Implemented Interfaces</title>
+<para>
+EpsaraDataElement implements
+ <link linkend="JsonSerializable">JsonSerializable</link>.</para>
+
+</refsect1>
+
+
+<refsect1 id="EpsaraDataElement.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="EpsaraDataElement.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="epsara-data-element-set-parent" role="function">
+<title>epsara_data_element_set_parent&#160;()</title>
+<indexterm zone="epsara-data-element-set-parent"><primary>epsara_data_element_set_parent</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+epsara_data_element_set_parent (<parameter><link linkend="EpsaraDataElement"><type>EpsaraDataElement</type></link> *parent</parameter>,
+                                <parameter><link linkend="EpsaraDataElement"><type>EpsaraDataElement</type></link> *element</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-element-get-parent" role="function" condition="since:0.02">
+<title>epsara_data_element_get_parent&#160;()</title>
+<indexterm zone="epsara-data-element-get-parent" role="0.02"><primary>epsara_data_element_get_parent</primary></indexterm>
+<programlisting language="C"><link linkend="EpsaraDataElement"><returnvalue>EpsaraDataElement</returnvalue></link>&#160;*
+epsara_data_element_get_parent (<parameter><link linkend="EpsaraDataElement"><type>EpsaraDataElement</type></link> *element</parameter>);</programlisting>
+<refsect3 id="epsara-data-element-get-parent.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>element</para></entry>
+<entry role="parameter_description"><para>an <link linkend="EpsaraDataElement"><type>EpsaraDataElement</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="epsara-data-element-get-parent.returns" role="returns">
+<title>Returns</title>
+<para>the parent element. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3><para role="since">Since: <link linkend="api-index-0.02">0.02</link></para></refsect2>
+<refsect2 id="epsara-data-element-get-children" role="function" condition="since:0.02">
+<title>epsara_data_element_get_children&#160;()</title>
+<indexterm zone="epsara-data-element-get-children" role="0.02"><primary>epsara_data_element_get_children</primary></indexterm>
+<programlisting language="C"><link linkend="GList"><returnvalue>GList</returnvalue></link>&#160;*
+epsara_data_element_get_children (<parameter><link linkend="EpsaraDataElement"><type>EpsaraDataElement</type></link> *element</parameter>);</programlisting>
+<refsect3 id="epsara-data-element-get-children.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>element</para></entry>
+<entry role="parameter_description"><para>an <link linkend="EpsaraDataElement"><type>EpsaraDataElement</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="epsara-data-element-get-children.returns" role="returns">
+<title>Returns</title>
+<para>the list of child elements. </para>
+<para><emphasis role="annotation">[<acronym>transfer container</acronym>][<acronym>element-type</acronym> EpsaraDataElement]</emphasis></para>
+</refsect3><para role="since">Since: <link linkend="api-index-0.02">0.02</link></para></refsect2>
+<refsect2 id="epsara-data-element-get-uuid" role="function">
+<title>epsara_data_element_get_uuid&#160;()</title>
+<indexterm zone="epsara-data-element-get-uuid"><primary>epsara_data_element_get_uuid</primary></indexterm>
+<programlisting language="C"><link linkend="gchar"><returnvalue>gchar</returnvalue></link>&#160;*
+epsara_data_element_get_uuid (<parameter><link linkend="EpsaraDataElement"><type>EpsaraDataElement</type></link> *element</parameter>);</programlisting>
+</refsect2>
+<refsect2 id="epsara-data-element-unparent" role="function">
+<title>epsara_data_element_unparent&#160;()</title>
+<indexterm zone="epsara-data-element-unparent"><primary>epsara_data_element_unparent</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+epsara_data_element_unparent (<parameter><link linkend="EpsaraDataElement"><type>EpsaraDataElement</type></link> *element</parameter>);</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="EpsaraDataElement.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="EpsaraDataElement-struct" role="struct">
+<title>struct EpsaraDataElement</title>
+<indexterm zone="EpsaraDataElement-struct"><primary>EpsaraDataElement</primary></indexterm>
+<programlisting language="C">struct EpsaraDataElement;</programlisting>
+</refsect2>
+<refsect2 id="EpsaraDataElementClass" role="struct">
+<title>struct EpsaraDataElementClass</title>
+<indexterm zone="EpsaraDataElementClass"><primary>EpsaraDataElementClass</primary></indexterm>
+<programlisting language="C">struct EpsaraDataElementClass {
+  GObjectClass parent_class;
+
+  /*&lt; private methods &gt; */
+/*  GList*    (*_eps_parser_save) (
+    EpsaraDataElement *element,
+    JsonObject *object,
+    GList *prev_list);
+
+  GList*    (*_eps_parser_load) (
+    EpsaraDataElement *element,
+    GList *root_nodes,
+    JsonObject *object,
+    GList *prev_list);*/
+};
+</programlisting>
+</refsect2>
+<refsect2 id="EpsaraDataElementPrivate" role="struct">
+<title>EpsaraDataElementPrivate</title>
+<indexterm zone="EpsaraDataElementPrivate"><primary>EpsaraDataElementPrivate</primary></indexterm>
+<programlisting language="C">typedef struct _EpsaraDataElementPrivate EpsaraDataElementPrivate;</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="EpsaraDataElement.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="EpsaraDataElement--children" role="property"><title>The <literal>“children”</literal> property</title>
+<indexterm zone="EpsaraDataElement--children"><primary>EpsaraDataElement:children</primary></indexterm>
+<programlisting>  “children”                 <link linkend="gpointer"><type>gpointer</type></link></programlisting>
+<para>Is a conveniant way to access the list of children-elements.</para><para>Flags: Read</para>
+</refsect2>
+<refsect2 id="EpsaraDataElement--name" role="property"><title>The <literal>“name”</literal> property</title>
+<indexterm zone="EpsaraDataElement--name"><primary>EpsaraDataElement:name</primary></indexterm>
+<programlisting>  “name”                     <link linkend="GString"><type>GString</type></link>&#160;*</programlisting>
+<para>the name of the element.</para><para>Flags: Read / Write</para>
+</refsect2>
+<refsect2 id="EpsaraDataElement--parent" role="property"><title>The <literal>“parent”</literal> property</title>
+<indexterm zone="EpsaraDataElement--parent"><primary>EpsaraDataElement:parent</primary></indexterm>
+<programlisting>  “parent”                   <link linkend="EpsaraDataElement"><type>EpsaraDataElement</type></link>&#160;*</programlisting>
+<para>Holds the element, that is assigned as the parent of this element.</para><para>Flags: Read / Write</para>
+</refsect2>
+<refsect2 id="EpsaraDataElement--uuid" role="property"><title>The <literal>“uuid”</literal> property</title>
+<indexterm zone="EpsaraDataElement--uuid"><primary>EpsaraDataElement:uuid</primary></indexterm>
+<programlisting>  “uuid”                     <link linkend="GBytes"><type>GBytes</type></link>&#160;*</programlisting>
+<para>a element-specific universal unique identifier.</para><para>Flags: Read / Write / Construct Only</para>
+</refsect2>
+
+</refsect1>
+
+</refentry>

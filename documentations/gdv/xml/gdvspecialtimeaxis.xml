@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="GdvSpecialTimeAxis">
+<refmeta>
+<refentrytitle role="top_of_page" id="GdvSpecialTimeAxis.top_of_page">GdvSpecialTimeAxis</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>GDV Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>GdvSpecialTimeAxis</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="GdvSpecialTimeAxis.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="GdvSpecialTimeAxis"><returnvalue>GdvSpecialTimeAxis</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="gdv-special-time-axis-new">gdv_special_time_axis_new</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="GdvSpecialTimeAxis.properties" role="properties">
+<title role="properties.title">Properties</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="properties_type" colwidth="150px"/>
+<colspec colname="properties_name" colwidth="300px"/>
+<colspec colname="properties_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="property_type"><link linkend="gboolean"><type>gboolean</type></link></entry><entry role="property_name"><link linkend="GdvSpecialTimeAxis--is-unix-time">is-unix-time</link></entry><entry role="property_flags">Read / Write</entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="GdvSpecialTimeAxis.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="GDV-SPECIAL-TIME-AXIS-TYPE:CAPS">GDV_SPECIAL_TIME_AXIS_TYPE</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="GdvSpecialTimeAxis-struct">GdvSpecialTimeAxis</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="GdvSpecialTimeAxisClass">GdvSpecialTimeAxisClass</link></entry></row>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="GdvSpecialTimeAxisPrivate">GdvSpecialTimeAxisPrivate</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="GdvSpecialTimeAxis.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GInitiallyUnowned">GInitiallyUnowned</link>
+        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkWidget">GtkWidget</link>
+            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkContainer">GtkContainer</link>
+                <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GdvAxis">GdvAxis</link>
+                    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GdvLinearAxis">GdvLinearAxis</link>
+                        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> GdvSpecialTimeAxis
+</screen>
+</refsect1>
+<refsect1 id="GdvSpecialTimeAxis.implemented-interfaces" role="impl_interfaces">
+<title role="impl_interfaces.title">Implemented Interfaces</title>
+<para>
+GdvSpecialTimeAxis implements
+ <link linkend="AtkImplementorIface">AtkImplementorIface</link> and  <link linkend="GtkBuildable">GtkBuildable</link>.</para>
+
+</refsect1>
+
+
+<refsect1 id="GdvSpecialTimeAxis.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="GdvSpecialTimeAxis.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="gdv-special-time-axis-new" role="function">
+<title>gdv_special_time_axis_new&#160;()</title>
+<indexterm zone="gdv-special-time-axis-new"><primary>gdv_special_time_axis_new</primary></indexterm>
+<programlisting language="C"><link linkend="GdvSpecialTimeAxis"><returnvalue>GdvSpecialTimeAxis</returnvalue></link>&#160;*
+gdv_special_time_axis_new (<parameter><type>void</type></parameter>);</programlisting>
+<para>Just a common constructor.</para>
+<refsect3 id="gdv-special-time-axis-new.returns" role="returns">
+<title>Returns</title>
+<para> a new <link linkend="GdvSpecialTimeAxis"><type>GdvSpecialTimeAxis</type></link></para>
+</refsect3></refsect2>
+
+</refsect1>
+<refsect1 id="GdvSpecialTimeAxis.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="GDV-SPECIAL-TIME-AXIS-TYPE:CAPS" role="macro">
+<title>GDV_SPECIAL_TIME_AXIS_TYPE</title>
+<indexterm zone="GDV-SPECIAL-TIME-AXIS-TYPE:CAPS"><primary>GDV_SPECIAL_TIME_AXIS_TYPE</primary></indexterm>
+<programlisting language="C">#define GDV_SPECIAL_TIME_AXIS_TYPE                 (gdv_special_time_axis_get_type ())
+</programlisting>
+</refsect2>
+<refsect2 id="GdvSpecialTimeAxis-struct" role="struct">
+<title>struct GdvSpecialTimeAxis</title>
+<indexterm zone="GdvSpecialTimeAxis-struct"><primary>GdvSpecialTimeAxis</primary></indexterm>
+<programlisting language="C">struct GdvSpecialTimeAxis;</programlisting>
+</refsect2>
+<refsect2 id="GdvSpecialTimeAxisClass" role="struct">
+<title>struct GdvSpecialTimeAxisClass</title>
+<indexterm zone="GdvSpecialTimeAxisClass"><primary>GdvSpecialTimeAxisClass</primary></indexterm>
+<programlisting language="C">struct GdvSpecialTimeAxisClass {
+  GdvLinearAxisClass parent_class;
+};
+</programlisting>
+<refsect3 id="GdvSpecialTimeAxisClass.members" role="struct_members">
+<title>Members</title>
+<informaltable role="struct_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="struct_members_name" colwidth="300px"/>
+<colspec colname="struct_members_description"/>
+<colspec colname="struct_members_annotations" colwidth="200px"/>
+<tbody>
+</tbody></tgroup></informaltable>
+</refsect3>
+</refsect2>
+<refsect2 id="GdvSpecialTimeAxisPrivate" role="struct">
+<title>GdvSpecialTimeAxisPrivate</title>
+<indexterm zone="GdvSpecialTimeAxisPrivate"><primary>GdvSpecialTimeAxisPrivate</primary></indexterm>
+<programlisting language="C">typedef struct _GdvSpecialTimeAxisPrivate GdvSpecialTimeAxisPrivate;</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="GdvSpecialTimeAxis.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="GdvSpecialTimeAxis--is-unix-time" role="property"><title>The <literal>“is-unix-time”</literal> property</title>
+<indexterm zone="GdvSpecialTimeAxis--is-unix-time"><primary>GdvSpecialTimeAxis:is-unix-time</primary></indexterm>
+<programlisting>  “is-unix-time”             <link linkend="gboolean"><type>gboolean</type></link></programlisting>
+<para>axis-values will be interpreted as the time in seconds since 1970-01-01 00:00:00 UTC (value is interpreted as UTC-time).</para><para>Flags: Read / Write</para>
+<para>Default value: FALSE</para>
+</refsect2>
+
+</refsect1>
+
+</refentry>

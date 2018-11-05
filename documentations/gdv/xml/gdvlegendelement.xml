@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="GdvLegendElement">
+<refmeta>
+<refentrytitle role="top_of_page" id="GdvLegendElement.top_of_page">GdvLegendElement</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>GDV Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>GdvLegendElement</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="GdvLegendElement.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="GdvLegendElement"><returnvalue>GdvLegendElement</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="gdv-legend-element-new">gdv_legend_element_new</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="GdvLegendElement.properties" role="properties">
+<title role="properties.title">Properties</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="properties_type" colwidth="150px"/>
+<colspec colname="properties_name" colwidth="300px"/>
+<colspec colname="properties_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="property_type"><link linkend="GtkWidget"><type>GtkWidget</type></link>&#160;*</entry><entry role="property_name"><link linkend="GdvLegendElement--descriptor">descriptor</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="GtkWidget"><type>GtkWidget</type></link>&#160;*</entry><entry role="property_name"><link linkend="GdvLegendElement--element">element</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gint"><type>gint</type></link></entry><entry role="property_name"><link linkend="GdvLegendElement--sample-length">sample-length</link></entry><entry role="property_flags">Read / Write</entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="GdvLegendElement.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="GdvLegendElementClass">GdvLegendElementClass</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="GdvLegendElement.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GInitiallyUnowned">GInitiallyUnowned</link>
+        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkWidget">GtkWidget</link>
+            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkContainer">GtkContainer</link>
+                <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> GdvLegendElement
+</screen>
+</refsect1>
+
+
+<refsect1 id="GdvLegendElement.description" role="desc">
+<title role="desc.title">Description</title>
+<para><link linkend="GdvLegendElement"><type>GdvLegendElement</type></link> Defines the small examples for <link linkend="GdvLayerContent"><type>GdvLayerContent</type></link>- or
+   <link linkend="GdvIndicators"><type>GdvIndicators</type></link>, used in a Layer to the GdvLegend. It is just an helper to
+   provide descriptive legends.</para>
+<refsect2><title>CSS nodes</title><para>GdvLegendElement uses a single CSS node with name legendelement.</para>
+</refsect2>
+
+</refsect1>
+<refsect1 id="GdvLegendElement.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="gdv-legend-element-new" role="function">
+<title>gdv_legend_element_new&#160;()</title>
+<indexterm zone="gdv-legend-element-new"><primary>gdv_legend_element_new</primary></indexterm>
+<programlisting language="C"><link linkend="GdvLegendElement"><returnvalue>GdvLegendElement</returnvalue></link>&#160;*
+gdv_legend_element_new (<parameter><type>void</type></parameter>);</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="GdvLegendElement.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="GdvLegendElementClass" role="struct">
+<title>struct GdvLegendElementClass</title>
+<indexterm zone="GdvLegendElementClass"><primary>GdvLegendElementClass</primary></indexterm>
+<programlisting language="C">struct GdvLegendElementClass {
+  GtkContainerClass parent_class;
+
+  /* Padding to allow adding up to 12 new virtual functions without
+   * breaking ABI. */
+  gpointer _gdv_reserve[12];
+};
+</programlisting>
+<refsect3 id="GdvLegendElementClass.members" role="struct_members">
+<title>Members</title>
+<informaltable role="struct_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="struct_members_name" colwidth="300px"/>
+<colspec colname="struct_members_description"/>
+<colspec colname="struct_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="member"><entry role="struct_member_name"><para><link linkend="gpointer"><type>gpointer</type></link>&#160;<structfield id="GdvLegendElementClass.-gdv-reserve">_gdv_reserve</structfield>[12];</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3>
+</refsect2>
+
+</refsect1>
+<refsect1 id="GdvLegendElement.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="GdvLegendElement--descriptor" role="property"><title>The <literal>“descriptor”</literal> property</title>
+<indexterm zone="GdvLegendElement--descriptor"><primary>GdvLegendElement:descriptor</primary></indexterm>
+<programlisting>  “descriptor”               <link linkend="GtkWidget"><type>GtkWidget</type></link>&#160;*</programlisting>
+<para>The widget to describe the legend-element.</para><para>Flags: Read / Write</para>
+</refsect2>
+<refsect2 id="GdvLegendElement--element" role="property"><title>The <literal>“element”</literal> property</title>
+<indexterm zone="GdvLegendElement--element" role="0.1"><primary>GdvLegendElement:element</primary></indexterm>
+<programlisting>  “element”                  <link linkend="GtkWidget"><type>GtkWidget</type></link>&#160;*</programlisting>
+<para>The connected element (layer-content or indicator) that will be displayed.</para>
+<para>Flags: Read / Write</para>
+<para role="since">Since: <link linkend="api-index-0.1">0.1</link></para></refsect2>
+<refsect2 id="GdvLegendElement--sample-length" role="property"><title>The <literal>“sample-length”</literal> property</title>
+<indexterm zone="GdvLegendElement--sample-length"><primary>GdvLegendElement:sample-length</primary></indexterm>
+<programlisting>  “sample-length”            <link linkend="gint"><type>gint</type></link></programlisting>
+<para>the length of sample-length in pixels.</para><para>Flags: Read / Write</para>
+<para>Allowed values: &gt;= 0</para>
+<para>Default value: 20</para>
+</refsect2>
+
+</refsect1>
+
+</refentry>

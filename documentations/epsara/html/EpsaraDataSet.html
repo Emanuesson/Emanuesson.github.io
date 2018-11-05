@@ -1,0 +1,606 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>The Data-Set: Epsara Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Epsara Reference Manual">
+<link rel="up" href="fundamental-structure.html" title="Fundamental structure">
+<link rel="prev" href="fundamental-structure.html" title="Fundamental structure">
+<link rel="next" href="EpsaraDataMeasurement.html" title="EpsaraDataMeasurement">
+<meta name="generator" content="GTK-Doc V1.29 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#EpsaraDataSet.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#EpsaraDataSet.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#EpsaraDataSet.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#EpsaraDataSet.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#EpsaraDataSet.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="fundamental-structure.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="fundamental-structure.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="EpsaraDataMeasurement.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="EpsaraDataSet"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EpsaraDataSet.top_of_page"></a>The Data-Set</span></h2>
+<p>The Data-Set — Basic container class for the fitting process</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="EpsaraDataSet.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="EpsaraDataSet.html#EpsaraForallCallback" title="EpsaraForallCallback ()">*EpsaraForallCallback</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EpsaraDataSet.html#epsara-data-set-contains" title="epsara_data_set_contains ()">epsara_data_set_contains</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="EpsaraDataSet.html#epsara-data-set-save-results" title="epsara_data_set_save_results ()">epsara_data_set_save_results</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EpsaraDataSet.html#epsara-data-set-perform-calculation" title="epsara_data_set_perform_calculation ()">epsara_data_set_perform_calculation</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EpsaraDataSet.html#epsara-data-set-get-fitting-schedule" title="epsara_data_set_get_fitting_schedule ()">epsara_data_set_get_fitting_schedule</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EpsaraDataSet.html#epsara-data-set-add-to-fitting-schedule" title="epsara_data_set_add_to_fitting_schedule ()">epsara_data_set_add_to_fitting_schedule</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EpsaraDataSet.html#epsara-data-set-get-measurements" title="epsara_data_set_get_measurements ()">epsara_data_set_get_measurements</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="EpsaraDataSet.html" title="The Data-Set"><span class="returnvalue">EpsaraDataSet</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="EpsaraDataSet.html#epsara-data-set-get-top-data-set" title="epsara_data_set_get_top_data_set ()">epsara_data_set_get_top_data_set</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="EpsaraDataSet.html#epsara-data-set-calculate-minimizer-value" title="epsara_data_set_calculate_minimizer_value ()">epsara_data_set_calculate_minimizer_value</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EpsaraDataSet.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="EpsaraDataSet.html#EpsaraDataSet--iterations" title="The “iterations” property">iterations</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">EpsaraMinimizerType</span></td>
+<td class="property_name"><a class="link" href="EpsaraDataSet.html#EpsaraDataSet--minimizer-type" title="The “minimizer-type” property">minimizer-type</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="../glib/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *</td>
+<td class="property_name"><a class="link" href="EpsaraDataSet.html#EpsaraDataSet--result-table" title="The “result-table” property">result-table</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><a href="../glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></td>
+<td class="property_name"><a class="link" href="EpsaraDataSet.html#EpsaraDataSet--tolerance" title="The “tolerance” property">tolerance</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EpsaraDataSet.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EpsaraDataSet.html#EpsaraDataSet-add" title="The “add” signal">add</a></td>
+<td class="signal_flags"><a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr>
+<tr>
+<td class="signal_type"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
+<td class="signal_name"><a class="link" href="EpsaraDataSet.html#EpsaraDataSet-calculate" title="The “calculate” signal">calculate</a></td>
+<td class="signal_flags"><a href="../gobject/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></td>
+</tr>
+<tr>
+<td class="signal_type"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
+<td class="signal_name"><a class="link" href="EpsaraDataSet.html#EpsaraDataSet-fit" title="The “fit” signal">fit</a></td>
+<td class="signal_flags"><a href="../gobject/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="EpsaraDataSet.html#EpsaraDataSet-remove" title="The “remove” signal">remove</a></td>
+<td class="signal_flags"><a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EpsaraDataSet.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EpsaraDataSet.html#EpsaraDataSet-struct" title="struct EpsaraDataSet">EpsaraDataSet</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="EpsaraDataSet.html#EpsaraDataSetClass" title="struct EpsaraDataSetClass">EpsaraDataSetClass</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="EpsaraDataSet.html#EpsaraDataSetPrivate" title="EpsaraDataSetPrivate">EpsaraDataSetPrivate</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="EpsaraDataSet.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> EpsaraDataElement
+        <span class="lineart">╰──</span> EpsaraDataSet
+</pre>
+</div>
+<div class="refsect1">
+<a name="EpsaraDataSet.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+EpsaraDataSet implements
+ JsonSerializable.</p>
+</div>
+<div class="refsect1">
+<a name="EpsaraDataSet.description"></a><h2>Description</h2>
+<p>An analytical experiment always contains a whole bunch of intormation. In many cases these
+informations are linked in a highly complex way. The idea of the <span class="type">EpsaraDataSet-class</span> is to
+bundle this information together in a way, that all relevant information is safed and the
+experimental questions are described completely. Only then a computer-algorithm is able to solve
+a physical problem.</p>
+<p>Beside the experimental information, described with the <span class="type">EpsaraDataMeasurement-instances</span>, a
+<span class="type">EpsaraDataSet-object</span> contains information about the fitting process, such as a fitting-schedule,
+the fitting-algorithm-type and the optimum-point as well as the estimation of error-boundaries.
+It also contains a global random-number-generator, that should be used in any calculation, linked
+to a data-set. Only then it is possible to prevent correlations between several instances of the
+same pseudo-random-number-generator.</p>
+</div>
+<div class="refsect1">
+<a name="EpsaraDataSet.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="EpsaraForallCallback"></a><h3>EpsaraForallCallback ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*EpsaraForallCallback<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="EpsaraDataSet.html" title="The Data-Set"><span class="type">EpsaraDataSet</span></a> *set_data</code></em>,
+                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+<p>The type of the callback functions used for e.g. iterating over
+the children of a set-data, see <code class="function">epsara_set_data_foreach()</code>.</p>
+<div class="refsect3">
+<a name="EpsaraForallCallback.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>set_data</p></td>
+<td class="parameter_description"><p>the set-data to operate on</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>user-supplied data. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/closure"><span class="acronym">closure</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="epsara-data-set-contains"></a><h3>epsara_data_set_contains ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+epsara_data_set_contains (<em class="parameter"><code><a class="link" href="EpsaraDataSet.html" title="The Data-Set"><span class="type">EpsaraDataSet</span></a> *set</code></em>,
+                          <em class="parameter"><code><a class="link" href="EpsaraDataMeasurement.html" title="EpsaraDataMeasurement"><span class="type">EpsaraDataMeasurement</span></a> *measurement</code></em>);</pre>
+<p>Tests if the specified <span class="type">EpsaraDataMeasurement-object</span> is a part of
+the <a class="link" href="EpsaraDataSet.html" title="The Data-Set"><span class="type">EpsaraDataSet</span></a> set.</p>
+<div class="refsect3">
+<a name="epsara-data-set-contains.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>set</p></td>
+<td class="parameter_description"><p>the <a class="link" href="EpsaraDataSet.html" title="The Data-Set"><span class="type">EpsaraDataSet</span></a> object</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>measurement</p></td>
+<td class="parameter_description"><p>the tested <a class="link" href="EpsaraDataMeasurement.html" title="EpsaraDataMeasurement"><span class="type">EpsaraDataMeasurement</span></a> object</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="epsara-data-set-contains.returns"></a><h4>Returns</h4>
+<p> the result of the test</p>
+</div>
+<p class="since">Since: 0.02</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="epsara-data-set-save-results"></a><h3>epsara_data_set_save_results ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+epsara_data_set_save_results (<em class="parameter"><code><a class="link" href="EpsaraDataSet.html" title="The Data-Set"><span class="type">EpsaraDataSet</span></a> *set</code></em>,
+                              <em class="parameter"><code><a href="../gio/GFile.html#GFile-struct"><span class="type">GFile</span></a> *output_file</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="epsara-data-set-perform-calculation"></a><h3>epsara_data_set_perform_calculation ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+epsara_data_set_perform_calculation (<em class="parameter"><code><a class="link" href="EpsaraDataSet.html" title="The Data-Set"><span class="type">EpsaraDataSet</span></a> *data</code></em>);</pre>
+<p>Performs the calculation of the data.</p>
+<div class="refsect3">
+<a name="epsara-data-set-perform-calculation.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>an <a class="link" href="EpsaraDataSet.html" title="The Data-Set"><span class="type">EpsaraDataSet</span></a> object</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="epsara-data-set-perform-calculation.returns"></a><h4>Returns</h4>
+<p> the status of the calculation</p>
+</div>
+<p class="since">Since: 0.02</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="epsara-data-set-get-fitting-schedule"></a><h3>epsara_data_set_get_fitting_schedule ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *
+epsara_data_set_get_fitting_schedule (<em class="parameter"><code><a class="link" href="EpsaraDataSet.html" title="The Data-Set"><span class="type">EpsaraDataSet</span></a> *data_set</code></em>,
+                                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> i</code></em>,
+                                      <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **property_name</code></em>);</pre>
+<p>Returns the list of objects at the <em class="parameter"><code>i</code></em>
+-position in the schedule list, or NULL if <code class="literal">i</code> is out of
+range.</p>
+<div class="refsect3">
+<a name="epsara-data-set-get-fitting-schedule.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_set</p></td>
+<td class="parameter_description"><p>a <a class="link" href="EpsaraDataSet.html" title="The Data-Set"><span class="type">EpsaraDataSet</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>i</p></td>
+<td class="parameter_description"><p>the index of the</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>property_name</p></td>
+<td class="parameter_description"><p>a pace to store the pointer to the property-name. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>][<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="epsara-data-set-get-fitting-schedule.returns"></a><h4>Returns</h4>
+<p>the list of objects connected to
+the parameter with the. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> GtkWindow][<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>][<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></p>
+</div>
+<p class="since">Since: 0.02</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="epsara-data-set-add-to-fitting-schedule"></a><h3>epsara_data_set_add_to_fitting_schedule ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+epsara_data_set_add_to_fitting_schedule
+                               (<em class="parameter"><code><a class="link" href="EpsaraDataSet.html" title="The Data-Set"><span class="type">EpsaraDataSet</span></a> *data_set</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *property_name</code></em>,
+                                <em class="parameter"><code><a href="../glib/glib-Singly-Linked-Lists.html#GSList"><span class="type">GSList</span></a> *objects_list</code></em>);</pre>
+<p>Adds one property to the list of parameters that will be used for global optimization (fitting).
+The <em class="parameter"><code>property_name</code></em>
+ and <em class="parameter"><code>objects_list</code></em>
+ build one entity, meaning one degree of freedom for the
+optimisation-kernel. The order of adding parameters with this function determines the logical
+order of parameters used by the <em class="parameter"><code>data_set</code></em>
+ in optimization.</p>
+<div class="refsect3">
+<a name="epsara-data-set-add-to-fitting-schedule.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_set</p></td>
+<td class="parameter_description"><p>a <a class="link" href="EpsaraDataSet.html" title="The Data-Set"><span class="type">EpsaraDataSet</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>property_name</p></td>
+<td class="parameter_description"><p>the property to add</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>objects_list</p></td>
+<td class="parameter_description"><p>list of respective elements. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> EpsaraDataElement]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="epsara-data-set-add-to-fitting-schedule.returns"></a><h4>Returns</h4>
+<p> <a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> on success and <code class="literal">False</code> on failure.</p>
+</div>
+<p class="since">Since: 0.02</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="epsara-data-set-get-measurements"></a><h3>epsara_data_set_get_measurements ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *
+epsara_data_set_get_measurements (<em class="parameter"><code><a class="link" href="EpsaraDataSet.html" title="The Data-Set"><span class="type">EpsaraDataSet</span></a> *data_set</code></em>);</pre>
+<p>Gives a list with all connected measurements.</p>
+<div class="refsect3">
+<a name="epsara-data-set-get-measurements.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_set</p></td>
+<td class="parameter_description"><p>a <a class="link" href="EpsaraDataSet.html" title="The Data-Set"><span class="type">EpsaraDataSet</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="epsara-data-set-get-measurements.returns"></a><h4>Returns</h4>
+<p>a <a href="../glib/glib-Singly-Linked-Lists.html#GSList"><span class="type">GSList</span></a>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20container"><span class="acronym">transfer container</span></a>][<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> Epsara.DataMeasurement]</span></p>
+</div>
+<p class="since">Since: 0.02</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="epsara-data-set-get-top-data-set"></a><h3>epsara_data_set_get_top_data_set ()</h3>
+<pre class="programlisting"><a class="link" href="EpsaraDataSet.html" title="The Data-Set"><span class="returnvalue">EpsaraDataSet</span></a> *
+epsara_data_set_get_top_data_set (<em class="parameter"><code><span class="type">EpsaraDataElement</span> *child</code></em>);</pre>
+<p>Gives the top most parent-set of the child.</p>
+<div class="refsect3">
+<a name="epsara-data-set-get-top-data-set.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>child</p></td>
+<td class="parameter_description"><p>an <span class="type">EpsaraDataElement</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="epsara-data-set-get-top-data-set.returns"></a><h4>Returns</h4>
+<p>the parent set. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+<p class="since">Since: 0.02</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="epsara-data-set-calculate-minimizer-value"></a><h3>epsara_data_set_calculate_minimizer_value ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+epsara_data_set_calculate_minimizer_value
+                               (<em class="parameter"><code><a class="link" href="EpsaraDataSet.html" title="The Data-Set"><span class="type">EpsaraDataSet</span></a> *data_set</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *params</code></em>,
+                                <em class="parameter"><code><span class="type">size_t</span> no_of_params</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="EpsaraDataSet.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="EpsaraDataSet-struct"></a><h3>struct EpsaraDataSet</h3>
+<pre class="programlisting">struct EpsaraDataSet;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EpsaraDataSetClass"></a><h3>struct EpsaraDataSetClass</h3>
+<pre class="programlisting">struct EpsaraDataSetClass {
+  EpsaraDataElementClass parent_class;
+
+  void  (*add)                (EpsaraDataSet         *container,
+                               EpsaraDataMeasurement *measurement);
+  void  (*remove)             (EpsaraDataSet         *container,
+                               EpsaraDataMeasurement *measurement);
+  void  (*forall)             (EpsaraDataSet         *container,
+                               gboolean               include_internals,
+                               EpsaraForallCallback   callback,
+                               gpointer               callback_data);
+  gboolean (*calculate)       (EpsaraDataSet         *measurement);
+  gboolean (*fit)             (EpsaraDataSet         *measurement);
+
+//  gboolean (*save)            (EpsaraDataSet         *measurement,
+//                               GFile                 *output_file);
+};
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EpsaraDataSetPrivate"></a><h3>EpsaraDataSetPrivate</h3>
+<pre class="programlisting">typedef struct _EpsaraDataSetPrivate EpsaraDataSetPrivate;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="EpsaraDataSet.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="EpsaraDataSet--iterations"></a><h3>The <code class="literal">“iterations”</code> property</h3>
+<pre class="programlisting">  “iterations”               <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>maximum number of iterations for the fitting-process.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 100</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EpsaraDataSet--minimizer-type"></a><h3>The <code class="literal">“minimizer-type”</code> property</h3>
+<pre class="programlisting">  “minimizer-type”           <span class="type">EpsaraMinimizerType</span></pre>
+<p>holds the type of algorithm, that will be applied for minimization.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: EPSARA_MINIMIZER_SIMPLEX</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EpsaraDataSet--result-table"></a><h3>The <code class="literal">“result-table”</code> property</h3>
+<pre class="programlisting">  “result-table”             <a href="../glib/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *</pre>
+<p>stores the calculated spectra as hash-table for all measurements.</p>
+<p>Flags: Read</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EpsaraDataSet--tolerance"></a><h3>The <code class="literal">“tolerance”</code> property</h3>
+<pre class="programlisting">  “tolerance”                <a href="../glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></pre>
+<p>maximum of tolerance for the fitting-process.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,1]</p>
+<p>Default value: 0.01</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="EpsaraDataSet.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="EpsaraDataSet-add"></a><h3>The <code class="literal">“add”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EpsaraDataSet.html" title="The Data-Set"><span class="type">EpsaraDataSet</span></a>         *epsaradataset,
+               <a class="link" href="EpsaraDataMeasurement.html" title="EpsaraDataMeasurement"><span class="type">EpsaraDataMeasurement</span></a> *arg1,
+               <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>               user_data)</pre>
+<p>Flags: <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EpsaraDataSet-calculate"></a><h3>The <code class="literal">“calculate”</code> signal</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+user_function (<a class="link" href="EpsaraDataSet.html" title="The Data-Set"><span class="type">EpsaraDataSet</span></a> *epsaradataset,
+               <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>       user_data)</pre>
+<p>Flags: <a href="../gobject/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EpsaraDataSet-fit"></a><h3>The <code class="literal">“fit”</code> signal</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+user_function (<a class="link" href="EpsaraDataSet.html" title="The Data-Set"><span class="type">EpsaraDataSet</span></a> *epsaradataset,
+               <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>       user_data)</pre>
+<p>Flags: <a href="../gobject/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EpsaraDataSet-remove"></a><h3>The <code class="literal">“remove”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="EpsaraDataSet.html" title="The Data-Set"><span class="type">EpsaraDataSet</span></a>         *epsaradataset,
+               <a class="link" href="EpsaraDataMeasurement.html" title="EpsaraDataMeasurement"><span class="type">EpsaraDataMeasurement</span></a> *arg1,
+               <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>               user_data)</pre>
+<p>Flags: <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.29</div>
+</body>
+</html>

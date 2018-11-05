@@ -1,0 +1,411 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="GdvLayerContent">
+<refmeta>
+<refentrytitle role="top_of_page" id="GdvLayerContent.top_of_page">GdvLayerContent</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>GDV Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>GdvLayerContent</refname>
+<refpurpose>plotting a set of data</refpurpose>
+</refnamediv>
+
+<refsect1 id="GdvLayerContent.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="GdvLayerContent"><returnvalue>GdvLayerContent</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="gdv-layer-content-new">gdv_layer_content_new</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-layer-content-add-data-point">gdv_layer_content_add_data_point</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-layer-content-remove-data-point-by-index">gdv_layer_content_remove_data_point_by_index</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GList"><returnvalue>GList</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="gdv-layer-content-get-content">gdv_layer_content_get_content</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-layer-content-get-min-max-x">gdv_layer_content_get_min_max_x</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-layer-content-get-min-max-y">gdv_layer_content_get_min_max_y</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-layer-content-get-min-max-z">gdv_layer_content_get_min_max_z</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="gdv-layer-content-reset">gdv_layer_content_reset</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="GdvLayerContent.properties" role="properties">
+<title role="properties.title">Properties</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="properties_type" colwidth="150px"/>
+<colspec colname="properties_name" colwidth="300px"/>
+<colspec colname="properties_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="property_type"><link linkend="GdvDataPoint"><type>GdvDataPoint</type></link>&#160;*</entry><entry role="property_name"><link linkend="GdvLayerContent--data-point">data-point</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gboolean"><type>gboolean</type></link></entry><entry role="property_name"><link linkend="GdvLayerContent--fill-above">fill-above</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gboolean"><type>gboolean</type></link></entry><entry role="property_name"><link linkend="GdvLayerContent--fill-below">fill-below</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="guint"><type>guint</type></link></entry><entry role="property_name"><link linkend="GdvLayerContent--line-style">line-style</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gdouble"><type>gdouble</type></link></entry><entry role="property_name"><link linkend="GdvLayerContent--point-line-width">point-line-width</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="guint"><type>guint</type></link></entry><entry role="property_name"><link linkend="GdvLayerContent--point-type">point-type</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gboolean"><type>gboolean</type></link></entry><entry role="property_name"><link linkend="GdvLayerContent--show-in-legend">show-in-legend</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gchar"><type>gchar</type></link>&#160;*</entry><entry role="property_name"><link linkend="GdvLayerContent--title">title</link></entry><entry role="property_flags">Read / Write</entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="GdvLayerContent.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="GdvLayerContent-struct">GdvLayerContent</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="GdvLayerContentClass">GdvLayerContentClass</link></entry></row>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="GdvLayerContentPrivate">GdvLayerContentPrivate</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="GdvLayerContent.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GInitiallyUnowned">GInitiallyUnowned</link>
+        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkWidget">GtkWidget</link>
+            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> GdvLayerContent
+</screen>
+</refsect1>
+<refsect1 id="GdvLayerContent.implemented-interfaces" role="impl_interfaces">
+<title role="impl_interfaces.title">Implemented Interfaces</title>
+<para>
+GdvLayerContent implements
+ <link linkend="AtkImplementorIface">AtkImplementorIface</link> and  <link linkend="GtkBuildable">GtkBuildable</link>.</para>
+
+</refsect1>
+
+
+<refsect1 id="GdvLayerContent.description" role="desc">
+<title role="desc.title">Description</title>
+<para><link linkend="GdvLayerContent"><type>GdvLayerContent</type></link> is a object-class, thats intention is to basically contain
+all the information, that will be plotted in a single data-series of a plot.</para>
+
+</refsect1>
+<refsect1 id="GdvLayerContent.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="gdv-layer-content-new" role="function">
+<title>gdv_layer_content_new&#160;()</title>
+<indexterm zone="gdv-layer-content-new"><primary>gdv_layer_content_new</primary></indexterm>
+<programlisting language="C"><link linkend="GdvLayerContent"><returnvalue>GdvLayerContent</returnvalue></link>&#160;*
+gdv_layer_content_new (<parameter><type>void</type></parameter>);</programlisting>
+<para>Just a common constructor.</para>
+<refsect3 id="gdv-layer-content-new.returns" role="returns">
+<title>Returns</title>
+<para> a new <link linkend="GdvLayerContent"><type>GdvLayerContent</type></link></para>
+</refsect3></refsect2>
+<refsect2 id="gdv-layer-content-add-data-point" role="function">
+<title>gdv_layer_content_add_data_point&#160;()</title>
+<indexterm zone="gdv-layer-content-add-data-point"><primary>gdv_layer_content_add_data_point</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+gdv_layer_content_add_data_point (<parameter><link linkend="GdvLayerContent"><type>GdvLayerContent</type></link> *layer_content</parameter>,
+                                  <parameter><link linkend="gdouble"><type>gdouble</type></link> x_value</parameter>,
+                                  <parameter><link linkend="gdouble"><type>gdouble</type></link> y_value</parameter>,
+                                  <parameter><link linkend="gdouble"><type>gdouble</type></link> z_value</parameter>);</programlisting>
+<para>Just add a new cartesian point to the <link linkend="layer-content"><type>layer_content</type></link>.</para>
+<refsect3 id="gdv-layer-content-add-data-point.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>layer_content</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvLayerContent"><type>GdvLayerContent</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>x_value</para></entry>
+<entry role="parameter_description"><para>the x value of the new data-point</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>y_value</para></entry>
+<entry role="parameter_description"><para>the y value of the new data-point</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>z_value</para></entry>
+<entry role="parameter_description"><para>the z value of the new data-point</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="gdv-layer-content-remove-data-point-by-index" role="function">
+<title>gdv_layer_content_remove_data_point_by_index&#160;()</title>
+<indexterm zone="gdv-layer-content-remove-data-point-by-index"><primary>gdv_layer_content_remove_data_point_by_index</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+gdv_layer_content_remove_data_point_by_index
+                               (<parameter><link linkend="GdvLayerContent"><type>GdvLayerContent</type></link> *layer_content</parameter>,
+                                <parameter><link linkend="gint"><type>gint</type></link> index</parameter>);</programlisting>
+<para>Removes the data-point from <link linkend="layer-content"><type>layer_content</type></link> that is stored under the <link linkend="index"><type>index</type></link>
+position (counted from the one added last to the one added first).</para>
+<para>A negative <link linkend="index"><type>index</type></link> removes the point that was added first to the layer.</para>
+<refsect3 id="gdv-layer-content-remove-data-point-by-index.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>layer_content</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvLayerContent"><type>GdvLayerContent</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>index</para></entry>
+<entry role="parameter_description"><para>The index of the point that should be removed</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="gdv-layer-content-remove-data-point-by-index.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the data-point could be removed and <link linkend="FALSE:CAPS"><literal>FALSE</literal></link> otherwise.</para>
+</refsect3></refsect2>
+<refsect2 id="gdv-layer-content-get-content" role="function">
+<title>gdv_layer_content_get_content&#160;()</title>
+<indexterm zone="gdv-layer-content-get-content"><primary>gdv_layer_content_get_content</primary></indexterm>
+<programlisting language="C"><link linkend="GList"><returnvalue>GList</returnvalue></link>&#160;*
+gdv_layer_content_get_content (<parameter><link linkend="GdvLayerContent"><type>GdvLayerContent</type></link> *content</parameter>);</programlisting>
+<para>Returns a newly allocated list of the content of the gdvlayercontent-object</para>
+<refsect3 id="gdv-layer-content-get-content.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>content</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvLayerContent"><type>GdvLayerContent</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="gdv-layer-content-get-content.returns" role="returns">
+<title>Returns</title>
+<para>a newly allocated
+copy of the content-list. </para>
+<para><emphasis role="annotation">[<acronym>element-type</acronym> GdvDataPoint][<acronym>transfer container</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="gdv-layer-content-get-min-max-x" role="function">
+<title>gdv_layer_content_get_min_max_x&#160;()</title>
+<indexterm zone="gdv-layer-content-get-min-max-x"><primary>gdv_layer_content_get_min_max_x</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+gdv_layer_content_get_min_max_x (<parameter><link linkend="GdvLayerContent"><type>GdvLayerContent</type></link> *content</parameter>,
+                                 <parameter><link linkend="gdouble"><type>gdouble</type></link> *min_x</parameter>,
+                                 <parameter><link linkend="gdouble"><type>gdouble</type></link> *max_x</parameter>);</programlisting>
+<para>Convenient function to get the minimum and maximum value of the layer-content.</para>
+<para>This function should not be used for now, as it will give wrong results
+after data-points were removed from the <link linkend="content"><type>content</type></link>.</para>
+<refsect3 id="gdv-layer-content-get-min-max-x.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>content</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvLayerContent"><type>GdvLayerContent</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>min_x</para></entry>
+<entry role="parameter_description"><para>The place to store the minimum x-value</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>max_x</para></entry>
+<entry role="parameter_description"><para>The place to store the maximum x-value</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="gdv-layer-content-get-min-max-y" role="function">
+<title>gdv_layer_content_get_min_max_y&#160;()</title>
+<indexterm zone="gdv-layer-content-get-min-max-y"><primary>gdv_layer_content_get_min_max_y</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+gdv_layer_content_get_min_max_y (<parameter><link linkend="GdvLayerContent"><type>GdvLayerContent</type></link> *content</parameter>,
+                                 <parameter><link linkend="gdouble"><type>gdouble</type></link> *min_y</parameter>,
+                                 <parameter><link linkend="gdouble"><type>gdouble</type></link> *max_y</parameter>);</programlisting>
+<para>Convenient function to get the minimum and maximum value of the layer-content.</para>
+<para>This function should not be used for now, as it will give wrong results
+after data-points were removed from the <link linkend="content"><type>content</type></link>.</para>
+<refsect3 id="gdv-layer-content-get-min-max-y.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>content</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvLayerContent"><type>GdvLayerContent</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>min_y</para></entry>
+<entry role="parameter_description"><para>The place to store the minimum y-value</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>max_y</para></entry>
+<entry role="parameter_description"><para>The place to store the maximum y-value</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="gdv-layer-content-get-min-max-z" role="function">
+<title>gdv_layer_content_get_min_max_z&#160;()</title>
+<indexterm zone="gdv-layer-content-get-min-max-z"><primary>gdv_layer_content_get_min_max_z</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+gdv_layer_content_get_min_max_z (<parameter><link linkend="GdvLayerContent"><type>GdvLayerContent</type></link> *content</parameter>,
+                                 <parameter><link linkend="gdouble"><type>gdouble</type></link> *min_z</parameter>,
+                                 <parameter><link linkend="gdouble"><type>gdouble</type></link> *max_z</parameter>);</programlisting>
+<para>Convenient function to get the minimum and maximum value of the layer-content.</para>
+<para>This function should not be used for now, as it will give wrong results
+after data-points were removed from the <link linkend="content"><type>content</type></link>.</para>
+<refsect3 id="gdv-layer-content-get-min-max-z.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>content</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvLayerContent"><type>GdvLayerContent</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>min_z</para></entry>
+<entry role="parameter_description"><para>The place to store the minimum z-value</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>max_z</para></entry>
+<entry role="parameter_description"><para>The place to store the maximum z-value</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="gdv-layer-content-reset" role="function">
+<title>gdv_layer_content_reset&#160;()</title>
+<indexterm zone="gdv-layer-content-reset"><primary>gdv_layer_content_reset</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+gdv_layer_content_reset (<parameter><link linkend="GdvLayerContent"><type>GdvLayerContent</type></link> *layer_content</parameter>);</programlisting>
+<para>Resets the <link linkend="layer-content"><type>layer_content</type></link>.</para>
+<refsect3 id="gdv-layer-content-reset.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>layer_content</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GdvLayerContent"><type>GdvLayerContent</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+
+</refsect1>
+<refsect1 id="GdvLayerContent.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="GdvLayerContent-struct" role="struct">
+<title>struct GdvLayerContent</title>
+<indexterm zone="GdvLayerContent-struct"><primary>GdvLayerContent</primary></indexterm>
+<programlisting language="C">struct GdvLayerContent;</programlisting>
+</refsect2>
+<refsect2 id="GdvLayerContentClass" role="struct">
+<title>struct GdvLayerContentClass</title>
+<indexterm zone="GdvLayerContentClass"><primary>GdvLayerContentClass</primary></indexterm>
+<programlisting language="C">struct GdvLayerContentClass {
+  GtkWidgetClass parent_class;
+
+  /* Padding to allow adding up to 12 new virtual functions without
+   * breaking ABI. */
+  gpointer _gdv_reserve[12];
+};
+</programlisting>
+<refsect3 id="GdvLayerContentClass.members" role="struct_members">
+<title>Members</title>
+<informaltable role="struct_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="struct_members_name" colwidth="300px"/>
+<colspec colname="struct_members_description"/>
+<colspec colname="struct_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="member"><entry role="struct_member_name"><para><link linkend="gpointer"><type>gpointer</type></link>&#160;<structfield id="GdvLayerContentClass.-gdv-reserve">_gdv_reserve</structfield>[12];</para></entry>
+<entry /><entry />
+</row>
+</tbody></tgroup></informaltable>
+</refsect3>
+</refsect2>
+<refsect2 id="GdvLayerContentPrivate" role="struct">
+<title>GdvLayerContentPrivate</title>
+<indexterm zone="GdvLayerContentPrivate"><primary>GdvLayerContentPrivate</primary></indexterm>
+<programlisting language="C">typedef struct _GdvLayerContentPrivate GdvLayerContentPrivate;</programlisting>
+</refsect2>
+
+</refsect1>
+<refsect1 id="GdvLayerContent.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="GdvLayerContent--data-point" role="property"><title>The <literal>“data-point”</literal> property</title>
+<indexterm zone="GdvLayerContent--data-point"><primary>GdvLayerContent:data-point</primary></indexterm>
+<programlisting>  “data-point”               <link linkend="GdvDataPoint"><type>GdvDataPoint</type></link>&#160;*</programlisting>
+<para>Gives the data-point that was added last to the layer-content or makes it
+possible to add a new data-point.</para>
+<para>Flags: Read / Write</para>
+</refsect2>
+<refsect2 id="GdvLayerContent--fill-above" role="property"><title>The <literal>“fill-above”</literal> property</title>
+<indexterm zone="GdvLayerContent--fill-above"><primary>GdvLayerContent:fill-above</primary></indexterm>
+<programlisting>  “fill-above”               <link linkend="gboolean"><type>gboolean</type></link></programlisting>
+<para>Determines if the space above the data should be filled.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: FALSE</para>
+</refsect2>
+<refsect2 id="GdvLayerContent--fill-below" role="property"><title>The <literal>“fill-below”</literal> property</title>
+<indexterm zone="GdvLayerContent--fill-below"><primary>GdvLayerContent:fill-below</primary></indexterm>
+<programlisting>  “fill-below”               <link linkend="gboolean"><type>gboolean</type></link></programlisting>
+<para>Determines if the space below the data should be filled.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: FALSE</para>
+</refsect2>
+<refsect2 id="GdvLayerContent--line-style" role="property"><title>The <literal>“line-style”</literal> property</title>
+<indexterm zone="GdvLayerContent--line-style"><primary>GdvLayerContent:line-style</primary></indexterm>
+<programlisting>  “line-style”               <link linkend="guint"><type>guint</type></link></programlisting>
+<para>The style-type to plot a line.</para>
+<para>Flags: Read / Write</para>
+<para>Allowed values: &lt;= 50</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="GdvLayerContent--point-line-width" role="property"><title>The <literal>“point-line-width”</literal> property</title>
+<indexterm zone="GdvLayerContent--point-line-width"><primary>GdvLayerContent:point-line-width</primary></indexterm>
+<programlisting>  “point-line-width”         <link linkend="gdouble"><type>gdouble</type></link></programlisting>
+<para>The line-width to plot a point.</para>
+<para>Flags: Read / Write</para>
+<para>Allowed values: &gt;= 0</para>
+<para>Default value: 2</para>
+</refsect2>
+<refsect2 id="GdvLayerContent--point-type" role="property"><title>The <literal>“point-type”</literal> property</title>
+<indexterm zone="GdvLayerContent--point-type"><primary>GdvLayerContent:point-type</primary></indexterm>
+<programlisting>  “point-type”               <link linkend="guint"><type>guint</type></link></programlisting>
+<para>The style-type to plot a point.</para>
+<para>Flags: Read / Write</para>
+<para>Allowed values: &lt;= 50</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2 id="GdvLayerContent--show-in-legend" role="property"><title>The <literal>“show-in-legend”</literal> property</title>
+<indexterm zone="GdvLayerContent--show-in-legend"><primary>GdvLayerContent:show-in-legend</primary></indexterm>
+<programlisting>  “show-in-legend”           <link linkend="gboolean"><type>gboolean</type></link></programlisting>
+<para>Determines if the layer-content should be listed in the legend.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: TRUE</para>
+</refsect2>
+<refsect2 id="GdvLayerContent--title" role="property"><title>The <literal>“title”</literal> property</title>
+<indexterm zone="GdvLayerContent--title"><primary>GdvLayerContent:title</primary></indexterm>
+<programlisting>  “title”                    <link linkend="gchar"><type>gchar</type></link>&#160;*</programlisting>
+<para>The title of the layer-content.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: "new content"</para>
+</refsect2>
+
+</refsect1>
+
+</refentry>

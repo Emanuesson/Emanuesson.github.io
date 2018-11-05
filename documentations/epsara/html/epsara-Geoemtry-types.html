@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Geoemtry types: Epsara Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Epsara Reference Manual">
+<link rel="up" href="numeric.html" title="Basic numerics">
+<link rel="prev" href="numeric.html" title="Basic numerics">
+<link rel="next" href="EpsaraDataVector.html" title="EpsaraDataVector">
+<meta name="generator" content="GTK-Doc V1.29 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#epsara-Geoemtry-types.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#epsara-Geoemtry-types.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="numeric.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="numeric.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="EpsaraDataVector.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="epsara-Geoemtry-types"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="epsara-Geoemtry-types.top_of_page"></a>Geoemtry types</span></h2>
+<p>Geoemtry types — Basic structures for geometry functions</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="epsara-Geoemtry-types.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="epsara-Geoemtry-types.html#epsara-data-point-equal" title="epsara_data_point_equal ()">epsara_data_point_equal</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="epsara-Geoemtry-types.html#epsara-data-point-scalar-product" title="epsara_data_point_scalar_product ()">epsara_data_point_scalar_product</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="epsara-Geoemtry-types.html#epsara-data-point-metric" title="epsara_data_point_metric ()">epsara_data_point_metric</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="epsara-Geoemtry-types.html#epsara-data-point-distance-to-origin" title="epsara_data_point_distance_to_origin ()">epsara_data_point_distance_to_origin</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="epsara-Geoemtry-types.html#epsara-data-direction-equal" title="epsara_data_direction_equal ()">epsara_data_direction_equal</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="epsara-Geoemtry-types.html#epsara-data-polygon-equal" title="epsara_data_polygon_equal ()">epsara_data_polygon_equal</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="EpsaraDataDirection"></a><a name="EpsaraDataPoint"></a><a name="EpsaraDataPolygon"></a><div class="refsect1">
+<a name="epsara-Geoemtry-types.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-Boxed-Types.html">GBoxed</a>
+    <span class="lineart">├──</span> EpsaraDataDirection
+    <span class="lineart">├──</span> EpsaraDataPoint
+    <span class="lineart">╰──</span> EpsaraDataPolygon
+</pre>
+</div>
+<div class="refsect1">
+<a name="epsara-Geoemtry-types.description"></a><h2>Description</h2>
+<p>I owe you a long description, what the geometric-structs are all about.</p>
+</div>
+<div class="refsect1">
+<a name="epsara-Geoemtry-types.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="epsara-data-point-equal"></a><h3>epsara_data_point_equal ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+epsara_data_point_equal (<em class="parameter"><code>const <a class="link" href="epsara-Geoemtry-types.html#EpsaraDataPoint"><span class="type">EpsaraDataPoint</span></a> *point1</code></em>,
+                         <em class="parameter"><code>const <a class="link" href="epsara-Geoemtry-types.html#EpsaraDataPoint"><span class="type">EpsaraDataPoint</span></a> *point2</code></em>);</pre>
+<p>Checks if the two given points are equal.</p>
+<div class="refsect3">
+<a name="epsara-data-point-equal.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>point1</p></td>
+<td class="parameter_description"><p>a <a class="link" href="epsara-Geoemtry-types.html#EpsaraDataPoint"><span class="type">EpsaraDataPoint</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>point2</p></td>
+<td class="parameter_description"><p>a <a class="link" href="epsara-Geoemtry-types.html#EpsaraDataPoint"><span class="type">EpsaraDataPoint</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="epsara-data-point-equal.returns"></a><h4>Returns</h4>
+<p> <a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the points are equal.</p>
+</div>
+<p class="since">Since: 0.50</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="epsara-data-point-scalar-product"></a><h3>epsara_data_point_scalar_product ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+epsara_data_point_scalar_product (<em class="parameter"><code>const <a class="link" href="epsara-Geoemtry-types.html#EpsaraDataPoint"><span class="type">EpsaraDataPoint</span></a> *point1</code></em>,
+                                  <em class="parameter"><code>const <a class="link" href="epsara-Geoemtry-types.html#EpsaraDataPoint"><span class="type">EpsaraDataPoint</span></a> *point2</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="epsara-data-point-metric"></a><h3>epsara_data_point_metric ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+epsara_data_point_metric (<em class="parameter"><code>const <a class="link" href="epsara-Geoemtry-types.html#EpsaraDataPoint"><span class="type">EpsaraDataPoint</span></a> *point1</code></em>,
+                          <em class="parameter"><code>const <a class="link" href="epsara-Geoemtry-types.html#EpsaraDataPoint"><span class="type">EpsaraDataPoint</span></a> *point2</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="epsara-data-point-distance-to-origin"></a><h3>epsara_data_point_distance_to_origin ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+epsara_data_point_distance_to_origin (<em class="parameter"><code>const <a class="link" href="epsara-Geoemtry-types.html#EpsaraDataPoint"><span class="type">EpsaraDataPoint</span></a> *point</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="epsara-data-direction-equal"></a><h3>epsara_data_direction_equal ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+epsara_data_direction_equal (<em class="parameter"><code>const <a class="link" href="epsara-Geoemtry-types.html#EpsaraDataDirection"><span class="type">EpsaraDataDirection</span></a> *direction1</code></em>,
+                             <em class="parameter"><code>const <a class="link" href="epsara-Geoemtry-types.html#EpsaraDataDirection"><span class="type">EpsaraDataDirection</span></a> *direction2</code></em>);</pre>
+<p>Checks if the two given directions are equal.</p>
+<div class="refsect3">
+<a name="epsara-data-direction-equal.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>direction1</p></td>
+<td class="parameter_description"><p>a <a class="link" href="epsara-Geoemtry-types.html#EpsaraDataDirection"><span class="type">EpsaraDataDirection</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>direction2</p></td>
+<td class="parameter_description"><p>a <a class="link" href="epsara-Geoemtry-types.html#EpsaraDataDirection"><span class="type">EpsaraDataDirection</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="epsara-data-direction-equal.returns"></a><h4>Returns</h4>
+<p> <a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the directions are equal.</p>
+</div>
+<p class="since">Since: 0.50</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="epsara-data-polygon-equal"></a><h3>epsara_data_polygon_equal ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+epsara_data_polygon_equal (<em class="parameter"><code>const <a class="link" href="epsara-Geoemtry-types.html#EpsaraDataPolygon"><span class="type">EpsaraDataPolygon</span></a> *polygon1</code></em>,
+                           <em class="parameter"><code>const <a class="link" href="epsara-Geoemtry-types.html#EpsaraDataPolygon"><span class="type">EpsaraDataPolygon</span></a> *polygon2</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="epsara-Geoemtry-types.other_details"></a><h2>Types and Values</h2>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.29</div>
+</body>
+</html>
